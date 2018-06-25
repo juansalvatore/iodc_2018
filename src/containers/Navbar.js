@@ -1,0 +1,138 @@
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { IntlProvider, FormattedMessage } from 'react-intl'
+import messages from './messages'
+import { setLocale } from '../actions/locale'
+import { Link } from 'react-router-dom'
+
+import '../styles/main.min.css'
+/*
+  Bootstrap documentation for react:
+  https://react-bootstrap.github.io/
+*/
+import { Navbar, Nav, NavItem } from 'react-bootstrap'
+
+import Logo from '../img/logo-iodc.svg'
+import facebook from '../img/facebook.svg'
+import twitter from '../img/twitter.svg'
+import flickr from '../img/flickr.svg'
+import youtube from '../img/youtube.svg'
+
+class Menu extends Component {
+  render() {
+    const { lang } = this.props
+    return (
+      <IntlProvider locale={lang} messages={messages[lang]}>
+        <div>
+          <Navbar className="navbar-container">
+            <Navbar.Header>
+              <Navbar.Brand>
+                <Link to="/">
+                  <img src={Logo} alt="logo" />
+                </Link>
+              </Navbar.Brand>
+            </Navbar.Header>
+            <Nav>
+              <NavItem eventKey={1} href="#">
+                <Link to="/preregister">
+                  <FormattedMessage
+                    id="nav.register"
+                    defaultMessage="Pre-Register"
+                  />
+                </Link>
+              </NavItem>
+
+              <NavItem eventKey={2} href="#">
+                <Link to="/venue">
+                  <FormattedMessage id="nav.venue" defaultMessage="Venue" />
+                </Link>
+              </NavItem>
+
+              <NavItem eventKey={3} href="#">
+                <Link to="/proposals">
+                  <FormattedMessage
+                    id="nav.proposals"
+                    defaultMessage="Call for Proposals"
+                  />
+                </Link>
+              </NavItem>
+
+              <NavItem eventKey={4} href="#">
+                <Link to="/about">
+                  <FormattedMessage id="nav.about" defaultMessage="About" />
+                </Link>
+              </NavItem>
+
+              <NavItem eventKey={5} href="#">
+                <Link to="/committee">
+                  <FormattedMessage
+                    id="nav.committee"
+                    defaultMessage="Programme Committee"
+                  />
+                </Link>
+              </NavItem>
+
+              <NavItem eventKey={6} href="#">
+                <Link to="/code">
+                  <FormattedMessage
+                    id="nav.code"
+                    defaultMessage="Code of Conduct"
+                  />
+                </Link>
+              </NavItem>
+
+              <NavItem eventKey={7} href="#">
+                <Link to="/faq">FAQ</Link>
+              </NavItem>
+
+              <NavItem eventKey={8} href="#">
+                <Link to="#">
+                  <img src={facebook} width="20" alt="fb" />
+                </Link>
+              </NavItem>
+
+              <NavItem eventKey={9} href="#">
+                <img src={twitter} width="20" alt="tw" />
+              </NavItem>
+
+              <NavItem eventKey={10} href="#">
+                <img src={flickr} width="20" alt="fl" />
+              </NavItem>
+
+              <NavItem eventKey={11} href="#">
+                <img src={youtube} width="20" alt="yt" />
+              </NavItem>
+
+              <NavItem
+                onClick={() => this.props.setLocale('en')}
+                eventKey={7}
+                href="#"
+              >
+                EN
+              </NavItem>
+              <NavItem
+                onClick={() => this.props.setLocale('es')}
+                eventKey={7}
+                href="#"
+              >
+                ES
+              </NavItem>
+            </Nav>
+          </Navbar>
+          <div />
+        </div>
+      </IntlProvider>
+    )
+  }
+}
+
+function mapStateToProps(state) {
+  return {
+    lang: state.locale.lang,
+  }
+}
+
+export default connect(
+  mapStateToProps,
+  { setLocale }
+)(Menu)
