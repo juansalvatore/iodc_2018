@@ -27,14 +27,14 @@ class Menu extends Component {
           <Navbar className="navbar-container">
             <Navbar.Header>
               <Navbar.Brand>
-                <Link to="/">
+                <Link to="/iodc_2018/">
                   <img src={Logo} alt="logo" />
                 </Link>
               </Navbar.Brand>
             </Navbar.Header>
             <Nav>
               <NavItem eventKey={1} href="#">
-                <Link to="/preregister">
+                <Link to="/iodc_2018/preregister">
                   <FormattedMessage
                     id="nav.register"
                     defaultMessage="Pre-Register"
@@ -43,13 +43,13 @@ class Menu extends Component {
               </NavItem>
 
               <NavItem eventKey={2} href="#">
-                <Link to="/venue">
+                <Link to="/iodc_2018/venue">
                   <FormattedMessage id="nav.venue" defaultMessage="Venue" />
                 </Link>
               </NavItem>
 
               <NavItem eventKey={3} href="#">
-                <Link to="/proposals">
+                <Link to="/iodc_2018/proposals">
                   <FormattedMessage
                     id="nav.proposals"
                     defaultMessage="Call for Proposals"
@@ -58,13 +58,13 @@ class Menu extends Component {
               </NavItem>
 
               <NavItem eventKey={4} href="#">
-                <Link to="/about">
+                <Link to="/iodc_2018/about">
                   <FormattedMessage id="nav.about" defaultMessage="About" />
                 </Link>
               </NavItem>
 
               <NavItem eventKey={5} href="#">
-                <Link to="/committee">
+                <Link to="/iodc_2018/committee">
                   <FormattedMessage
                     id="nav.committee"
                     defaultMessage="Programme Committee"
@@ -73,7 +73,7 @@ class Menu extends Component {
               </NavItem>
 
               <NavItem eventKey={6} href="#">
-                <Link to="/code">
+                <Link to="/iodc_2018/code">
                   <FormattedMessage
                     id="nav.code"
                     defaultMessage="Code of Conduct"
@@ -82,11 +82,11 @@ class Menu extends Component {
               </NavItem>
 
               <NavItem eventKey={7} href="#">
-                <Link to="/faq">FAQ</Link>
+                <Link to="/iodc_2018/faq">FAQ</Link>
               </NavItem>
 
               <NavItem eventKey={8} href="#">
-                <Link to="#">
+                <Link to="/iodc_2018/#">
                   <img src={facebook} width="20" alt="fb" />
                 </Link>
               </NavItem>
