@@ -5,7 +5,6 @@ import messages from './messages'
 import { setLocale } from '../actions/locale'
 import { Link } from 'react-router-dom'
 
-import '../styles/main.min.css'
 /*
   Bootstrap documentation for react:
   https://react-bootstrap.github.io/

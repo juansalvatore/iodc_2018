@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import { IntlProvider } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
-import '../styles/main.min.css'
 
 class SubmitedForm extends Component {
   render() {
