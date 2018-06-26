@@ -426,8 +426,9 @@ input[type="radio"]:focus
     padding: 0 !important
 
 .internal-sub-title-low
-    font-size: 24px !important
-
+    font-size: 20px !important
+    margin-top: 75px 
+    font-weight: 500
 
 
 .internal-text
@@ -436,37 +437,50 @@ input[type="radio"]:focus
     font-size: 16px
     
 
-ul li:before 
-    content: "•"
+.internal-text-list ul li:before 
+    content: "• "
     color: #2cd3f6 
     font-family: 'Roboto',Helvetica,Arial,sans-serif
     font-size: 36px
     font-weight: 500
+    padding-right: 10px
+    padding-top: 5px
 
 .internal-text-list
     color: #777777
     font-family: 'Roboto Mono',Helvetica,Arial,sans-serif !important
-    font-size: 18px
+    font-size: 16px
     
 ul
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 0px;
+    display: block
+    list-style-type: disc
+    -webkit-margin-before: 0em
+    -webkit-margin-after: 0em
+    -webkit-margin-start: 0px
+    -webkit-margin-end: 0px
+    -webkit-padding-start: 0px
 
 li 
     list-style: none
     padding-top: 15px
-
+    display: flex
+    align-items: center
+    line-height: 0.5
 
     
 
 .internal-bullets-text
     color: #2cd3f6 !important
     font-family: 'Roboto Mono',Helvetica,Arial,sans-serif !important
+
+
+.m75
+    margin-bottom: 75px
+
+.img-placeholder
+    height: 200px
+    width: 100%
+    background-color: #777777
 
  
 //  LAS MEDIA QUERIES SE HACEN ASI GUACHO - hay que crear los sass por fuera e importarlos -
