@@ -1,25 +1,25 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { IntlProvider, FormattedMessage } from 'react-intl'
-import messages from './messages'
-import { setLocale } from '../actions/locale'
-import { Link } from 'react-router-dom'
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { IntlProvider, FormattedMessage } from "react-intl";
+import messages from "./messages";
+import { setLocale } from "../actions/locale";
+import { Link } from "react-router-dom";
 
 /*
   Bootstrap documentation for react:
   https://react-bootstrap.github.io/
 */
-import { Navbar, Nav, NavItem } from 'react-bootstrap'
+import { Navbar, Nav, NavItem } from "react-bootstrap";
 
-import Logo from '../img/logo-iodc.svg'
-import facebook from '../img/facebook.svg'
-import twitter from '../img/twitter.svg'
-import flickr from '../img/flickr.svg'
-import youtube from '../img/youtube.svg'
+import Logo from "../img/logo-iodc.svg";
+import facebook from "../img/facebook.svg";
+import twitter from "../img/twitter.svg";
+import flickr from "../img/flickr.svg";
+import youtube from "../img/youtube.svg";
 
 class Menu extends Component {
   render() {
-    const { lang } = this.props
+    const { lang } = this.props;
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div>
@@ -48,7 +48,7 @@ class Menu extends Component {
               </NavItem>
 
               <NavItem eventKey={3} href="#">
-                <Link to="/iodc_2018/proposals">
+                <Link to="/iodc_2018/program">
                   <FormattedMessage
                     id="nav.proposals"
                     defaultMessage="Call for Proposals"
@@ -103,14 +103,14 @@ class Menu extends Component {
               </NavItem>
 
               <NavItem
-                onClick={() => this.props.setLocale('en')}
+                onClick={() => this.props.setLocale("en")}
                 eventKey={7}
                 href="#"
               >
                 EN
               </NavItem>
               <NavItem
-                onClick={() => this.props.setLocale('es')}
+                onClick={() => this.props.setLocale("es")}
                 eventKey={7}
                 href="#"
               >
@@ -121,17 +121,17 @@ class Menu extends Component {
           <div />
         </div>
       </IntlProvider>
-    )
+    );
   }
 }
 
 function mapStateToProps(state) {
   return {
-    lang: state.locale.lang,
-  }
+    lang: state.locale.lang
+  };
 }
 
 export default connect(
   mapStateToProps,
   { setLocale }
-)(Menu)
+)(Menu);
