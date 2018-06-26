@@ -3,7 +3,6 @@ export default {
     'nav.dashboard': 'Hello World',
     'list.a': 'test',
     // About
-    'about.main': 'info',
     // nav
     'nav.link': 'link',
     'nav.register': 'Pre-Register',
@@ -92,7 +91,6 @@ export default {
     'nav.dashboard': 'Hola Mundo',
     'list.a': 'prueba',
     // About
-    'about.main': 'más información',
     // nav
     'nav.link': 'test',
     'nav.register': 'Pre.Registrarse',

@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { IntlProvider, FormattedMessage } from "react-intl";
-import messages from "./messages";
-import { setLocale } from "../actions/locale";
-import "../styles/main.min.css";
-import Header from "./Header";
-import Footer from "./Footer";
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { IntlProvider, FormattedMessage } from 'react-intl'
+import messages from './messages'
+import { setLocale } from '../actions/locale'
+import '../styles/main.min.css'
+import Header from './Header'
+import Footer from './Footer'
 
 /*
   Bootstrap documentation for react:
@@ -14,12 +14,11 @@ import Footer from "./Footer";
 
 class About extends Component {
   render() {
-    const { lang } = this.props;
+    const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div class="container-fluid">
           <Header>About</Header>
-          <FormattedMessage id="about.main" defaultMessage="about" />
 
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
@@ -47,7 +46,7 @@ class About extends Component {
               </h3>
 
               <p class="internal-text">
-                <span class="internal-bullets-text">1.</span>{" "}
+                <span class="internal-bullets-text">1.</span>{' '}
                 <b>Identify and explore</b> the new opportunities and challenges
                 that are shaping the open data agenda.
               </p>
@@ -76,8 +75,8 @@ class About extends Component {
                 <b>
                   The agenda has been co-created with people from all around the
                   world
-                </b>{" "}
-                through a global call for proposals. The conference recieved{" "}
+                </b>{' '}
+                through a global call for proposals. The conference recieved{' '}
                 <b>600 proposals</b>, and all were examined by the IODC program
                 committee, seeking for gender balance, regional diversity and
                 inclusion of all voices. This resulted in a programme of
@@ -115,17 +114,17 @@ class About extends Component {
           <Footer />
         </div>
       </IntlProvider>
-    );
+    )
   }
 }
 
 function mapStateToProps(state) {
   return {
-    lang: state.locale.lang
-  };
+    lang: state.locale.lang,
+  }
 }
 
 export default connect(
   mapStateToProps,
   { setLocale }
-)(About);
+)(About)
