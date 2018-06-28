@@ -84,10 +84,10 @@ class Menu extends Component {
                 </NavItem>
               </LinkContainer>
 
-              <LinkContainer to="/iodc_2018/code">
+              <LinkContainer to="/iodc_2018/conduct">
                 <NavItem eventKey={6} href="#">
                   <FormattedMessage
-                    id="nav.code"
+                    id="nav.conduct"
                     defaultMessage="Code of Conduct"
                   />
                 </NavItem>

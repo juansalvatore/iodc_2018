@@ -10,7 +10,7 @@ export default {
     'nav.about': 'About',
     'nav.proposals': 'Call for Proposals',
     'nav.committee': 'Programme Committee',
-    'nav.code': 'Code of Conduct',
+    'nav.conduct': 'Code of Conduct',
     // Home
     'home.main.title': 'The Future is Open',
     'home.main.date': 'September 27-28, 2018',
@@ -98,7 +98,7 @@ export default {
     'nav.about': 'Acerca',
     'nav.proposals': 'Propuestas',
     'nav.committee': 'Comité',
-    'nav.code': 'Código de Conducta',
+    'nav.conduct': 'Código de Conducta',
 
     // Home
     'home.main.title': 'El Futuro es Abierto',
