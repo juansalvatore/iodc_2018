@@ -31,7 +31,14 @@ class Menu extends Component {
                 </Link>
               </Navbar.Brand>
             </Navbar.Header>
+
             <Nav>
+              <div className="hamburguer-bt">
+                <div className="hamburguer-bt__stripe hamburguer-bt__stripe__top" />
+                <div className="hamburguer-bt__stripe hamburguer-bt__stripe__middle" />
+                <div className="hamburguer-bt__stripe hamburguer-bt__stripe__bottom" />
+              </div>
+
               <LinkContainer to="/iodc_2018/preregister">
                 <NavItem eventKey={1} href="#">
                   <FormattedMessage

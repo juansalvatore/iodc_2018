@@ -104,16 +104,22 @@ nav {
   color: white !important;
   font-weight: 500;
   font-size: 12px;
+  opacity: 1 !important;
+  transition: all ease-in-out 300ms !important;
 }
 
 .navbar-nav li a img {
   max-height: 25px;
+  opacity: 1 !important;
+  transition: all ease-in-out 300ms !important;
 }
 
 .nav > li > a {
   position: relative;
   display: block;
   padding: 14px 10px !important;
+  opacity: 1 !important;
+  transition: all ease-in-out 300ms !important;
 }
 
 .no-padding {
@@ -554,4 +560,48 @@ li {
   height: 200px;
   width: 100%;
   background-color: #777777;
+}
+
+nav, .nav, .navbar-nav {
+  opacity: 1;
+  transiton: all ease-in-out 300ms !important;
+}
+
+.hamburguer-bt {
+  cursor: pointer;
+  height: 60px;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  width: 60px;
+  margin-top: -30px;
+  transition: all .2s ease-out;
+  z-index: 200;
+}
+
+.hamburguer-bt .hamburguer-bt__stripe {
+  width: 100%;
+  height: 10px;
+  background: white;
+  margin: 4px auto;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+.hamburguer-bt.on .hamburguer-bt__stripe__top {
+  transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburguer-bt.on .hamburguer-bt__stripe__middle {
+  opacity: 0;
+}
+
+.hamburguer-bt.on .hamburguer-bt__stripe__bottom {
+  transform: rotate(-45deg) translate(10px, -10px);
+}
+
+@media (max-width: 1300px) {
+  .navbar-nav {
+    opacity: 0;
+  }
 }
