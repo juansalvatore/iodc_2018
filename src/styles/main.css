@@ -629,6 +629,12 @@ nav, .nav, .navbar-nav {
   font-weight: 200;
 }
 
+.dropdown img {
+  transform: scale(1.4);
+  margin-right: 25px;
+  margin-top: 15px;
+}
+
 .dropdown li {
   height: 20px;
 }
@@ -639,6 +645,16 @@ nav, .nav, .navbar-nav {
   border: 0.5px solid white;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.language_dropdown {
+  position: relative;
+  margin-right: 10px;
+  right: -185px !important;
+}
+
+.language_dropdown:hover {
+  cursor: pointer;
 }
 
 #closed {

@@ -17,6 +17,7 @@ import facebook from '../img/facebook.svg'
 import twitter from '../img/twitter.svg'
 import flickr from '../img/flickr.svg'
 import youtube from '../img/youtube.svg'
+
 import NavbarDropdown from './NavbarDropdown'
 
 class Menu extends Component {

@@ -5,12 +5,29 @@ import messages from './messages'
 import { setLocale } from '../actions/locale'
 import { Link } from 'react-router-dom'
 
+import facebook from '../img/facebook.svg'
+import twitter from '../img/twitter.svg'
+import flickr from '../img/flickr.svg'
+import youtube from '../img/youtube.svg'
+
 class NavbarDropdown extends Component {
   render() {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
         <ul id={this.props.opened} className="dropdown">
+          <span
+            class="language_dropdown"
+            onClick={() => this.props.setLocale('en')}
+          >
+            EN
+          </span>
+          <span
+            class="language_dropdown"
+            onClick={() => this.props.setLocale('es')}
+          >
+            ES
+          </span>
           <hr />
           <li>
             <Link to="/iodc_2018/">Home</Link>
@@ -68,6 +85,13 @@ class NavbarDropdown extends Component {
             <li>FAQ</li>
           </Link>
           <hr />
+
+          <Link to="/iodc_2018/#">
+            <img src={facebook} width="20" alt="fb" />
+          </Link>
+          <img src={twitter} width="20" alt="tw" />
+          <img src={flickr} width="20" alt="fl" />
+          <img src={youtube} width="20" alt="yt" />
         </ul>
       </IntlProvider>
     )
