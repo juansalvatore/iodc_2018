@@ -5,6 +5,7 @@ import messages from './messages'
 import { setLocale } from '../actions/locale'
 import { Link } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap'
+import $ from 'jquery'
 /*
   Bootstrap documentation for react:
   https://react-bootstrap.github.io/
@@ -18,6 +19,11 @@ import flickr from '../img/flickr.svg'
 import youtube from '../img/youtube.svg'
 
 class Menu extends Component {
+  componentDidMount() {
+    $('.hamburguer-bt').click(function() {
+      $('.hamburguer-bt').toggleClass('on')
+    })
+  }
   render() {
     const { lang } = this.props
     return (
@@ -31,14 +37,13 @@ class Menu extends Component {
                 </Link>
               </Navbar.Brand>
             </Navbar.Header>
+            <div className="hamburguer-bt">
+              <div className="hamburguer-bt__stripe hamburguer-bt__stripe__top" />
+              <div className="hamburguer-bt__stripe hamburguer-bt__stripe__middle" />
+              <div className="hamburguer-bt__stripe hamburguer-bt__stripe__bottom" />
+            </div>
 
             <Nav>
-              <div className="hamburguer-bt">
-                <div className="hamburguer-bt__stripe hamburguer-bt__stripe__top" />
-                <div className="hamburguer-bt__stripe hamburguer-bt__stripe__middle" />
-                <div className="hamburguer-bt__stripe hamburguer-bt__stripe__bottom" />
-              </div>
-
               <LinkContainer to="/iodc_2018/preregister">
                 <NavItem eventKey={1} href="#">
                   <FormattedMessage

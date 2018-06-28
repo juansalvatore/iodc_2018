@@ -512,17 +512,21 @@ nav, .nav, .navbar-nav
     opacity: 1
     transiton: all ease-in-out 300ms !important
 
+
+    
 // Hamburguer style
 .hamburguer-bt 
+    display: none
     cursor: pointer
     height: 60px
     position: absolute
-    right: 50%
-    top: 50%
+    right: 20px
+    top: 55%
     width: 60px
     margin-top: -30px
     transition: all .2s ease-out
     z-index: 200
+    transform: scale(0.6)
 
 .hamburguer-bt .hamburguer-bt__stripe 
     width: 100%
@@ -542,6 +546,19 @@ nav, .nav, .navbar-nav
     transform: rotate(-45deg) translate(10px, -10px)
 
 
+
+
+
+
+
 @media (max-width: 1300px)         
+    .hamburguer-bt 
+        display: block
     .navbar-nav
         opacity: 0 
+        display: none
+    .navbar-brand
+        position: absolute
+        left: 20px
+    
+// FIN ESTILO JUAN
