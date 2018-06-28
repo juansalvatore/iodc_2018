@@ -619,6 +619,8 @@ nav, .nav, .navbar-nav {
   background-color: #232f43;
   position: absolute;
   top: 60px;
+  display: none;
+  opacity: 0;
   right: 20px;
   color: white;
   padding: 20px;
@@ -646,7 +648,7 @@ nav, .nav, .navbar-nav {
 }
 
 #opened {
-  opacity: 1;
+  opacity: 1 !important;
   pointer-events: all;
   transition: all ease-in-out 300ms;
 }
@@ -665,5 +667,9 @@ nav, .nav, .navbar-nav {
   }
   .navbar-default {
     background-color: #232f43 !important;
+  }
+  .dropdown {
+    display: block;
+    opacity: 1;
   }
 }
