@@ -22,51 +22,54 @@ class Conduct extends Component {
 
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
-              <h4 class="internal-date text-right">September 27-28. 2018</h4>
               <p class="internal-text mtop40">
-                <b>Under the Theme “The Future is Open”, IODC 2018</b> will once
-                again bring together the global open data community in an
-                innovative conference that will help shape our increasingly data
-                driven world. The Programme for IODC 2018 has been co-created
-                with the open data community to ensure a forward-focused
-                programme of interactive sessions, workshops, guided
-                discussions, and events.
+                The International Open Data Conference attracts a diverse
+                community of people from all over the world. Respect and safety
+                are our main values, and we want to provide a safe and
+                productive environment for all participants and presenters. The
+                following code of conduct is meant to guide everyone at the IODC
+                and help to ensure a respectful and safe conference experience
+                for all. This code of conduct applies to the main conference as
+                well as all pre-events.
               </p>
-
+              <h3 class="internal-sub-title internal-sub-title-low">
+                Diversity and Inclusivity
+              </h3>
               <p class="internal-text mbottom75">
-                The unique nature of this event is that it gathers together in
-                one location a diverse range of participants from the northern
-                and southern hemispheres who are{' '}
-                <b>
-                  seeking to define strategies to advance open data both locally
-                  and globally.
-                </b>
+                The International Open Data Conference welcomes and encourages
+                participation by everyone including but not limited to people of
+                all ages, cultures, ethnicities, gender, gender-identity,
+                language, race, sexual orientation, geographical location, and
+                religion.
               </p>
 
               <h3 class="internal-sub-title internal-sub-title-low">
-                A Call for Proposals targeted submissions along three conference
-                tracks:
+                Harassment-free Conference
               </h3>
 
               <p class="internal-text mtop40">
-                <span class="internal-bullets-text">1. The Big Picture </span>
-                <b>Panels and debates</b> that allow for the exploration of
-                emerging trends and issues, ongoing challenges, and
-                cross-cutting themes facing the broader open data community.
+                The International Open Data Conference is dedicated to providing
+                a harassment-free conference experience for everyone, regardless
+                of gender, gender identity and expression, sexual orientation,
+                disability, physical appearance, body size, race, age or
+                religion.
               </p>
+
               <p class="internal-text mtop40">
-                <span class="internal-bullets-text">2. Action Track </span>
-                Sessions and workshops that allow for the exchange of
-                information, interactive discussions, brainstorming sessions,
-                case studies, roundtables, etc. Sessions align with areas of
-                international collaboration identified in previous conferences,
-                and
-                <b>
-                  provide an opportunity for participants to explore innovative
-                  solutions, new partnerships, or potential follow-up actions to
-                  IODC 2018:
-                </b>
+                We do not tolerate harassment of conference participants in any
+                form. Examples of harassment include offensive comments, verbal
+                threats or demands, sexualized images in public spaces,
+                intimidation, stalking, harassing photography or recording,
+                sustained disruption of sessions or events, and unwelcome
+                physical contact or sexual attention. Harassment also includes
+                slights and negative messages, both unintended and intentional,
+                based solely on appearance. These activities will not be
+                tolerated.
               </p>
+
+              <h3 class="internal-sub-title internal-sub-title-low">
+                Reporting Issues at IODC
+              </h3>
 
               <p class="internal-text-list-program">
                 <ul>
