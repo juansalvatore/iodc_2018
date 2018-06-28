@@ -91,18 +91,40 @@ class About extends Component {
 
               <p className="internal-text-list">
                 <ul>
-                  <li>Open Data Experts and Practitioners</li>
-                  <li>Civil Society Multilateral Organizations</li>
+                  <li>
+                    {' '}
+                    <span class="bullet">●</span> Open Data Experts and
+                    Practitioners
+                  </li>
+                  <li>
+                    {' '}
+                    <span class="bullet">●</span> Civil Society Multilateral
+                    Organizations
+                  </li>
 
-                  <li>Government Policymakers and Service Providers</li>
-                  <li>Private Sector</li>
+                  <li>
+                    {' '}
+                    <span class="bullet">●</span> Government Policymakers and
+                    Service Providers
+                  </li>
+                  <li>
+                    {' '}
+                    <span class="bullet">●</span> Private Sector
+                  </li>
 
-                  <li>Researchers and Academics Donors and Investors</li>
-                  <li className="m75">Data Journalists</li>
+                  <li>
+                    {' '}
+                    <span class="bullet">●</span> Researchers and Academics
+                    Donors and Investors
+                  </li>
+                  <li className="m75">
+                    {' '}
+                    <span class="bullet">●</span> Data Journalists
+                  </li>
                 </ul>
               </p>
 
-              <p className="internal-text m75">
+              <p className="internal-text m75 mbottom75">
                 Prior to the official IODC 2018 program on September 27-28st, a
                 number of pre-events will be held in Buenos Aires. These events
                 are complementary to the program and allow more opportunities to

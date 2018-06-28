@@ -18,22 +18,13 @@ class Agenda extends Component {
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div class="container-fluid">
-          <Header>Agenda</Header>
+          <Header>Privacy Policy</Header>
 
           <div class="row">
             <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-              <a
-                id="sched-embed"
-                href="http://ogpargentina2017.sched.com/"
-                data-sched-sidebar="no"
-              >
-                View the Encuentro Regional de las Américas de la Alianza para
-                el Gobierno Abierto schedule &amp; directory.
-              </a>
-              <script
-                type="text/javascript"
-                src="http://ogpargentina2017.sched.com/js/embed.js"
-              />
+              <h3 class="internal-sub-title internal-sub-title-low">
+                Diversity and Inclusivity
+              </h3>
             </div>
           </div>
 

@@ -20,9 +20,9 @@ class Conduct extends Component {
         <div class="container-fluid">
           <Header>Code of Conduct</Header>
 
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-              <p class="internal-text mtop115">
+          <div className="row">
+            <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+              <p className="internal-text mtop115">
                 The International Open Data Conference attracts a diverse
                 community of people from all over the world. Respect and safety
                 are our main values, and we want to provide a safe and
@@ -32,10 +32,10 @@ class Conduct extends Component {
                 for all. This code of conduct applies to the main conference as
                 well as all pre-events.
               </p>
-              <h3 class="internal-sub-title internal-sub-title-low">
+              <h3 className="internal-sub-title internal-sub-title-low">
                 Diversity and Inclusivity
               </h3>
-              <p class="internal-text mbottom75">
+              <p className="internal-text mbottom75">
                 The International Open Data Conference welcomes and encourages
                 participation by everyone including but not limited to people of
                 all ages, cultures, ethnicities, gender, gender-identity,
@@ -43,11 +43,11 @@ class Conduct extends Component {
                 religion.
               </p>
 
-              <h3 class="internal-sub-title internal-sub-title-low">
+              <h3 className="internal-sub-title internal-sub-title-low">
                 Harassment-free Conference
               </h3>
 
-              <p class="internal-text mtop40">
+              <p className="internal-text mtop40">
                 The International Open Data Conference is dedicated to providing
                 a harassment-free conference experience for everyone, regardless
                 of gender, gender identity and expression, sexual orientation,
@@ -55,7 +55,7 @@ class Conduct extends Component {
                 religion.
               </p>
 
-              <p class="internal-text">
+              <p className="internal-text">
                 We do not tolerate harassment of conference participants in any
                 form. Examples of harassment include offensive comments, verbal
                 threats or demands, sexualized images in public spaces,
@@ -67,22 +67,22 @@ class Conduct extends Component {
                 tolerated.
               </p>
 
-              <h3 class="internal-sub-title internal-sub-title-low">
+              <h3 className="internal-sub-title internal-sub-title-low">
                 Reporting Issues at IODC
               </h3>
 
-              <p class="internal-text">
+              <p className="internal-text">
                 Participants asked to stop any harassing behaviour are expected
                 to comply immediately.
               </p>
 
-              <p class="internal-text mtop40">
+              <p className="internal-text mtop40">
                 Conference participants violating these rules may be sanctioned
                 or expelled from the conference at the discretion of the
                 conference organizers. You can make a report by:
               </p>
 
-              <p class="internal-text-list-program">
+              <p className="internal-text-list-program">
                 <ul>
                   <li>
                     Emailing us at contact@opendatacon.org. This email will be
@@ -95,7 +95,7 @@ class Conduct extends Component {
                 </ul>
               </p>
 
-              <p class="internal-text mtop40">
+              <p className="internal-text mtop40">
                 When taking a personal report, our staff will ensure you are
                 safe and cannot be overheard. They may involve other event staff
                 to ensure your report is managed properly. Once safe, we'll ask
@@ -105,7 +105,7 @@ class Conduct extends Component {
                 and we won't tell anyone who you are.
               </p>
 
-              <p class="internal-text mbottom75">
+              <p className="internal-text mbottom75">
                 Our team will be happy to help you contact hotel/venue security,
                 local law enforcement, local support services, provide escorts,
                 or otherwise assist you to feel safe for the duration of the
