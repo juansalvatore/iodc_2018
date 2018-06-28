@@ -602,6 +602,31 @@ nav, .nav, .navbar-nav {
   transform: rotate(-45deg) translate(10px, -10px);
 }
 
+.dropdown {
+  width: 270px;
+  background-color: #232f43;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  color: white;
+  padding: 20px;
+  z-index: 20000;
+  font-family: 'Roboto';
+  font-weight: 200;
+}
+
+.dropdown li {
+  height: 20px;
+}
+
+.dropdown hr {
+  position: relative;
+  width: 100%;
+  border: 0.5px solid white;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media (max-width: 1300px) {
   .hamburguer-bt {
     display: block;
@@ -613,5 +638,8 @@ nav, .nav, .navbar-nav {
   .navbar-brand {
     position: absolute;
     left: 20px;
+  }
+  .navbar-default {
+    background-color: #232f43 !important;
   }
 }
