@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { IntlProvider, FormattedMessage } from 'react-intl'
+import { IntlProvider } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
 import '../styles/main.min.css'
@@ -17,47 +17,47 @@ class About extends Component {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div class="container-fluid">
+        <div className="container-fluid">
           <Header>About</Header>
 
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <h3 class="internal-sub-title">
+          <div className="row">
+            <div className="col-md-10 col-md-offset-1">
+              <h3 className="internal-sub-title">
                 About The International Open Data Conference
               </h3>
-              <p class="internal-text">
+              <p className="internal-text">
                 <b>The International Open Data Conference (IODC)</b> is a
                 biannual event that brings the global open data community
                 together in order to learn, share, plan and collaborate on the
                 future of open data.
               </p>
 
-              <p class="internal-text m75">
+              <p className="internal-text m75">
                 The unique nature of this event is that it gathers together in
                 one location a diverse range of participants from the northern
                 and southern hemispheres who are seeking to define strategies to
                 advance open data both locally and globally.
               </p>
 
-              <div class="img-placeholder"> Imagen</div>
+              <div className="img-placeholder"> Imagen</div>
 
-              <h3 class="internal-sub-title internal-sub-title-low">
+              <h3 className="internal-sub-title internal-sub-title-low">
                 The IODC has 3 main objectives:
               </h3>
 
-              <p class="internal-text">
-                <span class="internal-bullets-text">1.</span>{' '}
+              <p className="internal-text">
+                <span className="internal-bullets-text">1.</span>{' '}
                 <b>Identify and explore</b> the new opportunities and challenges
                 that are shaping the open data agenda.
               </p>
-              <p class="internal-text">
-                <span class="internal-bullets-text">2.</span>
+              <p className="internal-text">
+                <span className="internal-bullets-text">2.</span>
                 <b>Highlight innovative and practical open data solutions</b>
                 capable of driving social and economic impact in areas such as
                 health, education, science, etc.
               </p>
-              <p class="internal-text">
-                <span class="internal-bullets-text">3.</span>
+              <p className="internal-text">
+                <span className="internal-bullets-text">3.</span>
                 <b>
                   Consolidate an international partnership to drive the
                   development of global common resources for the international
@@ -71,7 +71,7 @@ class About extends Component {
                 in the years ahead.
               </p>
 
-              <p class="internal-text">
+              <p className="internal-text">
                 <b>
                   The agenda has been co-created with people from all around the
                   world
@@ -84,12 +84,12 @@ class About extends Component {
                 events.
               </p>
 
-              <h3 class="internal-sub-title internal-sub-title-low">
+              <h3 className="internal-sub-title internal-sub-title-low">
                 The conference targets the broad participation of individuals
                 and organizations from:
               </h3>
 
-              <p class="internal-text-list">
+              <p className="internal-text-list">
                 <ul>
                   <li>Open Data Experts and Practitioners</li>
                   <li>Civil Society Multilateral Organizations</li>
@@ -98,11 +98,11 @@ class About extends Component {
                   <li>Private Sector</li>
 
                   <li>Researchers and Academics Donors and Investors</li>
-                  <li class="m75">Data Journalists</li>
+                  <li className="m75">Data Journalists</li>
                 </ul>
               </p>
 
-              <p class="internal-text m75">
+              <p className="internal-text m75">
                 Prior to the official IODC 2018 program on September 27-28st, a
                 number of pre-events will be held in Buenos Aires. These events
                 are complementary to the program and allow more opportunities to

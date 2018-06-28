@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { IntlProvider, FormattedMessage } from "react-intl";
-import messages from "./messages";
-import { setLocale } from "../actions/locale";
-import "../styles/main.min.css";
-import Header from "./Header";
-import Footer from "./Footer";
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { IntlProvider } from 'react-intl'
+import messages from './messages'
+import { setLocale } from '../actions/locale'
+import '../styles/main.min.css'
+import Header from './Header'
+import Footer from './Footer'
 
 /*
   Bootstrap documentation for react:
@@ -14,16 +14,18 @@ import Footer from "./Footer";
 
 class Program extends Component {
   render() {
-    const { lang } = this.props;
+    const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div class="container-fluid">
+        <div className="container-fluid">
           <Header>Program</Header>
 
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <h4 class="internal-date text-right">September 27-28. 2018</h4>
-              <p class="internal-text mtop40">
+          <div className="row">
+            <div className="col-md-10 col-md-offset-1">
+              <h4 className="internal-date text-right">
+                September 27-28. 2018
+              </h4>
+              <p className="internal-text mtop40">
                 <b>Under the Theme “The Future is Open”, IODC 2018</b> will once
                 again bring together the global open data community in an
                 innovative conference that will help shape our increasingly data
@@ -33,29 +35,31 @@ class Program extends Component {
                 discussions, and events.
               </p>
 
-              <p class="internal-text mbottom75">
+              <p className="internal-text mbottom75">
                 The unique nature of this event is that it gathers together in
                 one location a diverse range of participants from the northern
-                and southern hemispheres who are{" "}
+                and southern hemispheres who are{' '}
                 <b>
                   seeking to define strategies to advance open data both locally
                   and globally.
                 </b>
               </p>
 
-              <h3 class="internal-sub-title internal-sub-title-low">
+              <h3 className="internal-sub-title internal-sub-title-low">
                 A Call for Proposals targeted submissions along three conference
                 tracks:
               </h3>
 
-              <p class="internal-text mtop40">
-                <span class="internal-bullets-text">1. The Big Picture </span>
+              <p className="internal-text mtop40">
+                <span className="internal-bullets-text">
+                  1. The Big Picture{' '}
+                </span>
                 <b>Panels and debates</b> that allow for the exploration of
                 emerging trends and issues, ongoing challenges, and
                 cross-cutting themes facing the broader open data community.
               </p>
-              <p class="internal-text mtop40">
-                <span class="internal-bullets-text">2. Action Track </span>
+              <p className="internal-text mtop40">
+                <span className="internal-bullets-text">2. Action Track </span>
                 Sessions and workshops that allow for the exchange of
                 information, interactive discussions, brainstorming sessions,
                 case studies, roundtables, etc. Sessions align with areas of
@@ -68,7 +72,7 @@ class Program extends Component {
                 </b>
               </p>
 
-              <p class="internal-text-list-program">
+              <div className="internal-text-list-program">
                 <ul>
                   <li>
                     <b>Principles & Policies</b> - Broadening political
@@ -97,15 +101,15 @@ class Program extends Component {
                     North America, Oceania.
                   </li>
                 </ul>
-              </p>
+              </div>
 
-              <p class="internal-text mtop40">
-                <span class="internal-bullets-text">3. Impact Track </span>
+              <p className="internal-text mtop40">
+                <span className="internal-bullets-text">3. Impact Track </span>
                 Short, dynamic “Ignite “ sessions showcasing concrete examples
                 of open data in action within core open data thematic sectors:
               </p>
 
-              <p class="internal-text-list-program">
+              <div className="internal-text-list-program">
                 <ul>
                   <li>
                     <b>Accountability and Anti-Corruption</b> (parliamentary,
@@ -157,14 +161,14 @@ class Program extends Component {
                   <li>
                     <b>Transport</b>
                   </li>
-                  <li class="mbottom75">
+                  <li className="mbottom75">
                     <b>Urban Development</b> (open cities, resilience, urban
                     planning).
                   </li>
                 </ul>
-              </p>
+              </div>
 
-              <p class="internal-text mbottom75">
+              <p className="internal-text mbottom75">
                 In addition, IODC 2018 will spotlight gender issues as they
                 relate to open data - both in terms of gender equity with regard
                 to participation, practices, and processes toward attaining
@@ -177,17 +181,17 @@ class Program extends Component {
           <Footer />
         </div>
       </IntlProvider>
-    );
+    )
   }
 }
 
 function mapStateToProps(state) {
   return {
-    lang: state.locale.lang
-  };
+    lang: state.locale.lang,
+  }
 }
 
 export default connect(
   mapStateToProps,
   { setLocale }
-)(Program);
+)(Program)

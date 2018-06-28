@@ -46,16 +46,16 @@ class Preregister extends Component {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div class="container-fluid">
+        <div className="container-fluid">
           <Header>Pre-register</Header>
-          <div class="form-general-container">
-            <div class="form-container">
+          <div className="form-general-container">
+            <div className="form-container">
               <iframe
                 title="hidden_iframe_title"
-                class="hidden"
+                className="hidden"
                 name="hidden_iframe"
                 id="hidden_iframe"
-                onload="if(submitted) {window.location='form-submitted.html';}"
+                onLoad="if(submitted) {window.location='form-submitted.html';}"
               />
 
               <form
@@ -74,7 +74,7 @@ class Preregister extends Component {
                     />
                   </h4>
                   <input
-                    class="input-box"
+                    className="input-box"
                     type="text"
                     name="entry.181273001"
                     id="entry.181273001"
@@ -86,7 +86,7 @@ class Preregister extends Component {
                     />
                   </h4>
                   <input
-                    class="input-box"
+                    className="input-box"
                     type="text"
                     name="entry.1334882480"
                     id="entry.13348824801"
@@ -99,7 +99,7 @@ class Preregister extends Component {
                   </h4>
                   <input
                     type="text"
-                    class="input-box"
+                    className="input-box"
                     name="entry.30616987"
                     id="entry.30616987"
                   />
@@ -111,7 +111,7 @@ class Preregister extends Component {
                   </h4>
                   <input
                     type="text"
-                    class="input-box"
+                    className="input-box"
                     name="entry.137853284"
                     id="entry.137853284"
                   />
@@ -123,7 +123,7 @@ class Preregister extends Component {
                   </h4>
                   <input
                     type="text"
-                    class="input-box"
+                    className="input-box"
                     name="entry.1630280377"
                     id="entry.1630280377"
                   />
@@ -135,7 +135,7 @@ class Preregister extends Component {
                   </h4>
                   <input
                     type="number"
-                    class="input-box"
+                    className="input-box"
                     name="entry.27195521"
                     id="entry.27195521"
                   />
@@ -147,7 +147,7 @@ class Preregister extends Component {
                   </h4>
                   <input
                     type="text"
-                    class="input-box"
+                    className="input-box"
                     name="entry.1053209737"
                     id="entry.1053209737"
                   />
@@ -161,8 +161,8 @@ class Preregister extends Component {
                     />
                   </h4>
 
-                  <div class="row">
-                    <div class="col-md-6">
+                  <div className="row">
+                    <div className="col-md-6">
                       <input
                         type="radio"
                         name="entry.1935629477"
@@ -217,7 +217,7 @@ class Preregister extends Component {
                       <br />
                     </div>
 
-                    <div class="col-md-6">
+                    <div className="col-md-6">
                       <input
                         type="radio"
                         name="entry.1935629477"
@@ -267,8 +267,8 @@ class Preregister extends Component {
                     />
                   </h4>
 
-                  <div class="row">
-                    <div class="col-md-6">
+                  <div className="row">
+                    <div className="col-md-6">
                       <input
                         type="radio"
                         name="entry.351925754"
@@ -312,7 +312,7 @@ class Preregister extends Component {
                       </label>
                     </div>
 
-                    <div class="col-md-6">
+                    <div className="col-md-6">
                       <input
                         type="radio"
                         name="entry.351925754"
@@ -340,7 +340,7 @@ class Preregister extends Component {
                         name="entry.351925754.other_option_response"
                         id="entry.351925754.other_option_response"
                         value={this.state.value}
-                        class="hidden"
+                        className="hidden"
                       />
                       <label id="genre-other" for="contactChoice1">
                         <FormattedMessage
@@ -351,7 +351,7 @@ class Preregister extends Component {
                       <input
                         type="text"
                         onChange={this.handleChange}
-                        class="input-other"
+                        className="input-other"
                         id="input-genre"
                       />
                     </div>
@@ -364,8 +364,8 @@ class Preregister extends Component {
                     />
                   </h4>
 
-                  <div class="row">
-                    <div class="col-md-6">
+                  <div className="row">
+                    <div className="col-md-6">
                       <input
                         type="radio"
                         name="entry.1223885635"
@@ -448,7 +448,7 @@ class Preregister extends Component {
                       </label>
                     </div>
 
-                    <div class="col-md-6">
+                    <div className="col-md-6">
                       <input
                         type="radio"
                         name="entry.1223885635"
@@ -512,7 +512,7 @@ class Preregister extends Component {
                         name="entry.1223885635.other_option_response"
                         id="entry.1223885635.other_option_response"
                         value={this.state.registration}
-                        class="hidden"
+                        className="hidden"
                       />
                       <label for="contactChoice1">
                         <FormattedMessage
@@ -522,7 +522,7 @@ class Preregister extends Component {
                       </label>
 
                       <input
-                        class="input-registration"
+                        className="input-registration"
                         type="text"
                         id="input-registration"
                         onChange={this.handleChangeRegistration}
@@ -537,8 +537,8 @@ class Preregister extends Component {
                     />
                   </h4>
 
-                  <div class="row">
-                    <div class="col-md-6">
+                  <div className="row">
+                    <div className="col-md-6">
                       <input
                         type="radio"
                         name="entry.1154423302"
@@ -553,7 +553,7 @@ class Preregister extends Component {
                       </label>
                     </div>
 
-                    <div class="col-md-6">
+                    <div className="col-md-6">
                       <input
                         type="radio"
                         name="entry.1154423302"
@@ -576,8 +576,8 @@ class Preregister extends Component {
                     />
                   </h4>
 
-                  <div class="row">
-                    <div class="col-md-6">
+                  <div className="row">
+                    <div className="col-md-6">
                       <input
                         type="radio"
                         name="entry.631181808"
@@ -592,7 +592,7 @@ class Preregister extends Component {
                       </label>
                     </div>
 
-                    <div class="col-md-6">
+                    <div className="col-md-6">
                       <input
                         type="radio"
                         name="entry.631181808"
@@ -616,8 +616,8 @@ class Preregister extends Component {
                     />
                   </h4>
 
-                  <div class="row">
-                    <div class="col-md-6">
+                  <div className="row">
+                    <div className="col-md-6">
                       <input
                         type="radio"
                         name="entry.1783235225"
@@ -632,7 +632,7 @@ class Preregister extends Component {
                       </label>
                     </div>
 
-                    <div class="col-md-6">
+                    <div className="col-md-6">
                       <input
                         type="radio"
                         name="entry.1783235225"
@@ -654,8 +654,8 @@ class Preregister extends Component {
                       defaultMessage="Do you have a valid Visa to visit Argentina?"
                     />
                   </h4>
-                  <div class="row">
-                    <div class="col-md-6">
+                  <div className="row">
+                    <div className="col-md-6">
                       <input
                         type="radio"
                         name="entry.1284879173"
@@ -670,7 +670,7 @@ class Preregister extends Component {
                       </label>
                     </div>
 
-                    <div class="col-md-6">
+                    <div className="col-md-6">
                       <input
                         type="radio"
                         name="entry.1284879173"
@@ -689,7 +689,7 @@ class Preregister extends Component {
                   <br />
                 </div>
 
-                <button type="submit" class="submit-button">
+                <button type="submit" className="submit-button">
                   <FormattedMessage
                     id="register.submit"
                     defaultMessage="Submit"

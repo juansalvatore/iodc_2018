@@ -1,25 +1,25 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { IntlProvider, FormattedMessage } from "react-intl";
-import messages from "./messages";
-import { setLocale } from "../actions/locale";
-import { Link } from "react-router-dom";
-
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { IntlProvider, FormattedMessage } from 'react-intl'
+import messages from './messages'
+import { setLocale } from '../actions/locale'
+import { Link } from 'react-router-dom'
+import { LinkContainer } from 'react-router-bootstrap'
 /*
   Bootstrap documentation for react:
   https://react-bootstrap.github.io/
 */
-import { Navbar, Nav, NavItem } from "react-bootstrap";
+import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
-import Logo from "../img/logo-iodc.svg";
-import facebook from "../img/facebook.svg";
-import twitter from "../img/twitter.svg";
-import flickr from "../img/flickr.svg";
-import youtube from "../img/youtube.svg";
+import Logo from '../img/logo-iodc.svg'
+import facebook from '../img/facebook.svg'
+import twitter from '../img/twitter.svg'
+import flickr from '../img/flickr.svg'
+import youtube from '../img/youtube.svg'
 
 class Menu extends Component {
   render() {
-    const { lang } = this.props;
+    const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div>
@@ -32,63 +32,63 @@ class Menu extends Component {
               </Navbar.Brand>
             </Navbar.Header>
             <Nav>
-              <NavItem eventKey={1} href="#">
-                <Link to="/iodc_2018/preregister">
+              <LinkContainer to="/iodc_2018/preregister">
+                <NavItem eventKey={1} href="#">
                   <FormattedMessage
                     id="nav.register"
                     defaultMessage="Pre-Register"
                   />
-                </Link>
-              </NavItem>
+                </NavItem>
+              </LinkContainer>
 
-              <NavItem eventKey={2} href="#">
-                <Link to="/iodc_2018/venue">
+              <LinkContainer to="/iodc_2018/venue">
+                <NavItem eventKey={2} href="#">
                   <FormattedMessage id="nav.venue" defaultMessage="Venue" />
-                </Link>
-              </NavItem>
+                </NavItem>
+              </LinkContainer>
 
-              <NavItem eventKey={3} href="#">
-                <Link to="/iodc_2018/program">
+              <LinkContainer to="/iodc_2018/program">
+                <NavItem eventKey={3} href="#">
                   <FormattedMessage
                     id="nav.proposals"
                     defaultMessage="Call for Proposals"
                   />
-                </Link>
-              </NavItem>
+                </NavItem>
+              </LinkContainer>
 
-              <NavItem eventKey={4} href="#">
-                <Link to="/iodc_2018/about">
+              <LinkContainer to="/iodc_2018/about">
+                <NavItem eventKey={4} href="#">
                   <FormattedMessage id="nav.about" defaultMessage="About" />
-                </Link>
-              </NavItem>
+                </NavItem>
+              </LinkContainer>
 
-              <NavItem eventKey={5} href="#">
-                <Link to="/iodc_2018/committee">
+              <LinkContainer to="/iodc_2018/committee">
+                <NavItem eventKey={5} href="#">
                   <FormattedMessage
                     id="nav.committee"
                     defaultMessage="Programme Committee"
                   />
-                </Link>
-              </NavItem>
+                </NavItem>
+              </LinkContainer>
 
-              <NavItem eventKey={6} href="#">
-                <Link to="/iodc_2018/code">
+              <LinkContainer to="/iodc_2018/code">
+                <NavItem eventKey={6} href="#">
                   <FormattedMessage
                     id="nav.code"
                     defaultMessage="Code of Conduct"
                   />
-                </Link>
-              </NavItem>
-
-              <NavItem eventKey={7} href="#">
-                <Link to="/iodc_2018/faq">FAQ</Link>
-              </NavItem>
-
-              <NavItem eventKey={8} href="#">
-                <Link to="/iodc_2018/#">
+                </NavItem>
+              </LinkContainer>
+              <LinkContainer to="/iodc_2018/faq">
+                <NavItem eventKey={7} href="#">
+                  FAQ
+                </NavItem>
+              </LinkContainer>
+              <LinkContainer to="/iodc_2018/#">
+                <NavItem eventKey={8} href="#">
                   <img src={facebook} width="20" alt="fb" />
-                </Link>
-              </NavItem>
+                </NavItem>
+              </LinkContainer>
 
               <NavItem eventKey={9} href="#">
                 <img src={twitter} width="20" alt="tw" />
@@ -103,14 +103,14 @@ class Menu extends Component {
               </NavItem>
 
               <NavItem
-                onClick={() => this.props.setLocale("en")}
+                onClick={() => this.props.setLocale('en')}
                 eventKey={7}
                 href="#"
               >
                 EN
               </NavItem>
               <NavItem
-                onClick={() => this.props.setLocale("es")}
+                onClick={() => this.props.setLocale('es')}
                 eventKey={7}
                 href="#"
               >
@@ -121,17 +121,17 @@ class Menu extends Component {
           <div />
         </div>
       </IntlProvider>
-    );
+    )
   }
 }
 
 function mapStateToProps(state) {
   return {
-    lang: state.locale.lang
-  };
+    lang: state.locale.lang,
+  }
 }
 
 export default connect(
   mapStateToProps,
   { setLocale }
-)(Menu);
+)(Menu)

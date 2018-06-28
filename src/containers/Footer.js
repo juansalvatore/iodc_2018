@@ -15,18 +15,18 @@ class Footer extends Component {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div class="row footer centerelement position-absolute">
-          <div class="col-lg-10 centerelement">
-            <div class="col-lg-3 text-center">
+        <div className="row footer centerelement position-absolute">
+          <div className="col-lg-10 centerelement">
+            <div className="col-lg-3 text-center">
               <img src={logomin} alt="Logo Min" />
             </div>
-            <div class="col-lg-3 text-center">
+            <div className="col-lg-3 text-center">
               <img src={logocanada} alt="Canada" />
             </div>
-            <div class="col-lg-3 text-center">
+            <div className="col-lg-3 text-center">
               <img src={logowbg} alt="World Bank" />
             </div>
-            <div class="col-lg-3 text-center">
+            <div className="col-lg-3 text-center">
               <img src={logoopendata} alt="Open Data" />
             </div>
           </div>

@@ -21,9 +21,9 @@ class Home extends Component {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div class="container-fluid">
-          <div class="row img-back centerelement">
-            <div class="col-lg-12 centerelement">
+        <div className="container-fluid">
+          <div className="row img-back centerelement">
+            <div className="col-lg-12 centerelement">
               <div>
                 <h2>
                   <FormattedMessage
@@ -32,12 +32,12 @@ class Home extends Component {
                   />
                 </h2>
 
-                <div class="flex-row">
-                  <div class="city-back">
-                    <h4 class="city">BUENOS AIRES</h4>
+                <div className="flex-row">
+                  <div className="city-back">
+                    <h4 className="city">BUENOS AIRES</h4>
                   </div>
                   <div>
-                    <h4 class="date">
+                    <h4 className="date">
                       <FormattedMessage
                         id="home.main.date"
                         defaultMessage="September 27-28, 2018"
@@ -48,15 +48,15 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <div class="centerelement">
+          <div className="centerelement">
             <div>
-              <button class="register-button">
+              <button className="register-button">
                 <FormattedMessage
                   id="home.main.register"
                   defaultMessage="REGISTER"
                 />
               </button>
-              <button class="schedule-button">
+              <button className="schedule-button">
                 <FormattedMessage
                   id="home.main.schedule"
                   defaultMessage="SEE THE SCHEDULE"
@@ -66,10 +66,10 @@ class Home extends Component {
           </div>
 
           {/* SECCION BULLETS */}
-          <div class="container bottom-140">
-            <div class="row">
-              <div class="col-lg-12">
-                <h4 class="sub-title">
+          <div className="container bottom-140">
+            <div className="row">
+              <div className="col-lg-12">
+                <h4 className="sub-title">
                   <FormattedMessage
                     id="home.bullets.title"
                     defaultMessage="Already registered to the event?"
@@ -78,15 +78,15 @@ class Home extends Component {
               </div>
 
               {/* BULLETS */}
-              <div class="col-xs-12 col-sm-4 text-center">
-                <img src={obelisco} alt="Obelisco" class="img-bullets" />
-                <h5 class="bullets">
+              <div className="col-xs-12 col-sm-4 text-center">
+                <img src={obelisco} alt="Obelisco" className="img-bullets" />
+                <h5 className="bullets">
                   <FormattedMessage
                     id="home.bullets.1"
                     defaultMessage="Need more info about Buenos Aires?"
                   />
                 </h5>
-                <button class="button-bullets">
+                <button className="button-bullets">
                   <FormattedMessage
                     id="home.bullets.button.1"
                     defaultMessage="Get to know the city"
@@ -94,15 +94,15 @@ class Home extends Component {
                 </button>
               </div>
 
-              <div class="col-xs-12 col-sm-4 text-center">
-                <img src={visas} alt="Visas" class="img-bullets" />
-                <h5 class="bullets">
+              <div className="col-xs-12 col-sm-4 text-center">
+                <img src={visas} alt="Visas" className="img-bullets" />
+                <h5 className="bullets">
                   <FormattedMessage
                     id="home.bullets.2"
                     defaultMessage="Need more info about visas?"
                   />
                 </h5>
-                <button class="button-bullets">
+                <button className="button-bullets">
                   <FormattedMessage
                     id="home.bullets.button.2"
                     defaultMessage="Info for your application"
@@ -110,15 +110,19 @@ class Home extends Component {
                 </button>
               </div>
 
-              <div class="col-xs-12 col-sm-4 text-center">
-                <img src={invitacion} alt="Invitacion" class="img-bullets" />
-                <h5 class="bullets">
+              <div className="col-xs-12 col-sm-4 text-center">
+                <img
+                  src={invitacion}
+                  alt="Invitacion"
+                  className="img-bullets"
+                />
+                <h5 className="bullets">
                   <FormattedMessage
                     id="home.bullets.3"
                     defaultMessage="Do you need an invite from the comitee?"
                   />
                 </h5>
-                <button class="button-bullets">
+                <button className="button-bullets">
                   <FormattedMessage
                     id="home.bullets.button.3"
                     defaultMessage="Request an invite"
@@ -133,11 +137,11 @@ class Home extends Component {
 
           {/* SECCION INFO */}
 
-          <div class="row img-back-info centerelement">
-            <div class="col-xs-12 col-sm-8">
-              <h5 class="info-iodc-title">About IODC</h5>
+          <div className="row img-back-info centerelement">
+            <div className="col-xs-12 col-sm-8">
+              <h5 className="info-iodc-title">About IODC</h5>
 
-              <p class="info-iodc">
+              <p className="info-iodc">
                 The International Open Data Conference (IODC) is a biannual
                 event to bring the global open data community together in order
                 to learn, share, plan, and collaborate on the future of open
@@ -153,10 +157,10 @@ class Home extends Component {
 
           {/* SECCION PROPUESTAS */}
 
-          <div class="container bottom-140">
-            <div class="row">
-              <div class="col-lg-12">
-                <h4 class="sub-title">
+          <div className="container bottom-140">
+            <div className="row">
+              <div className="col-lg-12">
+                <h4 className="sub-title">
                   <FormattedMessage
                     id="home.proposals.title"
                     defaultMessage="Proposals received"
@@ -164,17 +168,17 @@ class Home extends Component {
                 </h4>
               </div>
 
-              <div class="col-xs-12 col-lg-3 centerelement">
-                <div class="proposals">The Big Picture</div>
+              <div className="col-xs-12 col-lg-3 centerelement">
+                <div className="proposals">The Big Picture</div>
               </div>
-              <div class="col-xs-12 col-lg-3 centerelement">
-                <div class="proposals">Action Track</div>
+              <div className="col-xs-12 col-lg-3 centerelement">
+                <div className="proposals">Action Track</div>
               </div>
-              <div class="col-xs-12 col-lg-3 centerelement">
-                <div class="proposals">Impact Track</div>
+              <div className="col-xs-12 col-lg-3 centerelement">
+                <div className="proposals">Impact Track</div>
               </div>
-              <div class="col-xs-12 col-lg-3 centerelement">
-                <div class="proposals-received">
+              <div className="col-xs-12 col-lg-3 centerelement">
+                <div className="proposals-received">
                   <span>600</span>
                   Proposals Received
                 </div>
@@ -185,10 +189,10 @@ class Home extends Component {
 
           {/* MAPA */}
 
-          <div class="container bottom-140">
-            <div class="row">
-              <div class="col-lg-12">
-                <h4 class="sub-title">
+          <div className="container bottom-140">
+            <div className="row">
+              <div className="col-lg-12">
+                <h4 className="sub-title">
                   <FormattedMessage
                     id="home.visit.title"
                     defaultMessage="Your visit to Argentina"
@@ -196,14 +200,14 @@ class Home extends Component {
                 </h4>
               </div>
 
-              <div class="col-xs-12 centerelement">
-                <div class="usina right">
-                  <div class="map-title">#IODC18</div>
+              <div className="col-xs-12 centerelement">
+                <div className="usina right">
+                  <div className="map-title">#IODC18</div>
 
                   <hr />
 
                   <div>Usina del arte</div>
-                  <div class="map-direction">
+                  <div className="map-direction">
                     Agustín R. Caffarena 1, C1157ADA CABA
                   </div>
                 </div>
@@ -211,7 +215,7 @@ class Home extends Component {
                   title="usina-map"
                   width="100%"
                   height="520"
-                  frameborder="0"
+                  frameBorder="0"
                   src="https://datosgobar.carto.com/u/modernizacion/builder/329aca58-835c-465d-bb40-f215ef950dc5/embed"
                 />
               </div>
@@ -221,10 +225,10 @@ class Home extends Component {
           {/* FIN MAPA */}
 
           {/* SIDEEVENTS */}
-          <div class="container bottom-140">
-            <div class="row padding-15">
-              <div class="col-lg-12">
-                <h4 class="sub-title">
+          <div className="container bottom-140">
+            <div className="row padding-15">
+              <div className="col-lg-12">
+                <h4 className="sub-title">
                   <FormattedMessage
                     id="home.sideevents"
                     defaultMessage="Events around the Conference"
@@ -233,36 +237,36 @@ class Home extends Component {
               </div>
 
               {/* EVENTO 1 */}
-              <div class="col-xs-12 col-lg-6 preevent">
-                <div class="col-xs-6 preevent-txt">
-                  <div class="preevent-txt-map">Pre-event</div>
+              <div className="col-xs-12 col-lg-6 preevent">
+                <div className="col-xs-6 preevent-txt">
+                  <div className="preevent-txt-map">Pre-event</div>
 
                   <hr />
 
                   <div>Centro Metropolitano de Diseño</div>
-                  <div class="preevent-txt-direction">
+                  <div className="preevent-txt-direction">
                     Algarrobo 1041, Barracas, CABA
                   </div>
                 </div>
                 <div>
-                  <img src={Preevent} alt="Preevent" class="preevent-img" />
+                  <img src={Preevent} alt="Preevent" className="preevent-img" />
                 </div>
               </div>
 
               {/* EVENTO 2 */}
-              <div class="col-xs-12 col-lg-6 preevent">
-                <div class="col-xs-6 preevent-txt">
-                  <div class="preevent-txt-map">Pre-event</div>
+              <div className="col-xs-12 col-lg-6 preevent">
+                <div className="col-xs-6 preevent-txt">
+                  <div className="preevent-txt-map">Pre-event</div>
 
                   <hr />
 
                   <div>Centro Metropolitano de Diseño</div>
-                  <div class="preevent-txt-direction">
+                  <div className="preevent-txt-direction">
                     Algarrobo 1041, Barracas, CABA
                   </div>
                 </div>
                 <div>
-                  <img src={Preevent} alt="Preevent" class="preevent-img" />
+                  <img src={Preevent} alt="Preevent" className="preevent-img" />
                 </div>
               </div>
             </div>
@@ -272,10 +276,10 @@ class Home extends Component {
 
           {/* EVENTOS ANTERIORES */}
 
-          <div class="container bottom-140">
-            <div class="row padding-15">
-              <div class="col-lg-12">
-                <h4 class="sub-title">
+          <div className="container bottom-140">
+            <div className="row padding-15">
+              <div className="col-lg-12">
+                <h4 className="sub-title">
                   <FormattedMessage
                     id="home.previous"
                     defaultMessage="Previous Events"
@@ -283,24 +287,24 @@ class Home extends Component {
                 </h4>
               </div>
               <div>
-                <div class="col-xs-12 col-lg-5">
+                <div className="col-xs-12 col-lg-5">
                   <img
                     src={iodc16}
                     alt="iodc16"
-                    class="img-responsive iodc16"
+                    className="img-responsive iodc16"
                   />
                 </div>
-                <div class="col-xs-12 col-lg-7">
-                  <img src={iodc15} alt="iodc15" class="img-responsive" />
+                <div className="col-xs-12 col-lg-7">
+                  <img src={iodc15} alt="iodc15" className="img-responsive" />
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="container bottom-140">
-            <div class="row padding-15">
-              <div class="centerelement">
-                <button class="register-button">
+          <div className="container bottom-140">
+            <div className="row padding-15">
+              <div className="centerelement">
+                <button className="register-button">
                   <FormattedMessage
                     id="home.main.register"
                     defaultMessage="REGISTER"
