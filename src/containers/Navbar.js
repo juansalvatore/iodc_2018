@@ -64,27 +64,24 @@ class Menu extends Component {
             </div>
 
             <Nav>
-              <LinkContainer to="/iodc_2018/preregister">
+              <LinkContainer to="/iodc_2018/register">
                 <NavItem eventKey={1} href="#">
                   <FormattedMessage
                     id="nav.register"
-                    defaultMessage="Pre-Register"
+                    defaultMessage="Register"
                   />
                 </NavItem>
               </LinkContainer>
 
-              <LinkContainer to="/iodc_2018/venue">
+              <LinkContainer to="/iodc_2018/press">
                 <NavItem eventKey={2} href="#">
-                  <FormattedMessage id="nav.venue" defaultMessage="Venue" />
+                  <FormattedMessage id="nav.press" defaultMessage="Press" />
                 </NavItem>
               </LinkContainer>
 
-              <LinkContainer to="/iodc_2018/program">
+              <LinkContainer to="/iodc_2018/agenda">
                 <NavItem eventKey={3} href="#">
-                  <FormattedMessage
-                    id="nav.proposals"
-                    defaultMessage="Call for Proposals"
-                  />
+                  <FormattedMessage id="nav.agenda" defaultMessage="Agenda" />
                 </NavItem>
               </LinkContainer>
 
@@ -94,12 +91,9 @@ class Menu extends Component {
                 </NavItem>
               </LinkContainer>
 
-              <LinkContainer to="/iodc_2018/committee">
+              <LinkContainer to="/iodc_2018/info">
                 <NavItem eventKey={5} href="#">
-                  <FormattedMessage
-                    id="nav.committee"
-                    defaultMessage="Programme Committee"
-                  />
+                  <FormattedMessage id="nav.info" defaultMessage="Info" />
                 </NavItem>
               </LinkContainer>
 
@@ -111,9 +105,12 @@ class Menu extends Component {
                   />
                 </NavItem>
               </LinkContainer>
-              <LinkContainer to="/iodc_2018/faq">
+              <LinkContainer to="/iodc_2018/privacy">
                 <NavItem eventKey={7} href="#">
-                  FAQ
+                  <FormattedMessage
+                    id="nav.privacy"
+                    defaultMessage="Privacy Policy"
+                  />
                 </NavItem>
               </LinkContainer>
               <LinkContainer to="/iodc_2018/#">

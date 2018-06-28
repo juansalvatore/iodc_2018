@@ -6,7 +6,7 @@ import { setLocale } from '../actions/locale'
 import Header from './Header'
 import Footer from './Footer'
 
-class Preregister extends Component {
+class Register extends Component {
   constructor(props) {
     super(props)
     this.state = { value: '', registration: '', sent: false }
@@ -47,7 +47,7 @@ class Preregister extends Component {
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div className="container-fluid">
-          <Header>Pre-register</Header>
+          <Header>Register</Header>
           <div className="form-general-container">
             <div className="form-container">
               <iframe
@@ -714,4 +714,4 @@ function mapStateToProps(state) {
 export default connect(
   mapStateToProps,
   { setLocale }
-)(Preregister)
+)(Register)

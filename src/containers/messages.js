@@ -5,12 +5,13 @@ export default {
     // About
     // nav
     'nav.link': 'link',
-    'nav.register': 'Pre-Register',
-    'nav.venue': 'Venue',
+    'nav.register': 'Register',
+    'nav.press': 'Press',
     'nav.about': 'About',
-    'nav.proposals': 'Call for Proposals',
-    'nav.committee': 'Programme Committee',
+    'nav.agenda': 'Agenda',
+    'nav.info': 'Info',
     'nav.conduct': 'Code of Conduct',
+    'nav.privacy': 'Privacy Policy',
     // Home
     'home.main.title': 'The Future is Open',
     'home.main.date': 'September 27-28, 2018',
@@ -93,12 +94,13 @@ export default {
     // About
     // nav
     'nav.link': 'test',
-    'nav.register': 'Pre.Registrarse',
-    'nav.venue': 'Recinto',
+    'nav.register': 'Registrarse',
+    'nav.press': 'Prensa',
     'nav.about': 'Acerca',
-    'nav.proposals': 'Propuestas',
-    'nav.committee': 'Comité',
+    'nav.agenda': 'Agenda',
+    'nav.info': 'Info',
     'nav.conduct': 'Código de Conducta',
+    'nav.privacy': 'Política de Privacidad',
 
     // Home
     'home.main.title': 'El Futuro es Abierto',

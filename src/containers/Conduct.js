@@ -21,8 +21,8 @@ class Conduct extends Component {
           <Header>Code of Conduct</Header>
 
           <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <p class="internal-text mtop40">
+            <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+              <p class="internal-text mtop115">
                 The International Open Data Conference attracts a diverse
                 community of people from all over the world. Respect and safety
                 are our main values, and we want to provide a safe and
@@ -55,7 +55,7 @@ class Conduct extends Component {
                 religion.
               </p>
 
-              <p class="internal-text mtop40">
+              <p class="internal-text">
                 We do not tolerate harassment of conference participants in any
                 form. Examples of harassment include offensive comments, verbal
                 threats or demands, sexualized images in public spaces,
@@ -71,108 +71,45 @@ class Conduct extends Component {
                 Reporting Issues at IODC
               </h3>
 
+              <p class="internal-text">
+                Participants asked to stop any harassing behaviour are expected
+                to comply immediately.
+              </p>
+
+              <p class="internal-text mtop40">
+                Conference participants violating these rules may be sanctioned
+                or expelled from the conference at the discretion of the
+                conference organizers. You can make a report by:
+              </p>
+
               <p class="internal-text-list-program">
                 <ul>
                   <li>
-                    <b>Principles & Policies</b> - Broadening political
-                    commitment to open data principles and policies
+                    Emailing us at contact@opendatacon.org. This email will be
+                    continuously monitored for the duration of the event.
                   </li>
                   <li>
-                    <b>Open Standards</b> - Identifying and adopting
-                    user-centric open standards
-                  </li>
-                  <li>
-                    <b>Capacity Building</b> - Data Literacy, Skills
-                    Development, IT and Data Infrastructure
-                  </li>
-                  <li>
-                    <b>Innovation Networks</b> - Strengthening networks to
-                    address shared and common challenges
-                  </li>
-                  <li>
-                    <b>Measurement and Evaluation</b> - Ensuring action on open
-                    data is more evidence-based
-                  </li>
-                  <li>
-                    <b>Regional Dialogues </b>- Connecting global and regional
-                    communities: Africa, Asia, Eastern and Western Europe, Latin
-                    America and the Caribbean, Middle East and Northern Africa,
-                    North America, Oceania.
+                    Contacting a staff member, identified by STAFF badges,
+                    buttons, or shirts.
                   </li>
                 </ul>
               </p>
 
               <p class="internal-text mtop40">
-                <span class="internal-bullets-text">3. Impact Track </span>
-                Short, dynamic “Ignite “ sessions showcasing concrete examples
-                of open data in action within core open data thematic sectors:
-              </p>
-
-              <p class="internal-text-list-program">
-                <ul>
-                  <li>
-                    <b>Accountability and Anti-Corruption</b> (parliamentary,
-                    elections, party financing)
-                  </li>
-                  <li>
-                    <b>Agriculture</b>
-                  </li>
-                  <li>
-                    <b>Corporate</b> (beneficial ownership, incorporation data)
-                  </li>
-                  <li>
-                    <b>Crime and Justice</b>
-                  </li>
-                  <li>
-                    <b>Education</b>
-                  </li>
-                  <li>
-                    <b>Elections</b>
-                  </li>
-                  <li>
-                    <b>Environment</b> (incl: climate, air and water quality,
-                    weather)
-                  </li>
-                  <li>
-                    <b>Extractives</b>
-                  </li>
-                  <li>
-                    <b>Geospatial</b> (mapping and earth observation)
-                  </li>
-                  <li>
-                    <b>Government Finances </b>(budget, expenditures, taxation)
-                  </li>
-                  <li>
-                    <b>Health</b>
-                  </li>
-                  <li>
-                    <b>International Aid and Humanitarian Relief</b>
-                  </li>
-                  <li>
-                    <b>Land Ownership</b>
-                  </li>
-                  <li>
-                    <b>National Statistics</b>
-                  </li>
-                  <li>
-                    <b>Science/Research</b>
-                  </li>
-                  <li>
-                    <b>Transport</b>
-                  </li>
-                  <li class="mbottom75">
-                    <b>Urban Development</b> (open cities, resilience, urban
-                    planning).
-                  </li>
-                </ul>
+                When taking a personal report, our staff will ensure you are
+                safe and cannot be overheard. They may involve other event staff
+                to ensure your report is managed properly. Once safe, we'll ask
+                you to tell us about what happened. This can be upsetting, but
+                we'll handle it as respectfully as possible, and you can bring
+                someone to support you. You won't be asked to confront anyone
+                and we won't tell anyone who you are.
               </p>
 
               <p class="internal-text mbottom75">
-                In addition, IODC 2018 will spotlight gender issues as they
-                relate to open data - both in terms of gender equity with regard
-                to participation, practices, and processes toward attaining
-                gender equality as an end goal, as well as the accessibility and
-                use of gender related data.
+                Our team will be happy to help you contact hotel/venue security,
+                local law enforcement, local support services, provide escorts,
+                or otherwise assist you to feel safe for the duration of the
+                event. We value your attendance.
               </p>
             </div>
           </div>
