@@ -20,10 +20,25 @@ import youtube from '../img/youtube.svg'
 import NavbarDropdown from './NavbarDropdown'
 
 class Menu extends Component {
+  state = {
+    dropdown: 'closed',
+  }
   componentDidMount() {
     $('.hamburguer-bt').click(function() {
       $('.hamburguer-bt').toggleClass('on')
     })
+  }
+  toggleDropdown() {
+    switch (this.state.dropdown) {
+      case 'closed':
+        this.setState({ dropdown: 'opened' })
+        break
+      case 'opened':
+        this.setState({ dropdown: 'closed' })
+        break
+      default:
+        break
+    }
   }
   render() {
     const { lang } = this.props
@@ -38,7 +53,10 @@ class Menu extends Component {
                 </Link>
               </Navbar.Brand>
             </Navbar.Header>
-            <div className="hamburguer-bt">
+            <div
+              className="hamburguer-bt"
+              onClick={() => this.toggleDropdown()}
+            >
               <div className="hamburguer-bt__stripe hamburguer-bt__stripe__top" />
               <div className="hamburguer-bt__stripe hamburguer-bt__stripe__middle" />
               <div className="hamburguer-bt__stripe hamburguer-bt__stripe__bottom" />
@@ -132,7 +150,8 @@ class Menu extends Component {
             </Nav>
           </Navbar>
           <div />
-          <NavbarDropdown />
+          {/* DROPDOWN */}
+          <NavbarDropdown opened={this.state.dropdown} />
         </div>
       </IntlProvider>
     )

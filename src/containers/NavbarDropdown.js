@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import { IntlProvider, FormattedMessage } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
-import { LinkContainer } from 'react-router-bootstrap'
 import { Link } from 'react-router-dom'
 
 class NavbarDropdown extends Component {
@@ -11,7 +10,7 @@ class NavbarDropdown extends Component {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <ul className="dropdown">
+        <ul id={this.props.opened} className="dropdown">
           <hr />
           <li>
             <Link to="/iodc_2018/">Home</Link>
