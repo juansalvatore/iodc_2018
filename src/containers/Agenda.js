@@ -43,15 +43,13 @@ class Agenda extends Component {
         <div class="container-fluid">
           <Header>Agenda</Header>
           <div class="row">
-            <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-              <div id="agenda">
-                <iframe
-                  height="100%"
-                  width="100vw"
-                  id="slideshow_frame"
-                  src="http://ogpargentina2017.sched.com/"
-                />
-              </div>
+            <div id="agenda">
+              <iframe
+                height="100%"
+                width="100%"
+                id="slideshow_frame"
+                src="http://ogpargentina2017.sched.com/"
+              />
             </div>
           </div>
           <Footer />
