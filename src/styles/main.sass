@@ -438,7 +438,7 @@ input[type="radio"]:focus
 .internal-sub-title-low
     font-size: 20px !important
     margin-top: 75px 
-    font-weight: 500
+    font-weight: 500 
 
 
 .internal-text
@@ -670,6 +670,26 @@ nav, .nav, .navbar-nav
 #footer_fixed
     position: fixed !important
     bottom: 0 !important
+
+.show_error
+    display: block
+    position: relative
+    text-align: right
+    margin-bottom: -19px
+    color: red
+
+.input_error
+    border: 1px solid red
+    background-color: rgba(255,0,0,0.04)
+    transition: all ease-in-out 300ms
+
+.input_error_hide
+    border: 1px solid #ccc
+    background-color: white
+    transition: all ease-in-out 300ms
+
+.hide_error
+    display: none
 
 @media (max-width: 1300px)         
     .hamburguer-bt 
