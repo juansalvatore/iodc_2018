@@ -721,6 +721,21 @@ nav, .nav, .navbar-nav {
   justify-content: center;
 }
 
+#agenda {
+  overflow: hidden;
+}
+
+iframe {
+  display: block;
+  border: none;
+  height: 100vh;
+}
+
+#footer_fixed {
+  position: fixed !important;
+  bottom: 0 !important;
+}
+
 @media (max-width: 1300px) {
   .hamburguer-bt {
     display: block;

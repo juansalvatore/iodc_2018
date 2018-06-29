@@ -7,6 +7,7 @@ import '../styles/main.min.css'
 import Header from './Header'
 import Footer from './Footer'
 import Script from 'react-load-script'
+import ReactDOM from 'react-dom'
 
 /*
   Bootstrap documentation for react:
@@ -14,25 +15,43 @@ import Script from 'react-load-script'
 */
 
 class Agenda extends Component {
+  constructor() {
+    super()
+    this.state = {
+      iFrameHeight: '0px',
+    }
+  }
+  componentDidMount() {
+    this.renderScript()
+  }
+
+  renderScript = () => {
+    return (
+      <Script
+        url="https://ogpargentina2017.sched.com/js/embed.js"
+        // onCreate={this.handleScriptCreate.bind(this)}
+        // onError={this.handleScriptError.bind(this)}
+        // onLoad={this.handleScriptLoad.bind(this)}
+      />
+    )
+  }
+  iframeLoaded = () => {}
   render() {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div class="container-fluid">
-          <Script
-            url="https://ogpargentina2017.sched.com/js/embed.js"
-            // onCreate={this.handleScriptCreate.bind(this)}
-            // onError={this.handleScriptError.bind(this)}
-            // onLoad={this.handleScriptLoad.bind(this)}
-          />
           <Header>Agenda</Header>
           <div class="row">
             <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-              <a
-                id="sched-embed"
-                href="http://ogpargentina2017.sched.com/"
-                data-sched-sidebar="no"
-              />
+              <div id="agenda">
+                <iframe
+                  height="100%"
+                  width="100%"
+                  id="slideshow_frame"
+                  src="http://ogpargentina2017.sched.com/"
+                />
+              </div>
             </div>
           </div>
           <Footer />
