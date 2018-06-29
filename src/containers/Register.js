@@ -47,6 +47,11 @@ class Register extends Component {
     document.getElementById('form_container').style.height = '100%'
   }
 
+  back = () => {
+    document.getElementById('form_content').style.transform = 'translateX(0%)'
+    document.getElementById('form_container').style.height = '833px'
+  }
+
   render() {
     const { lang } = this.props
     return (
@@ -170,6 +175,14 @@ class Register extends Component {
                   {/* FORM ONE FINISH */}
                   {/* FORM TWO START */}
                   <div className="form_two">
+                    <div className="continue_button_container">
+                      <div
+                        className="continue_button"
+                        onClick={() => this.back()}
+                      >
+                        Back
+                      </div>
+                    </div>
                     <h4>
                       <FormattedMessage
                         id="register.region"
@@ -703,14 +716,6 @@ class Register extends Component {
                     <br />
                     <br />
                     <div className="buttons_container">
-                      <div className="continue_button_container">
-                        <div
-                          className="continue_button"
-                          onClick={() => this.back()}
-                        >
-                          Back
-                        </div>
-                      </div>
                       <button type="submit" className="submit-button">
                         <FormattedMessage
                           id="register.submit"
