@@ -725,7 +725,7 @@ nav, .nav, .navbar-nav {
   overflow: hidden;
 }
 
-iframe {
+#agenda iframe {
   display: block;
   border: none;
   height: 100vh;
