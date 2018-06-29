@@ -545,6 +545,10 @@ li {
   margin-bottom: 75px;
 }
 
+.mtop20 {
+  margin-top: 20px;
+}
+
 .mtop40 {
   margin-top: 40px;
 }
@@ -582,6 +586,10 @@ nav, .nav, .navbar-nav {
 
 .bold-text {
   font-weight: 700;
+}
+
+.links-ext {
+  color: #29c4e6;
 }
 
 .hamburguer-bt {
