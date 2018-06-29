@@ -47,7 +47,7 @@ class Agenda extends Component {
               <div id="agenda">
                 <iframe
                   height="100%"
-                  width="100%"
+                  width="100vw"
                   id="slideshow_frame"
                   src="http://ogpargentina2017.sched.com/"
                 />
