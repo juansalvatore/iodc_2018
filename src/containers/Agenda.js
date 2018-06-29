@@ -6,6 +6,7 @@ import { setLocale } from '../actions/locale'
 import '../styles/main.min.css'
 import Header from './Header'
 import Footer from './Footer'
+import Script from 'react-load-script'
 
 /*
   Bootstrap documentation for react:
@@ -18,25 +19,22 @@ class Agenda extends Component {
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div class="container-fluid">
+          <Script
+            url="https://ogpargentina2017.sched.com/js/embed.js"
+            // onCreate={this.handleScriptCreate.bind(this)}
+            // onError={this.handleScriptError.bind(this)}
+            // onLoad={this.handleScriptLoad.bind(this)}
+          />
           <Header>Agenda</Header>
-
           <div class="row">
             <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <a
                 id="sched-embed"
                 href="http://ogpargentina2017.sched.com/"
                 data-sched-sidebar="no"
-              >
-                View the Encuentro Regional de las Américas de la Alianza para
-                el Gobierno Abierto schedule &amp; directory.
-              </a>
-              <script
-                type="text/javascript"
-                src="https://ogpargentina2017.sched.com/js/embed.js"
               />
             </div>
           </div>
-
           <Footer />
         </div>
       </IntlProvider>
