@@ -6,6 +6,7 @@ import { setLocale } from '../actions/locale'
 import '../styles/main.min.css'
 import Header from './Header'
 import Footer from './Footer'
+import AboutImg from '../img/about-section.jpg'
 
 /*
   Bootstrap documentation for react:
@@ -41,9 +42,13 @@ class About extends Component {
                 advance open data both locally and globally.
               </p>
 
-              <div className="img-placeholder"> Imagen</div>
+              <img
+                src={AboutImg}
+                alt="About"
+                className="img-placeholder mtop40"
+              />
 
-              <h3 className="internal-sub-title internal-sub-title-low">
+              <h3 className="internal-sub-title internal-sub-title-low mtop40">
                 The IODC has 3 main objectives:
               </h3>
 
@@ -129,12 +134,32 @@ class About extends Component {
                 </ul>
               </p>
 
-              <p className="internal-text m75 mbottom75">
+              <p className="internal-text m75">
                 Prior to the official IODC 2018 program on September 27-28st, a
                 number of pre-events will be held in Buenos Aires. These events
                 are complementary to the program and allow more opportunities to
                 engage and learn about different topics.
               </p>
+
+              <h3 className="internal-sub-title internal-sub-title-low">
+                Organizers
+              </h3>
+
+              <p className="internal-text">
+                The fifth edition of IODC is organized by the Government of
+                Argentina, together with the Open Data for Development Network,
+                the International Development Research Centre and the World
+                Bank. Organizers will work with stakeholders and partners around
+                the world to strengthen cohesion among existing open data
+                efforts and explore new ways to drive social and economic value
+                around the world.
+              </p>
+
+              <h3 className="internal-sub-title internal-sub-title-low">
+                Programme Committee
+              </h3>
+
+              <p className="internal-text">COMITTEE</p>
             </div>
           </div>
 

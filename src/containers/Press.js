@@ -21,7 +21,13 @@ class Press extends Component {
           <Header>Press</Header>
 
           <div class="row">
-            <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2" />
+            <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+              <p className="internal-text">
+                Soon, in this section you will find everything you need to know
+                to accredit and cover the Conference. For more information,
+                contact us at contact@opendatacon.org.
+              </p>
+            </div>
           </div>
 
           <Footer />

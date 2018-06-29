@@ -42,8 +42,12 @@ class Info extends Component {
                 <span className="bold-title">
                   How could I confirm my registration?
                 </span>{' '}
-                Once you completed the registration form you will receive a
-                notification, and also an automatic confirmation email.
+                Once you completed the{' '}
+                <a className="links-ext" href="#">
+                  registration form
+                </a>{' '}
+                you will receive a notification, and also an automatic
+                confirmation email.
               </p>
 
               <p className="internal-text">
@@ -63,10 +67,23 @@ class Info extends Component {
                 </span>{' '}
                 For information on nationalities that precise a visa, diplomatic
                 or official passports to enter the Argentine Republic, please
-                consult here. In case you do not require a visa, you still must
-                present a valid passport and proof of accreditation to the
-                Conference at the immigration point of entry into Argentina. You
-                can find more information here.
+                <a
+                  target="_blank"
+                  className="links-ext"
+                  href="http://www.migraciones.gov.ar/accesible/indexA.php?visas"
+                >
+                  consult here.
+                </a>{' '}
+                In case you do not require a visa, you still must present a
+                valid passport and proof of accreditation to the Conference at
+                the immigration point of entry into Argentina. You can find{' '}
+                <a
+                  target="_blank"
+                  className="links-ext"
+                  href="http://www.argentina.gob.ar/tema/extranjeros/turistas"
+                >
+                  more information here.
+                </a>
               </p>
 
               <p className="internal-text">
@@ -76,23 +93,37 @@ class Info extends Component {
                 You should contact the Argentine Consular Representation in your
                 country at least 45 days prior to the date of your trip. For
                 contact information of Consulates and Embassies of the Argentine
-                Republic, please consult here. If you do not have an Argentine
-                Consular Representation in your country of residence, you will
-                have the possibility of requesting your visa remotely. For this
-                exceptional procedure, you must follow the following steps:
+                Republic,{' '}
+                <a
+                  target="_blank"
+                  className="links-ext"
+                  href="http://mrecic.gov.ar/representaciones"
+                >
+                  please consult here.
+                </a>{' '}
+                If you do not have an Argentine Consular Representation in your
+                country of residence, you will have the possibility of
+                requesting your visa remotely. For this exceptional procedure,
+                you must follow the following steps:
               </p>
 
               <p className="internal-text-list-program">
                 <ul>
                   <li>
-                    <span class="bullet">●</span>
-                    a. Contact the consular representation that is most
-                    convenient, with an anticipation of, at least, 45 days to
-                    the date of your trip.
+                    <span class="internal-bullets-text">a.</span>
+                    <a
+                      target="_blank"
+                      className="links-ext"
+                      href="http://mrecic.gov.ar/representaciones"
+                    >
+                      Contact the consular representation that is most
+                      convenient
+                    </a>, with an anticipation of, at least, 45 days to the date
+                    of your trip.
                   </li>
                   <li>
-                    <span class="bullet">●</span>
-                    b. Send the requested documentation via email to the
+                    <span class="internal-bullets-text">b.</span>
+                    Send the requested documentation via email to the
                     corresponding consular representation, and make sure of
                     having an appointment with date and time for the consular
                     interview. Details for the procedure, such as the
@@ -100,18 +131,17 @@ class Info extends Component {
                     be informed by the representation.
                   </li>
                   <li>
-                    <span class="bullet">●</span>
-                    c. Once the visa has been approved, the consular
-                    representative will contact you to coordinate a date and
-                    time in which you can show up, with your valid passport, to
-                    obtain your visa (this may occur during a stopover of your
-                    flight to the Argentine Republic). Note: you can authorize
-                    another person to appear with your passport to obtain your
-                    visa.
+                    <span class="internal-bullets-text">c.</span> Once the visa
+                    has been approved, the consular representative will contact
+                    you to coordinate a date and time in which you can show up,
+                    with your valid passport, to obtain your visa (this may
+                    occur during a stopover of your flight to the Argentine
+                    Republic). Note: you can authorize another person to appear
+                    with your passport to obtain your visa.
                   </li>
                   <li>
-                    <span class="bullet">●</span>
-                    d. The Argentine Republic, through Consular Representation,
+                    <span class="internal-bullets-text">d.</span>
+                    The Argentine Republic, through Consular Representation,
                     reserves the right to deny any visa applicant the
                     possibility of carrying out the procedure remotely,
                     requiring the foreigner to carry out the procedure in
