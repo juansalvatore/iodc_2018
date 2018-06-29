@@ -574,8 +574,6 @@ nav, .nav, .navbar-nav {
   color: #29c4e6 !important;
 }
 
-<<<<<<< HEAD
-=======
 .bold-title {
   display: block;
   font-weight: 700;
@@ -586,7 +584,6 @@ nav, .nav, .navbar-nav {
   font-weight: 700;
 }
 
->>>>>>> master
 .hamburguer-bt {
   display: none;
   cursor: pointer;
@@ -752,7 +749,6 @@ nav, .nav, .navbar-nav {
   bottom: 0 !important;
 }
 
-<<<<<<< HEAD
 .show_error {
   display: block;
   position: relative;
@@ -777,8 +773,6 @@ nav, .nav, .navbar-nav {
   display: none;
 }
 
-=======
->>>>>>> master
 @media (max-width: 1300px) {
   .hamburguer-bt {
     display: block;

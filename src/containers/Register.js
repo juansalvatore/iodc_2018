@@ -86,7 +86,11 @@ class Register extends Component {
     if (organization === '') {
       this.setState({ organizationError: true })
     }
-    if (email === '') {
+    if (
+      email === '' ||
+      email.split('@').length == 1 ||
+      email.split('@')[1] === ''
+    ) {
       this.setState({ emailError: true })
     }
     if (telephone === '') {
@@ -94,11 +98,11 @@ class Register extends Component {
     }
     if (country === '') {
       this.setState({ countryError: true })
-    } else {
-      document.getElementById('form_content').style.transform =
-        'translateX(-52%)'
-      document.getElementById('form_container').style.height = '100%'
+      return
     }
+
+    document.getElementById('form_content').style.transform = 'translateX(-52%)'
+    document.getElementById('form_container').style.height = '100%'
   }
 
   back = () => {
