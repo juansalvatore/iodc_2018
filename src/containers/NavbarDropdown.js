@@ -34,7 +34,7 @@ class NavbarDropdown extends Component {
           </li>
           <hr />
           <li>
-            <Link to="/iodc_2018/preregister">
+            <Link to="/iodc_2018/register">
               <FormattedMessage
                 id="nav.register"
                 defaultMessage="Pre-Register"
@@ -43,8 +43,8 @@ class NavbarDropdown extends Component {
           </li>
           <hr />
           <li>
-            <Link to="/iodc_2018/venue">
-              <FormattedMessage id="nav.venue" defaultMessage="Venue" />
+            <Link to="/iodc_2018/agenda">
+              <FormattedMessage id="nav.agenda" defaultMessage="Agenda" />
             </Link>
           </li>
           <hr />
@@ -57,6 +57,13 @@ class NavbarDropdown extends Component {
             </Link>
           </li>
           <hr />
+
+          <li>
+            <Link to="/iodc_2018/info">
+              <FormattedMessage id="nav.info" defaultMessage="Info" />
+            </Link>
+          </li>
+          <hr />
           <li>
             <Link to="/iodc_2018/about">
               <FormattedMessage id="nav.about" defaultMessage="About" />
@@ -64,18 +71,9 @@ class NavbarDropdown extends Component {
           </li>
           <hr />
           <li>
-            <Link to="/iodc_2018/committee">
+            <Link to="/iodc_2018/conduct">
               <FormattedMessage
-                id="nav.committee"
-                defaultMessage="Programme Committee"
-              />
-            </Link>
-          </li>
-          <hr />
-          <li>
-            <Link to="/iodc_2018/code">
-              <FormattedMessage
-                id="nav.code"
+                id="nav.conduct"
                 defaultMessage="Code of Conduct"
               />
             </Link>

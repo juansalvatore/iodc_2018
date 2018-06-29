@@ -32,7 +32,7 @@ class Agenda extends Component {
               </a>
               <script
                 type="text/javascript"
-                src="http://ogpargentina2017.sched.com/js/embed.js"
+                src="https://ogpargentina2017.sched.com/js/embed.js"
               />
             </div>
           </div>

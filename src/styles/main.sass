@@ -113,6 +113,7 @@ nav
     display: flex
     align-items: center
     justify-content: space-around
+    flex-wrap: wrap
 
 .register-button
     background-color: #1e9c59
@@ -362,17 +363,16 @@ h4
     display: flex
     justify-content: center
 
-.form-container
+#form_container
     padding: 20px
+    height: 833px
     box-shadow: 0 0 10px rgba(0,0,0,0.2)
     border-radius: 5px
     margin-top: 20px
     margin-bottom: 40px
     width: 650px
-
-
-
-
+    overflow: hidden
+    transition: all ease-in-out 300ms
 
 input[type="radio"] 
   appearance: none
@@ -480,9 +480,6 @@ li
     list-style: none
     align-items: center
     
-
-    
-
 .internal-bullets-text
     color: #2cd3f6 !important
     font-family: 'Roboto Mono',Helvetica,Arial,sans-serif !important
@@ -606,6 +603,59 @@ nav, .nav, .navbar-nav
     opacity: 1 !important
     pointer-events: all
     transition: all ease-in-out 300ms
+
+#form_content
+    overflow: hidden
+    width: 225%
+    display: -ms-flexbox
+    display: flex
+    transition: all ease-in-out 300ms
+    // transform: translateX(-52%)
+
+.form_one
+    // background-color: pink
+    width: 88%
+    margin-right: 70px
+    position: relative
+
+.form_two
+    // background-color: #ccc
+    width: 100%
+    padding-left: 70px
+
+.continue_button
+    border: 2px solid green
+    padding: 10px
+    display: flex
+    justify-content: center
+    margin-top: 20px
+    width: 150px
+    color: green
+    border-radius: 5PX
+    font: 
+        weight: 500
+ 
+    &:hover
+        cursor: pointer
+
+.continue_button_container
+    width: 100%
+    display: flex
+    justify-content: center
+
+.buttons_container
+    display: flex
+    justify-content: flex-start
+    align-items: center
+
+    .continue_button
+        width: 200px
+        height: 60px
+
+    .continue_button_container
+        width: 200px
+        display: flex
+        justify-content: center
 
 @media (max-width: 1300px)         
     .hamburguer-bt 
