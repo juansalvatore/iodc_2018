@@ -48,7 +48,7 @@ class Agenda extends Component {
                 height="100%"
                 width="100%"
                 id="slideshow_frame"
-                src="http://ogpargentina2017.sched.com/"
+                src="https://ogpargentina2017.sched.com/"
               />
             </div>
           </div>
