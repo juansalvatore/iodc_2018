@@ -12,7 +12,7 @@ import Footer from './Footer'
   https://react-bootstrap.github.io/
 */
 
-class Agenda extends Component {
+class Info extends Component {
   render() {
     const { lang } = this.props
     return (
@@ -278,4 +278,4 @@ function mapStateToProps(state) {
 export default connect(
   mapStateToProps,
   { setLocale }
-)(Agenda)
+)(Info)
