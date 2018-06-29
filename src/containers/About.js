@@ -26,8 +26,10 @@ class About extends Component {
                 About The International Open Data Conference
               </h3>
               <p className="internal-text">
-                <b>The International Open Data Conference (IODC)</b> is a
-                biannual event that brings the global open data community
+                <span class="bold-text">
+                  The International Open Data Conference (IODC)
+                </span>{' '}
+                is a biannual event that brings the global open data community
                 together in order to learn, share, plan and collaborate on the
                 future of open data.
               </p>
@@ -47,22 +49,25 @@ class About extends Component {
 
               <p className="internal-text">
                 <span className="internal-bullets-text">1.</span>{' '}
-                <b>Identify and explore</b> the new opportunities and challenges
-                that are shaping the open data agenda.
+                <span className="bold-text">Identify and explore</span> the new
+                opportunities and challenges that are shaping the open data
+                agenda.
               </p>
               <p className="internal-text">
                 <span className="internal-bullets-text">2.</span>
-                <b>Highlight innovative and practical open data solutions</b>
+                <span className="bold-text">
+                  Highlight innovative and practical open data solutions
+                </span>
                 capable of driving social and economic impact in areas such as
                 health, education, science, etc.
               </p>
               <p className="internal-text">
                 <span className="internal-bullets-text">3.</span>
-                <b>
+                <span className="bold-text">
                   Consolidate an international partnership to drive the
                   development of global common resources for the international
                   open data community.
-                </b>
+                </span>
                 Under the theme “The Future is Open”, this year’s conference
                 will reconvene our ever expanding community to address the key
                 issues and challenges facing the open data community today, and
@@ -72,16 +77,16 @@ class About extends Component {
               </p>
 
               <p className="internal-text">
-                <b>
+                <span className="bold-text">
                   The agenda has been co-created with people from all around the
                   world
-                </b>{' '}
+                </span>{' '}
                 through a global call for proposals. The conference recieved{' '}
-                <b>600 proposals</b>, and all were examined by the IODC program
-                committee, seeking for gender balance, regional diversity and
-                inclusion of all voices. This resulted in a programme of
-                interactive sessions, workshops, discussions and other special
-                events.
+                <span className="bold-text">600 proposals</span>, and all were
+                examined by the IODC program committee, seeking for gender
+                balance, regional diversity and inclusion of all voices. This
+                resulted in a programme of interactive sessions, workshops,
+                discussions and other special events.
               </p>
 
               <h3 className="internal-sub-title internal-sub-title-low">

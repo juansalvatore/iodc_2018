@@ -26,6 +26,13 @@ h3
     font-weight: 300
     padding-left: 57px
 
+
+%center_element
+  display: flex
+  justify-content: space-around 
+  align-items: center
+
+
 .city 
     color: #ffffff
     font-family: "Roboto",Helvetica,Arial,sans-serif
@@ -110,9 +117,7 @@ nav
     padding: 0px !important
 
 .centerelement
-    display: flex
-    align-items: center
-    justify-content: space-around
+    @extend %center_element
     flex-wrap: wrap
 
 .register-button
@@ -440,7 +445,14 @@ input[type="radio"]:focus
     color: #777777
     font-family: 'Roboto',Helvetica,Arial,sans-serif
     font-size: 16px
-    
+
+.bold-title
+    display: block
+    font-weight: 700
+    margin-top: 25px
+
+.bold-text
+    font-weight: 700
 
 
 

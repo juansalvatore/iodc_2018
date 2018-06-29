@@ -47,7 +47,7 @@ class Conduct extends Component {
                 Harassment-free Conference
               </h3>
 
-              <p className="internal-text mtop40">
+              <p className="internal-text">
                 The International Open Data Conference is dedicated to providing
                 a harassment-free conference experience for everyone, regardless
                 of gender, gender identity and expression, sexual orientation,
@@ -76,7 +76,7 @@ class Conduct extends Component {
                 to comply immediately.
               </p>
 
-              <p className="internal-text mtop40">
+              <p className="internal-text">
                 Conference participants violating these rules may be sanctioned
                 or expelled from the conference at the discretion of the
                 conference organizers. You can make a report by:
