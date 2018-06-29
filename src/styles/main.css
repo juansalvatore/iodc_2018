@@ -578,6 +578,8 @@ nav, .nav, .navbar-nav {
   color: #29c4e6 !important;
 }
 
+<<<<<<< HEAD
+=======
 .bold-title {
   display: block;
   font-weight: 700;
@@ -588,10 +590,14 @@ nav, .nav, .navbar-nav {
   font-weight: 700;
 }
 
+<<<<<<< HEAD
 .links-ext {
   color: #29c4e6;
 }
 
+=======
+>>>>>>> master
+>>>>>>> master
 .hamburguer-bt {
   display: none;
   cursor: pointer;
@@ -757,6 +763,33 @@ nav, .nav, .navbar-nav {
   bottom: 0 !important;
 }
 
+<<<<<<< HEAD
+.show_error {
+  display: block;
+  position: relative;
+  text-align: right;
+  margin-bottom: -19px;
+  color: red;
+}
+
+.input_error {
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.04);
+  transition: all ease-in-out 300ms;
+}
+
+.input_error_hide {
+  border: 1px solid #ccc;
+  background-color: white;
+  transition: all ease-in-out 300ms;
+}
+
+.hide_error {
+  display: none;
+}
+
+=======
+>>>>>>> master
 @media (max-width: 1300px) {
   .hamburguer-bt {
     display: block;

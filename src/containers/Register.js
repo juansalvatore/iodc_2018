@@ -9,7 +9,32 @@ import Footer from './Footer'
 class Register extends Component {
   constructor(props) {
     super(props)
-    this.state = { value: '', registration: '', sent: false }
+    this.state = {
+      value: '',
+      registration: '',
+      sent: false,
+      // Form one inputs
+      name: '',
+      nameError: false,
+
+      lastName: '',
+      lastNameError: false,
+
+      title: '',
+      titleError: false,
+
+      organization: '',
+      organizationError: false,
+
+      email: '',
+      emailError: false,
+
+      telephone: '',
+      telephoneError: false,
+
+      country: '',
+      countryError: false,
+    }
   }
 
   hideOtherInput = input => {
@@ -28,10 +53,6 @@ class Register extends Component {
     }, 100)
   }
 
-  handleChange = event => {
-    this.setState({ value: event.target.value })
-  }
-
   handleChangeRegistration = event => {
     this.setState({ registration: event.target.value })
   }
@@ -43,13 +64,52 @@ class Register extends Component {
   }
 
   continue = () => {
-    document.getElementById('form_content').style.transform = 'translateX(-52%)'
-    document.getElementById('form_container').style.height = '100%'
+    let {
+      name,
+      lastName,
+      title,
+      organization,
+      email,
+      telephone,
+      country,
+    } = this.state
+
+    if (name === '') {
+      this.setState({ nameError: true })
+    }
+    if (lastName === '') {
+      this.setState({ lastNameError: true })
+    }
+    if (title === '') {
+      this.setState({ titleError: true })
+    }
+    if (organization === '') {
+      this.setState({ organizationError: true })
+    }
+    if (email === '') {
+      this.setState({ emailError: true })
+    }
+    if (telephone === '') {
+      this.setState({ telephoneError: true })
+    }
+    if (country === '') {
+      this.setState({ countryError: true })
+    } else {
+      document.getElementById('form_content').style.transform =
+        'translateX(-52%)'
+      document.getElementById('form_container').style.height = '100%'
+    }
   }
 
   back = () => {
     document.getElementById('form_content').style.transform = 'translateX(0%)'
     document.getElementById('form_container').style.height = '833px'
+  }
+
+  handleChange(event) {
+    let name = event.target.className.split(' ')[0]
+    this.setState({ [name]: event.target.value })
+    console.log(name)
   }
 
   render() {
@@ -86,11 +146,25 @@ class Register extends Component {
                       />
                     </h4>
                     <input
-                      className="input-box"
+                      className={
+                        this.state.nameError
+                          ? 'name input-box input_error'
+                          : 'name input-box input_error_hide'
+                      }
                       type="text"
                       name="entry.181273001"
                       id="entry.181273001"
+                      onChange={this.handleChange.bind(this)}
+                      onKeyDown={() => this.setState({ nameError: false })}
+                      value={this.state.name}
                     />
+                    <span
+                      className={
+                        this.state.nameError ? 'show_error' : 'hide_error'
+                      }
+                    >
+                      You need to complete your name
+                    </span>
                     <h4>
                       <FormattedMessage
                         id="register.last.name"
@@ -98,11 +172,25 @@ class Register extends Component {
                       />
                     </h4>
                     <input
-                      className="input-box"
+                      className={
+                        this.state.lastNameError
+                          ? 'lastName input-box input_error'
+                          : 'lastName input-box input_error_hide'
+                      }
                       type="text"
                       name="entry.1334882480"
                       id="entry.13348824801"
+                      onChange={this.handleChange.bind(this)}
+                      onKeyDown={() => this.setState({ lastNameError: false })}
+                      value={this.state.lastName}
                     />
+                    <span
+                      class={
+                        this.state.lastNameError ? 'show_error' : 'hide_error'
+                      }
+                    >
+                      You need to complete your last name
+                    </span>
                     <h4>
                       <FormattedMessage
                         id="register.title"
@@ -111,10 +199,24 @@ class Register extends Component {
                     </h4>
                     <input
                       type="text"
-                      className="input-box"
+                      className={
+                        this.state.titleError
+                          ? 'title input-box input_error'
+                          : 'title input-box input_error_hide'
+                      }
                       name="entry.30616987"
                       id="entry.30616987"
+                      onChange={this.handleChange.bind(this)}
+                      onKeyDown={() => this.setState({ titleError: false })}
+                      value={this.state.title}
                     />
+                    <span
+                      class={
+                        this.state.titleError ? 'show_error' : 'hide_error'
+                      }
+                    >
+                      You need to complete the title
+                    </span>
                     <h4>
                       <FormattedMessage
                         id="register.organization"
@@ -123,10 +225,28 @@ class Register extends Component {
                     </h4>
                     <input
                       type="text"
-                      className="input-box"
+                      className={
+                        this.state.organizationError
+                          ? 'organization input-box input_error'
+                          : 'organization input-box input_error_hide'
+                      }
                       name="entry.137853284"
                       id="entry.137853284"
+                      onChange={this.handleChange.bind(this)}
+                      onKeyDown={() =>
+                        this.setState({ organizationError: false })
+                      }
+                      value={this.state.organization}
                     />
+                    <span
+                      class={
+                        this.state.organizationError
+                          ? 'show_error'
+                          : 'hide_error'
+                      }
+                    >
+                      You need to complete your organization
+                    </span>
                     <h4>
                       <FormattedMessage
                         id="register.email"
@@ -135,10 +255,24 @@ class Register extends Component {
                     </h4>
                     <input
                       type="text"
-                      className="input-box"
+                      className={
+                        this.state.emailError
+                          ? 'email input-box input_error'
+                          : 'email input-box input_error_hide'
+                      }
                       name="entry.1630280377"
                       id="entry.1630280377"
+                      onChange={this.handleChange.bind(this)}
+                      onKeyDown={() => this.setState({ emailError: false })}
+                      value={this.state.email}
                     />
+                    <span
+                      class={
+                        this.state.emailError ? 'show_error' : 'hide_error'
+                      }
+                    >
+                      You need to complete your email
+                    </span>
                     <h4>
                       <FormattedMessage
                         id="register.phone"
@@ -147,10 +281,24 @@ class Register extends Component {
                     </h4>
                     <input
                       type="number"
-                      className="input-box"
+                      className={
+                        this.state.telephoneError
+                          ? 'telephone input-box input_error'
+                          : 'telephone input-box input_error_hide'
+                      }
                       name="entry.27195521"
                       id="entry.27195521"
+                      onChange={this.handleChange.bind(this)}
+                      onKeyDown={() => this.setState({ telephoneError: false })}
+                      value={this.state.telephone}
                     />
+                    <span
+                      class={
+                        this.state.telephoneError ? 'show_error' : 'hide_error'
+                      }
+                    >
+                      You need to complete your telephone
+                    </span>
                     <h4>
                       <FormattedMessage
                         id="register.country"
@@ -159,10 +307,24 @@ class Register extends Component {
                     </h4>
                     <input
                       type="text"
-                      className="input-box"
+                      className={
+                        this.state.countryError
+                          ? 'country input-box input_error'
+                          : 'country input-box input_error_hide'
+                      }
                       name="entry.1053209737"
                       id="entry.1053209737"
+                      onChange={this.handleChange.bind(this)}
+                      onKeyDown={() => this.setState({ countryError: false })}
+                      value={this.state.country}
                     />
+                    <span
+                      class={
+                        this.state.countryError ? 'show_error' : 'hide_error'
+                      }
+                    >
+                      You need to complete your country
+                    </span>
                     <div className="continue_button_container">
                       <div
                         className="continue_button"
