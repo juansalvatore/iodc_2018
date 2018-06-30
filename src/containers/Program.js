@@ -7,11 +7,6 @@ import '../styles/main.min.css'
 import Header from './Header'
 import Footer from './Footer'
 
-/*
-  Bootstrap documentation for react:
-  https://react-bootstrap.github.io/
-*/
-
 class Program extends Component {
   render() {
     const { lang } = this.props
