@@ -6,10 +6,6 @@ import { setLocale } from '../actions/locale'
 import { Link } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap'
 import $ from 'jquery'
-/*
-  Bootstrap documentation for react:
-  https://react-bootstrap.github.io/
-*/
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
 import Logo from '../img/logo-iodc.svg'

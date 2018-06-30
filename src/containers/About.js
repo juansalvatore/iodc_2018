@@ -8,11 +8,6 @@ import Header from './Header'
 import Footer from './Footer'
 import AboutImg from '../img/about-section.jpg'
 
-/*
-  Bootstrap documentation for react:
-  https://react-bootstrap.github.io/
-*/
-
 class About extends Component {
   render() {
     const { lang } = this.props

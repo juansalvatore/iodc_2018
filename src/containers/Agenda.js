@@ -7,12 +7,6 @@ import '../styles/main.min.css'
 import Header from './Header'
 import Footer from './Footer'
 import Script from 'react-load-script'
-import ReactDOM from 'react-dom'
-
-/*
-  Bootstrap documentation for react:
-  https://react-bootstrap.github.io/
-*/
 
 class Agenda extends Component {
   constructor() {

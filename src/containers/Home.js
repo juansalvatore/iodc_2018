@@ -4,11 +4,7 @@ import { IntlProvider, FormattedMessage } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
 import Footer from './Footer'
-/*
-  Bootstrap documentation for react:
-  https://react-bootstrap.github.io/
-*/
-// import Patio from '../img/patio.jpg'
+
 import Preevent from '../img/preevent.png'
 import iodc16 from '../img/iodc16.png'
 import iodc15 from '../img/iodc15.png'
