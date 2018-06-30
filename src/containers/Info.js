@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { IntlProvider, FormattedMessage } from 'react-intl'
+import { IntlProvider } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
 import '../styles/main.min.css'
@@ -63,6 +63,7 @@ class Info extends Component {
                 For information on nationalities that precise a visa, diplomatic
                 or official passports to enter the Argentine Republic, please
                 <a
+                  rel="noopener noreferrer"
                   target="_blank"
                   className="links-ext"
                   href="http://www.migraciones.gov.ar/accesible/indexA.php?visas"
@@ -73,6 +74,7 @@ class Info extends Component {
                 valid passport and proof of accreditation to the Conference at
                 the immigration point of entry into Argentina. You can find{' '}
                 <a
+                  rel="noopener noreferrer"
                   target="_blank"
                   className="links-ext"
                   href="http://www.argentina.gob.ar/tema/extranjeros/turistas"
@@ -90,6 +92,7 @@ class Info extends Component {
                 contact information of Consulates and Embassies of the Argentine
                 Republic,{' '}
                 <a
+                  rel="noopener noreferrer"
                   target="_blank"
                   className="links-ext"
                   href="http://mrecic.gov.ar/representaciones"
@@ -107,6 +110,7 @@ class Info extends Component {
                   <li>
                     <span class="internal-bullets-text">a.</span>
                     <a
+                      rel="noopener noreferrer"
                       target="_blank"
                       className="links-ext"
                       href="http://mrecic.gov.ar/representaciones"

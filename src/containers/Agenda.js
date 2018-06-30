@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { IntlProvider, FormattedMessage } from 'react-intl'
+import { IntlProvider } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
 import '../styles/main.min.css'
@@ -39,6 +39,7 @@ class Agenda extends Component {
           <div class="row">
             <div id="agenda">
               <iframe
+                title="agenda"
                 height="100%"
                 width="100%"
                 id="slideshow_frame"

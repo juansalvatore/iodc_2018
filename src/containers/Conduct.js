@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { IntlProvider, FormattedMessage } from 'react-intl'
-import messages from './messages'
+import { IntlProvider } from 'react-intl'
 import { setLocale } from '../actions/locale'
-import '../styles/main.min.css'
+import messages from './messages'
+
 import Header from './Header'
 import Footer from './Footer'
 

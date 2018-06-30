@@ -5,12 +5,7 @@ import messages from './messages'
 import { setLocale } from '../actions/locale'
 import Footer from './Footer'
 
-import Preevent from '../img/preevent.png'
-import iodc16 from '../img/iodc16.png'
-import iodc15 from '../img/iodc15.png'
-import obelisco from '../img/obelisco.svg'
-import visas from '../img/visas.svg'
-import invitacion from '../img/invitacion.svg'
+import { Preevent, Iodc16, Iodc15, Obelisco, Visas, Invitacion } from '../img'
 
 class Home extends Component {
   render() {
@@ -75,7 +70,7 @@ class Home extends Component {
 
               {/* BULLETS */}
               <div className="col-xs-12 col-sm-4 text-center">
-                <img src={obelisco} alt="Obelisco" className="img-bullets" />
+                <img src={Obelisco} alt="Obelisco" className="img-bullets" />
                 <h5 className="bullets">
                   <FormattedMessage
                     id="home.bullets.1"
@@ -91,7 +86,7 @@ class Home extends Component {
               </div>
 
               <div className="col-xs-12 col-sm-4 text-center">
-                <img src={visas} alt="Visas" className="img-bullets" />
+                <img src={Visas} alt="Visas" className="img-bullets" />
                 <h5 className="bullets">
                   <FormattedMessage
                     id="home.bullets.2"
@@ -108,7 +103,7 @@ class Home extends Component {
 
               <div className="col-xs-12 col-sm-4 text-center">
                 <img
-                  src={invitacion}
+                  src={Invitacion}
                   alt="Invitacion"
                   className="img-bullets"
                 />
@@ -285,13 +280,13 @@ class Home extends Component {
               <div>
                 <div className="col-xs-12 col-lg-5">
                   <img
-                    src={iodc16}
+                    src={Iodc16}
                     alt="iodc16"
                     className="img-responsive iodc16"
                   />
                 </div>
                 <div className="col-xs-12 col-lg-7">
-                  <img src={iodc15} alt="iodc15" className="img-responsive" />
+                  <img src={Iodc15} alt="iodc15" className="img-responsive" />
                 </div>
               </div>
             </div>

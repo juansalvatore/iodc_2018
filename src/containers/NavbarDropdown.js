@@ -5,10 +5,7 @@ import messages from './messages'
 import { setLocale } from '../actions/locale'
 import { Link } from 'react-router-dom'
 
-import facebook from '../img/facebook.svg'
-import twitter from '../img/twitter.svg'
-import flickr from '../img/flickr.svg'
-import youtube from '../img/youtube.svg'
+import { Facebook, Twitter, Flickr, Youtube } from '../img/'
 
 class NavbarDropdown extends Component {
   render() {
@@ -85,11 +82,11 @@ class NavbarDropdown extends Component {
           <hr />
 
           <Link to="/iodc_2018/#">
-            <img src={facebook} width="20" alt="fb" />
+            <img src={Facebook} width="20" alt="fb" />
           </Link>
-          <img src={twitter} width="20" alt="tw" />
-          <img src={flickr} width="20" alt="fl" />
-          <img src={youtube} width="20" alt="yt" />
+          <img src={Twitter} width="20" alt="tw" />
+          <img src={Flickr} width="20" alt="fl" />
+          <img src={Youtube} width="20" alt="yt" />
         </ul>
       </IntlProvider>
     )

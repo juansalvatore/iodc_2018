@@ -3,12 +3,8 @@ import { connect } from 'react-redux'
 import { IntlProvider } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
-import '../styles/main.min.css'
 
-import logomin from '../img/logomin.png'
-import logocanada from '../img/logocanada.png'
-import logowbg from '../img/logowbg.png'
-import logoopendata from '../img/logoopendata.png'
+import { LogoMin, LogoCanada, LogoWbg, LogoOpendata } from '../img'
 
 class Footer extends Component {
   render() {
@@ -18,16 +14,16 @@ class Footer extends Component {
         <div className="row footer centerelement position-absolute">
           <div className="col-lg-10 centerelement">
             <div className="col-lg-3 text-center">
-              <img src={logomin} alt="Logo Min" />
+              <img src={LogoMin} alt="Logo Min" />
             </div>
             <div className="col-lg-3 text-center">
-              <img src={logocanada} alt="Canada" />
+              <img src={LogoCanada} alt="Canada" />
             </div>
             <div className="col-lg-3 text-center">
-              <img src={logowbg} alt="World Bank" />
+              <img src={LogoWbg} alt="World Bank" />
             </div>
             <div className="col-lg-3 text-center">
-              <img src={logoopendata} alt="Open Data" />
+              <img src={LogoOpendata} alt="Open Data" />
             </div>
           </div>
         </div>

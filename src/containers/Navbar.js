@@ -1,18 +1,14 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { IntlProvider, FormattedMessage } from 'react-intl'
-import messages from './messages'
 import { setLocale } from '../actions/locale'
 import { Link } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap'
-import $ from 'jquery'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
-
-import Logo from '../img/logo-iodc.svg'
-import facebook from '../img/facebook.svg'
-import twitter from '../img/twitter.svg'
-import flickr from '../img/flickr.svg'
-import youtube from '../img/youtube.svg'
+import $ from 'jquery'
+import messages from './messages'
+import { IntlProvider, FormattedMessage } from 'react-intl'
+// Import images
+import { Logo, Facebook, Twitter, Flickr, Youtube } from '../img/'
 
 import NavbarDropdown from './NavbarDropdown'
 
@@ -111,20 +107,20 @@ class Menu extends Component {
               </LinkContainer>
               <LinkContainer to="/iodc_2018/#">
                 <NavItem eventKey={8} href="#">
-                  <img src={facebook} width="20" alt="fb" />
+                  <img src={Facebook} width="20" alt="fb" />
                 </NavItem>
               </LinkContainer>
 
               <NavItem eventKey={9} href="#">
-                <img src={twitter} width="20" alt="tw" />
+                <img src={Twitter} width="20" alt="tw" />
               </NavItem>
 
               <NavItem eventKey={10} href="#">
-                <img src={flickr} width="20" alt="fl" />
+                <img src={Flickr} width="20" alt="fl" />
               </NavItem>
 
               <NavItem eventKey={11} href="#">
-                <img src={youtube} width="20" alt="yt" />
+                <img src={Youtube} width="20" alt="yt" />
               </NavItem>
 
               <NavItem
