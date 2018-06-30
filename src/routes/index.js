@@ -1,16 +1,17 @@
 import React from 'react'
-
 import { BrowserRouter, Route } from 'react-router-dom'
-import Home from '../containers/Home'
-import Navbar from '../containers/Navbar'
-import About from '../containers/About'
-import Register from '../containers/Register'
-import Privacy from '../containers/Privacy'
-import SubmitedForm from '../containers/SubmitedForm'
-import Conduct from '../containers/Conduct'
-import Agenda from '../containers/Agenda'
-import Press from '../containers/Press'
-import Info from '../containers/Info'
+import {
+  Home,
+  Navbar,
+  About,
+  Register,
+  Privacy,
+  SubmitedForm,
+  Conduct,
+  Agenda,
+  Press,
+  Info,
+} from '../containers'
 
 export default () => (
   <BrowserRouter>
