@@ -13,7 +13,7 @@ import Iodc15 from './iodc15.png'
 import Obelisco from './obelisco.svg'
 import Visas from './visas.svg'
 import Invitacion from './invitacion.svg'
-
+import AboutImg from './about-section.jpg'
 export {
   Logo,
   Facebook,
@@ -30,4 +30,5 @@ export {
   Obelisco,
   Visas,
   Invitacion,
+  AboutImg,
 }

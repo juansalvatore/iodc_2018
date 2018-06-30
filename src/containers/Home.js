@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { IntlProvider, FormattedMessage } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
-import Footer from './Footer'
+import { Footer } from './'
 
 import { Preevent, Iodc16, Iodc15, Obelisco, Visas, Invitacion } from '../img'
 
@@ -22,7 +22,6 @@ class Home extends Component {
                     defaultMessage="The Future is Open"
                   />
                 </h2>
-
                 <div className="flex-row">
                   <div className="city-back">
                     <h4 className="city">BUENOS AIRES</h4>

@@ -4,8 +4,7 @@ import { IntlProvider } from 'react-intl'
 import { setLocale } from '../actions/locale'
 import messages from './messages'
 
-import Header from './Header'
-import Footer from './Footer'
+import { Header, Footer } from './'
 
 class Conduct extends Component {
   render() {

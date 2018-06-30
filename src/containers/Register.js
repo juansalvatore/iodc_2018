@@ -3,8 +3,8 @@ import { connect } from 'react-redux'
 import { IntlProvider, FormattedMessage } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
-import Header from './Header'
-import Footer from './Footer'
+
+import { Header, Footer } from './'
 
 class Register extends Component {
   constructor(props) {

@@ -3,10 +3,9 @@ import { connect } from 'react-redux'
 import { IntlProvider } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
-import '../styles/main.min.css'
-import Header from './Header'
-import Footer from './Footer'
 import Script from 'react-load-script'
+
+import { Header, Footer } from './'
 
 class Agenda extends Component {
   constructor() {

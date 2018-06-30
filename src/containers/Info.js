@@ -3,9 +3,8 @@ import { connect } from 'react-redux'
 import { IntlProvider } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
-import '../styles/main.min.css'
-import Header from './Header'
-import Footer from './Footer'
+
+import { Header, Footer } from './'
 
 class Info extends Component {
   render() {
@@ -14,7 +13,6 @@ class Info extends Component {
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div className="container-fluid">
           <Header>Practical Information</Header>
-
           <div className="row">
             <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 className="internal-sub-title">Registration</h3>
