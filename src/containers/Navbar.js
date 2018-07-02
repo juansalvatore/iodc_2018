@@ -8,7 +8,7 @@ import $ from 'jquery'
 import messages from './messages'
 import { IntlProvider, FormattedMessage } from 'react-intl'
 // Import images
-import { Logo, Facebook, Twitter, Flickr, Youtube } from '../img/'
+import { Logo, Facebook, Twitter, Flickr, Youtube, Medium } from '../img/'
 
 import NavbarDropdown from './NavbarDropdown'
 
@@ -121,6 +121,10 @@ class Menu extends Component {
 
               <NavItem eventKey={11} href="#">
                 <img src={Youtube} width="20" alt="yt" />
+              </NavItem>
+
+              <NavItem eventKey={12} href="#">
+                <img src={Medium} width="20" alt="tw" />
               </NavItem>
 
               <NavItem

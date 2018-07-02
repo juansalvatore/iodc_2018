@@ -5,7 +5,7 @@ import messages from './messages'
 import { setLocale } from '../actions/locale'
 import { Link } from 'react-router-dom'
 
-import { Facebook, Twitter, Flickr, Youtube } from '../img/'
+import { Facebook, Twitter, Flickr, Youtube, Medium } from '../img/'
 
 class NavbarDropdown extends Component {
   render() {
@@ -27,48 +27,46 @@ class NavbarDropdown extends Component {
           </span>
           <hr />
           <li>
-            <Link to="/iodc_2018/">Home</Link>
-          </li>
-          <hr />
-          <li>
-            <Link to="/iodc_2018/register">
-              <FormattedMessage
-                id="nav.register"
-                defaultMessage="Pre-Register"
-              />
+            <Link className="navbar-dropdown-links" to="/iodc_2018/">
+              Home
             </Link>
           </li>
           <hr />
           <li>
-            <Link to="/iodc_2018/agenda">
+            <Link className="navbar-dropdown-links" to="/iodc_2018/register">
+              <FormattedMessage id="nav.register" defaultMessage="Register" />
+            </Link>
+          </li>
+          <hr />
+          <li>
+            <Link className="navbar-dropdown-links" to="/iodc_2018/press">
+              <FormattedMessage id="nav.press" defaultMessage="Press" />
+            </Link>
+          </li>
+          <hr />
+          <li>
+            <Link className="navbar-dropdown-links" to="/iodc_2018/agenda">
               <FormattedMessage id="nav.agenda" defaultMessage="Agenda" />
-            </Link>
-          </li>
-          <hr />
-          <li>
-            <Link to="/iodc_2018/program">
-              <FormattedMessage
-                id="nav.proposals"
-                defaultMessage="Call for Proposals"
-              />
             </Link>
           </li>
           <hr />
 
           <li>
-            <Link to="/iodc_2018/info">
+            <Link className="navbar-dropdown-links" to="/iodc_2018/about">
+              <FormattedMessage id="nav.about" defaultMessage="About" />
+            </Link>
+          </li>
+
+          <hr />
+
+          <li>
+            <Link className="navbar-dropdown-links" to="/iodc_2018/info">
               <FormattedMessage id="nav.info" defaultMessage="Info" />
             </Link>
           </li>
           <hr />
           <li>
-            <Link to="/iodc_2018/about">
-              <FormattedMessage id="nav.about" defaultMessage="About" />
-            </Link>
-          </li>
-          <hr />
-          <li>
-            <Link to="/iodc_2018/conduct">
+            <Link className="navbar-dropdown-links" to="/iodc_2018/conduct">
               <FormattedMessage
                 id="nav.conduct"
                 defaultMessage="Code of Conduct"
@@ -76,8 +74,11 @@ class NavbarDropdown extends Component {
             </Link>
           </li>
           <hr />
-          <Link to="/iodc_2018/faq">
-            <li>FAQ</li>
+          <Link className="navbar-dropdown-links" to="/iodc_2018/privacy">
+            <li>
+              {' '}
+              <FormattedMessage id="nav.privacy" defaultMessage="Privacy" />
+            </li>
           </Link>
           <hr />
 
@@ -87,6 +88,7 @@ class NavbarDropdown extends Component {
           <img src={Twitter} width="20" alt="tw" />
           <img src={Flickr} width="20" alt="fl" />
           <img src={Youtube} width="20" alt="yt" />
+          <img src={Medium} width="20" alt="md" />
         </ul>
       </IntlProvider>
     )
