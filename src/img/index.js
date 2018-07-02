@@ -14,6 +14,7 @@ import Obelisco from './obelisco.svg'
 import Visas from './visas.svg'
 import Invitacion from './invitacion.svg'
 import AboutImg from './about-section.jpg'
+import Medium from './medium.svg'
 export {
   Logo,
   Facebook,
@@ -31,4 +32,5 @@ export {
   Visas,
   Invitacion,
   AboutImg,
+  Medium,
 }
