@@ -1,18 +1,11 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { IntlProvider, FormattedMessage } from 'react-intl'
+import { IntlProvider } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
-import '../styles/main.min.css'
-import Header from './Header'
-import Footer from './Footer'
 import Script from 'react-load-script'
-import ReactDOM from 'react-dom'
 
-/*
-  Bootstrap documentation for react:
-  https://react-bootstrap.github.io/
-*/
+import { Header, Footer } from './'
 
 class Agenda extends Component {
   constructor() {
@@ -45,6 +38,7 @@ class Agenda extends Component {
           <div class="row">
             <div id="agenda">
               <iframe
+                title="agenda"
                 height="100%"
                 width="100%"
                 id="slideshow_frame"

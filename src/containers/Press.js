@@ -1,16 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { IntlProvider, FormattedMessage } from 'react-intl'
+import { IntlProvider } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
-import '../styles/main.min.css'
-import Header from './Header'
-import Footer from './Footer'
-
-/*
-  Bootstrap documentation for react:
-  https://react-bootstrap.github.io/
-*/
+import { Header, Footer } from './'
 
 class Press extends Component {
   render() {
@@ -21,7 +14,13 @@ class Press extends Component {
           <Header>Press</Header>
 
           <div class="row">
-            <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2" />
+            <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+              <p className="internal-text">
+                Soon, in this section you will find everything you need to know
+                to accredit and cover the Conference. For more information,
+                contact us at contact@opendatacon.org.
+              </p>
+            </div>
           </div>
 
           <Footer />

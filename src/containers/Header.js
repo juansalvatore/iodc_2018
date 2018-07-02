@@ -3,8 +3,6 @@ import { connect } from 'react-redux'
 import { IntlProvider } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
-import '../styles/main.min.css'
-// import Patio from '../img/patio.jpg'
 
 class Header extends Component {
   render() {

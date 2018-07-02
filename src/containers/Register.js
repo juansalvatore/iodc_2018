@@ -3,8 +3,9 @@ import { connect } from 'react-redux'
 import { IntlProvider, FormattedMessage } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
-import Header from './Header'
-import Footer from './Footer'
+import countries from './countries'
+
+import { Header, Footer } from './'
 
 class Register extends Component {
   constructor(props) {
@@ -12,7 +13,10 @@ class Register extends Component {
     this.state = {
       value: '',
       registration: '',
+      countries: countries,
+      continue: false,
       sent: false,
+
       // Form one inputs
       name: '',
       nameError: false,
@@ -33,8 +37,16 @@ class Register extends Component {
       telephoneError: false,
 
       country: '',
-      countryError: false,
+      countryError: true,
     }
+  }
+
+  displayCountries = () => {
+    return this.state.countries.map(country => (
+      <option key={country} value={country}>
+        {country}
+      </option>
+    ))
   }
 
   hideOtherInput = input => {
@@ -71,7 +83,13 @@ class Register extends Component {
       organization,
       email,
       telephone,
-      country,
+      nameError,
+      lastNameError,
+      titleError,
+      organizationError,
+      emailError,
+      telephoneError,
+      countryError,
     } = this.state
 
     if (name === '') {
@@ -96,13 +114,33 @@ class Register extends Component {
     if (telephone === '') {
       this.setState({ telephoneError: true })
     }
-    if (country === '') {
-      this.setState({ countryError: true })
-      return
+    if (countryError === true) {
+      this.setState({ continue: true })
     }
+    console.log({
+      nameError,
+      lastNameError,
+      titleError,
+      organizationError,
+      emailError,
+      telephoneError,
+      countryError,
+    })
 
-    document.getElementById('form_content').style.transform = 'translateX(-52%)'
-    document.getElementById('form_container').style.height = '100%'
+    if (
+      !nameError &&
+      !lastNameError &&
+      !titleError &&
+      !organizationError &&
+      !emailError &&
+      !telephoneError &&
+      !countryError
+    ) {
+      this.setState({ continue: true })
+      document.getElementById('form_content').style.transform =
+        'translateX(-52%)'
+      document.getElementById('form_container').style.height = '100%'
+    }
   }
 
   back = () => {
@@ -309,7 +347,18 @@ class Register extends Component {
                         defaultMessage="Country"
                       />
                     </h4>
-                    <input
+                    <select
+                      name="entry.1053209737"
+                      id="entry.1053209737"
+                      onChange={() =>
+                        this.setState({
+                          countryError: false,
+                        })
+                      }
+                    >
+                      {this.displayCountries()}
+                    </select>
+                    {/* <input
                       type="text"
                       className={
                         this.state.countryError
@@ -321,13 +370,15 @@ class Register extends Component {
                       onChange={this.handleChange.bind(this)}
                       onKeyDown={() => this.setState({ countryError: false })}
                       value={this.state.country}
-                    />
+                    /> */}
                     <span
                       class={
-                        this.state.countryError ? 'show_error' : 'hide_error'
+                        this.state.countryError && this.state.continue
+                          ? 'show_error'
+                          : 'hide_error'
                       }
                     >
-                      You need to complete your country
+                      You need to select your country
                     </span>
                     <div className="continue_button_container">
                       <div

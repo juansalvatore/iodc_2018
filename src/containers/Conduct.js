@@ -1,16 +1,10 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { IntlProvider, FormattedMessage } from 'react-intl'
-import messages from './messages'
+import { IntlProvider } from 'react-intl'
 import { setLocale } from '../actions/locale'
-import '../styles/main.min.css'
-import Header from './Header'
-import Footer from './Footer'
+import messages from './messages'
 
-/*
-  Bootstrap documentation for react:
-  https://react-bootstrap.github.io/
-*/
+import { Header, Footer } from './'
 
 class Conduct extends Component {
   render() {

@@ -1,18 +1,22 @@
-
 body 
     font-family: "Roboto",Helvetica,Arial,sans-serif
 
 *
     box-sizing: border-box
 
+// Colors definition
+$celeste: #2cd3f6
+$verde: #1e9c59
+$azul: #2269ba 
+
 h1 
-    color: #ffffff
+    color: #fff 
 
     &:hover
         cursor: pointer
 
 h2 
-    color: #ffffff
+    color: #fff
     font-size: 110px
     font-weight: 300
 
@@ -21,11 +25,10 @@ h3
     flex-flow: column
     justify-content: center
     margin-top: 115px 
-    color: #ffffff
+    color: #fff
     font-size: 50px
     font-weight: 300
     padding-left: 57px
-
 
 %center_element
   display: flex
@@ -34,11 +37,11 @@ h3
 
 
 .city 
-    color: #ffffff
+    color: #fff
     font-family: "Roboto",Helvetica,Arial,sans-serif
     font-size: 30px
     text-align: center
-    background-color: #2cd3f6
+    background-color: $celeste
     padding: 8px
     margin-top: 9px
 
@@ -46,7 +49,7 @@ h3
 //     width: 240px
 
 .date 
-    color: #ffffff
+    color: #fff
     font-family: "Roboto Mono",Helvetica,Arial,sans-serif
     font-size: 30px
     margin-left: 15px
@@ -121,12 +124,12 @@ nav
     flex-wrap: wrap
 
 .register-button
-    background-color: #1e9c59
+    background-color: $verde
     border-radius: 5px
     height: 70px
     width: 275px
     border: none
-    color: #ffffff
+    color: #fff
     font-family: "Roboto Mono",Helvetica,Arial,sans-serif
     font-size: 20px
     margin-top: -43px
@@ -134,12 +137,12 @@ nav
     margin-right: 15px
 
 .schedule-button
-    background-color: #ffffff
+    background-color: #fff
     border-radius: 5px
     height: 70px
     width: 275px
-    border: 3px solid #1e9c59
-    color: #1e9c59
+    border: 3px solid $verde
+    color: $verde
     font-family: "Roboto Mono",Helvetica,Arial,sans-serif
     font-size: 20px
     margin-top: -43px
@@ -147,7 +150,7 @@ nav
     margin-right: 15px
 
 .submit-button
-    background-color: #1e9c59
+    background-color: $verde
     border-radius: 5px
     margin-top: 30px
     height: 60px
@@ -155,13 +158,13 @@ nav
     font-family: "Roboto Mono",Helvetica,Arial,sans-serif
     font-size: 20px
     margin: auto
-    color: #ffffff
+    color: #fff
     display: flex
     align-items: center
     justify-content: space-around
 
 .sub-title 
-    color: #000000
+    color: #000
     font-family: "Roboto Mono",Helvetica,Arial,sans-serif
     font-size: 30px
     text-align: center
@@ -170,17 +173,17 @@ nav
 
 .bullets
     margin-top: 25px
-    color: #777777
+    color: #777
     font-family: "Roboto",Helvetica,Arial,sans-serif
     font-size: 20px
     text-align: center
     font-weight: 300
 
 .button-bullets
-    border: 2px solid #2cd3f6
+    border: 2px solid $celeste
     border-radius: 5px
     background-color: white
-    color: #2269ba
+    color: $azul
     font-family: "Roboto Mono",Helvetica,Arial,sans-serif
     font-size: 15px
     padding: 15px
@@ -199,20 +202,20 @@ nav
 .circle
     height: 100px
     width: 100px
-    background-color: #2269ba
+    background-color: $azul
     border-radius: 50%
     margin: auto
 
 
 .info-iodc-title
-    color: #ffffff
+    color: #fff
     font-family: "Roboto Mono",Helvetica,Arial,sans-serif
     font-size: 25px
     text-align: center
     margin-bottom: 50px
 
 .info-iodc
-    color: #ffffff
+    color: #fff
     font-family: "Roboto",Helvetica,Arial,sans-serif
     font-size: 20px
     text-align: center
@@ -232,8 +235,8 @@ nav
 .proposals
     height: 200px
     width: 200px
-    background-color: #29c4e6
-    color: #ffffff
+    background-color: $celeste
+    color: #fff
     font-family:  "Roboto",Helvetica,Arial,sans-serif
     font-size: 30px
     font-weight: 700
@@ -246,9 +249,9 @@ nav
 .proposals-received
     height: 200px
     width: 200px
-    background-color: #ffffff
-    color: #000000
-    border: 4px solid #29c4e6
+    background-color: #fff
+    color: #000
+    border: 4px solid $celeste
     font-size: 22px
     text-align: center
     justify-content: center
@@ -264,18 +267,18 @@ nav
 
 
 hr
-    border: solid 2px #11c3fb
+    border: solid 2px $celeste
     width: 70%
     margin-top: 5px
     margin-left: 0px
     margin-bottom: 5px
 
 .usina
-    background-color: #2269ba
+    background-color: $azul
     position: absolute
     width: 30%
     height: 100%
-    color: #ffffff
+    color: #fff
     font-family: "Roboto",Helvetica,Arial,sans-serif
     right: 15px
     opacity: 0.8
@@ -295,8 +298,8 @@ hr
 .preevent 
     height: 140px
     width: 100%
-    color: #ffffff
-    background-color: #2269ba
+    color: #fff
+    background-color: $azul
     padding: 0px
     margin-bottom: 35px
 
@@ -304,27 +307,26 @@ hr
     float: right
 
 .preevent-txt
-    color: #ffffff
+    color: #fff
     font-family: "Roboto",Helvetica,Arial,sans-serif  
     font-size: 20px
     font-weight: 500
     margin-top: 15px
     margin-left: 40px
+
     .preevent-txt-map
         font-size: 30px
         font-weight: 700
         display: block
+
     .preevent-txt-direction
         font-size: 15px
         font-family: "Roboto Mono",Helvetica,Arial,sans-serif
         font-weight: 300
 
-
-
 .iodc16 
     margin: auto
     margin-right: 15px
-
 
 .padding-15
     padding-left: 15px
@@ -338,7 +340,6 @@ hr
 .position-absolute
     position: absolute !important
 
-
 .input-box
     width: 100%
     border-radius: 3px
@@ -346,22 +347,17 @@ hr
     height: 35px
     padding: 10px
 
-
 label
     font-weight: 300
-    color: #888888
+    color: #888
     padding-left: 10px  
     display: inline-block
     vertical-align: middle
     margin-top: -15px
 
-
-
 h4 
     font-weight: 300
     margin-top: 40px
-
-
 
 .form-general-container
     width: 100%
@@ -384,7 +380,7 @@ input[type="radio"]
   margin: 5px 0px
   width: 20px
   height: 20px
-  background: #eeeeee
+  background: #eee
   box-shadow: inset 0 0 0 3.4px white, 0 0 0 2px #ccc
   border-radius: 50%
   transition: .2s
@@ -396,8 +392,8 @@ input[type="radio"]:hover, input[type="radio"]:checked
   box-shadow: inset 0 0 0 .6em white, 0 0 0 .2em
 
 input[type="radio"]:checked 
-  background: #29c4e6
-  box-shadow: inset 0 0 0 .3em white, 0 0 0 .3em #29c4e6
+  background: $celeste
+  box-shadow: inset 0 0 0 .3em white, 0 0 0 .3em $celeste
 
 input[type="radio"]:focus 
   outline: 0
@@ -425,12 +421,12 @@ input[type="radio"]:focus
     font-family: 'Roboto Mono',Helvetica,Arial,sans-serif !important
     font-size: 24px 
     padding: 0 
-    color: #2569be
+    color: $azul
     font-weight: 500
     margin-top: 100px !important
     
 .internal-sub-title
-    color: #2cd3f6 !important
+    color: $celeste !important
     font-family: 'Roboto Mono',Helvetica,Arial,sans-serif !important
     font-size: 38px !important
     padding: 0 !important
@@ -440,24 +436,23 @@ input[type="radio"]:focus
     margin-top: 75px 
     font-weight: 500 
 
-
 .internal-text
-    color: #777777
+    color: #777
     font-family: 'Roboto',Helvetica,Arial,sans-serif
     font-size: 16px
 
 .internal-text-list
-    color: #777777
+    color: #777
     font-family: 'Roboto Mono',Helvetica,Arial,sans-serif !important
     font-size: 16px
 
 .internal-text-list-program
-    color: #777777
+    color: #777
     font-family: 'Roboto',Helvetica,Arial,sans-serif !important
     font-size: 16px
 
 .bullet
-    color: #2cd3f6 
+    color: $celeste 
     font-family: 'Roboto',Helvetica,Arial,sans-serif
     font-size: 22px
     font-weight: 500
@@ -466,9 +461,7 @@ input[type="radio"]:focus
 
 .internal-text-list ul li
     padding-top: 15px
-
-
-    
+   
 ul
     display: block
     list-style-type: disc
@@ -483,12 +476,14 @@ li
     align-items: center
     
 .internal-bullets-text
-    color: #2cd3f6 !important
+    color: $celeste !important
     font-family: 'Roboto Mono',Helvetica,Arial,sans-serif !important
-
 
 .mbottom75
     margin-bottom: 75px
+
+.mtop20 
+    margin-top: 20px
 
 .mtop40
     margin-top: 40px
@@ -497,24 +492,21 @@ li
     margin-top: 115px
 
 .img-placeholder
-    height: 200px
+    height: auto
     width: 100%
-    background-color: #777777
 
 nav, .nav, .navbar-nav
     opacity: 1
     transiton: all ease-in-out 300ms !important
 
 // ESTILOS SEBA
-
 .navbar-default .navbar-nav > .active > a
     background-color: rgba(255, 255, 255, .0)
-    color: #29c4e6 !important
+    color: $celeste !important
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover 
     background-color: rgba(255, 255, 255, .0)
-    color: #29c4e6 !important
-
+    color: $celeste !important
 
 .bold-title
     display: block
@@ -524,14 +516,11 @@ nav, .nav, .navbar-nav
 .bold-text
     font-weight: 700
 
-
-
-
+.links-ext
+    color: $celeste
 
 // FIN ESTILOS SEBA
 
-
-    
 // Hamburguer style
 .hamburguer-bt 
     display: none
@@ -602,6 +591,7 @@ nav, .nav, .navbar-nav
     
     &:hover
         cursor: pointer
+
 #closed
     opacity: 0 !important
     pointer-events: none
@@ -618,16 +608,13 @@ nav, .nav, .navbar-nav
     display: -ms-flexbox
     display: flex
     transition: all ease-in-out 300ms
-    // transform: translateX(-52%)
 
 .form_one
-    // background-color: pink
     width: 88%
     margin-right: 70px
     position: relative
 
 .form_two
-    // background-color: #ccc
     width: 100%
     padding-left: 70px
 
@@ -711,6 +698,5 @@ nav, .nav, .navbar-nav
     .dropdown
         display: block
         opacity: 1
-        
     
 // FIN ESTILO JUAN
