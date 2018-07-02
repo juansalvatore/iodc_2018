@@ -14,13 +14,13 @@ class NavbarDropdown extends Component {
       <IntlProvider locale={lang} messages={messages[lang]}>
         <ul id={this.props.opened} className="dropdown">
           <span
-            class="language_dropdown"
+            className="language_dropdown"
             onClick={() => this.props.setLocale('en')}
           >
             EN
           </span>
           <span
-            class="language_dropdown"
+            className="language_dropdown"
             onClick={() => this.props.setLocale('es')}
           >
             ES
