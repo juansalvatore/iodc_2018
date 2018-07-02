@@ -47,8 +47,9 @@ class Info extends Component {
                 <span className="bold-title">
                   I am a journalist and want to cover IODC. How can I do this?
                 </span>
-                Contact us at contact@opendatacon.org to discuss media access to
-                the event.
+                Contact us at{' '}
+                <span className="italic-text">contact@opendatacon.org</span> to
+                discuss media access to the event.
               </p>
 
               <h3 className="internal-sub-title">
@@ -59,17 +60,16 @@ class Info extends Component {
                   How do I know if I need a visa?
                 </span>{' '}
                 For information on nationalities that precise a visa, diplomatic
-                or official passports to enter the Argentine Republic, please
+                or official passports to enter the Argentine Republic, please{' '}
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
                   className="links-ext"
                   href="http://www.migraciones.gov.ar/accesible/indexA.php?visas"
                 >
-                  consult here.
-                </a>{' '}
-                In case you do not require a visa, you still must present a
-                valid passport and proof of accreditation to the Conference at
+                  consult here
+                </a>. In case you do not require a visa, you still must present
+                a valid passport and proof of accreditation to the Conference at
                 the immigration point of entry into Argentina. You can find{' '}
                 <a
                   rel="noopener noreferrer"
@@ -77,8 +77,8 @@ class Info extends Component {
                   className="links-ext"
                   href="http://www.argentina.gob.ar/tema/extranjeros/turistas"
                 >
-                  more information here.
-                </a>
+                  more information here
+                </a>.
               </p>
 
               <p className="internal-text">
@@ -86,63 +86,74 @@ class Info extends Component {
                   What should I do if I need a visa?
                 </span>{' '}
                 You should contact the Argentine Consular Representation in your
-                country at least 45 days prior to the date of your trip. For
-                contact information of Consulates and Embassies of the Argentine
-                Republic,{' '}
+                country at least{' '}
+                <span className="bold-text">
+                  45 days prior to the date of your trip.{' '}
+                </span>For contact information of Consulates and Embassies of
+                the Argentine Republic,{' '}
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
                   className="links-ext"
                   href="http://mrecic.gov.ar/representaciones"
                 >
-                  please consult here.
-                </a>{' '}
-                If you do not have an Argentine Consular Representation in your
-                country of residence, you will have the possibility of
-                requesting your visa remotely. For this exceptional procedure,
-                you must follow the following steps:
+                  please consult here
+                </a>. If you{' '}
+                <span className="bold-text">
+                  do not have an Argentine Consular Representation in your
+                  country of residence
+                </span>, you will have the possibility of requesting your visa
+                remotely. For this exceptional procedure, you must follow the
+                following steps:
               </p>
 
               <p className="internal-text-list-program">
                 <ul>
-                  <li>
+                  <li className="mtop20">
                     <span class="internal-bullets-text">a.</span>
+                    Contact the{' '}
                     <a
                       rel="noopener noreferrer"
                       target="_blank"
                       className="links-ext"
                       href="http://mrecic.gov.ar/representaciones"
                     >
-                      Contact the consular representation that is most
-                      convenient
+                      consular representation that is most convenient
                     </a>, with an anticipation of, at least, 45 days to the date
                     of your trip.
                   </li>
-                  <li>
+                  <li className="mtop20">
                     <span class="internal-bullets-text">b.</span>
-                    Send the requested documentation via email to the
-                    corresponding consular representation, and make sure of
-                    having an appointment with date and time for the consular
-                    interview. Details for the procedure, such as the
-                    documentation to be presented and the cost of the visa, will
-                    be informed by the representation.
+                    Send the requested documentation via email{' '}
+                    <span class="bold-text">
+                      to the corresponding consular representation, and make
+                      sure of having an appointment with date and time for the
+                      consular interview.
+                    </span>{' '}
+                    Details for the procedure, such as the documentation to be
+                    presented and the cost of the visa, will be informed by the
+                    representation.
                   </li>
-                  <li>
+                  <li className="mtop20">
                     <span class="internal-bullets-text">c.</span> Once the visa
-                    has been approved, the consular representative will contact
-                    you to coordinate a date and time in which you can show up,
-                    with your valid passport, to obtain your visa (this may
-                    occur during a stopover of your flight to the Argentine
-                    Republic). Note: you can authorize another person to appear
-                    with your passport to obtain your visa.
+                    has been approved,{' '}
+                    <span class="bold-text">
+                      the consular representative will contact you to coordinate
+                      a date and time in which you can show up, with your valid
+                      passport, to obtain your visa
+                    </span>{' '}
+                    (this may occur during a stopover of your flight to the
+                    Argentine Republic). Note: you can authorize another person
+                    to appear with your passport to obtain your visa.
                   </li>
-                  <li>
+                  <li className="mtop20">
                     <span class="internal-bullets-text">d.</span>
                     The Argentine Republic, through Consular Representation,
-                    reserves the right to deny any visa applicant the
-                    possibility of carrying out the procedure remotely,
-                    requiring the foreigner to carry out the procedure in
-                    person.
+                    <span class="bold-text">
+                      reserves the right to deny any visa applicant the
+                      possibility of carrying out the procedure remotely
+                    </span>, requiring the foreigner to carry out the procedure
+                    in person.
                   </li>
                 </ul>
               </p>
@@ -152,7 +163,8 @@ class Info extends Component {
                   I could not ask for a visa myself. Can you help me?
                 </span>{' '}
                 In case you need help, you can contact us at
-                contact@opendatacon.org and specify the following information:
+                <span class="italic-text">contact@opendatacon.org</span> and
+                specify the following information:
               </p>
 
               <p className="internal-text-list-program">
@@ -242,11 +254,12 @@ class Info extends Component {
               <p className="internal-text">
                 <span className="bold-title">Taxis</span> Taxis can be hired or
                 cars can be rented in the companies that offer the service
-                inside the airport and the Bus Terminal. Prices range from USD
-                30 to USD 40 from the airports. The official and safe taxis
-                identify with the colors black and yellow (white at the
-                airport). They are charged through the use of a
-                clock-tachometer, with one and only official rate.
+                inside the airport and the Bus Terminal. Prices range from{' '}
+                <span class="bold-text">USD 30 to USD 40</span> from the
+                airports. The official and safe taxis identify with the colors
+                black and yellow (white at the airport). They are charged
+                through the use of a clock-tachometer, with one and only
+                official rate.
               </p>
 
               <h3 className="internal-sub-title internal-sub-title-low">
@@ -256,17 +269,22 @@ class Info extends Component {
               <p className="internal-text">
                 <span className="bold-title">Hotel 725</span> Participants must
                 request their reservation by sending their full information
-                mentioning "IODC 2018" addressed to reservas@725continental.com,
-                with a copy to fmonteleone@725continental.com.
+                mentioning "IODC 2018" addressed to{' '}
+                <span class="italic-text">reservas@725continental.com</span>,
+                with a copy to{' '}
+                <span class="italic-text">fmonteleone@725continental.com</span>.
               </p>
 
               <p className="internal-text">
                 <span className="bold-title">
                   Eurobuilding Hotel Boutique Buenos Aires
                 </span>{' '}
-                Contact buenosaires@eurobuilding.com.ve with a copy to Roberto
-                Brizuela (rbrizuela@eurobuilding.com.ve), mentioning the code
-                "IODC 2018" to have the rate of U$D 110.- plus VAT.
+                Contact{' '}
+                <span class="italic-text">buenosaires@eurobuilding.com.ve</span>{' '}
+                with a copy to Roberto Brizuela (<span class="italic-text">
+                  rbrizuela@eurobuilding.com.ve
+                </span>), mentioning the code "IODC 2018" to have the rate of
+                U$D 110.- plus VAT.
               </p>
 
               <p className="internal-text">
@@ -274,8 +292,9 @@ class Info extends Component {
                   Wyndham - Dazzler - Esplendor
                 </span>{' '}
                 Participants must request their reservation by sending their
-                complete information mentioning "IODC 2018" addressed to
-                reservas@fenhoteles.com, with a copy to jherrera@fenhoteles.com.
+                complete information mentioning "IODC 2018" addressed to{' '}
+                <span class="italic-text">reservas@fenhoteles.com</span>, with a
+                copy to <span class="italic-text">jherrera@fenhoteles.com</span>.
               </p>
 
               <h3 className="internal-sub-title">Invitation from Committee</h3>
@@ -284,7 +303,8 @@ class Info extends Component {
                 <span className="bold-title">
                   Do you need an invite from the committee?
                 </span>{' '}
-                If you need an invite just write to contact@opendatacon.org
+                If you need an invite just write to{' '}
+                <span class="italic-text">contact@opendatacon.org</span>.
               </p>
             </div>
           </div>

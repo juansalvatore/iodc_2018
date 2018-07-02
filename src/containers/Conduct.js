@@ -17,24 +17,29 @@ class Conduct extends Component {
           <div className="row">
             <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <p className="internal-text mtop115">
-                The International Open Data Conference attracts a diverse
-                community of people from all over the world. Respect and safety
-                are our main values, and we want to provide a safe and
-                productive environment for all participants and presenters. The
-                following code of conduct is meant to guide everyone at the IODC
-                and help to ensure a respectful and safe conference experience
-                for all. This code of conduct applies to the main conference as
-                well as all pre-events.
+                The{' '}
+                <span className="bold-text">
+                  International Open Data Conference
+                </span>{' '}
+                attracts a diverse community of people from all over the world.{' '}
+                <span className="bold-text">
+                  Respect and safety are our main values
+                </span>, and we want to provide a safe and productive
+                environment for all participants and presenters. The following
+                code of conduct is meant to guide everyone at the IODC and help
+                to ensure a respectful and safe conference experience for all.
+                This code of conduct applies to the main conference as well as
+                all pre-events.
               </p>
               <h3 className="internal-sub-title internal-sub-title-low">
                 Diversity and Inclusivity
               </h3>
               <p className="internal-text mbottom75">
                 The International Open Data Conference welcomes and encourages
-                participation by everyone including but not limited to people of
-                all ages, cultures, ethnicities, gender, gender-identity,
-                language, race, sexual orientation, geographical location, and
-                religion.
+                participation <span className="bold-text">by everyone</span>{' '}
+                including but not limited to people of all ages, cultures,
+                ethnicities, gender, gender-identity, language, race, sexual
+                orientation, geographical location, and religion.
               </p>
 
               <h3 className="internal-sub-title internal-sub-title-low">
@@ -42,23 +47,30 @@ class Conduct extends Component {
               </h3>
 
               <p className="internal-text">
-                The International Open Data Conference is dedicated to providing
-                a harassment-free conference experience for everyone, regardless
-                of gender, gender identity and expression, sexual orientation,
-                disability, physical appearance, body size, race, age or
-                religion.
+                The International Open Data Conference is{' '}
+                <span className="bold-text">
+                  dedicated to providing a harassment-free conference experience
+                  for everyone
+                </span>, regardless of gender, gender identity and expression,
+                sexual orientation, disability, physical appearance, body size,
+                race, age or religion.
               </p>
 
               <p className="internal-text">
-                We do not tolerate harassment of conference participants in any
-                form. Examples of harassment include offensive comments, verbal
+                <span className="bold-text">
+                  We do not tolerate harassment of conference participants in
+                  any form.
+                </span>{' '}
+                Examples of harassment include offensive comments, verbal
                 threats or demands, sexualized images in public spaces,
                 intimidation, stalking, harassing photography or recording,
                 sustained disruption of sessions or events, and unwelcome
                 physical contact or sexual attention. Harassment also includes
                 slights and negative messages, both unintended and intentional,
-                based solely on appearance. These activities will not be
-                tolerated.
+                based solely on appearance.{' '}
+                <span className="bold-text">
+                  These activities will not be tolerated.
+                </span>
               </p>
 
               <h3 className="internal-sub-title internal-sub-title-low">
@@ -66,21 +78,29 @@ class Conduct extends Component {
               </h3>
 
               <p className="internal-text">
-                Participants asked to stop any harassing behaviour are expected
-                to comply immediately.
+                <span className="bold-text">
+                  {' '}
+                  Participants asked to stop any harassing behaviour are
+                  expected to comply immediately.
+                </span>
               </p>
 
               <p className="internal-text">
-                Conference participants violating these rules may be sanctioned
-                or expelled from the conference at the discretion of the
-                conference organizers. You can make a report by:
+                Conference participants violating these rules{' '}
+                <span className="bold-text">
+                  may be sanctioned or expelled from the conference at the
+                  discretion of the conference organizers.
+                </span>{' '}
+                You can make a report by:
               </p>
 
               <p className="internal-text-list-program">
                 <ul>
                   <li>
-                    Emailing us at contact@opendatacon.org. This email will be
-                    continuously monitored for the duration of the event.
+                    Emailing us at{' '}
+                    <span className="italic-text">contact@opendatacon.org</span>.
+                    This email will be continuously monitored for the duration
+                    of the event.
                   </li>
                   <li>
                     Contacting a staff member, identified by STAFF badges,
@@ -103,7 +123,8 @@ class Conduct extends Component {
                 Our team will be happy to help you contact hotel/venue security,
                 local law enforcement, local support services, provide escorts,
                 or otherwise assist you to feel safe for the duration of the
-                event. We value your attendance.
+                event.{' '}
+                <span className="bold-text">We value your attendance.</span>
               </p>
             </div>
           </div>

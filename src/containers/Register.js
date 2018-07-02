@@ -163,6 +163,16 @@ class Register extends Component {
           <Header>Register</Header>
           <div className="form-general-container">
             <div id="form_container">
+              <div className="row">
+                <div className="col-xs-12">
+                  <h3 className="internal-sub-title mtop40">
+                    IODC Online Registration
+                  </h3>
+                  <p className="internal-text">
+                    Please fill in the form below.
+                  </p>
+                </div>
+              </div>
               <iframe
                 title="hidden_iframe_title"
                 className="hidden"
@@ -406,10 +416,7 @@ class Register extends Component {
                   {/* FORM TWO START */}
                   <div className="form_two">
                     <div className="continue_button_container">
-                      <div
-                        className="continue_button"
-                        onClick={() => this.back()}
-                      >
+                      <div className="back_button" onClick={() => this.back()}>
                         Back
                       </div>
                     </div>

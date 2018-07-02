@@ -17,17 +17,18 @@ class About extends Component {
           <Header>About</Header>
 
           <div className="row">
-            <div className="col-md-10 col-md-offset-1">
+            <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 className="internal-sub-title">
-                About The International Open Data Conference
+                About the International Open Data Conference
               </h3>
               <p className="internal-text">
+                The{' '}
                 <span class="bold-text">
-                  The International Open Data Conference (IODC)
-                </span>
-                is a biannual event that brings the global open data community
-                together in order to learn, share, plan and collaborate on the
-                future of open data.
+                  International Open Data Conference
+                </span>{' '}
+                (IODC) is a biannual event that brings the global open data
+                community together in order to learn, share, plan and
+                collaborate on the future of open data.
               </p>
 
               <p className="internal-text m75">
@@ -130,10 +131,12 @@ class About extends Component {
               </p>
 
               <p className="internal-text m75">
-                Prior to the official IODC 2018 program on September 27-28st, a
-                number of pre-events will be held in Buenos Aires. These events
-                are complementary to the program and allow more opportunities to
-                engage and learn about different topics.
+                Prior to the official IODC 2018 program on September 27-28st,{' '}
+                <span class="bold-text">
+                  a number of pre-events will be held in Buenos Aires.
+                </span>{' '}
+                These events are complementary to the program and allow more
+                opportunities to engage and learn about different topics.
               </p>
 
               <h3 className="internal-sub-title internal-sub-title-low">
@@ -141,11 +144,13 @@ class About extends Component {
               </h3>
 
               <p className="internal-text">
-                The fifth edition of IODC is organized by the Government of
-                Argentina, together with the Open Data for Development Network,
-                the International Development Research Centre and the World
-                Bank. Organizers will work with stakeholders and partners around
-                the world to strengthen cohesion among existing open data
+                The fifth edition of IODC is organized by the{' '}
+                <span class="bold-text">
+                  Government of Argentina, together with the Open Data for
+                  Development Network, the International Development Research
+                  Centre and the World Bank
+                </span>. Organizers will work with stakeholders and partners
+                around the world to strengthen cohesion among existing open data
                 efforts and explore new ways to drive social and economic value
                 around the world.
               </p>

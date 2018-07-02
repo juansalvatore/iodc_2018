@@ -15,27 +15,33 @@ class Privacy extends Component {
 
           <div className="row">
             <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-              <h3 className="internal-sub-title">Who We Are </h3>
+              <h3 className="internal-sub-title">Who we are </h3>
               <p className="internal-text">
-                As advocated of open data and data for good, we value your
-                personal data and making efforts to make sure it is secured and
-                used only for the purpose of IODC. This policy will describe how
-                we deal with your data: when and why we collect your personal
-                information, how we use it, the limited conditions under which
-                we may disclose it to others and how we keep it secure.
+                As advocated of open data and data for good,{' '}
+                <span class="bold-text">
+                  we value your personal data and making efforts to make sure it
+                  is secured and used only for the purpose of IODC.
+                </span>{' '}
+                This policy will describe how we deal with your data: when and
+                why we collect your personal information, how we use it, the
+                limited conditions under which we may disclose it to others and
+                how we keep it secure.
               </p>
 
               <p className="internal-sub-title internal-sub-title-low mtop40">
-                Data Use
+                Data use
               </p>
               <p className="internal-text">
-                IODC does not sell, rent or lease your personal data under any
-                circumstances. IODC uses the information you provide to send you
+                <span class="bold-text">
+                  IODC does not sell, rent or lease your personal data under any
+                  circumstances.
+                </span>{' '}
+                IODC uses the information you provide to send you
                 communications, such as Conference program updates; ticketing
                 information; and other relevant Conference information.
               </p>
               <p className="internal-sub-title internal-sub-title-low mtop40">
-                Type of Data We Collect
+                Type of data we collect
               </p>
 
               <p className="internal-text">
@@ -44,19 +50,25 @@ class Privacy extends Component {
                     <span class="bullet">●</span>
                     <span className="bold-text">Google Analytics</span>{' '}
                     <p>
-                      When someone visits opendatacon.org, we use a third party
-                      service, Google Analytics, to collect standard internet
-                      log information and details of visitor behaviour patterns.
-                      We do this to understand who we reached and how we can
-                      reach more people to our conference. This information is
-                      only processed in a way which does not identify anyone. We
-                      do not make, and do not allow Google to make, any attempt
-                      to find out the identities of those visiting our website.
+                      When someone visits{' '}
+                      <span className="links-ext">opendatacon.org</span>, we use
+                      a third party service,{' '}
+                      <span class="bold-text">Google Analytics</span>, to
+                      collect standard internet log information and details of
+                      visitor behaviour patterns. We do this to{' '}
+                      <span class="bold-text">
+                        understand who we reached and how we can reach more
+                        people to our conference.
+                      </span>{' '}
+                      This information is only processed in a way which does not
+                      identify anyone. We do not make, and do not allow Google
+                      to make, any attempt to find out the identities of those
+                      visiting our website.
                     </p>
                   </li>
                   <li className="mtop20">
                     <span class="bullet">●</span>
-                    <span className="bold-text">Registration Forms</span>{' '}
+                    <span className="bold-text">Registration forms</span>{' '}
                     <p>
                       We collect your contact details in our registration form
                       so that we can:
@@ -92,8 +104,8 @@ class Privacy extends Component {
                         target="_blank"
                         href="https://mailchimp.com/legal/privacy/"
                       >
-                        MailChimp’s privacy notice.
-                      </a>
+                        MailChimp’s privacy notice
+                      </a>.
                     </p>
                   </li>
                 </ul>
@@ -101,18 +113,18 @@ class Privacy extends Component {
 
               <p className="internal-text">
                 <p className="internal-sub-title internal-sub-title-low mtop40">
-                  Access to your Personal Information
+                  Access to your personal information
                 </p>
-                You are entitled to view, amend, or delete the personal
-                information of yours that we maintain. Email your request to
-                contact@opendatacon.org
+                You are entitled to view, amend or delete the personal
+                information of yours that we maintain. Email your request to{' '}
+                <span className="italic-text">contact@opendatacon.org</span>.
               </p>
 
               <p className="internal-text mbottom75">
-                <span className="bold-title">
+                <p className="internal-sub-title internal-sub-title-low mtop40">
                   Changes to this Privacy Notice
-                </span>{' '}
-                This privacy policy was changed on 27/5/2018
+                </p>
+                This privacy policy was changed on 27/5/2018.
               </p>
             </div>
           </div>
