@@ -31,7 +31,7 @@ class Register extends Component {
       organizationError: false,
 
       email: '',
-      emailError: true,
+      emailError: false,
 
       telephone: '',
       telephoneError: false,
@@ -76,6 +76,7 @@ class Register extends Component {
   }
 
   continue = () => {
+    this.setState({ continue: true })
     let {
       name,
       lastName,
@@ -105,12 +106,11 @@ class Register extends Component {
       this.setState({ organizationError: true })
     }
     if (
-      email != '' &&
-      email.split('@').length != 1 &&
-      email.split('@')[1] != undefined &&
-      email.split('@')[1] !== ''
+      email == '' ||
+      email.split('@').length == 1 ||
+      email.split('@')[1] == ''
     ) {
-      this.setState({ emailError: false })
+      this.setState({ emailError: true })
     }
     if (telephone === '') {
       this.setState({ telephoneError: true })
@@ -127,6 +127,7 @@ class Register extends Component {
       telephoneError,
       countryError,
     })
+    console.log(email.split('@').length)
 
     if (
       !nameError &&
@@ -137,7 +138,6 @@ class Register extends Component {
       !telephoneError &&
       !countryError
     ) {
-      this.setState({ continue: true })
       document.getElementById('form_content').style.transform =
         'translateX(-52%)'
       document.getElementById('form_container').style.height = '100%'
@@ -308,14 +308,13 @@ class Register extends Component {
                       onChange={this.handleChange.bind(this)}
                       onKeyDown={() => {
                         if (
-                          this.state.email != '' &&
-                          this.state.email.split('@').length != 1 &&
-                          this.state.email.split('@')[1] != undefined &&
-                          this.state.email.split('@')[1] !== ''
+                          this.state.email == '' ||
+                          this.state.email.split('@').length == 1 ||
+                          this.state.email.split('@')[1] == ''
                         ) {
-                          this.setState({ emailError: false })
-                        } else {
                           this.setState({ emailError: true })
+                        } else {
+                          this.setState({ emailError: false })
                         }
                       }}
                       value={this.state.email}
