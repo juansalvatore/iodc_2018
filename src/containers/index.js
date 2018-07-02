@@ -11,6 +11,7 @@ import Conduct from '../containers/Conduct'
 import Agenda from './Agenda'
 import Press from './Press'
 import Info from './Info'
+import SideEvent from './SideEvent'
 export {
   Header,
   Footer,
@@ -24,4 +25,5 @@ export {
   Agenda,
   Press,
   Info,
+  SideEvent,
 }

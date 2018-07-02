@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { IntlProvider, FormattedMessage } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
-import { Footer } from './'
+import { Footer, SideEvent } from './'
 
 import { Preevent, Iodc16, Iodc15, Obelisco, Visas, Invitacion } from '../img'
 
@@ -225,40 +225,18 @@ class Home extends Component {
                   />
                 </h4>
               </div>
-
               {/* EVENTO 1 */}
-              <div className="col-xs-12 col-lg-6 preevent">
-                <div className="col-xs-6 preevent-txt">
-                  <div className="preevent-txt-map">Pre-event</div>
-
-                  <hr />
-
-                  <div>Centro Metropolitano de Diseño</div>
-                  <div className="preevent-txt-direction">
-                    Algarrobo 1041, Barracas, CABA
-                  </div>
-                </div>
-                <div>
-                  <img src={Preevent} alt="Preevent" className="preevent-img" />
-                </div>
-              </div>
-
+              <SideEvent
+                image={Preevent}
+                location="Centro Metropolitano de Diseño"
+                direction="Algarrobo 1041, Barracas, CABA"
+              />
               {/* EVENTO 2 */}
-              <div className="col-xs-12 col-lg-6 preevent">
-                <div className="col-xs-6 preevent-txt">
-                  <div className="preevent-txt-map">Pre-event</div>
-
-                  <hr />
-
-                  <div>Centro Metropolitano de Diseño</div>
-                  <div className="preevent-txt-direction">
-                    Algarrobo 1041, Barracas, CABA
-                  </div>
-                </div>
-                <div>
-                  <img src={Preevent} alt="Preevent" className="preevent-img" />
-                </div>
-              </div>
+              <SideEvent
+                image={Preevent}
+                location="Centro Metropolitano de Diseño"
+                direction="Algarrobo 1041, Barracas, CABA"
+              />
             </div>
           </div>
 
