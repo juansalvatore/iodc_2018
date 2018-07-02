@@ -10,7 +10,7 @@ class SideEvent extends Component {
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div className="col-xs-12 col-lg-6 preevent">
-          <div className="col-xs-6 preevent-txt">
+          <div className="preevent-txt">
             <div className="preevent-txt-map">Pre-event</div>
             <hr />
             <div>{this.props.location}</div>
