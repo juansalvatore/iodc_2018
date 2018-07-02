@@ -8,6 +8,7 @@ body
 $celeste: #2cd3f6
 $verde: #1e9c59
 $azul: #2269ba 
+$gris: #777777
 
 h1 
     color: #fff 
@@ -499,7 +500,7 @@ li
 nav, .nav, .navbar-nav
     opacity: 1
     transiton: all ease-in-out 300ms !important
-
+ 
 // ESTILOS SEBA
 .navbar-default .navbar-nav > .active > a
     background-color: rgba(255, 255, 255, .0)
@@ -519,6 +520,30 @@ nav, .nav, .navbar-nav
 
 .links-ext
     color: $celeste
+
+.people-list li
+    width: 45%
+    display: inline-block
+    padding: 10px 0
+
+.people-list__name
+    color: $celeste
+    font-weight: 500
+    font-size: 1.7rem !important
+    margin: 0 0 5px
+
+.people-list__org
+    color: $gris
+    font-weight: 200
+
+.people-list li 
+    list-style: none
+    border-bottom: 1px dotted #00e6fd
+    margin: 5px
+
+mbottom30 
+    margin-bottom: 30px
+    
 
 // FIN ESTILOS SEBA
 
@@ -699,5 +724,9 @@ nav, .nav, .navbar-nav
     .dropdown
         display: block
         opacity: 1
+
+@media (max-width: 40.063em)
+    .people-list li 
+        width: 100%
     
 // FIN ESTILO JUAN
