@@ -31,7 +31,7 @@ class Register extends Component {
       organizationError: false,
 
       email: '',
-      emailError: false,
+      emailError: true,
 
       telephone: '',
       telephoneError: false,
@@ -105,11 +105,12 @@ class Register extends Component {
       this.setState({ organizationError: true })
     }
     if (
-      email === '' ||
-      email.split('@').length == 1 ||
-      email.split('@')[1] === ''
+      email != '' &&
+      email.split('@').length != 1 &&
+      email.split('@')[1] != undefined &&
+      email.split('@')[1] !== ''
     ) {
-      this.setState({ emailError: true })
+      this.setState({ emailError: false })
     }
     if (telephone === '') {
       this.setState({ telephoneError: true })
@@ -298,19 +299,32 @@ class Register extends Component {
                     <input
                       type="text"
                       className={
-                        this.state.emailError
+                        this.state.emailError && this.state.continue
                           ? 'email input-box input_error'
                           : 'email input-box input_error_hide'
                       }
                       name="entry.1630280377"
                       id="entry.1630280377"
                       onChange={this.handleChange.bind(this)}
-                      onKeyDown={() => this.setState({ emailError: false })}
+                      onKeyDown={() => {
+                        if (
+                          this.state.email != '' &&
+                          this.state.email.split('@').length != 1 &&
+                          this.state.email.split('@')[1] != undefined &&
+                          this.state.email.split('@')[1] !== ''
+                        ) {
+                          this.setState({ emailError: false })
+                        } else {
+                          this.setState({ emailError: true })
+                        }
+                      }}
                       value={this.state.email}
                     />
                     <span
                       class={
-                        this.state.emailError ? 'show_error' : 'hide_error'
+                        this.state.emailError && this.state.continue
+                          ? 'show_error'
+                          : 'hide_error'
                       }
                     >
                       You need to complete your email
