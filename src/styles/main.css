@@ -1,5 +1,10 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Roboto",Helvetica,Arial,sans-serif;
+  overflow-x: hidden;
 }
 
 * {
@@ -18,6 +23,7 @@ h2 {
   color: #fff;
   font-size: 110px;
   font-weight: 300;
+  transition: all ease-in-out 300ms;
 }
 
 h3 {
@@ -31,7 +37,7 @@ h3 {
   padding-left: 57px;
 }
 
-.centerelement {
+.centerelement, .submitted-form-success {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -176,6 +182,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.submitted-form-success {
+  flex-wrap: wrap;
+  height: 65vh;
 }
 
 .sub-title {
@@ -591,6 +602,34 @@ nav, .nav, .navbar-nav {
   color: #2cd3f6;
 }
 
+.people-list li {
+  width: 45%;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.people-list__name {
+  color: #2cd3f6;
+  font-weight: 500;
+  font-size: 1.7rem !important;
+  margin: 0 0 5px;
+}
+
+.people-list__org {
+  color: #777777;
+  font-weight: 200;
+}
+
+.people-list li {
+  list-style: none;
+  border-bottom: 1px dotted #00e6fd;
+  margin: 5px;
+}
+
+mbottom30 {
+  margin-bottom: 30px;
+}
+
 .hamburguer-bt {
   display: none;
   cursor: pointer;
@@ -798,5 +837,47 @@ nav, .nav, .navbar-nav {
   .dropdown {
     display: block;
     opacity: 1;
+  }
+}
+
+.home_button_container {
+  transition: all ease-in-out 300ms;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .people-list li {
+    width: 100%;
+  }
+  .home_button_container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 171px;
+    top: -20px;
+  }
+}
+
+@media (max-width: 425px) {
+  h2 {
+    font-size: 40px;
+  }
+  .date {
+    font-size: 20px;
+  }
+  .city {
+    font-size: 20px;
   }
 }

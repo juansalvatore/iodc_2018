@@ -39,7 +39,7 @@ class Home extends Component {
             </div>
           </div>
           <div className="centerelement">
-            <div>
+            <div className="home_button_container">
               <button className="register-button">
                 <FormattedMessage
                   id="home.main.register"

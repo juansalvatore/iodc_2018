@@ -1,5 +1,10 @@
+
+html 
+    overflow-x: hidden  
+
 body 
     font-family: "Roboto",Helvetica,Arial,sans-serif
+    overflow-x: hidden  
 
 *
     box-sizing: border-box
@@ -20,6 +25,7 @@ h2
     color: #fff
     font-size: 110px
     font-weight: 300
+    transition: all ease-in-out 300ms
 
 h3 
     display: flex
@@ -728,9 +734,46 @@ mbottom30
     .dropdown
         display: block
         opacity: 1
+
+.home_button_container
+    transition: all ease-in-out 300ms
+    
+
+@media (max-width: 768px)   
+    h2
+        font:
+            size: 60px
+
+
+@media (max-width: 768px)   
+    h2
+        font:
+            size: 60px
  
-@media (max-width: 40.063em)
+@media (max-width: 640px)
     .people-list li 
         width: 100%
-    
+
+    .home_button_container
+        display: flex
+        position: relative
+        flex-direction: column
+        justify-content: space-around
+        height: 171px
+        top: -20px
+
+@media (max-width: 425px)
+    h2
+        font:
+            size: 40px
+
+    .date
+        font:
+            size: 20px
+
+    .city 
+        font: 
+            size: 20px
+        
+        
 // FIN ESTILO JUAN
