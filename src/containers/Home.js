@@ -6,7 +6,19 @@ import { setLocale } from '../actions/locale'
 import { Footer, SideEvent } from './'
 import { Link } from 'react-router-dom'
 
-import { Preevent, Iodc16, Iodc15, Obelisco, Visas, Invitacion } from '../img'
+import {
+  Preevent,
+  Iodc16,
+  Iodc15,
+  Obelisco,
+  Visas,
+  Invitacion,
+  Uruguay,
+  Francia,
+  Brasil,
+  Iodc12,
+  Iodc10,
+} from '../img'
 
 class Home extends Component {
   render() {
@@ -181,7 +193,7 @@ class Home extends Component {
 
           {/* MAPA */}
 
-          <div className="container bottom-140">
+          <div className="container">
             <div className="row">
               <div className="col-lg-12">
                 <h4 className="sub-title">
@@ -217,7 +229,7 @@ class Home extends Component {
           {/* FIN MAPA */}
 
           {/* SIDEEVENTS */}
-          <div className="container bottom-140">
+          <div className="container">
             <div className="row padding-15">
               <div className="col-lg-12">
                 <h4 className="sub-title">
@@ -240,13 +252,26 @@ class Home extends Component {
                 direction="Algarrobo 1041, Barracas, CABA"
               />
             </div>
+
+            <div className="row padding-15 mtop40">
+              <div className="centerelement">
+                <Link to="/iodc_2018/register">
+                  <button className="register-button">
+                    <FormattedMessage
+                      id="home.main.register"
+                      defaultMessage="REGISTER"
+                    />
+                  </button>
+                </Link>
+              </div>
+            </div>
           </div>
 
           {/* FIN EVENTOS */}
 
           {/* EVENTOS ANTERIORES */}
 
-          <div className="container bottom-140">
+          <div className="container">
             <div className="row padding-15">
               <div className="col-lg-12">
                 <h4 className="sub-title">
@@ -257,31 +282,60 @@ class Home extends Component {
                 </h4>
               </div>
               <div>
-                <div className="col-xs-12 col-lg-5">
-                  <img
-                    src={Iodc16}
-                    alt="iodc16"
-                    className="img-responsive iodc16"
-                  />
-                </div>
-                <div className="col-xs-12 col-lg-7">
-                  <img src={Iodc15} alt="iodc15" className="img-responsive" />
+                <div className="row centerelement">
+                  <div className="col-xs-12 col-md-2 col-lg-2">
+                    <img
+                      src={Iodc10}
+                      alt="iodc10"
+                      className="img-responsive centerelement"
+                    />
+                  </div>
+                  <div className="col-xs-12 col-md-4 col-lg-4">
+                    <img
+                      src={Iodc12}
+                      alt="iodc12"
+                      className="img-responsive centerelement"
+                    />
+                  </div>
+                  <div className="col-xs-12 col-md-2 col-lg-2">
+                    <img
+                      src={Iodc16}
+                      alt="iodc16"
+                      className="img-responsive centerelement"
+                    />
+                  </div>
+                  <div className="col-xs-12 col-md-4 col-lg-4">
+                    <img
+                      src={Iodc15}
+                      alt="iodc15"
+                      className="img-responsive centerelement"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="container bottom-140">
-            <div className="row padding-15">
-              <div className="centerelement">
-                <Link to="/iodc_2018/register">
-                  <button className="register-button">
-                    <FormattedMessage
-                      id="home.main.register"
-                      defaultMessage="REGISTER"
-                    />
-                  </button>
-                </Link>
+            <div className="row centerelement">
+              <div className="col-lg-12">
+                <h4 className="sub-title">
+                  <FormattedMessage
+                    id="home.partners"
+                    defaultMessage="Partners"
+                  />
+                </h4>
+              </div>
+            </div>
+            <div className="row centerelement">
+              <div className="col-xs-12 col-md-3 col-lg-3">
+                <img src={Francia} alt="Francia" className="img-responsive" />
+              </div>
+              <div className="col-xs-12 col-md-3 col-lg-3 ">
+                <img src={Uruguay} alt="Uruguay" className="img-responsive" />
+              </div>
+              <div className="col-xs-12 col-md-3 col-lg-3">
+                <img src={Brasil} alt="Brasil" className="img-responsive" />
               </div>
             </div>
           </div>
