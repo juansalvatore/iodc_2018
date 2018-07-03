@@ -19,17 +19,17 @@ class Footer extends Component {
           }
         >
           <div className="col-lg-10 centerelement">
-            <div className="col-lg-3 text-center">
-              <img src={LogoMin} alt="Logo Min" />
-            </div>
-            <div className="col-lg-3 text-center">
+            <div className="col-xs-12 col-md-3 col-lg-3 text-center">
               <img src={LogoCanada} alt="Canada" />
             </div>
-            <div className="col-lg-3 text-center">
+            <div className="col-xs-12 col-md-3 col-lg-3 text-center">
               <img src={LogoWbg} alt="World Bank" />
             </div>
-            <div className="col-lg-3 text-center">
+            <div className="col-xs-12 col-md-3 col-lg-3 text-center">
               <img src={LogoOpendata} alt="Open Data" />
+            </div>
+            <div className="col-xs-12 col-md-3 col-lg-3 text-center">
+              <img src={LogoMin} alt="Logo Min" />
             </div>
           </div>
         </div>
