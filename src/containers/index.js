@@ -12,7 +12,8 @@ import Agenda from './Agenda'
 import Press from './Press'
 import Info from './Info'
 import SideEvent from './SideEvent'
-import SideEventslist from './SideEventsList'
+import SideEventsList from '../containers/SideEventsList'
+
 export {
   Header,
   Footer,
