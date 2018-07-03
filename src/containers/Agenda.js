@@ -50,7 +50,7 @@ class Agenda extends Component {
             <div id="agenda">
               <iframe
                 title="agenda"
-                height="100%"
+                height="2000px"
                 width="100%"
                 id="slideshow_frame"
                 src="https://iodc2018.sched.com/"

@@ -735,12 +735,12 @@ mbottom30
         justify-content: center
 
 #agenda
-    overflow: hidden
+    // overflow: hidden
 
     iframe 
         display: block
         border: none
-        height: 100vh
+        // height: 100vh
 
 #footer_fixed
     position: fixed !important
@@ -798,6 +798,11 @@ select:focus, input:focus
 .hide-submitted-message
     display: none
 
+.home_button_container
+    transition: all ease-in-out 300ms
+
+// MEDIA QUERIES
+
 @media (max-width: 1300px)         
     .hamburguer-bt 
         display: block
@@ -812,16 +817,26 @@ select:focus, input:focus
     .dropdown
         display: block
         opacity: 1
-
-.home_button_container
-    transition: all ease-in-out 300ms
+    
     
 
+    
 @media (max-width: 768px)   
     h2
         font:
             size: 60px
 
+    .usina
+        position: absolute
+        height: 240px
+        display: flex
+        flex-direction: column
+        transform: translateY(100%)
+        width: 100%
+        margin: 0px
+        padding: 0px 
+        justify-content: center
+        padding-left: 40px
 
 @media (max-width: 768px)   
     h2
