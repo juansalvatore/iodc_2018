@@ -25,236 +25,35 @@ class Home extends Component {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div className="container-fluid">
-          <div className="row img-back centerelement">
-            <div className="col-lg-12 centerelement">
-              <div>
-                <h2>
-                  <FormattedMessage
-                    id="home.main.title"
-                    defaultMessage="The Future is Open"
-                  />
-                </h2>
-                <div className="flex-row">
-                  <div className="city-back">
-                    <h4 className="city">BUENOS AIRES</h4>
-                  </div>
-                  <div>
-                    <h4 className="date">
-                      <FormattedMessage
-                        id="home.main.date"
-                        defaultMessage="September 27-28, 2018"
-                      />
-                    </h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="centerelement">
-            <div className="home_button_container">
-              <Link to="/iodc_2018/register">
-                <button className="register-button">
-                  <FormattedMessage
-                    id="home.main.register"
-                    defaultMessage="REGISTER"
-                  />
-                </button>
-              </Link>
-              <Link to="/iodc_2018/agenda">
-                <button className="schedule-button">
-                  <FormattedMessage
-                    id="home.main.schedule"
-                    defaultMessage="SEE THE SCHEDULE"
-                  />
-                </button>
-              </Link>
-            </div>
-          </div>
-
-          {/* SECCION BULLETS */}
-          <div className="container bottom-140">
-            <div className="row">
-              <div className="col-lg-12">
-                <h4 className="sub-title">
-                  <FormattedMessage
-                    id="home.bullets.title"
-                    defaultMessage="Already registered to the event?"
-                  />
-                </h4>
-              </div>
-
-              {/* BULLETS */}
-              <div className="col-xs-12 col-sm-4 text-center">
-                <img src={Obelisco} alt="Obelisco" className="img-bullets" />
-                <h5 className="bullets">
-                  <FormattedMessage
-                    id="home.bullets.1"
-                    defaultMessage="Need more info about Buenos Aires?"
-                  />
-                </h5>
-                <button className="button-bullets">
-                  <FormattedMessage
-                    id="home.bullets.button.1"
-                    defaultMessage="Get to know the city"
-                  />
-                </button>
-              </div>
-
-              <div className="col-xs-12 col-sm-4 text-center">
-                <img src={Visas} alt="Visas" className="img-bullets" />
-                <h5 className="bullets">
-                  <FormattedMessage
-                    id="home.bullets.2"
-                    defaultMessage="Need more info about visas?"
-                  />
-                </h5>
-                <button className="button-bullets">
-                  <FormattedMessage
-                    id="home.bullets.button.2"
-                    defaultMessage="Info for your application"
-                  />
-                </button>
-              </div>
-
-              <div className="col-xs-12 col-sm-4 text-center">
-                <img
-                  src={Invitacion}
-                  alt="Invitacion"
-                  className="img-bullets"
-                />
-                <h5 className="bullets">
-                  <FormattedMessage
-                    id="home.bullets.3"
-                    defaultMessage="Do you need an invite from the comitee?"
-                  />
-                </h5>
-                <button className="button-bullets">
-                  <FormattedMessage
-                    id="home.bullets.button.3"
-                    defaultMessage="Request an invite"
-                  />
-                </button>
-              </div>
-
-              {/* FIN BULLETS */}
-            </div>
-          </div>
-          {/* FIN SECCION BULLETS */}
-
-          {/* SECCION INFO */}
-
-          <div className="row img-back-info centerelement">
-            <div className="col-xs-12 col-sm-8">
-              <h5 className="info-iodc-title">About IODC</h5>
-
-              <p className="info-iodc">
-                <FormattedMessage
-                  id="home.about.iodc"
-                  defaultMessage="about iodc"
-                />
-              </p>
-            </div>
-          </div>
-
-          {/* FIN SECCION INFO */}
-
-          {/* SECCION PROPUESTAS */}
-
-          <div className="container bottom-140">
-            <div className="row">
-              <div className="col-lg-12">
-                <h4 className="sub-title">
-                  <FormattedMessage
-                    id="home.proposals.title"
-                    defaultMessage="Proposals received"
-                  />
-                </h4>
-              </div>
-
-              <div className="col-xs-12 col-lg-3 centerelement">
-                <div className="proposals">The Big Picture</div>
-              </div>
-              <div className="col-xs-12 col-lg-3 centerelement">
-                <div className="proposals">Action Track</div>
-              </div>
-              <div className="col-xs-12 col-lg-3 centerelement">
-                <div className="proposals">Impact Track</div>
-              </div>
-              <div className="col-xs-12 col-lg-3 centerelement">
-                <div className="proposals-received">
-                  <span>600</span>
-                  Proposals Received
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* FIN SECCION PROPUESTAS */}
-
-          {/* MAPA */}
-
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <h4 className="sub-title">
-                  <FormattedMessage
-                    id="home.visit.title"
-                    defaultMessage="Your visit to Argentina"
-                  />
-                </h4>
-              </div>
-
-              <div className="col-xs-12 centerelement map_container">
-                <div className="usina right">
-                  <div className="map-title">#IODC18</div>
-
-                  <hr />
-
-                  <div>Usina del arte</div>
-                  <div className="map-direction">
-                    Agustín R. Caffarena 1, C1157ADA CABA
+        <div>
+          <div className="container-fluid">
+            <div className="row img-back centerelement">
+              <div className="col-lg-12 centerelement">
+                <div>
+                  <h2>
+                    <FormattedMessage
+                      id="home.main.title"
+                      defaultMessage="The Future is Open"
+                    />
+                  </h2>
+                  <div className="flex-row">
+                    <div className="city-back">
+                      <h4 className="city">BUENOS AIRES</h4>
+                    </div>
+                    <div>
+                      <h4 className="date">
+                        <FormattedMessage
+                          id="home.main.date"
+                          defaultMessage="September 27-28, 2018"
+                        />
+                      </h4>
+                    </div>
                   </div>
                 </div>
-                <iframe
-                  title="usina-map"
-                  width="100%"
-                  height="520"
-                  frameBorder="0"
-                  src="https://datosgobar.carto.com/u/modernizacion/builder/329aca58-835c-465d-bb40-f215ef950dc5/embed"
-                />
               </div>
             </div>
-          </div>
-
-          {/* FIN MAPA */}
-
-          {/* SIDEEVENTS */}
-          <div className="container">
-            <div className="row padding-15">
-              <div className="col-lg-12">
-                <h4 className="sub-title">
-                  <FormattedMessage
-                    id="home.sideevents"
-                    defaultMessage="Events around the Conference"
-                  />
-                </h4>
-              </div>
-              {/* EVENTO 1 */}
-              <SideEvent
-                image={Preevent}
-                location="Centro Metropolitano de Diseño"
-                direction="Algarrobo 1041, Barracas, CABA"
-              />
-              {/* EVENTO 2 */}
-              <SideEvent
-                image={Preevent}
-                location="Centro Metropolitano de Diseño"
-                direction="Algarrobo 1041, Barracas, CABA"
-              />
-            </div>
-
-            <div className="row padding-15 mtop40">
-              <div className="centerelement">
+            <div className="centerelement">
+              <div className="home_button_container">
                 <Link to="/iodc_2018/register">
                   <button className="register-button">
                     <FormattedMessage
@@ -263,83 +62,285 @@ class Home extends Component {
                     />
                   </button>
                 </Link>
+                <Link to="/iodc_2018/agenda">
+                  <button className="schedule-button">
+                    <FormattedMessage
+                      id="home.main.schedule"
+                      defaultMessage="SEE THE SCHEDULE"
+                    />
+                  </button>
+                </Link>
               </div>
             </div>
-          </div>
 
-          {/* FIN EVENTOS */}
+            {/* SECCION BULLETS */}
+            <div className="container bottom-140">
+              <div className="row">
+                <div className="col-lg-12">
+                  <h4 className="sub-title">
+                    <FormattedMessage
+                      id="home.bullets.title"
+                      defaultMessage="Already registered to the event?"
+                    />
+                  </h4>
+                </div>
 
-          {/* EVENTOS ANTERIORES */}
+                {/* BULLETS */}
+                <div className="col-xs-12 col-sm-4 text-center">
+                  <img src={Obelisco} alt="Obelisco" className="img-bullets" />
+                  <h5 className="bullets">
+                    <FormattedMessage
+                      id="home.bullets.1"
+                      defaultMessage="Need more info about Buenos Aires?"
+                    />
+                  </h5>
+                  <button className="button-bullets">
+                    <FormattedMessage
+                      id="home.bullets.button.1"
+                      defaultMessage="Get to know the city"
+                    />
+                  </button>
+                </div>
 
-          <div className="container">
-            <div className="row padding-15">
-              <div className="col-lg-12">
-                <h4 className="sub-title">
-                  <FormattedMessage
-                    id="home.previous"
-                    defaultMessage="Previous Events"
+                <div className="col-xs-12 col-sm-4 text-center">
+                  <img src={Visas} alt="Visas" className="img-bullets" />
+                  <h5 className="bullets">
+                    <FormattedMessage
+                      id="home.bullets.2"
+                      defaultMessage="Need more info about visas?"
+                    />
+                  </h5>
+                  <button className="button-bullets">
+                    <FormattedMessage
+                      id="home.bullets.button.2"
+                      defaultMessage="Info for your application"
+                    />
+                  </button>
+                </div>
+
+                <div className="col-xs-12 col-sm-4 text-center">
+                  <img
+                    src={Invitacion}
+                    alt="Invitacion"
+                    className="img-bullets"
                   />
-                </h4>
+                  <h5 className="bullets">
+                    <FormattedMessage
+                      id="home.bullets.3"
+                      defaultMessage="Do you need an invite from the comitee?"
+                    />
+                  </h5>
+                  <button className="button-bullets">
+                    <FormattedMessage
+                      id="home.bullets.button.3"
+                      defaultMessage="Request an invite"
+                    />
+                  </button>
+                </div>
+
+                {/* FIN BULLETS */}
               </div>
-              <div>
-                <div className="row centerelement">
-                  <div className="col-xs-12 col-md-2 col-lg-2">
-                    <img
-                      src={Iodc10}
-                      alt="iodc10"
-                      className="img-responsive centerelement"
+            </div>
+            {/* FIN SECCION BULLETS */}
+
+            {/* SECCION INFO */}
+
+            <div className="row img-back-info centerelement">
+              <div className="col-xs-12 col-sm-8">
+                <h5 className="info-iodc-title">About IODC</h5>
+
+                <p className="info-iodc">
+                  <FormattedMessage
+                    id="home.about.iodc"
+                    defaultMessage="about iodc"
+                  />
+                </p>
+              </div>
+            </div>
+
+            {/* FIN SECCION INFO */}
+
+            {/* SECCION PROPUESTAS */}
+
+            <div className="container bottom-140">
+              <div className="row">
+                <div className="col-lg-12">
+                  <h4 className="sub-title">
+                    <FormattedMessage
+                      id="home.proposals.title"
+                      defaultMessage="Proposals received"
                     />
-                  </div>
-                  <div className="col-xs-12 col-md-4 col-lg-4">
-                    <img
-                      src={Iodc12}
-                      alt="iodc12"
-                      className="img-responsive centerelement"
-                    />
-                  </div>
-                  <div className="col-xs-12 col-md-2 col-lg-2">
-                    <img
-                      src={Iodc16}
-                      alt="iodc16"
-                      className="img-responsive centerelement"
-                    />
-                  </div>
-                  <div className="col-xs-12 col-md-4 col-lg-4">
-                    <img
-                      src={Iodc15}
-                      alt="iodc15"
-                      className="img-responsive centerelement"
-                    />
+                  </h4>
+                </div>
+
+                <div className="col-xs-12 col-lg-3 centerelement">
+                  <div className="proposals">The Big Picture</div>
+                </div>
+                <div className="col-xs-12 col-lg-3 centerelement">
+                  <div className="proposals">Action Track</div>
+                </div>
+                <div className="col-xs-12 col-lg-3 centerelement">
+                  <div className="proposals">Impact Track</div>
+                </div>
+                <div className="col-xs-12 col-lg-3 centerelement">
+                  <div className="proposals-received">
+                    <span>600</span>
+                    Proposals Received
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+            {/* FIN SECCION PROPUESTAS */}
 
-          <div className="container bottom-140">
-            <div className="row centerelement">
-              <div className="col-lg-12">
-                <h4 className="sub-title">
-                  <FormattedMessage
-                    id="home.partners"
-                    defaultMessage="Partners"
+            {/* MAPA */}
+
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12">
+                  <h4 className="sub-title">
+                    <FormattedMessage
+                      id="home.visit.title"
+                      defaultMessage="Your visit to Argentina"
+                    />
+                  </h4>
+                </div>
+
+                <div className="col-xs-12 centerelement map_container">
+                  <div className="usina right">
+                    <div className="map-title">#IODC18</div>
+
+                    <hr />
+
+                    <div>Usina del arte</div>
+                    <div className="map-direction">
+                      Agustín R. Caffarena 1, C1157ADA CABA
+                    </div>
+                  </div>
+                  <iframe
+                    title="usina-map"
+                    width="100%"
+                    height="520"
+                    frameBorder="0"
+                    src="https://datosgobar.carto.com/u/modernizacion/builder/329aca58-835c-465d-bb40-f215ef950dc5/embed"
                   />
-                </h4>
+                </div>
               </div>
             </div>
-            <div className="row centerelement">
-              <div className="col-xs-12 col-md-3 col-lg-3">
-                <img src={Francia} alt="Francia" className="img-responsive" />
+
+            {/* FIN MAPA */}
+
+            {/* SIDEEVENTS */}
+            <div className="container">
+              <div className="row padding-15">
+                <div className="col-lg-12">
+                  <h4 className="sub-title">
+                    <FormattedMessage
+                      id="home.sideevents"
+                      defaultMessage="Events around the Conference"
+                    />
+                  </h4>
+                </div>
+                {/* EVENTO 1 */}
+                <SideEvent
+                  image={Preevent}
+                  location="Centro Metropolitano de Diseño"
+                  direction="Algarrobo 1041, Barracas, CABA"
+                />
+                {/* EVENTO 2 */}
+                <SideEvent
+                  image={Preevent}
+                  location="Centro Metropolitano de Diseño"
+                  direction="Algarrobo 1041, Barracas, CABA"
+                />
               </div>
-              <div className="col-xs-12 col-md-3 col-lg-3 ">
-                <img src={Uruguay} alt="Uruguay" className="img-responsive" />
+
+              <div className="row padding-15 mtop40">
+                <div className="centerelement">
+                  <Link to="/iodc_2018/register">
+                    <button className="register-button">
+                      <FormattedMessage
+                        id="home.main.register"
+                        defaultMessage="REGISTER"
+                      />
+                    </button>
+                  </Link>
+                </div>
               </div>
-              <div className="col-xs-12 col-md-3 col-lg-3">
-                <img src={Brasil} alt="Brasil" className="img-responsive" />
+            </div>
+
+            {/* FIN EVENTOS */}
+
+            {/* EVENTOS ANTERIORES */}
+
+            <div className="container">
+              <div className="row padding-15">
+                <div className="col-lg-12">
+                  <h4 className="sub-title">
+                    <FormattedMessage
+                      id="home.previous"
+                      defaultMessage="Previous Events"
+                    />
+                  </h4>
+                </div>
+                <div>
+                  <div className="row centerelement">
+                    <div className="col-xs-12 col-md-2 col-lg-2">
+                      <img
+                        src={Iodc10}
+                        alt="iodc10"
+                        className="img-responsive centerelement"
+                      />
+                    </div>
+                    <div className="col-xs-12 col-md-4 col-lg-4">
+                      <img
+                        src={Iodc12}
+                        alt="iodc12"
+                        className="img-responsive centerelement"
+                      />
+                    </div>
+                    <div className="col-xs-12 col-md-2 col-lg-2">
+                      <img
+                        src={Iodc16}
+                        alt="iodc16"
+                        className="img-responsive centerelement"
+                      />
+                    </div>
+                    <div className="col-xs-12 col-md-4 col-lg-4">
+                      <img
+                        src={Iodc15}
+                        alt="iodc15"
+                        className="img-responsive centerelement"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="container bottom-140">
+              <div className="row centerelement">
+                <div className="col-lg-12">
+                  <h4 className="sub-title">
+                    <FormattedMessage
+                      id="home.partners"
+                      defaultMessage="Partners"
+                    />
+                  </h4>
+                </div>
+              </div>
+              <div className="row centerelement">
+                <div className="col-xs-12 col-md-3 col-lg-3">
+                  <img src={Francia} alt="Francia" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-3 col-lg-3 ">
+                  <img src={Uruguay} alt="Uruguay" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-3 col-lg-3">
+                  <img src={Brasil} alt="Brasil" className="img-responsive" />
+                </div>
               </div>
             </div>
           </div>
-
           <Footer />
         </div>
       </IntlProvider>

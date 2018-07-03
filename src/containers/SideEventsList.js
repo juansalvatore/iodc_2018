@@ -31,12 +31,14 @@ class SideEventsList extends Component {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div class="container-fluid">
-          <Header>Press</Header>
-          <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-            <ul class="people-list mbottom75">{this.displaySideEvents()}</ul>
-            <Footer bottom={false} />
+        <div>
+          <div class="container-fluid">
+            <Header>Press</Header>
+            <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+              <ul class="people-list mbottom75">{this.displaySideEvents()}</ul>
+            </div>
           </div>
+          <Footer bottom={false} />
         </div>
       </IntlProvider>
     )
