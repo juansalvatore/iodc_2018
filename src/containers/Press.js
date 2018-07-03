@@ -23,7 +23,7 @@ class Press extends Component {
             </div>
           </div>
 
-          <Footer />
+          <Footer bottom={true} />
         </div>
       </IntlProvider>
     )

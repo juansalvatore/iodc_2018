@@ -11,7 +11,13 @@ class Footer extends Component {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div className="row footer centerelement position-absolute">
+        <div
+          className={
+            this.props.bottom
+              ? 'footer centerelement bottom-footer'
+              : 'footer centerelement'
+          }
+        >
           <div className="col-lg-10 centerelement">
             <div className="col-lg-3 text-center">
               <img src={LogoMin} alt="Logo Min" />

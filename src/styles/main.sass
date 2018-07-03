@@ -357,6 +357,12 @@ hr
     background-color: #2a80e2
     height: 140px
     width: 100%
+    position: absolute
+    margin: 0
+    left: 0
+    
+.bottom-footer
+    bottom: 0
 
 .position-absolute
     position: absolute !important
@@ -384,6 +390,8 @@ h4
     width: 100%
     display: flex
     justify-content: center
+    opacity: 1
+    transition: all ease-in-out 300ms
 
 #form_container
     padding: 20px
@@ -737,6 +745,14 @@ mbottom30
     margin-bottom: -19px
     color: red
 
+.show_error_radio
+    display: block
+    position: relative
+    text-align: left
+    margin-bottom: -19px
+    padding-left: 15px
+    color: red
+
 .input_error
     border: 1px solid red
     background-color: rgba(255,0,0,0.04)
@@ -763,6 +779,14 @@ select:focus, input:focus
     border: 2px solid $celeste
 
 .hide_error
+    display: none
+
+.hide-form
+    opacity: 0
+    display: none
+    pointer-events: none
+
+.hide-submitted-message
     display: none
 
 @media (max-width: 1300px)         

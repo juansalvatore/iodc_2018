@@ -16,6 +16,7 @@ class Register extends Component {
       countries: countries,
       continue: false,
       sent: false,
+      submit: false,
 
       // Form one inputs
       name: '',
@@ -38,6 +39,15 @@ class Register extends Component {
 
       country: '',
       countryError: true,
+
+      // Form two inputs
+      region: false,
+      gender: false,
+      registrationType: false,
+      travelAssistanceRequired: false,
+      travelAssistanceConfirmed: false,
+      visaRequired: false,
+      validVisa: false,
     }
   }
 
@@ -70,9 +80,30 @@ class Register extends Component {
   }
 
   handleSubmit = event => {
-    this.setState({ sent: true })
-    console.log(this.state.sent)
-    window.location.href = '/submited-form'
+    this.setState({ submit: true })
+    const {
+      region,
+      gender,
+      registrationType,
+      travelAssistanceRequired,
+      travelAssistanceConfirmed,
+      visaRequired,
+      validVisa,
+    } = this.state
+
+    if (
+      region &&
+      gender &&
+      registrationType &&
+      travelAssistanceRequired &&
+      travelAssistanceConfirmed &&
+      visaRequired &&
+      validVisa
+    ) {
+      this.setState({ sent: true })
+      console.log(this.state.sent)
+      // window.location.href = '/iodc_2018/submited-form'
+    }
   }
 
   continue = () => {
@@ -155,21 +186,43 @@ class Register extends Component {
     console.log(name)
   }
 
+  handleOptionChange = changeEvent => {
+    this.setState({
+      region: changeEvent.target.value,
+    })
+  }
+
   render() {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div className="container-fluid">
           <Header>Register</Header>
-          <div className="form-general-container">
+
+          <div className={this.state.sent ? 'row' : 'hide-submitted-message'}>
+            <div className="col-md-10 col-md-offset-1">
+              <h3 className="internal-sub-title submitted-form-success">
+                You have been registered successfully.
+              </h3>
+            </div>
+          </div>
+          <div
+            className={this.state.sent ? 'hide-form' : 'form-general-container'}
+          >
             <div id="form_container">
               <div className="row">
                 <div className="col-xs-12">
                   <h3 className="internal-sub-title mtop40">
-                    IODC Online Registration
+                    <FormattedMessage
+                      id="register.title"
+                      defaultMessage="IODC Online Registration"
+                    />
                   </h3>
                   <p className="internal-text">
-                    Please fill in the form below.
+                    <FormattedMessage
+                      id="register.subtitle"
+                      defaultMessage="Please fill in the form below."
+                    />
                   </p>
                 </div>
               </div>
@@ -216,7 +269,10 @@ class Register extends Component {
                         this.state.nameError ? 'show_error' : 'hide_error'
                       }
                     >
-                      You need to complete your name
+                      <FormattedMessage
+                        id="register.error.firstName"
+                        defaultMessage="You need to complete your name"
+                      />
                     </span>
                     <h4>
                       <FormattedMessage
@@ -242,7 +298,10 @@ class Register extends Component {
                         this.state.lastNameError ? 'show_error' : 'hide_error'
                       }
                     >
-                      You need to complete your last name
+                      <FormattedMessage
+                        id="register.error.lastName"
+                        defaultMessage="You need to complete your last name"
+                      />
                     </span>
                     <h4>
                       <FormattedMessage
@@ -268,7 +327,10 @@ class Register extends Component {
                         this.state.titleError ? 'show_error' : 'hide_error'
                       }
                     >
-                      You need to complete the title
+                      <FormattedMessage
+                        id="register.error.title"
+                        defaultMessage="You need to complete the title"
+                      />
                     </span>
                     <h4>
                       <FormattedMessage
@@ -298,7 +360,10 @@ class Register extends Component {
                           : 'hide_error'
                       }
                     >
-                      You need to complete your organization
+                      <FormattedMessage
+                        id="register.error.organization"
+                        defaultMessage="You need to complete your organization"
+                      />
                     </span>
                     <h4>
                       <FormattedMessage
@@ -336,7 +401,10 @@ class Register extends Component {
                           : 'hide_error'
                       }
                     >
-                      You need to complete your email
+                      <FormattedMessage
+                        id="register.error.email"
+                        defaultMessage="You need to complete your email."
+                      />
                     </span>
                     <h4>
                       <FormattedMessage
@@ -362,7 +430,10 @@ class Register extends Component {
                         this.state.telephoneError ? 'show_error' : 'hide_error'
                       }
                     >
-                      You need to complete your telephone
+                      <FormattedMessage
+                        id="register.error.telephone"
+                        defaultMessage="You need to complete your telephone."
+                      />
                     </span>
                     <h4>
                       <FormattedMessage
@@ -381,19 +452,7 @@ class Register extends Component {
                     >
                       {this.displayCountries()}
                     </select>
-                    {/* <input
-                      type="text"
-                      className={
-                        this.state.countryError
-                          ? 'country input-box input_error'
-                          : 'country input-box input_error_hide'
-                      }
-                      name="entry.1053209737"
-                      id="entry.1053209737"
-                      onChange={this.handleChange.bind(this)}
-                      onKeyDown={() => this.setState({ countryError: false })}
-                      value={this.state.country}
-                    /> */}
+
                     <span
                       class={
                         this.state.countryError && this.state.continue
@@ -401,7 +460,10 @@ class Register extends Component {
                           : 'hide_error'
                       }
                     >
-                      You need to select your country
+                      <FormattedMessage
+                        id="register.error.country"
+                        defaultMessage="You need to select your country."
+                      />
                     </span>
                     <div className="continue_button_container">
                       <div
@@ -433,7 +495,8 @@ class Register extends Component {
                           type="radio"
                           name="entry.1935629477"
                           id="entry.1935629477"
-                          value="East Asia & Pacific"
+                          value={'East Asia & Pacific'}
+                          onChange={() => this.setState({ region: true })}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -447,6 +510,7 @@ class Register extends Component {
                           name="entry.1935629477"
                           id="entry.1935629477"
                           value="Latin America & Caribbean"
+                          onChange={() => this.setState({ region: true })}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -460,6 +524,7 @@ class Register extends Component {
                           name="entry.1935629477"
                           id="entry.1935629477"
                           value="North America"
+                          onChange={() => this.setState({ region: true })}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -473,6 +538,7 @@ class Register extends Component {
                           name="entry.1935629477"
                           id="entry.1935629477"
                           value="Sub-Saharan Africa"
+                          onChange={() => this.setState({ region: true })}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -489,6 +555,7 @@ class Register extends Component {
                           name="entry.1935629477"
                           id="entry.1935629477"
                           value="Europe & Central Asia"
+                          onChange={() => this.setState({ region: true })}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -502,6 +569,7 @@ class Register extends Component {
                           name="entry.1935629477"
                           id="entry.1935629477"
                           value="Middle East & North Africa"
+                          onChange={() => this.setState({ region: true })}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -515,6 +583,7 @@ class Register extends Component {
                           name="entry.1935629477"
                           id="entry.1935629477"
                           value="South Asia"
+                          onChange={() => this.setState({ region: true })}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -523,6 +592,15 @@ class Register extends Component {
                           />
                         </label>
                       </div>
+                      <span
+                        className={
+                          !this.state.region && this.state.submit
+                            ? 'show_error_radio'
+                            : 'hide_error'
+                        }
+                      >
+                        You need to select an option.
+                      </span>
                     </div>
                     <br />
                     {/* gender */}
@@ -540,7 +618,10 @@ class Register extends Component {
                           name="entry.351925754"
                           id="entry.351925754"
                           value="Female"
-                          onChange={() => this.hideOtherInput('input-genre')}
+                          onChange={() => {
+                            this.hideOtherInput('input-genre')
+                            this.setState({ gender: true })
+                          }}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -554,7 +635,10 @@ class Register extends Component {
                           name="entry.351925754"
                           id="entry.351925754"
                           value="Male"
-                          onChange={() => this.hideOtherInput('input-genre')}
+                          onChange={() => {
+                            this.hideOtherInput('input-genre')
+                            this.setState({ gender: true })
+                          }}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -568,7 +652,10 @@ class Register extends Component {
                           name="entry.351925754"
                           id="entry.351925754"
                           value="Non-binary/third gender"
-                          onChange={() => this.hideOtherInput('input-genre')}
+                          onChange={() => {
+                            this.hideOtherInput('input-genre')
+                            this.setState({ gender: true })
+                          }}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -584,7 +671,10 @@ class Register extends Component {
                           name="entry.351925754"
                           id="entry.351925754"
                           value="Prefer not to say"
-                          onChange={() => this.hideOtherInput('input-genre')}
+                          onChange={() => {
+                            this.hideOtherInput('input-genre')
+                            this.setState({ gender: true })
+                          }}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -599,7 +689,10 @@ class Register extends Component {
                           name="entry.351925754"
                           id="entry.351925754"
                           value="__other_option__"
-                          onChange={() => this.showOtherInput('input-genre')}
+                          onChange={() => {
+                            this.showOtherInput('input-genre')
+                            this.setState({ gender: true })
+                          }}
                         />
                         <input
                           type="text"
@@ -616,11 +709,20 @@ class Register extends Component {
                         </label>
                         <input
                           type="text"
-                          onChange={this.handleChange}
+                          onChange={() => this.handleChange}
                           className="input-other"
                           id="input-genre"
                         />
                       </div>
+                      <span
+                        className={
+                          !this.state.gender && this.state.submit
+                            ? 'show_error_radio'
+                            : 'hide_error'
+                        }
+                      >
+                        You need to select an option.
+                      </span>
                     </div>
                     <br />
                     <h4>
@@ -637,9 +739,10 @@ class Register extends Component {
                           name="entry.1223885635"
                           id="entry.1223885635"
                           value="Academic"
-                          onChange={() =>
+                          onChange={() => {
                             this.hideOtherInput('input-registration')
-                          }
+                            this.setState({ registrationType: true })
+                          }}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -653,9 +756,10 @@ class Register extends Component {
                           name="entry.1223885635"
                           id="entry.1223885635"
                           value="Individual/unaffiliated"
-                          onChange={() =>
+                          onChange={() => {
                             this.hideOtherInput('input-registration')
-                          }
+                            this.setState({ registrationType: true })
+                          }}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -669,9 +773,10 @@ class Register extends Component {
                           name="entry.1223885635"
                           id="entry.1223885635"
                           value="Multilateral Organization"
-                          onChange={() =>
+                          onChange={() => {
                             this.hideOtherInput('input-registration')
-                          }
+                            this.setState({ registrationType: true })
+                          }}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -685,9 +790,10 @@ class Register extends Component {
                           name="entry.1223885635"
                           id="entry.1223885635"
                           value="Private Sector"
-                          onChange={() =>
+                          onChange={() => {
                             this.hideOtherInput('input-registration')
-                          }
+                            this.setState({ registrationType: true })
+                          }}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -701,9 +807,10 @@ class Register extends Component {
                           name="entry.1223885635"
                           id="entry.1223885635"
                           value="Government"
-                          onChange={() =>
+                          onChange={() => {
                             this.hideOtherInput('input-registration')
-                          }
+                            this.setState({ registrationType: true })
+                          }}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -719,9 +826,10 @@ class Register extends Component {
                           name="entry.1223885635"
                           id="entry.1223885635"
                           value="Media"
-                          onChange={() =>
+                          onChange={() => {
                             this.hideOtherInput('input-registration')
-                          }
+                            this.setState({ registrationType: true })
+                          }}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -735,9 +843,10 @@ class Register extends Component {
                           name="entry.1223885635"
                           id="entry.1223885635"
                           value="NGO"
-                          onChange={() =>
+                          onChange={() => {
                             this.hideOtherInput('input-registration')
-                          }
+                            this.setState({ registrationType: true })
+                          }}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -751,9 +860,10 @@ class Register extends Component {
                           name="entry.1223885635"
                           id="entry.1223885635"
                           value="Student"
-                          onChange={() =>
+                          onChange={() => {
                             this.hideOtherInput('input-registration')
-                          }
+                            this.setState({ registrationType: true })
+                          }}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -768,9 +878,10 @@ class Register extends Component {
                           name="entry.1223885635"
                           id="entry.1223885635"
                           value="__other_option__"
-                          onChange={() =>
+                          onChange={() => {
                             this.showOtherInput('input-registration')
-                          }
+                            this.setState({ registrationType: true })
+                          }}
                         />
                         <input
                           type="text"
@@ -793,6 +904,15 @@ class Register extends Component {
                           onChange={this.handleChangeRegistration}
                         />
                       </div>
+                      <span
+                        className={
+                          !this.state.registrationType && this.state.submit
+                            ? 'show_error_radio'
+                            : 'hide_error'
+                        }
+                      >
+                        You need to select an option.
+                      </span>
                     </div>
                     {/* Travel assistance */}
                     <h4>
@@ -809,6 +929,9 @@ class Register extends Component {
                           name="entry.1154423302"
                           id="entry.1154423302"
                           value="Yes"
+                          onChange={() =>
+                            this.setState({ travelAssistanceRequired: true })
+                          }
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -824,6 +947,9 @@ class Register extends Component {
                           name="entry.1154423302"
                           id="entry.1154423302"
                           value="No"
+                          onChange={() =>
+                            this.setState({ travelAssistanceRequired: true })
+                          }
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -832,6 +958,16 @@ class Register extends Component {
                           />
                         </label>
                       </div>
+                      <span
+                        className={
+                          !this.state.travelAssistanceRequired &&
+                          this.state.submit
+                            ? 'show_error_radio'
+                            : 'hide_error'
+                        }
+                      >
+                        You need to select an option.
+                      </span>
                     </div>
                     <br />
                     <h4>
@@ -848,6 +984,9 @@ class Register extends Component {
                           name="entry.631181808"
                           id="entry.631181808"
                           value="Yes"
+                          onChange={() =>
+                            this.setState({ travelAssistanceConfirmed: true })
+                          }
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -863,6 +1002,9 @@ class Register extends Component {
                           name="entry.631181808"
                           id="entry.631181808"
                           value="No"
+                          onChange={() =>
+                            this.setState({ travelAssistanceConfirmed: true })
+                          }
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -871,6 +1013,16 @@ class Register extends Component {
                           />
                         </label>
                       </div>
+                      <span
+                        className={
+                          !this.state.travelAssistanceConfirmed &&
+                          this.state.submit
+                            ? 'show_error_radio'
+                            : 'hide_error'
+                        }
+                      >
+                        You need to select an option.
+                      </span>
                     </div>
 
                     <br />
@@ -888,6 +1040,7 @@ class Register extends Component {
                           name="entry.1783235225"
                           id="entry.1783235225"
                           value="Yes"
+                          onChange={() => this.setState({ visaRequired: true })}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -903,6 +1056,7 @@ class Register extends Component {
                           name="entry.1783235225"
                           id="entry.1783235225"
                           value="No"
+                          onChange={() => this.setState({ visaRequired: true })}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -911,6 +1065,15 @@ class Register extends Component {
                           />
                         </label>
                       </div>
+                      <span
+                        className={
+                          !this.state.visaRequired && this.state.submit
+                            ? 'show_error_radio'
+                            : 'hide_error'
+                        }
+                      >
+                        You need to select an option.
+                      </span>
                     </div>
                     <br />
                     <h4>
@@ -926,6 +1089,7 @@ class Register extends Component {
                           name="entry.1284879173"
                           id="entry.1284879173"
                           value="Yes"
+                          onChange={() => this.setState({ validVisa: true })}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -941,6 +1105,7 @@ class Register extends Component {
                           name="entry.1284879173"
                           id="entry.1284879173"
                           value="No"
+                          onChange={() => this.setState({ validVisa: true })}
                         />
                         <label for="contactChoice1">
                           <FormattedMessage
@@ -949,6 +1114,15 @@ class Register extends Component {
                           />
                         </label>
                       </div>
+                      <span
+                        className={
+                          !this.state.validVisa && this.state.submit
+                            ? 'show_error_radio'
+                            : 'hide_error'
+                        }
+                      >
+                        You need to select an option.
+                      </span>
                     </div>
                     <br />
                     <br />
