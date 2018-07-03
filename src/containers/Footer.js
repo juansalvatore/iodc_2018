@@ -4,7 +4,7 @@ import { IntlProvider } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
 
-import { LogoMin, LogoCanada, LogoWbg, LogoOpendata } from '../img'
+import { LogoMin, LogoCanada, LogoWbg, LogoOpendata, LogoBA } from '../img'
 
 class Footer extends Component {
   render() {
@@ -19,17 +19,20 @@ class Footer extends Component {
           }
         >
           <div className="col-lg-10 centerelement">
-            <div className="col-xs-12 col-md-3 col-lg-3 text-center">
-              <img src={LogoCanada} alt="Canada" />
+            <div className="col-xs-12 col-md-2 col-lg-2 text-center">
+              <img className="footer-img" src={LogoCanada} alt="Canada" />
+            </div>
+            <div className="col-xs-12 col-md-2 col-lg-2 text-center">
+              <img className="footer-img" src={LogoWbg} alt="World Bank" />
+            </div>
+            <div className="col-xs-12 col-md-2 col-lg-2 text-center">
+              <img className="footer-img" src={LogoOpendata} alt="Open Data" />
+            </div>
+            <div className="col-xs-12 col-md-2 col-lg-2 text-center">
+              <img className="footer-img" src={LogoBA} alt="BA" />
             </div>
             <div className="col-xs-12 col-md-3 col-lg-3 text-center">
-              <img src={LogoWbg} alt="World Bank" />
-            </div>
-            <div className="col-xs-12 col-md-3 col-lg-3 text-center">
-              <img src={LogoOpendata} alt="Open Data" />
-            </div>
-            <div className="col-xs-12 col-md-3 col-lg-3 text-center">
-              <img src={LogoMin} alt="Logo Min" />
+              <img className="footer-img" src={LogoMin} alt="Logo Min" />
             </div>
           </div>
         </div>

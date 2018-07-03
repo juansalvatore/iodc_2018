@@ -8,7 +8,14 @@ import {
 import messages from './messages'
 import { setLocale } from '../actions/locale'
 
-import { AboutImg } from '../img'
+import {
+  AboutImg,
+  LogoBAGrey,
+  LogoCanadaGrey,
+  LogoOpendataGrey,
+  LogoMinGrey,
+  LogoWbgGrey,
+} from '../img'
 
 import CommitteeData from './committeeData'
 
@@ -188,6 +195,40 @@ class About extends Component {
                     defaultMessage="Organizers"
                   />
                 </p>
+
+                <div className="col-lg-10 centerelement">
+                  <div className="col-xs-12 col-md-2 col-lg-2 text-center">
+                    <img
+                      className="footer-img"
+                      src={LogoCanadaGrey}
+                      alt="Canada"
+                    />
+                  </div>
+                  <div className="col-xs-12 col-md-2 col-lg-2 text-center">
+                    <img
+                      className="footer-img"
+                      src={LogoWbgGrey}
+                      alt="World Bank"
+                    />
+                  </div>
+                  <div className="col-xs-12 col-md-2 col-lg-2 text-center">
+                    <img
+                      className="footer-img"
+                      src={LogoOpendataGrey}
+                      alt="Open Data"
+                    />
+                  </div>
+                  <div className="col-xs-12 col-md-2 col-lg-2 text-center">
+                    <img className="footer-img" src={LogoBAGrey} alt="BA" />
+                  </div>
+                  <div className="col-xs-12 col-md-3 col-lg-3 text-center">
+                    <img
+                      className="footer-img"
+                      src={LogoMinGrey}
+                      alt="Logo Min"
+                    />
+                  </div>
+                </div>
 
                 <h3 className="internal-sub-title mbottom30">
                   Programme Committee

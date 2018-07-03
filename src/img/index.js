@@ -7,6 +7,12 @@ import LogoMin from './logomin.png'
 import LogoCanada from './logocanada.png'
 import LogoWbg from './logowbg.png'
 import LogoOpendata from './logoopendata.png'
+import LogoBA from './BA.png'
+import LogoMinGrey from './logomingrey.png'
+import LogoCanadaGrey from './logocanadagrey.png'
+import LogoWbgGrey from './logowbggrey.png'
+import LogoOpendataGrey from './logoopendatagrey.png'
+import LogoBAGrey from './BAgrey.png'
 import Preevent from './preevent.png'
 import Iodc16 from './iodc16.png'
 import Iodc15 from './iodc15.png'
@@ -37,6 +43,12 @@ export {
   Iodc15,
   Iodc12,
   Iodc10,
+  LogoBA,
+  LogoMinGrey,
+  LogoCanadaGrey,
+  LogoWbgGrey,
+  LogoOpendataGrey,
+  LogoBAGrey,
   Obelisco,
   Visas,
   Invitacion,
