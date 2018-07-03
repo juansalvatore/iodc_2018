@@ -59,6 +59,10 @@ class Register extends Component {
     ))
   }
 
+  componentWillMount() {
+    window.scrollTo(0, 0)
+  }
+
   hideOtherInput = input => {
     document.getElementById(input).style.width = '1px'
     document.getElementById(input).style.opacity = '0'

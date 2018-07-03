@@ -4,6 +4,7 @@ import { IntlProvider, FormattedMessage } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
 import { Footer, SideEvent } from './'
+import { Link } from 'react-router-dom'
 
 import { Preevent, Iodc16, Iodc15, Obelisco, Visas, Invitacion } from '../img'
 
@@ -40,18 +41,22 @@ class Home extends Component {
           </div>
           <div className="centerelement">
             <div className="home_button_container">
-              <button className="register-button">
-                <FormattedMessage
-                  id="home.main.register"
-                  defaultMessage="REGISTER"
-                />
-              </button>
-              <button className="schedule-button">
-                <FormattedMessage
-                  id="home.main.schedule"
-                  defaultMessage="SEE THE SCHEDULE"
-                />
-              </button>
+              <Link to="/iodc_2018/register">
+                <button className="register-button">
+                  <FormattedMessage
+                    id="home.main.register"
+                    defaultMessage="REGISTER"
+                  />
+                </button>
+              </Link>
+              <Link to="/iodc_2018/agenda">
+                <button className="schedule-button">
+                  <FormattedMessage
+                    id="home.main.schedule"
+                    defaultMessage="SEE THE SCHEDULE"
+                  />
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -272,12 +277,14 @@ class Home extends Component {
           <div className="container bottom-140">
             <div className="row padding-15">
               <div className="centerelement">
-                <button className="register-button">
-                  <FormattedMessage
-                    id="home.main.register"
-                    defaultMessage="REGISTER"
-                  />
-                </button>
+                <Link to="/iodc_2018/register">
+                  <button className="register-button">
+                    <FormattedMessage
+                      id="home.main.register"
+                      defaultMessage="REGISTER"
+                    />
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
