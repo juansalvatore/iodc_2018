@@ -10,9 +10,26 @@ import { setLocale } from '../actions/locale'
 
 import { AboutImg } from '../img'
 
+import CommitteeData from './committeeData'
+
 import { Header, Footer } from './'
 
 class About extends Component {
+  state = {
+    committee: CommitteeData,
+  }
+
+  displayCommittee = () => {
+    this.state.committee.map(person => (
+      <li>
+        <p class="people-list__name">
+          {person.Name} {person.Surname}
+        </p>
+        <p class="people-list__org">{person.Organization}</p>
+      </li>
+    ))
+  }
+
   render() {
     const { lang } = this.props
     return (
@@ -173,6 +190,7 @@ class About extends Component {
               </h3>
 
               <ul class="people-list mbottom75">
+                {() => this.displayCommitte()}
                 <li>
                   <p class="people-list__name">Lucia Abelenda</p>
                   <p class="people-list__org">Avina</p>
