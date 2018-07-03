@@ -137,13 +137,10 @@ class Home extends Component {
               <h5 className="info-iodc-title">About IODC</h5>
 
               <p className="info-iodc">
-                The International Open Data Conference (IODC) is a biannual
-                event to bring the global open data community together in order
-                to learn, share, plan, and collaborate on the future of open
-                data. The unique nature of this event is that it gathers
-                together in one location a diverse range of participants from
-                the northern and southern hemispheres who are seeking to define
-                strategies to advance open data both globally and locally.
+                <FormattedMessage
+                  id="home.about.iodc"
+                  defaultMessage="about iodc"
+                />
               </p>
             </div>
           </div>
@@ -195,7 +192,7 @@ class Home extends Component {
                 </h4>
               </div>
 
-              <div className="col-xs-12 centerelement">
+              <div className="col-xs-12 centerelement map_container">
                 <div className="usina right">
                   <div className="map-title">#IODC18</div>
 

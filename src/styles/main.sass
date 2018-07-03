@@ -304,14 +304,19 @@ hr
     font-weight: 500
     padding-left: 35px
     padding-top: 139px
+    transition: all ease-in-out 300ms
+
     .map-title
          font-size: 50px
          font-weight: 700
          display: block
+         transition: all ease-in-out 300ms
+
     .map-direction
         font-size: 15px
         font-family: "Roboto Mono",Helvetica,Arial,sans-serif
         font-weight: 300
+        transition: all ease-in-out 300ms
 
 .preevent 
     height: 140px
@@ -818,7 +823,17 @@ select:focus, input:focus
         display: block
         opacity: 1
     
-    
+
+@media (max-width: 995px)     
+    .map-title
+        font: 
+            size: 35px !important
+    .usina 
+        font: 
+            size: 18px !important
+    .map-direction
+        font: 
+            size: 12px !important
 
     
 @media (max-width: 768px)   
@@ -828,15 +843,20 @@ select:focus, input:focus
 
     .usina
         position: absolute
-        height: 240px
+        height: 180px
         display: flex
         flex-direction: column
-        transform: translateY(100%)
+        transform: translateY(-94%)
         width: 100%
         margin: 0px
         padding: 0px 
         justify-content: center
         padding-left: 40px
+        right: 0px
+
+    .map_container
+        padding: 0px
+        transition: all ease-in-out 300ms
 
 @media (max-width: 768px)   
     h2
