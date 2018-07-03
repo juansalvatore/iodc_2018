@@ -237,6 +237,7 @@ nav
     font-size: 20px
     text-align: center
     font-weight: 300
+    transition: all ease-in-out 300ms
 
 .img-back-info
     background-image: url("../img/evento.jpg")
@@ -320,19 +321,24 @@ hr
     padding: 0px
     margin-bottom: 35px
     overflow: hidden
+    z-index: 1
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding-left: 20px
+    padding-right: 10px
 
 .preevent-img
     position: absolute
     top: 0px
     right: 0px
+    z-index: -10
 
 .preevent-txt
     color: #fff
     font-family: "Roboto",Helvetica,Arial,sans-serif  
     font-size: 20px
     font-weight: 500
-    margin-top: 15px
-    margin-left: 40px
     z-index: 20
 
     .preevent-txt-map
@@ -612,16 +618,16 @@ mbottom30
 .dropdown
     width: 270px
     overflow: hidden
-    transition: all ease-in-out 300ms
+    transition: all ease-in-out 4900ms
     background-color: #232f43
     position: absolute
     top: 60px
     display: none 
-    opacity: 0
+    opacity: 1
     right: 20px
     color: white
     padding: 20px
-    z-index: 20000
+    z-index: 1
     font:
         family: 'Roboto'
         weight: 200
@@ -650,14 +656,16 @@ mbottom30
         cursor: pointer
 
 #closed
-    opacity: 0 !important
+    opacity: 1 !important
     pointer-events: none
-    transition: all ease-in-out 300ms
+    transition: all ease-in-out 200ms
+    transform: translateY(-100%)
 
 #opened
     opacity: 1 !important
     pointer-events: all
-    transition: all ease-in-out 300ms
+    transition: all ease-in-out 200ms
+    transform: translateY(0%)
 
 #form_content
     overflow: hidden
@@ -752,6 +760,7 @@ mbottom30
     margin-bottom: -19px
     padding-left: 15px
     color: red
+    z-index: -200
 
 .input_error
     border: 1px solid red
@@ -831,6 +840,10 @@ select:focus, input:focus
         height: 171px
         top: -20px
 
+    .info-iodc
+        font:
+            size: 17px
+
 @media (max-width: 425px)
     h2
         font:
@@ -844,5 +857,26 @@ select:focus, input:focus
         font: 
             size: 20px
         
+@media (max-width: 390px)
+    .preevent
+        display: flex
+        flex-direction: column
+        justify-content: center
+    .preevent-txt
+        font:
+            size: 16px !important
+    .preevent-txt-map
+        font:
+            size: 20px !important
+    .preevent-txt-direction
+        font:
+            size: 13px !important
+    .info-iodc
+        font:
+            size: 15px
+    .dropdown
+        width: 100%
+        left: 0
+
         
 // FIN ESTILO JUAN

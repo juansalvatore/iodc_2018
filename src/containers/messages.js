@@ -96,6 +96,7 @@ export default {
     'register.error.email': 'You need to complete your email.',
     'register.error.telephone': 'You need to complete your telephone.',
     'register.error.country': 'You need to select your country.',
+    'register.error.radioButton': 'You need to select an option.',
   },
   es: {
     'nav.dashboard': 'Hola Mundo',
@@ -195,5 +196,6 @@ export default {
     'register.error.email': 'Necesitás poner un email válido.',
     'register.error.telephone': 'Necesitás poner un teléfono válido.',
     'register.error.country': 'Necesitás poner tu país.',
+    'register.error.radioButton': 'Debes seleccionar una opción.',
   },
 }

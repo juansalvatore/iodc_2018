@@ -599,7 +599,10 @@ class Register extends Component {
                             : 'hide_error'
                         }
                       >
-                        You need to select an option.
+                        <FormattedMessage
+                          id="register.error.radioButton"
+                          defaultMessage="You need to select an option."
+                        />
                       </span>
                     </div>
                     <br />
@@ -721,7 +724,10 @@ class Register extends Component {
                             : 'hide_error'
                         }
                       >
-                        You need to select an option.
+                        <FormattedMessage
+                          id="register.error.radioButton"
+                          defaultMessage="You need to select an option."
+                        />
                       </span>
                     </div>
                     <br />
@@ -911,7 +917,10 @@ class Register extends Component {
                             : 'hide_error'
                         }
                       >
-                        You need to select an option.
+                        <FormattedMessage
+                          id="register.error.radioButton"
+                          defaultMessage="You need to select an option."
+                        />
                       </span>
                     </div>
                     {/* Travel assistance */}
@@ -966,7 +975,10 @@ class Register extends Component {
                             : 'hide_error'
                         }
                       >
-                        You need to select an option.
+                        <FormattedMessage
+                          id="register.error.radioButton"
+                          defaultMessage="You need to select an option."
+                        />
                       </span>
                     </div>
                     <br />
@@ -1021,7 +1033,10 @@ class Register extends Component {
                             : 'hide_error'
                         }
                       >
-                        You need to select an option.
+                        <FormattedMessage
+                          id="register.error.radioButton"
+                          defaultMessage="You need to select an option."
+                        />
                       </span>
                     </div>
 
@@ -1072,7 +1087,10 @@ class Register extends Component {
                             : 'hide_error'
                         }
                       >
-                        You need to select an option.
+                        <FormattedMessage
+                          id="register.error.radioButton"
+                          defaultMessage="You need to select an option."
+                        />
                       </span>
                     </div>
                     <br />
@@ -1121,7 +1139,10 @@ class Register extends Component {
                             : 'hide_error'
                         }
                       >
-                        You need to select an option.
+                        <FormattedMessage
+                          id="register.error.radioButton"
+                          defaultMessage="You need to select an option."
+                        />
                       </span>
                     </div>
                     <br />
