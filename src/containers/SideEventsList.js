@@ -4,32 +4,39 @@ import { IntlProvider } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
 import { Header, Footer } from './'
-import { IdCard } from '../img'
-
+import { SideEvent } from '../containers'
+import SideEventsData from './sideEventsData'
 class SideEventsList extends Component {
+  state = {
+    sideEvents: SideEventsData,
+  }
+
+  displaySideEvents = () => {
+    return this.state.sideEvents.map(event => (
+      <li className={event.invitation ? 'hide_invitation_event' : ''}>
+        <p className="people-list__name">{event.event}</p>
+        <p className="people-list__org">{event.location} </p>
+        <p className="people-list__org">{event.date} </p>
+        <a
+          className={event.url ? 'side_event_button' : 'hide_event_button'}
+          target="_blank"
+          href={event.url}
+        >
+          go to event
+        </a>
+      </li>
+    ))
+  }
   render() {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div class="container-fluid">
           <Header>Press</Header>
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-              <img
-                src={IdCard}
-                alt="IdCard"
-                className="centerelement img-idcard"
-              />
-              <p className="internal-text text-center">
-                Soon, in this section you will find everything you need to know
-                to accredit and cover the Conference. For more information,
-                contact us at{' '}
-                <span className="italic-text"> contact@opendatacon.org</span>.
-              </p>
-            </div>
+          <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+            <ul class="people-list mbottom75">{this.displaySideEvents()}</ul>
+            <Footer bottom={false} />
           </div>
-
-          <Footer bottom={false} />
         </div>
       </IntlProvider>
     )
