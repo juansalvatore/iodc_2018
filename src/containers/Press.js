@@ -12,7 +12,6 @@ class Press extends Component {
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div class="container-fluid">
           <Header>Press</Header>
-
           <div class="row">
             <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <p className="internal-text">
