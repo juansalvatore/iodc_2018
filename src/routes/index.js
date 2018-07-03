@@ -11,6 +11,7 @@ import {
   Agenda,
   Press,
   Info,
+  SideEventsList,
 } from '../containers'
 
 export default () => (
@@ -26,6 +27,11 @@ export default () => (
       <Route path="/iodc_2018/agenda" exact component={Agenda} />
       <Route path="/iodc_2018/press" exact component={Press} />
       <Route path="/iodc_2018/info" exact component={Info} />
+      <Route
+        path="/iodc_2018/side-events-list"
+        exact
+        component={SideEventsList}
+      />
     </div>
   </BrowserRouter>
 )

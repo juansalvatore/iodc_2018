@@ -6,7 +6,7 @@ import { setLocale } from '../actions/locale'
 import { Header, Footer } from './'
 import { IdCard } from '../img'
 
-class Press extends Component {
+class SideEventsList extends Component {
   render() {
     const { lang } = this.props
     return (
@@ -45,4 +45,4 @@ function mapStateToProps(state) {
 export default connect(
   mapStateToProps,
   { setLocale }
-)(Press)
+)(SideEventsList)

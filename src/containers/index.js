@@ -12,6 +12,7 @@ import Agenda from './Agenda'
 import Press from './Press'
 import Info from './Info'
 import SideEvent from './SideEvent'
+import SideEventslist from './SideEventsList'
 export {
   Header,
   Footer,
@@ -26,4 +27,5 @@ export {
   Press,
   Info,
   SideEvent,
+  SideEventsList,
 }
