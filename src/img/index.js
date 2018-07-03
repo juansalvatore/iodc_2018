@@ -15,6 +15,7 @@ import Visas from './visas.svg'
 import Invitacion from './invitacion.svg'
 import AboutImg from './about-section.jpg'
 import Medium from './medium.svg'
+import IdCard from './idcard.png'
 export {
   Logo,
   Facebook,
@@ -33,4 +34,5 @@ export {
   Invitacion,
   AboutImg,
   Medium,
+  IdCard,
 }
