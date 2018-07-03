@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { IntlProvider } from 'react-intl'
+import { IntlProvider, FormattedMessage } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
 import Script from 'react-load-script'
@@ -38,11 +38,17 @@ class Agenda extends Component {
 
           <div className="row">
             <div className="col-xs-12 col-md-10 col-md-offset-1">
-              <h3 className="internal-sub-title mtop40">See the Schedule</h3>
+              <h3 className="internal-sub-title mtop40">
+                <FormattedMessage
+                  id="agenda.subtitle"
+                  defaultMessage="about iodc"
+                />
+              </h3>
               <p className="internal-text">
-                All sessions that will take place in the main plenary room will
-                be livestreamed. Also, there will be simultaneous translation
-                services available -both for english and spanish- in all rooms.
+                <FormattedMessage
+                  id="agenda.description"
+                  defaultMessage="about iodc"
+                />
               </p>
             </div>
           </div>

@@ -98,6 +98,11 @@ export default {
     'register.error.telephone': 'You need to complete your telephone.',
     'register.error.country': 'You need to select your country.',
     'register.error.radioButton': 'You need to select an option.',
+
+    // Agenda
+    'agenda.subtitle': 'See the Schedule',
+    'agenda.description':
+      'All sessions that will take place in the main plenary room will be livestreamed. Also, there will be simultaneous translation services available -both for english and spanish- in all rooms.',
   },
   es: {
     'nav.dashboard': 'Hola Mundo',
@@ -199,5 +204,10 @@ export default {
     'register.error.telephone': 'Necesitás poner un teléfono válido.',
     'register.error.country': 'Necesitás poner tu país.',
     'register.error.radioButton': 'Debes seleccionar una opción.',
+
+    // Agenda
+    'agenda.subtitle': 'Vea la agenda',
+    'agenda.description':
+      'Todas las sesiones que transcurrirán en sala plenaria principal serán transmitidas en vivo. Además habrá servicios de traducción simultánea disponibles, tanto en inglés como en español, en todas las salas.',
   },
 }
