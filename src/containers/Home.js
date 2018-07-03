@@ -160,37 +160,46 @@ class Home extends Component {
 
             {/* FIN SECCION INFO */}
 
-            {/* SECCION PROPUESTAS */}
-
-            <div className="container bottom-140">
-              <div className="row">
+            {/* SIDEEVENTS */}
+            <div className="container">
+              <div className="row padding-15">
                 <div className="col-lg-12">
                   <h4 className="sub-title">
                     <FormattedMessage
-                      id="home.proposals.title"
-                      defaultMessage="Proposals received"
+                      id="home.sideevents"
+                      defaultMessage="Events around the Conference"
                     />
                   </h4>
                 </div>
+                {/* EVENTO 1 */}
+                <SideEvent
+                  image={Preevent}
+                  location="Centro Metropolitano de Diseño"
+                  direction="Algarrobo 1041, Barracas, CABA"
+                />
+                {/* EVENTO 2 */}
+                <SideEvent
+                  image={Preevent}
+                  location="Centro Metropolitano de Diseño"
+                  direction="Algarrobo 1041, Barracas, CABA"
+                />
+              </div>
 
-                <div className="col-xs-12 col-lg-3 centerelement">
-                  <div className="proposals">The Big Picture</div>
-                </div>
-                <div className="col-xs-12 col-lg-3 centerelement">
-                  <div className="proposals">Action Track</div>
-                </div>
-                <div className="col-xs-12 col-lg-3 centerelement">
-                  <div className="proposals">Impact Track</div>
-                </div>
-                <div className="col-xs-12 col-lg-3 centerelement">
-                  <div className="proposals-received">
-                    <span>600</span>
-                    Proposals Received
-                  </div>
+              <div className="row padding-15 mtop40">
+                <div className="centerelement">
+                  <Link to="/iodc_2018/side-events-list">
+                    <button className="schedule-button sideevents-button">
+                      <FormattedMessage
+                        id="home.main.sideevents"
+                        defaultMessage="See all the side events"
+                      />
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
-            {/* FIN SECCION PROPUESTAS */}
+
+            {/* FIN EVENTOS */}
 
             {/* MAPA */}
 
@@ -225,34 +234,6 @@ class Home extends Component {
                   />
                 </div>
               </div>
-            </div>
-
-            {/* FIN MAPA */}
-
-            {/* SIDEEVENTS */}
-            <div className="container">
-              <div className="row padding-15">
-                <div className="col-lg-12">
-                  <h4 className="sub-title">
-                    <FormattedMessage
-                      id="home.sideevents"
-                      defaultMessage="Events around the Conference"
-                    />
-                  </h4>
-                </div>
-                {/* EVENTO 1 */}
-                <SideEvent
-                  image={Preevent}
-                  location="Centro Metropolitano de Diseño"
-                  direction="Algarrobo 1041, Barracas, CABA"
-                />
-                {/* EVENTO 2 */}
-                <SideEvent
-                  image={Preevent}
-                  location="Centro Metropolitano de Diseño"
-                  direction="Algarrobo 1041, Barracas, CABA"
-                />
-              </div>
 
               <div className="row padding-15 mtop40">
                 <div className="centerelement">
@@ -268,7 +249,7 @@ class Home extends Component {
               </div>
             </div>
 
-            {/* FIN EVENTOS */}
+            {/* FIN MAPA */}
 
             {/* EVENTOS ANTERIORES */}
 

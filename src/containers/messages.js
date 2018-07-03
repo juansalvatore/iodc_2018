@@ -17,6 +17,7 @@ export default {
     'home.main.date': 'September 27-28, 2018',
     'home.main.register': 'REGISTER',
     'home.main.schedule': 'SEE THE SCHEDULE',
+    'home.main.sideevents': 'See all the side events',
 
     // Home Bullets
     'home.bullets.title': 'Already registered to the event?',
@@ -206,6 +207,7 @@ export default {
     'home.main.date': '27 y 28 de septiembre de 2018',
     'home.main.register': 'REGISTRATE',
     'home.main.schedule': 'VER LA AGENDA',
+    'home.main.sideevents': 'Ver todos los eventos paralelos',
 
     // Home Bullets
     'home.bullets.title': '¿Ya estás registrado en el evento?',
