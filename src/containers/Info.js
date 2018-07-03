@@ -307,9 +307,8 @@ class Info extends Component {
                 <span class="italic-text">contact@opendatacon.org</span>.
               </p>
             </div>
+            <Footer />
           </div>
-
-          <Footer />
         </div>
       </IntlProvider>
     )

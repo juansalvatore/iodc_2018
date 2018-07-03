@@ -33,9 +33,22 @@ class SideEventsList extends Component {
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div>
           <div class="container-fluid">
-            <Header>Press</Header>
-            <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-              <ul class="people-list mbottom75">{this.displaySideEvents()}</ul>
+            <Header>Side-Events</Header>
+            <div className="row">
+              <div className="col-xs-12 col-md-10 col-md-offset-1">
+                <h3 className="internal-sub-title mtop40">See the list</h3>
+                <p className="internal-text">
+                  Here you can find the list of side events that will occur
+                  along side IODC.
+                </p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                <ul class="people-list mbottom75">
+                  {this.displaySideEvents()}
+                </ul>
+              </div>
             </div>
           </div>
           <Footer bottom={false} />

@@ -196,32 +196,32 @@ class About extends Component {
                   />
                 </p>
 
-                <div className="col-lg-10 centerelement">
-                  <div className="col-xs-12 col-md-2 col-lg-2 text-center">
+                <div className="col-lg-12 centerelement">
+                  <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center  mtop40">
                     <img
                       className="footer-img"
                       src={LogoCanadaGrey}
                       alt="Canada"
                     />
                   </div>
-                  <div className="col-xs-12 col-md-2 col-lg-2 text-center">
+                  <div className="col-xs-12 col-sm-6 col-md-2 col-lg-2 text-center  mtop40">
                     <img
                       className="footer-img"
                       src={LogoWbgGrey}
                       alt="World Bank"
                     />
                   </div>
-                  <div className="col-xs-12 col-md-2 col-lg-2 text-center">
+                  <div className="col-xs-12 col-sm-4 col-md-2 col-lg-2 text-center  mtop40">
                     <img
                       className="footer-img"
                       src={LogoOpendataGrey}
                       alt="Open Data"
                     />
                   </div>
-                  <div className="col-xs-12 col-md-2 col-lg-2 text-center">
+                  <div className="col-xs-12 col-sm-4 col-md-2 col-lg-2 text-center  mtop40">
                     <img className="footer-img" src={LogoBAGrey} alt="BA" />
                   </div>
-                  <div className="col-xs-12 col-md-3 col-lg-3 text-center">
+                  <div className="col-xs-12 col-sm-4 col-md-3 col-lg-3 text-center  mtop40">
                     <img
                       className="footer-img"
                       src={LogoMinGrey}

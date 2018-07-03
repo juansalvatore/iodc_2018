@@ -100,6 +100,12 @@ export default {
     'register.error.country': 'You need to select your country.',
     'register.error.radioButton': 'You need to select an option.',
 
+    // INFO
+
+    'info.registration': 'Registration',
+    'info.fee.registration': '<b>Is there a fee for registration?</b>',
+    'info.fee.registration.answer': ' No, access to the event is free.',
+
     // Agenda
     'agenda.subtitle': 'See the Schedule',
     'agenda.description':
@@ -289,6 +295,12 @@ export default {
     'register.error.telephone': 'Necesitás poner un teléfono válido.',
     'register.error.country': 'Necesitás poner tu país.',
     'register.error.radioButton': 'Debes seleccionar una opción.',
+
+    // INFO
+
+    'info.registration': 'Registro',
+    'info.fee.registration': '<b>¿Hay una tarifa de registro?</b>',
+    'info.fee.registration.answer': 'No. El acceso al evento es gratuito.',
 
     // Agenda
     'agenda.subtitle': 'Vea la agenda',
