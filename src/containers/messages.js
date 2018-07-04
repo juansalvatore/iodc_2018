@@ -12,6 +12,8 @@ export default {
     'nav.info': 'Info',
     'nav.conduct': 'Code of Conduct',
     'nav.privacy': 'Privacy Policy',
+    'nav.side-events': 'side events',
+
     // Home
     'home.main.title': 'The Future is Open',
     'home.main.date': 'September 27-28, 2018',
@@ -207,6 +209,7 @@ export default {
     'nav.info': 'Info',
     'nav.conduct': 'Código de Conducta',
     'nav.privacy': 'Política de Privacidad',
+    'nav.side-events': 'eventos paralelos',
 
     // Home
     'home.main.title': 'El Futuro es Abierto',
