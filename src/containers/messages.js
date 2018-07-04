@@ -203,6 +203,42 @@ export default {
 
     // Code of Conduct
     'conduct.header': 'Code of Conduct',
+
+    'conduct.a':
+      'The <b>International Open Data Conference</b> attracts a diverse community of people from all over the world. <b>Respect and safety are our main values</b>, and we want to provide a safe and productive environment for all participants and presenters. The following code of conduct is meant to guide everyone at the IODC and help to ensure a respectful and safe conference experience for all. This code of conduct applies to the main conference as well as all pre-events.',
+
+    'conduct.diversity': 'Diversity and Inclusivity',
+
+    'conduct.b':
+      'The International Open Data Conference welcomes and encourages participation <b>by everyone</b> including but not limited to people of all ages, cultures, ethnicities, gender, gender-identity, language, race, sexual orientation, geographical location, and religion.',
+
+    'conduct.harasment': 'Harassment-free Conference',
+
+    'conduct.c':
+      'The International Open Data Conference is <b>dedicated to providing a harassment-free conference experience for everyone</b>, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age or religion.',
+
+    'conduct.d':
+      '<b>We do not tolerate harassment of conference participants in any form.</b> Examples of harassment include offensive comments, verbal threats or demands, sexualized images in public spaces, intimidation, stalking, harassing photography or recording, sustained disruption of sessions or events, and unwelcome physical contact or sexual attention. Harassment also includes slights and negative messages, both unintended and intentional, based solely on appearance. <b>These activities will not be tolerated.</b>',
+
+    'conduct.reporting': 'Reporting Issues at IODC',
+
+    'conduct.e':
+      '<b>Participants asked to stop any harassing behaviour are expected to comply immediately.</b>',
+
+    'conduct.f':
+      'Conference participants violating these rules <b>may be sanctioned or expelled from the conference at the discretion of the conference organizers.</b> You can make a report by:',
+
+    'conduct.g':
+      'Emailing us at <i>contact@opendatacon.org</i>. This email will be continuously monitored for the duration of the event.',
+
+    'conduct.h':
+      'Contacting a staff member, identified by STAFF badges, buttons, or shirts.',
+
+    'conduct.i':
+      "When taking a personal report, our staff will ensure you are safe and cannot be overheard. They may involve other event staff to ensure your report is managed properly. Once safe, we'll ask you to tell us about what happened. This can be upsetting, but we'll handle it as respectfully as possible, and you can bring someone to support you. You won't be asked to confront anyone and we won't tell anyone who you are.",
+
+    'conduct.j':
+      'Our team will be happy to help you contact hotel/venue security, local law enforcement, local support services, provide escorts, or otherwise assist you to feel safe for the duration of the event. <b>We value your attendance.</b>',
   },
   es: {
     'nav.dashboard': 'Hola Mundo',
@@ -383,5 +419,40 @@ export default {
 
     // Code of Conduct
     'conduct.header': 'Código de Conducta',
+    'conduct.a':
+      'La <b>Conferencia Internacional de Datos Abiertos</b> atrae a una comunidad diversa de personas de todo el mundo. <b>El respeto y la seguridad son nuestros principales valores</b>, y queremos proporcionar un entorno seguro y productivo para todos los participantes y presentadores. El siguiente código de conducta está destinado a guiar a todos durante IODC, y ayudar a garantizar una experiencia respetuosa y segura para todos. Este código de conducta se aplica a la conferencia principal, así como a todos los eventos previos.',
+
+    'conduct.diversity': 'Diversidad e Inclusión',
+
+    'conduct.b':
+      'La Conferencia Internacional de Datos abiertos da la bienvenida y alienta la participación <b>de personas de todas las edades, culturas, etnias, género, identidad de género, idioma, raza, orientación sexual, ubicación geográfica y religión.</b>',
+
+    'conduct.harasment': 'Conferencia libre de acoso',
+
+    'conduct.c':
+      'La Conferencia Internacional de Datos Abiertos está <b>dedicada a proporcionar una experiencia de conferencia libre de acoso para todos</b>, independientemente de su género, identidad y expresión de género, orientación sexual, discapacidad, apariencia física, tamaño corporal, raza, edad o religión.',
+
+    'conduct.d':
+      '<b>No toleramos el acoso de los participantes de la conferencia de ninguna forma.</b> Los ejemplos de acoso incluyen comentarios ofensivos, amenazas o demandas verbales, imágenes sexualizadas en espacios públicos, intimidación, acecho, acoso fotográfico o grabación, interrupción sostenida de sesiones o eventos y contacto físico o atención sexual no deseados. El acoso también incluye desaires y mensajes negativos, tanto involuntarios como intencionales, basados ​​únicamente en la apariencia. <b>Estas actividades no serán toleradas.</b>',
+
+    'conduct.reporting': 'Reporte de inconvenientes en IODC',
+
+    'conduct.e':
+      '<b>Se espera que los participantes puedan comunicar cualquier comportamiento de acoso para detenerlo inmediatamente.</b>',
+
+    'conduct.f':
+      'Quienes violen estas reglas <b>pueden ser sancionados o expulsados ​​de la conferencia a discreción de los organizadores de la conferencia.</b> Para hacer un informe, podés:',
+
+    'conduct.g':
+      'Enviar un correo electrónico a <i>contact@opendatacon.org</i>. Este correo electrónico será monitoreado continuamente durante la duración del evento.',
+
+    'conduct.h':
+      'Contactar a un miembro del personal, identificado por insignias, botones o camisetas.',
+
+    'conduct.i':
+      'Al tomar un informe personal, nuestro equipo se asegurará de que esté seguro y no pueda ser escuchado. Otro miembro del equipo organizador puede ser involucrado para garantizar que el informe se gestione correctamente. Una vez que estés seguro, te pediremos que nos cuente sobre lo sucedido. Esto puede ser molesto, pero lo manejaremos con el mayor respeto posible, y vas a poder puede traer a alguien para que te respalde. No se te pedirá que confrontes a nadie, y no le diremos a nadie quién sos.',
+
+    'conduct.j':
+      'Nuestro equipo estará encantado de ayudarte a contactar a la seguridad del hotel o lugar de hospedaje, la policía local o los servicios de apoyo locales; y proporcionar escoltas o ayudarte a sentirte seguro durante el evento. <b>Valoramos tu asistencia.</b>',
   },
 }
