@@ -111,6 +111,7 @@ class Register extends Component {
   }
 
   continue = () => {
+    window.scrollTo(0, 0)
     this.setState({ continue: true })
     let {
       name,
@@ -181,7 +182,7 @@ class Register extends Component {
 
   back = () => {
     document.getElementById('form_content').style.transform = 'translateX(0%)'
-    document.getElementById('form_container').style.height = '833px'
+    document.getElementById('form_container').style.height = '970px'
   }
 
   handleChange(event) {
@@ -202,7 +203,9 @@ class Register extends Component {
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div>
           <div className="container-fluid">
-            <Header>Register</Header>
+            <Header>
+              <FormattedMessage id="register.title" defaultMessage="Register" />
+            </Header>
 
             <div className={this.state.sent ? 'row' : 'hide-submitted-message'}>
               <div className="col-md-10 col-md-offset-1">
@@ -219,12 +222,7 @@ class Register extends Component {
               <div id="form_container">
                 <div className="row">
                   <div className="col-xs-12">
-                    <h3 className="internal-sub-title mtop40">
-                      <FormattedMessage
-                        id="register.title"
-                        defaultMessage="IODC Online Registration"
-                      />
-                    </h3>
+                    <h3 className="internal-sub-title mtop40">#IODC18</h3>
                     <p className="internal-text">
                       <FormattedMessage
                         id="register.subtitle"

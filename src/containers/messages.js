@@ -20,6 +20,7 @@ export default {
     'home.main.register': 'REGISTER',
     'home.main.schedule': 'SEE THE SCHEDULE',
     'home.main.sideevents': 'See all the side events',
+    'home.about.iodc.title': 'About IODC',
 
     // Home Bullets
     'home.bullets.title': 'Already registered to the event?',
@@ -54,7 +55,7 @@ export default {
     'register.section': 'Pre-Register',
     'register.first.name': 'First Name',
     'register.last.name': 'Last Name',
-    'register.title': 'Title',
+    'register.title': 'Register',
     'register.subtitle': 'Please fill in the form below.',
     'register.organization': 'Organization',
     'register.email': 'E-Mail',
@@ -277,6 +278,7 @@ export default {
     'home.bullets.button.2': 'Información para tu aplicación',
     'home.bullets.3': '¿Necesitas una invitación del comité?',
     'home.bullets.button.3': 'Solicita una invitación',
+    'home.about.iodc.title': 'Sobre IODC',
 
     // Home Info
     'home.about.iodc':
@@ -302,7 +304,8 @@ export default {
     'register.section': 'Pre-Registro',
     'register.first.name': 'Nombre',
     'register.last.name': 'Apellido',
-    'register.title': 'Título',
+    'register.title': 'Registro',
+
     'register.subtitle': 'Por favor, complete el siguiente formulario.',
     'register.organization': 'Organización',
     'register.email': 'Correo Electrónico',

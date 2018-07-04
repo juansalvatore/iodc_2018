@@ -166,7 +166,12 @@ class Home extends Component {
 
             <div className="row img-back-info centerelement">
               <div className="col-xs-12 col-sm-8">
-                <h5 className="info-iodc-title">About IODC</h5>
+                <h5 className="info-iodc-title">
+                  <FormattedMessage
+                    id="home.about.iodc.title"
+                    defaultMessage="About IODC"
+                  />
+                </h5>
 
                 <p className="info-iodc">
                   <FormattedMessage
