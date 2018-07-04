@@ -9,21 +9,25 @@ class SideEvent extends Component {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div className="col-xs-12 col-lg-6 preevent">
-          <div className="preevent-txt">
-            <div className="preevent-txt-map">Pre-event</div>
-            <hr />
-            <div>{this.props.location}</div>
-            <div className="preevent-txt-direction">{this.props.direction}</div>
+        <a href={this.props.url} target="_blank">
+          <div className="col-xs-12 col-lg-6 preevent">
+            <div className="preevent-txt">
+              <div className="preevent-txt-map">{this.props.title}</div>
+              <hr />
+              <div>{this.props.location}</div>
+              <div className="preevent-txt-direction">
+                {this.props.direction}
+              </div>
+            </div>
+            <div>
+              <img
+                src={this.props.image}
+                alt="Preevent"
+                className="preevent-img"
+              />
+            </div>
           </div>
-          <div>
-            <img
-              src={this.props.image}
-              alt="Preevent"
-              className="preevent-img"
-            />
-          </div>
-        </div>
+        </a>
       </IntlProvider>
     )
   }
