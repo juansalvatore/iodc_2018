@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { IntlProvider } from 'react-intl'
+import { IntlProvider, FormattedHTMLMessage } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
 
@@ -12,299 +12,257 @@ class Info extends Component {
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div className="container-fluid">
-          <Header>Practical Information</Header>
+          <Header>
+            <FormattedHTMLMessage
+              id="info.header"
+              defaultMessage="Practical Info"
+            />
+          </Header>
           <div className="row">
             <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-              <h3 className="internal-sub-title">Registration</h3>
-              <p className="internal-text">
-                <span className="bold-title">
-                  Is there a fee for registration?
-                </span>{' '}
-                No, access to the event is free.
+              <h3 className="internal-sub-title">
+                {' '}
+                <FormattedHTMLMessage
+                  id="info.registration"
+                  defaultMessage="Info"
+                />
+              </h3>
+              <p className="internal-text mbottom0">
+                <FormattedHTMLMessage
+                  id="info.fee.registration"
+                  defaultMessage="Info"
+                />
               </p>
               <p className="internal-text">
-                <span className="bold-title">
-                  {' '}
-                  Does registration have a deadline?
-                </span>{' '}
-                You will be able to register during the following months, and
-                even throughout the event at the entrance hall of the Usina del
-                Arte.
+                <FormattedHTMLMessage
+                  id="info.fee.registration.answer"
+                  defaultMessage="Info"
+                />
               </p>
-              <p className="internal-text">
-                <span className="bold-title">
-                  How could I confirm my registration?
-                </span>{' '}
-                Once you completed the{' '}
-                <a className="links-ext" href="#">
-                  registration form
-                </a>{' '}
-                you will receive a notification, and also an automatic
-                confirmation email.
+
+              <p className="internal-text mbottom0">
+                <FormattedHTMLMessage id="info.a" defaultMessage="Info" />
               </p>
 
               <p className="internal-text">
-                <span className="bold-title">
-                  I am a journalist and want to cover IODC. How can I do this?
-                </span>
-                Contact us at{' '}
-                <span className="italic-text">contact@opendatacon.org</span> to
-                discuss media access to the event.
+                <FormattedHTMLMessage id="info.b" defaultMessage="Info" />
+              </p>
+
+              <p className="internal-text mbottom0">
+                <FormattedHTMLMessage id="info.c" defaultMessage="Info" />
+              </p>
+
+              <p className="internal-text">
+                <FormattedHTMLMessage id="info.d" defaultMessage="Info" />
+              </p>
+
+              <p className="internal-text mbottom0">
+                <FormattedHTMLMessage id="info.e" defaultMessage="Info" />
+              </p>
+
+              <p className="internal-text">
+                <FormattedHTMLMessage id="info.f" defaultMessage="Info" />
               </p>
 
               <h3 className="internal-sub-title">
-                Visa and travel information
+                <FormattedHTMLMessage id="info.visa" defaultMessage="Info" />
               </h3>
-              <p className="internal-text">
-                <span className="bold-title">
-                  How do I know if I need a visa?
-                </span>{' '}
-                For information on nationalities that precise a visa, diplomatic
-                or official passports to enter the Argentine Republic, please{' '}
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="links-ext"
-                  href="http://www.migraciones.gov.ar/accesible/indexA.php?visas"
-                >
-                  consult here
-                </a>. In case you do not require a visa, you still must present
-                a valid passport and proof of accreditation to the Conference at
-                the immigration point of entry into Argentina. You can find{' '}
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="links-ext"
-                  href="http://www.argentina.gob.ar/tema/extranjeros/turistas"
-                >
-                  more information here
-                </a>.
+              <p className="internal-text mbottom0">
+                <FormattedHTMLMessage id="info.g" defaultMessage="Info" />
               </p>
 
               <p className="internal-text">
-                <span className="bold-title">
-                  What should I do if I need a visa?
-                </span>{' '}
-                You should contact the Argentine Consular Representation in your
-                country at least{' '}
-                <span className="bold-text">
-                  45 days prior to the date of your trip.{' '}
-                </span>For contact information of Consulates and Embassies of
-                the Argentine Republic,{' '}
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="links-ext"
-                  href="http://mrecic.gov.ar/representaciones"
-                >
-                  please consult here
-                </a>. If you{' '}
-                <span className="bold-text">
-                  do not have an Argentine Consular Representation in your
-                  country of residence
-                </span>, you will have the possibility of requesting your visa
-                remotely. For this exceptional procedure, you must follow the
-                following steps:
+                <FormattedHTMLMessage id="info.h" defaultMessage="Info" />
+              </p>
+
+              <p className="internal-text mbottom0">
+                <FormattedHTMLMessage id="info.i" defaultMessage="Info" />
+              </p>
+              <p className="internal-text">
+                <FormattedHTMLMessage id="info.j" defaultMessage="Info" />
               </p>
 
               <p className="internal-text-list-program">
                 <ul>
                   <li className="mtop20">
                     <span class="internal-bullets-text">a.</span>
-                    Contact the{' '}
-                    <a
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      className="links-ext"
-                      href="http://mrecic.gov.ar/representaciones"
-                    >
-                      consular representation that is most convenient
-                    </a>, with an anticipation of, at least, 45 days to the date
-                    of your trip.
+                    <FormattedHTMLMessage id="info.j.a" defaultMessage="Info" />
                   </li>
                   <li className="mtop20">
                     <span class="internal-bullets-text">b.</span>
-                    Send the requested documentation via email{' '}
-                    <span class="bold-text">
-                      to the corresponding consular representation, and make
-                      sure of having an appointment with date and time for the
-                      consular interview.
-                    </span>{' '}
-                    Details for the procedure, such as the documentation to be
-                    presented and the cost of the visa, will be informed by the
-                    representation.
+                    <FormattedHTMLMessage id="info.j.b" defaultMessage="Info" />
                   </li>
                   <li className="mtop20">
-                    <span class="internal-bullets-text">c.</span> Once the visa
-                    has been approved,{' '}
-                    <span class="bold-text">
-                      the consular representative will contact you to coordinate
-                      a date and time in which you can show up, with your valid
-                      passport, to obtain your visa
-                    </span>{' '}
-                    (this may occur during a stopover of your flight to the
-                    Argentine Republic). Note: you can authorize another person
-                    to appear with your passport to obtain your visa.
+                    <span class="internal-bullets-text">c.</span>{' '}
+                    <FormattedHTMLMessage id="info.j.c" defaultMessage="Info" />
                   </li>
                   <li className="mtop20">
                     <span class="internal-bullets-text">d.</span>
-                    The Argentine Republic, through Consular Representation,
-                    <span class="bold-text">
-                      reserves the right to deny any visa applicant the
-                      possibility of carrying out the procedure remotely
-                    </span>, requiring the foreigner to carry out the procedure
-                    in person.
+                    <FormattedHTMLMessage id="info.j.d" defaultMessage="Info" />
                   </li>
                 </ul>
               </p>
 
+              <p className="internal-text mbottom0">
+                <FormattedHTMLMessage id="info.k" defaultMessage="Info" />
+              </p>
+
               <p className="internal-text">
-                <span className="bold-title">
-                  I could not ask for a visa myself. Can you help me?
-                </span>{' '}
-                In case you need help, you can contact us at
-                <span class="italic-text">contact@opendatacon.org</span> and
-                specify the following information:
+                <FormattedHTMLMessage id="info.l" defaultMessage="Info" />
               </p>
 
               <p className="internal-text-list-program">
                 <ul>
                   <li>
                     <span class="bullet">●</span>
-                    Name
-                  </li>
-
-                  <li>
-                    <span class="bullet">●</span>
-                    Surname
+                    <FormattedHTMLMessage
+                      id="info.name"
+                      defaultMessage="Info"
+                    />
                   </li>
                   <li>
                     <span class="bullet">●</span>
-                    Birth Date
+                    <FormattedHTMLMessage
+                      id="info.surname"
+                      defaultMessage="Info"
+                    />
                   </li>
                   <li>
                     <span class="bullet">●</span>
-                    Nationality
+                    <FormattedHTMLMessage
+                      id="info.birth"
+                      defaultMessage="Info"
+                    />
                   </li>
                   <li>
                     <span class="bullet">●</span>
-                    Where was your passport issued? What is your passport
-                    number?
+                    <FormattedHTMLMessage
+                      id="info.nationality"
+                      defaultMessage="Info"
+                    />
                   </li>
                   <li>
                     <span class="bullet">●</span>
-                    What organization are you part of? Which is your charge?
+                    <FormattedHTMLMessage
+                      id="info.where"
+                      defaultMessage="Info"
+                    />
                   </li>
                   <li>
                     <span class="bullet">●</span>
-                    Argentine Consulate that should process this request:
+                    <FormattedHTMLMessage
+                      id="info.what"
+                      defaultMessage="Info"
+                    />
+                  </li>
+                  <li>
+                    <span class="bullet">●</span>
+                    <FormattedHTMLMessage
+                      id="info.consulate"
+                      defaultMessage="Info"
+                    />
                   </li>
                 </ul>
               </p>
 
-              <h3 className="internal-sub-title">Venue</h3>
-              <p className="internal-text">
-                <span className="bold-title"> Where is the venue located?</span>
-                The Usina Del Arte is in the neighborhood of La Boca, southern
-                part of the City of Buenos Aires.
+              <h3 className="internal-sub-title">
+                <FormattedHTMLMessage id="info.venue" defaultMessage="Info" />
+              </h3>
+              <p className="internal-text mbottom0">
+                <FormattedHTMLMessage id="info.m" defaultMessage="Info" />
               </p>
               <p className="internal-text">
-                <span className="bold-title">
-                  Is the venue accessible to people with disabilities?
-                </span>
-                Yes, there are accessible pathways to the first and second
-                floors. There are also ramps to enter the different halls, and
-                special sittings are reserved for people with disabilities.
+                <FormattedHTMLMessage id="info.n" defaultMessage="Info" />
+              </p>
+              <p className="internal-text mbottom0">
+                <FormattedHTMLMessage id="info.o" defaultMessage="Info" />
               </p>
 
-              <h3 className="internal-sub-title">About Buenos Aires</h3>
+              <p className="internal-text">
+                <FormattedHTMLMessage id="info.p" defaultMessage="Info" />
+              </p>
+
+              <h3 className="internal-sub-title">
+                {' '}
+                <FormattedHTMLMessage id="info.baires" defaultMessage="Info" />
+              </h3>
 
               <h3 className="internal-sub-title internal-sub-title-low">
-                1. Trip
+                <FormattedHTMLMessage id="info.trip" defaultMessage="Info" />
               </h3>
-              <p className="internal-text">
-                <span className="bold-title">
-                  Ministro Pistarini International Airport
-                </span>{' '}
-                Also known as “Ezeiza International Airport”, it is located in
-                the neighbourhood of Ezeiza, 35 km southwest of the Autonomous
-                City of Buenos Aires.
+              <p className="internal-text mbottom0">
+                <FormattedHTMLMessage id="info.q" defaultMessage="Info" />
               </p>
 
               <p className="internal-text">
-                <span className="bold-title">
-                  Metropolitan Airport Jorge Newbery
-                </span>{' '}
-                It is the national and regional traffic airport located in the
-                City of Buenos Aires, in the neighborhood of Palermo.
+                <FormattedHTMLMessage id="info.r" defaultMessage="Info" />
               </p>
 
+              <p className="internal-text mbottom0">
+                <FormattedHTMLMessage id="info.s" defaultMessage="Info" />
+              </p>
               <p className="internal-text">
-                <span className="bold-title">Retiro bus terminal</span> This is
-                the main bus terminal in the city of Buenos Aires, and the
-                largest in Argentina. It is located 300 mts. away from the
-                Railway Retiro Station. Until this station, buses arrive and
-                depart from and to all areas of the country. There are also
-                regular services to and from various destinations on the
-                continent, mainly Montevideo, Santiago de Chile, Lima, Santa
-                Cruz de la Sierra, Asunción, Foz de Iguazú, Porto Alegre and São
-                Paulo.
+                <FormattedHTMLMessage id="info.t" defaultMessage="Info" />
               </p>
 
+              <p className="internal-text mbottom0">
+                <FormattedHTMLMessage id="info.u" defaultMessage="Info" />{' '}
+              </p>
               <p className="internal-text">
-                <span className="bold-title">Taxis</span> Taxis can be hired or
-                cars can be rented in the companies that offer the service
-                inside the airport and the Bus Terminal. Prices range from{' '}
-                <span class="bold-text">USD 30 to USD 40</span> from the
-                airports. The official and safe taxis identify with the colors
-                black and yellow (white at the airport). They are charged
-                through the use of a clock-tachometer, with one and only
-                official rate.
+                <FormattedHTMLMessage id="info.v" defaultMessage="Info" />
+              </p>
+
+              <p className="internal-text mbottom0">
+                <FormattedHTMLMessage id="info.w" defaultMessage="Info" />
+              </p>
+              <p className="internal-text">
+                <FormattedHTMLMessage id="info.x" defaultMessage="Info" />
               </p>
 
               <h3 className="internal-sub-title internal-sub-title-low">
-                2. Accomodation
+                <FormattedHTMLMessage
+                  id="info.accomodation"
+                  defaultMessage="Info"
+                />
               </h3>
 
-              <p className="internal-text">
-                <span className="bold-title">Hotel 725</span> Participants must
-                request their reservation by sending their full information
-                mentioning "IODC 2018" addressed to{' '}
-                <span class="italic-text">reservas@725continental.com</span>,
-                with a copy to{' '}
-                <span class="italic-text">fmonteleone@725continental.com</span>.
+              <p className="internal-text mbottom0">
+                <FormattedHTMLMessage id="info.y" defaultMessage="Info" />
               </p>
 
               <p className="internal-text">
-                <span className="bold-title">
-                  Eurobuilding Hotel Boutique Buenos Aires
-                </span>{' '}
-                Contact{' '}
-                <span class="italic-text">buenosaires@eurobuilding.com.ve</span>{' '}
-                with a copy to Roberto Brizuela (<span class="italic-text">
-                  rbrizuela@eurobuilding.com.ve
-                </span>), mentioning the code "IODC 2018" to have the rate of
-                U$D 110.- plus VAT.
+                <FormattedHTMLMessage id="info.z" defaultMessage="Info" />
+              </p>
+
+              <p className="internal-text mbottom0">
+                <FormattedHTMLMessage id="info.1" defaultMessage="Info" />
               </p>
 
               <p className="internal-text">
-                <span className="bold-title">
-                  Wyndham - Dazzler - Esplendor
-                </span>{' '}
-                Participants must request their reservation by sending their
-                complete information mentioning "IODC 2018" addressed to{' '}
-                <span class="italic-text">reservas@fenhoteles.com</span>, with a
-                copy to <span class="italic-text">jherrera@fenhoteles.com</span>.
+                <FormattedHTMLMessage id="info.2" defaultMessage="Info" />
               </p>
 
-              <h3 className="internal-sub-title">Invitation from Committee</h3>
+              <p className="internal-text mbottom0">
+                <FormattedHTMLMessage id="info.3" defaultMessage="Info" />
+              </p>
+
+              <p className="internal-text">
+                <FormattedHTMLMessage id="info.4" defaultMessage="Info" />
+              </p>
+
+              <h3 className="internal-sub-title">
+                <FormattedHTMLMessage
+                  id="info.invitation"
+                  defaultMessage="Info"
+                />
+              </h3>
+
+              <p className="internal-text mbottom0">
+                <FormattedHTMLMessage id="info.5" defaultMessage="Info" />
+              </p>
 
               <p className="internal-text mbottom75">
-                <span className="bold-title">
-                  Do you need an invite from the committee?
-                </span>{' '}
-                If you need an invite just write to{' '}
-                <span class="italic-text">contact@opendatacon.org</span>.
+                <FormattedHTMLMessage id="info.6" defaultMessage="Info" />
               </p>
             </div>
             <Footer />

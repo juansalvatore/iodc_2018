@@ -111,9 +111,121 @@ export default {
 
     // INFO
 
+    'info.header': 'Practical Info',
     'info.registration': 'Registration',
     'info.fee.registration': '<b>Is there a fee for registration?</b>',
     'info.fee.registration.answer': ' No, access to the event is free.',
+    'info.a': '<b>Does registration have a deadline?</b>',
+    'info.b':
+      'You will be able to register during the following months, and even throughout the event at the entrance hall of the Usina del Arte.',
+    'info.c': '<b>How could I confirm my registration?</b>',
+
+    'info.d':
+      'Once you completed the <a href="/register">registration form</a> you will receive a notification, and also an automatic confirmation email.',
+
+    'info.e':
+      '<b>I am a journalist and want to cover IODC. How can I do this?</b>',
+
+    'info.f':
+      'Contact us at <i>contact@opendatacon.org</i> to discuss media access to the event.',
+
+    'info.visa': 'Visa and travel information',
+
+    'info.g': '<b>How do I know if I need a visa?</b>',
+
+    'info.h':
+      'For information on nationalities that precise a visa, diplomatic or official passports to enter the Argentine Republic, please <a href="http://www.migraciones.gov.ar/accesible/indexA.php?visas">consult here</a>. In case you do not require a visa, you still must present a valid passport and proof of accreditation to the Conference at the immigration point of entry into Argentina. You can find <a href="http://www.argentina.gob.ar/tema/extranjeros/turistas">more information here</a>.',
+
+    'info.i': '<b>What should I do if I need a visa?</b>',
+
+    'info.j':
+      'You should contact the Argentine Consular Representation in your country at least <b>45 days prior to the date of your trip.</b> For contact information of Consulates and Embassies of the Argentine Republic, <a href="http://mrecic.gov.ar/representaciones">please consult here</a>. If you do<b>not have an Argentine Consular Representation in your country of residence</b>, you will have the possibility of requesting your visa remotely. For this exceptional procedure, you must follow the following steps:',
+
+    'info.j.a':
+      'Contact the <a href="http://mrecic.gov.ar/representaciones">consular representation that is most convenient</a>, with an anticipation of, at least, 45 days to the date of your trip.',
+
+    'info.j.b':
+      'Send the requested documentation via email <b>to the corresponding consular representation, and make sure of having an appointment with date and time for the consular interview.</b> Details for the procedure, such as the documentation to be presented and the cost of the visa, will be informed by the representation.',
+
+    'info.j.c':
+      'Once the visa has been approved, <b>the consular representative will contact you to coordinate a date and time in which you can show up, with your valid passport, to obtain your visa</b> (this may occur during a stopover of your flight to the Argentine Republic). Note: you can authorize another person to appear with your passport to obtain your visa.',
+
+    'info.j.d':
+      'The Argentine Republic, through Consular Representation, <b>reserves the right to deny any visa applicant the possibility of carrying out the procedure remotely</b>, requiring the foreigner to carry out the procedure in person.',
+
+    'info.k': '<b>I could not ask for a visa myself. Can you help me?</b>',
+
+    'info.l':
+      'In case you need help, you can contact us at <i>contact@opendatacon.org</i> and specify the following information:',
+
+    'info.name': 'Name',
+    'info.surname': 'Surname',
+    'info.birth': 'Birth Date',
+    'info.nationality': 'Nationality',
+    'info.where':
+      'Where was your passport issued? What is your passport number?',
+    'info.what': 'What organization are you part of? Which is your charge?',
+    'info.consulate': 'Argentine Consulate that should process this request:',
+
+    'info.venue': 'Venue',
+
+    'info.m': '<b>Where is the venue located?</b>',
+
+    'info.n':
+      'The Usina Del Arte is in the neighborhood of La Boca, southern part of the City of Buenos Aires.',
+
+    'info.o': '<b>Is the venue accessible to people with disabilities?</b>',
+
+    'info.p':
+      'Yes, there are accessible pathways to the first and second floors. There are also ramps to enter the different halls, and special sittings are reserved for people with disabilities.',
+
+    'info.baires': 'About Buenos Aires',
+
+    'info.trip': '1. Trip',
+
+    'info.q': '<b>Ministro Pistarini International Airport</b>',
+
+    'info.r':
+      'Also known as “Ezeiza International Airport”, it is located in the neighbourhood of Ezeiza, 35 km southwest of the Autonomous City of Buenos Aires.',
+
+    'info.s': '<b>Metropolitan Airport Jorge Newbery</b>',
+
+    'info.t':
+      'It is the national and regional traffic airport located in the City of Buenos Aires, in the neighborhood of Palermo.',
+
+    'info.u': '<b>Retiro bus terminal</b>',
+
+    'info.v':
+      'This is the main bus terminal in the city of Buenos Aires, and the largest in Argentina. It is located 300 mts. away from the Railway Retiro Station. Until this station, buses arrive and depart from and to all areas of the country. There are also regular services to and from various destinations on the continent, mainly Montevideo, Santiago de Chile, Lima, Santa Cruz de la Sierra, Asunción, Foz de Iguazú, Porto Alegre and São Paulo.',
+
+    'info.w': '<b>Taxis</b>',
+
+    'info.x':
+      'Taxis can be hired or cars can be rented in the companies that offer the service inside the airport and the Bus Terminal. Prices range from <b>USD 30 to USD 40</b> from the airports. The official and safe taxis identify with the colors black and yellow (white at the airport). They are charged through the use of a clock-tachometer, with one and only official rate.',
+
+    'info.accomodation': '2. Hospedaje',
+
+    'info.y': '<b>Hotel 725</b>',
+
+    'info.z':
+      'Participants must request their reservation by sending their full information mentioning "IODC 2018" addressed to <i>reservas@725continental.com</i>, with a copy to <i>fmonteleone@725continental.com</i>.',
+
+    'info.1': '<b>Eurobuilding Hotel Boutique Buenos Aires</b>',
+
+    'info.2':
+      'Contact <i>buenosaires@eurobuilding.com.ve</i> with a copy to Roberto Brizuela (<i>rbrizuela@eurobuilding.com.ve</i>), mentioning the code "IODC 2018" to have the rate of U$D 110.- plus VAT.',
+
+    'info.3': '<b>Wyndham - Dazzler - Esplendor</b>',
+
+    'info.4':
+      'Participants must request their reservation by sending their complete information mentioning "IODC 2018" addressed to <i>reservas@fenhoteles.com</i>, with a copy to <i>jherrera@fenhoteles.com</i>.',
+
+    'info.invitation': 'Invitation from Committee',
+
+    'info.5': '<b>Do you need an invite from the committee?</b>',
+
+    'info.6':
+      'If you need an invite just write to <i>contact@opendatacon.org</i>.',
 
     // Agenda
     'agenda.subtitle': 'See the Schedule',
@@ -400,9 +512,122 @@ export default {
 
     // INFO
 
+    'info.header': 'Información práctica',
     'info.registration': 'Registro',
     'info.fee.registration': '<b>¿Hay una tarifa de registro?</b>',
     'info.fee.registration.answer': 'No. El acceso al evento es gratuito.',
+    'info.a': '<b>¿El registro tiene una fecha límite?</b>',
+    'info.b':
+      'Podés registrarte durante los próximos meses, e incluso durante todo el evento en el hall de entrada de la Usina del Arte.',
+    'info.c': '<b>¿Cómo puedo confirmar mi registro?</b>',
+
+    'info.d':
+      'Una vez que hayas completado el <a href="/register">formulario de registro</a>, recibirá una notificación y también un correo electrónico de confirmación automática.',
+
+    'info.e': '<b>Soy periodista y quiero cubrir IODC. ¿Cómo puedo hacer?</b>',
+
+    'info.f':
+      'Contactanos a través de <i>contact@opendatacon.org</i> para conocer el acceso de los medios de comunicación al evento.',
+
+    'info.visa': 'Visas e información para viajar',
+
+    'info.g': '<b>¿Cómo sé si necesito una visa?</b>',
+
+    'info.h':
+      'Para obtener información sobre las nacionalidades que requieren una visa, pasaportes diplomáticos u oficiales para ingresar a la República Argentina, <a href="http://www.migraciones.gov.ar/accesible/indexA.php?visas">consultá acá</a>. En caso de que no necesites una visa, de todas formas tenés que presentar un pasaporte válido y un comprobante de acreditación a la Conferencia en el punto de entrada de inmigración a Argentina. Podés encontrar<a href="http://www.argentina.gob.ar/tema/extranjeros/turistas"> más información acá</a>.',
+
+    'info.i': '<b>¿Qué tengo que hacer si necesito una visa?</b>',
+
+    'info.j':
+      'Debés ponerte en contacto con la representación consular argentina en tu país, al menos <b>45 días antes de la fecha de tu viaje</b>. Para información de contacto de consulados y embajadas de la República Argentina, <a href="http://mrecic.gov.ar/representaciones">consultá acá</a>. <b>Si no hay un consulado argentino en tu país</b>, tenés la posibilidad de solicitar tu visa de forma remota. Para este procedimiento excepcional, seguí los siguientes pasos:',
+
+    'info.j.a':
+      'Ponete en en contacto con <a href="http://mrecic.gov.ar/representaciones">la representación consular que sea más conveniente</a> con una anticipación de, al menos, 45 días a la fecha de tu viaje.',
+
+    'info.j.b':
+      'Enviá la documentación solicitada por correo electrónico <b>a la representación consular, y asegurate de tener una cita con la fecha y hora de la entrevista consular.</b> Otros detalles del proceso, como la documentación a presentar y el costo de la visa, serán informados por el consulado.',
+
+    'info.j.c':
+      'Una vez aprobada la visa, <b>el representante consular se pondrá en contacto para coordinar una fecha y hora en la que puedas presentarte, con tu pasaporte válido, para obtener la visa</b> (esto puede ocurrir durante una escala de tu vuelo a la República Argentina). Nota: podés autorizar a otra persona para que se presente con tu pasaporte y obtener la visa.',
+
+    'info.j.d':
+      'La República Argentina, a través de la Representación Consular, <b>se reserva el derecho de negar a cualquier solicitante de visa la posibilidad de llevar a cabo el procedimiento a distancia</b>, requiriendo que el extranjero lleve a cabo el procedimiento en persona.',
+
+    'info.k': '<b>No pude pedir una visa por mi cuenta. ¿Me pueden ayudar?</b>',
+
+    'info.l':
+      'En caso de que necesites ayuda, puede contactarnos a <i>contact@opendatacon.org</i> y especificar la siguiente información:',
+
+    'info.name': 'Nombre',
+    'info.surname': 'Apellido',
+    'info.birth': 'Fecha de Nacimiento',
+    'info.nationality': 'Nacionalidad',
+    'info.where':
+      '¿Dónde se emitió su pasaporte? ¿Cuál es tu número de pasaporte?',
+    'info.what': '¿De qué organización sos parte? ¿Cuál es tu cargo?',
+    'info.consulate':
+      'Consulado argentino que debería procesar esta solicitud:',
+
+    'info.venue': 'Recinto',
+
+    'info.m': '<b>¿Dónde está ubicado el lugar del encuentro?</b>',
+
+    'info.n':
+      'Usina Del Arte se encuentra en el barrio de La Boca, en la parte sur de la Ciudad de Buenos Aires.',
+
+    'info.o':
+      '<b>El lugar, ¿es accesible para personas con discapacidades?</b>',
+
+    'info.p':
+      'Sí. Hay rampas de acceso para el primer y segundo piso, además de rampas de ingreso a las diferentes diferentes salas. Las sesiones cuentan, también, con asientos reservados especialmente para personas con discapacidades.',
+
+    'info.baires': 'Sobre Buenos Aires',
+
+    'info.trip': '1. Viaje',
+
+    'info.q': '<b>Aeropuerto Internacional Ministro Pistarini</b>',
+
+    'info.r':
+      'También conocido como "Aeropuerto Internacional de Ezeiza", se encuentra en el barrio de Ezeiza, a 35 km. de la Ciudad Autónoma de Buenos Aires.',
+
+    'info.s': '<b>Aeroparque Jorge Newbery</b>',
+
+    'info.t':
+      'Es el aeropuerto de tránsito nacional y regional ubicado en la Ciudad de Buenos Aires, en el barrio de Palermo.',
+
+    'info.u': '<b>Terminal de micros “Retiro”</b>',
+
+    'info.v':
+      'Esta es la principal terminal de autobuses de la Ciudad de Buenos Aires, y la más grande de Argentina. Está ubicada a 300 mts. de la estación de ferrocarril Retiro. Esta terminal es punto de conexión entre una gran cantidad de áreas del país, e incluso hay servicios desde y hacia varios destinos en el continente como Montevideo, Santiago de Chile, Lima, Santa Cruz de la Sierra, Asunción, Foz de Iguazú, Porto Alegre y São Paulo.',
+
+    'info.w': '<b>Taxis</b>',
+
+    'info.x':
+      'Se pueden tomar taxis o alquilar automóviles en las compañías que ofrecen el servicio dentro delos aeropuertos y la terminal de autobuses. Los precios oscilan entre <b>USD 30 y USD 40</b> desde los aeropuertos. Los taxis oficiales y seguros se identifican con los colores negro y amarillo (blanco en el aeropuerto), y el cobro es mediante un reloj-tacómetro con una única tarifa oficial.',
+
+    'info.accomodation': '2. Accomodation',
+
+    'info.y': '<b>Hotel 725</b>',
+
+    'info.z':
+      'Participantes deben solicitar su reserva enviando su información completa mencionando “IODC 2018” dirigido hacia <i>reservas@725continental.com</i> con copia a <i>fmonteleone@725continental.com</i>.',
+
+    'info.1': '<b>Eurobuilding Hotel Boutique Buenos Aires</b>',
+
+    'info.2':
+      'Contactarse con <i>buenosaires@eurobuilding.com.ve</i> con copia a Roberto Brizuela <i>rbrizuela@eurobuilding.com.ve</i> mencionando el código "IODC 2018" para tener la tarifa de U$D 110.- mas IVA.',
+
+    'info.3': '<b>Wyndham - Dazzler - Esplendor</b>',
+
+    'info.4':
+      'Participantes deben solicitar su reserva enviando su información completa mencionando “IODC 2018” dirigido hacia <i>reservas@fenhoteles.com</i> con copia a <i>jherrera@fenhoteles.com</i>.',
+
+    'info.invitation': 'Invitación del Comité',
+
+    'info.5':
+      '<b>¿Necesitás una invitación especial de parte del Comité del Programa?</b>',
+
+    'info.6': 'Podés solicitarla escribiendo a <i>contact@opendatacon.org</i>.',
 
     // Agenda
     'agenda.subtitle': 'Vea la agenda',
@@ -412,10 +637,7 @@ export default {
     // About
     'about.title': 'Acerca de la Conferencia Internacional de Datos Abiertos',
     'about.top.info.a': `
-    La 
-      <span class="bold-text">
-      Conferencia Internacional de Datos Abiertos
-      </span>
+    La <b>Conferencia Internacional de Datos Abiertos</b>
       (IODC, por sus siglas en inglés) es un evento semestral que reúne a la comunidad global de datos abiertos para aprender, compartir, planificar y colaborar en el futuro de la apertura.
     `,
     'about.top.info.b': `
