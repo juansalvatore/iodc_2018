@@ -12,25 +12,28 @@ class Press extends Component {
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div>
-          <div class="container-fluid">
+          <div className="container-fluid">
             <Header>Press</Header>
-            <div class="row">
-              <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+            <div className="row press_container">
+              <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
                 <img
                   src={IdCard}
                   alt="IdCard"
-                  className="centerelement img-idcard"
+                  classNameName="centerelement img-idcard"
                 />
-                <p className="internal-text text-center">
+                <p classNameName="internal-text text-center">
                   Soon, in this section you will find everything you need to
                   know to accredit and cover the Conference. For more
                   information, contact us at{' '}
-                  <span className="italic-text"> contact@opendatacon.org</span>.
+                  <span classNameName="italic-text">
+                    {' '}
+                    contact@opendatacon.org
+                  </span>.
                 </p>
               </div>
             </div>
           </div>
-          <Footer bottom={false} />
+          <Footer bottom={true} />
         </div>
       </IntlProvider>
     )

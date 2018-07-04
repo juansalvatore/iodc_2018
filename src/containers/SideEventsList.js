@@ -13,10 +13,13 @@ class SideEventsList extends Component {
 
   displaySideEvents = () => {
     return this.state.sideEvents.map(event => (
-      <li className={event.invitation ? 'hide_invitation_event' : ''}>
+      <li>
         <p className="people-list__name">{event.event}</p>
         <p className="people-list__org">{event.location} </p>
         <p className="people-list__org">{event.date} </p>
+        <p className={event.invitation ? 'hide_invitation_event' : ''}>
+          Invitation
+        </p>
         <a
           className={event.url ? 'side_event_button' : 'hide_event_button'}
           target="_blank"
