@@ -19,19 +19,19 @@ class Footer extends Component {
           }
         >
           <div className="col-lg-10 centerelement">
-            <div className="col-xs-12 col-md-2 col-lg-2 text-center">
+            <div className="col-xs-12 col-md-2 col-lg-2 text-center center_footer">
               <img className="footer-img" src={LogoCanada} alt="Canada" />
             </div>
-            <div className="col-xs-12 col-md-2 col-lg-2 text-center">
+            <div className="col-xs-12 col-md-2 col-lg-2 text-center center_footer">
               <img className="footer-img" src={LogoWbg} alt="World Bank" />
             </div>
-            <div className="col-xs-12 col-md-2 col-lg-2 text-center">
+            <div className="col-xs-12 col-md-2 col-lg-2 text-center center_footer">
               <img className="footer-img" src={LogoOpendata} alt="Open Data" />
             </div>
-            <div className="col-xs-12 col-md-2 col-lg-2 text-center">
+            <div className="col-xs-12 col-md-2 col-lg-2 text-center center_footer">
               <img className="footer-img" src={LogoBA} alt="BA" />
             </div>
-            <div className="col-xs-12 col-md-3 col-lg-3 text-center">
+            <div className="col-xs-12 col-md-3 col-lg-3 text-center center_footer">
               <img className="footer-img" src={LogoMin} alt="Logo Min" />
             </div>
           </div>
