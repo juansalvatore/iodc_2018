@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { IntlProvider } from 'react-intl'
+import { IntlProvider, FormattedHTMLMessage } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
 import { Header, Footer } from './'
@@ -12,25 +12,36 @@ class Privacy extends Component {
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div>
           <div class="container-fluid">
-            <Header>Privacy Policy</Header>
+            <Header>
+              {' '}
+              <FormattedHTMLMessage
+                id="privacy.header"
+                defaultMessage="Privacy Policy"
+              />
+            </Header>
 
             <div className="row">
               <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                <h3 className="internal-sub-title">Who we are </h3>
+                <h3 className="internal-sub-title">
+                  {' '}
+                  <FormattedHTMLMessage
+                    id="privacy.who.we.are"
+                    defaultMessage="Who we are"
+                  />{' '}
+                </h3>
                 <p className="internal-text">
-                  As advocated of open data and data for good,{' '}
-                  <span class="bold-text">
-                    we value your personal data and making efforts to make sure
-                    it is secured and used only for the purpose of IODC.
-                  </span>{' '}
-                  This policy will describe how we deal with your data: when and
-                  why we collect your personal information, how we use it, the
-                  limited conditions under which we may disclose it to others
-                  and how we keep it secure.
+                  {' '}
+                  <FormattedHTMLMessage
+                    id="privacy.a"
+                    defaultMessage="Privacy Policy"
+                  />
                 </p>
 
                 <p className="internal-sub-title internal-sub-title-low mtop40">
-                  Data use
+                  <FormattedHTMLMessage
+                    id="privacy.data.use"
+                    defaultMessage="Privacy Policy"
+                  />
                 </p>
                 <p className="internal-text">
                   <span class="bold-text">
