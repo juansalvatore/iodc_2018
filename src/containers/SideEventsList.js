@@ -29,7 +29,10 @@ class SideEventsList extends Component {
           target="_blank"
           href={event.url}
         >
-          go to event
+          <FormattedMessage
+            id="side.events.button"
+            defaultMessage="Go to event"
+          />
         </a>
       </li>
     ))
@@ -40,13 +43,26 @@ class SideEventsList extends Component {
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div>
           <div class="container-fluid">
-            <Header>Side-Events</Header>
+            <Header>
+              <FormattedMessage
+                id="nav.side-events"
+                defaultMessage="Side events"
+              />
+            </Header>
             <div className="row">
               <div className="col-xs-12 col-md-10 col-md-offset-1">
-                <h3 className="internal-sub-title mtop40">See the list</h3>
+                <h3 className="internal-sub-title mtop40">
+                  <FormattedMessage
+                    id="nav.side-events.subtitle"
+                    defaultMessage="See the list"
+                  />
+                </h3>
                 <p className="internal-text">
-                  Here you can find the list of side events that will occur
-                  along side IODC.
+                  <FormattedMessage
+                    id="nav.side-events.description"
+                    defaultMessage="Here you can find the list of side events that will occur
+                    along side IODC."
+                  />
                 </p>
               </div>
             </div>

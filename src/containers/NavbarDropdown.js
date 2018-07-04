@@ -50,6 +50,18 @@ class NavbarDropdown extends Component {
             </Link>
           </li>
           <hr />
+          <li>
+            <Link
+              className="navbar-dropdown-links"
+              to="/iodc_2018/side-events-list"
+            >
+              <FormattedMessage
+                id="nav.side-events"
+                defaultMessage="side events"
+              />
+            </Link>
+          </li>
+          <hr />
 
           <li>
             <Link className="navbar-dropdown-links" to="/iodc_2018/about">
@@ -76,7 +88,6 @@ class NavbarDropdown extends Component {
           <hr />
           <Link className="navbar-dropdown-links" to="/iodc_2018/privacy">
             <li>
-              {' '}
               <FormattedMessage id="nav.privacy" defaultMessage="Privacy" />
             </li>
           </Link>
@@ -85,10 +96,18 @@ class NavbarDropdown extends Component {
           <Link to="/iodc_2018/#">
             <img src={Facebook} width="20" alt="fb" />
           </Link>
-          <img src={Twitter} width="20" alt="tw" />
-          <img src={Flickr} width="20" alt="fl" />
-          <img src={Youtube} width="20" alt="yt" />
-          <img src={Medium} width="20" alt="md" />
+          <a href="https://medium.com/@opendatacon" target="_blank">
+            <img src={Twitter} width="20" alt="tw" />
+          </a>
+          <a href="https://medium.com/@opendatacon" target="_blank">
+            <img src={Flickr} width="20" alt="fl" />
+          </a>
+          <a href="https://medium.com/@opendatacon" target="_blank">
+            <img src={Youtube} width="20" alt="yt" />
+          </a>
+          <a href="https://medium.com/@opendatacon" target="_blank">
+            <img src={Medium} width="20" alt="md" />
+          </a>
         </ul>
       </IntlProvider>
     )
