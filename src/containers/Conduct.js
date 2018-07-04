@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { IntlProvider } from 'react-intl'
+import { IntlProvider, FormattedHTMLMessage } from 'react-intl'
 import { setLocale } from '../actions/locale'
 import messages from './messages'
 
@@ -13,7 +13,12 @@ class Conduct extends Component {
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div>
           <div class="container-fluid">
-            <Header>Code of Conduct</Header>
+            <Header>
+              <FormattedHTMLMessage
+                id="conduct.header"
+                defaultMessage="Code of Conduct"
+              />
+            </Header>
 
             <div className="row">
               <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
