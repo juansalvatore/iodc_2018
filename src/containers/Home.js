@@ -193,14 +193,32 @@ class Home extends Component {
                 {/* EVENTO 1 */}
                 <SideEvent
                   image={Preevent}
-                  location="Centro Metropolitano de Diseño"
-                  direction="Algarrobo 1041, Barracas, CABA"
+                  url="http://2018.abrelatam.org/"
+                  title="AbreLatam"
+                  location="Usina del Arte"
+                  direction="Wednesday 26th September"
                 />
                 {/* EVENTO 2 */}
                 <SideEvent
                   image={Preevent}
+                  url="http://opencitiessummit.org/"
+                  title="Open Cities"
                   location="Centro Metropolitano de Diseño"
-                  direction="Algarrobo 1041, Barracas, CABA"
+                  direction="Monday 24th September"
+                />
+                <SideEvent
+                  image={Preevent}
+                  url="https://www.eventbrite.com/e/open-data-research-symposium-2018-tickets-47181009670"
+                  title="Open Data Research Symposium"
+                  location="Centro Cultural San Martín"
+                  direction="Tuesday 25th September"
+                />
+                <SideEvent
+                  image={Preevent}
+                  url="https://www.open-contracting.org/events/"
+                  title="Open Contracting Workshop"
+                  location="Facultad de Derecho"
+                  direction="Tuesday 25th September"
                 />
               </div>
 
