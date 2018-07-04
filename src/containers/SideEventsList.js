@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { IntlProvider } from 'react-intl'
+import { IntlProvider, FormattedMessage } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
 import { Header, Footer } from './'
-import { SideEvent } from '../containers'
 import SideEventsData from './sideEventsData'
 class SideEventsList extends Component {
   state = {
@@ -16,9 +15,14 @@ class SideEventsList extends Component {
       <li>
         <p className="people-list__name">{event.event}</p>
         <p className="people-list__org">{event.location} </p>
-        <p className="people-list__org">{event.date} </p>
+        <p className="people-list__org">
+          {this.props.lang == 'en' ? event.date : event.date_es}
+        </p>
         <p className={event.invitation ? 'hide_invitation_event' : ''}>
-          Invitation
+          <FormattedMessage
+            id="side.events.invitation"
+            defaultMessage="Access with invitation"
+          />
         </p>
         <a
           className={event.url ? 'side_event_button' : 'hide_event_button'}

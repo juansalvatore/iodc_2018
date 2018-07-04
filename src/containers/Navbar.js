@@ -112,26 +112,41 @@ class Menu extends Component {
                   />
                 </NavItem>
               </LinkContainer>
-              <LinkContainer to="/iodc_2018/#">
-                <NavItem eventKey={8} href="#">
+
+              <NavItem eventKey={8} href="https://">
+                <a href="https://www.facebook.com/opendatacon/" target="_blank">
                   <img src={Facebook} width="20" alt="fb" />
-                </NavItem>
-              </LinkContainer>
-
-              <NavItem eventKey={9} href="#">
-                <img src={Twitter} width="20" alt="tw" />
+                </a>
               </NavItem>
 
-              <NavItem eventKey={10} href="#">
-                <img src={Flickr} width="20" alt="fl" />
+              <NavItem eventKey={9} href="https://">
+                <a href="https://twitter.com/opendatacon" target="_blank">
+                  <img src={Twitter} width="20" alt="tw" />
+                </a>
               </NavItem>
 
-              <NavItem eventKey={11} href="#">
-                <img src={Youtube} width="20" alt="yt" />
+              <NavItem eventKey={10} href="https://">
+                <a
+                  href="https://www.flickr.com/photos/144810968@N02/albums"
+                  target="_blank"
+                >
+                  <img src={Flickr} width="20" alt="fl" />
+                </a>
               </NavItem>
 
-              <NavItem eventKey={12} href="#">
-                <img src={Medium} width="20" alt="tw" />
+              <NavItem eventKey={11} href="https://">
+                <a
+                  href="https://www.youtube.com/channel/UC8cKSDSxKSbOnKliM_MhZmQ"
+                  target="_blank"
+                >
+                  <img src={Youtube} width="20" alt="yt" />
+                </a>
+              </NavItem>
+
+              <NavItem eventKey={12} href="https://">
+                <a href="https://medium.com/@opendatacon" target="_blank">
+                  <img src={Medium} width="20" alt="tw" />
+                </a>
               </NavItem>
 
               <NavItem
