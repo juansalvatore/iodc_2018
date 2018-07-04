@@ -239,6 +239,13 @@ export default {
 
     'conduct.j':
       'Our team will be happy to help you contact hotel/venue security, local law enforcement, local support services, provide escorts, or otherwise assist you to feel safe for the duration of the event. <b>We value your attendance.</b>',
+
+    // Privacy policy
+
+    'privacy.header': 'Privacy Policy',
+    'privacy.who.we.are': 'Who we are',
+    'privacy.a':
+      'As advocated of open data and data for good, <b>we value your personal data and making efforts to make sure it is secured and used only for the purpose of IODC.</b> This policy will describe how we deal with your data: when and why we collect your personal information, how we use it, the limited conditions under which we may disclose it to others and how we keep it secure.',
   },
   es: {
     'nav.dashboard': 'Hola Mundo',
@@ -454,5 +461,12 @@ export default {
 
     'conduct.j':
       'Nuestro equipo estará encantado de ayudarte a contactar a la seguridad del hotel o lugar de hospedaje, la policía local o los servicios de apoyo locales; y proporcionar escoltas o ayudarte a sentirte seguro durante el evento. <b>Valoramos tu asistencia.</b>',
+
+    // Privacy policy
+
+    'privacy.header': 'Políticas de Privacidad',
+    'privacy.who.we.are': 'Quienes somos',
+    'privacy.a':
+      'Como abogamos por el uso de datos abiertos de calidad y para un bien común, <b>valoramos tus datos personales y nos esforzamos por protegerlos y asegurarnos de que sólo se usen para el propósito de IODC.</b> Esta política describe cómo manejamos sus datos: cuándo y por qué recopilamos su información personal, cómo la utilizamos, las condiciones limitadas bajo las cuales podemos divulgarla a otros y cómo la mantenemos segura.',
   },
 }
