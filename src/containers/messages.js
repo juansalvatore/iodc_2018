@@ -12,7 +12,7 @@ export default {
     'nav.info': 'Info',
     'nav.conduct': 'Code of Conduct',
     'nav.privacy': 'Privacy Policy',
-    'nav.side-events': 'side events',
+    'nav.side-events': 'Side Events',
 
     // Home
     'home.main.title': 'The Future is Open',
@@ -42,6 +42,10 @@ export default {
     // Side Events
     'home.sideevents': 'Events around the Conference',
     'side.events.invitation': 'Access with invitation',
+    'side.events.button': 'Go to the event',
+    'nav.side-events.subtitle': 'See the list',
+    'nav.side-events.description':
+      'Here you can find the list of side events that will occur along side IODC.',
 
     // Previous events
     'home.previous': 'Previous Events',
@@ -256,7 +260,7 @@ export default {
     'nav.info': 'Info',
     'nav.conduct': 'Código de Conducta',
     'nav.privacy': 'Política de Privacidad',
-    'nav.side-events': 'eventos paralelos',
+    'nav.side-events': 'Pre-eventos',
 
     // Home
     'home.main.title': 'El Futuro es Abierto',
@@ -286,6 +290,11 @@ export default {
     // Side Events
     'home.sideevents': 'Eventos alrededor de la Conferencia',
     'side.events.invitation': 'Acceso con invitación',
+    'side.events.button': 'Ir al evento',
+    'nav.side-events.subtitle': 'Conocé los pre-eventos',
+    'nav.side-events.description':
+      'Conocé más sobre los pre eventos en la semana de #IODC18',
+
     // Previous events
     'home.previous': 'Eventos anteriores',
 
