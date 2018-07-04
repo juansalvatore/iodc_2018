@@ -195,6 +195,9 @@ export default {
       efforts and explore new ways to drive social and economic value
       around the world.
     `,
+
+    // Code of Conduct
+    'conduct.header': 'Code of Conduct',
   },
   es: {
     'nav.dashboard': 'Hola Mundo',
@@ -367,5 +370,8 @@ export default {
       Gobierno de Argentina, junto con la Red de Datos Abiertos para el Desarrollo, el Centro Internacional de Investigaciones para el Desarrollo y el Banco Mundial
       </b>. Los organizadores trabajarán con socios de todo el mundo para fortalecer los esfuerzos ya existentes y explorar nuevas formas de impulsar el valor social y económico a nivel global.
     `,
+
+    // Code of Conduct
+    'conduct.header': 'Código de Conducta',
   },
 }
