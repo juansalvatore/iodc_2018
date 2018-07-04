@@ -246,6 +246,44 @@ export default {
     'privacy.who.we.are': 'Who we are',
     'privacy.a':
       'As advocated of open data and data for good, <b>we value your personal data and making efforts to make sure it is secured and used only for the purpose of IODC.</b> This policy will describe how we deal with your data: when and why we collect your personal information, how we use it, the limited conditions under which we may disclose it to others and how we keep it secure.',
+
+    'privacy.data.use': 'Data use',
+
+    'privacy.b':
+      '<b>IODC does not sell, rent or lease your personal data under any circumstances.</b> IODC uses the information you provide to send you communications, such as Conference program updates; ticketing information; and other relevant Conference information.',
+
+    'privacy.collect': 'Type of data we collect',
+
+    'privacy.analytics': '<b>Google Analytics</b>',
+
+    'privacy.c':
+      'When someone visits <a href="http://www.opendatacon.org">opendatacon.org</a>, we use a third party service, <b>Google Analytics</b>, to collect standard internet log information and details of visitor behaviour patterns. We do this to <b>understand who we reached and how we can reach more people to our conference.</b> This information is only processed in a way which does not identify anyone. We do not make, and do not allow Google to make, any attempt to find out the identities of those visiting our website.',
+
+    'privacy.registration': '<b>Registration forms</b>',
+
+    'privacy.d':
+      'We collect your contact details in our registration form so that we can:',
+
+    'privacy.1': 'Verify your identification when you visit the conference.',
+
+    'privacy.2':
+      'Contact you so you can keep up-to-date with the conference and have the best attendance experience.',
+
+    'privacy.3': 'Measure the diversity of the event.',
+
+    'privacy.newsletter': '<b>Newsletter</b>',
+
+    'privacy.e':
+      'By registering to the conference, you give us consent to include you in our mailing list. Your data will only be shared with MailChimp to send you correspondance about the conference. You can unsubscribe from MailChimp at anytime. For more information, please see <a href="https://mailchimp.com/legal/privacy/">MailChimp’s privacy notice.</a>',
+
+    'privacy.access': 'Access to your personal information',
+
+    'privacy.f':
+      'You are entitled to view, amend or delete the personal information of yours that we maintain. Email your request to <i>contact@opendatacon.org</i>.',
+
+    'privacy.changes': 'Changes to this Privacy Notice',
+
+    'privacy.g': 'This privacy policy was changed on 27/5/2018.',
   },
   es: {
     'nav.dashboard': 'Hola Mundo',
@@ -465,8 +503,48 @@ export default {
     // Privacy policy
 
     'privacy.header': 'Políticas de Privacidad',
+
     'privacy.who.we.are': 'Quienes somos',
+
     'privacy.a':
       'Como abogamos por el uso de datos abiertos de calidad y para un bien común, <b>valoramos tus datos personales y nos esforzamos por protegerlos y asegurarnos de que sólo se usen para el propósito de IODC.</b> Esta política describe cómo manejamos sus datos: cuándo y por qué recopilamos su información personal, cómo la utilizamos, las condiciones limitadas bajo las cuales podemos divulgarla a otros y cómo la mantenemos segura.',
+
+    'privacy.data.use': 'Uso de Datos',
+
+    'privacy.b':
+      '<b>IODC no vende ni presta tus datos personales bajo ninguna circunstancia.</b> Sólo usa la información proporcionada para enviar comunicaciones, como actualizaciones del programa de la Conferencia; información de tickets; y otra información relevante de la Conferencia.',
+
+    'privacy.collect': 'Tipo de data que recolectamos',
+
+    'privacy.analytics': '<b>Google Analytics</b>',
+
+    'privacy.c':
+      'Cuando alguien visita <a href="http://www.opendatacon.org">opendatacon.org</a>, utilizamos un servicio de terceros, <b>Google Analytics</b>, para recopilar información estándar de registro de Internet y detalles de los patrones de comportamiento de los visitantes. Hacemos esto para <b>comprender a quién llegamos y cómo podemos acceder a más personas.</b> Esta información sólo se procesa de una manera anónima, y no hacemos ni permitimos que Google haga ningún intento de averiguar las identidades de quienes visitan nuestro sitio web.',
+
+    'privacy.registration': '<b>Formulario de registro</b>',
+
+    'privacy.d':
+      'Recopilamos tus datos de contacto en nuestro formulario de registro para poder:',
+
+    'privacy.1': 'Verificar tu identidad cuando visite la conferencia.',
+
+    'privacy.2':
+      'Contactarte para que puedas mantenerte actualizado sobre la conferencia, y tener la mejor experiencia posible.',
+
+    'privacy.3': 'Medir la diversidad en el evento.',
+
+    'privacy.newsletter': '<b>Newsletter</b>',
+
+    'privacy.e':
+      'Al registrarte en la conferencia, nos das tu consentimiento para incluirte en nuestra lista de correo. Tus datos sólo se compartirán con MailChimp para enviarte correspondencia sobre la conferencia. Podés darte de baja de MailChimp en cualquier momento. Para obtener más información, consulte el <a href="https://mailchimp.com/legal/privacy/">aviso de privacidad de MailChimp.</a>',
+
+    'privacy.access': 'Acceso a tu información personal',
+
+    'privacy.f':
+      'Tenés derecho a ver, modificar o eliminar la información personal que conservamos. Enviá tu solicitud por correo electrónico a <i>contact@opendatacon.org</i>.',
+
+    'privacy.changes': 'Cambios en esta política de privacidad',
+
+    'privacy.g': 'Esta política de privacidad fue actualizada del 27/5/2018.',
   },
 }

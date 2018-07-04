@@ -44,80 +44,81 @@ class Privacy extends Component {
                   />
                 </p>
                 <p className="internal-text">
-                  <span class="bold-text">
-                    IODC does not sell, rent or lease your personal data under
-                    any circumstances.
-                  </span>{' '}
-                  IODC uses the information you provide to send you
-                  communications, such as Conference program updates; ticketing
-                  information; and other relevant Conference information.
+                  <FormattedHTMLMessage
+                    id="privacy.b"
+                    defaultMessage="Privacy Policy"
+                  />
                 </p>
                 <p className="internal-sub-title internal-sub-title-low mtop40">
-                  Type of data we collect
+                  <FormattedHTMLMessage
+                    id="privacy.collect"
+                    defaultMessage="Privacy Policy"
+                  />
                 </p>
 
                 <p className="internal-text">
                   <ul>
                     <li className="mtop20">
                       <span class="bullet">●</span>
-                      <span className="bold-text">Google Analytics</span>{' '}
+                      <FormattedHTMLMessage
+                        id="privacy.analytics"
+                        defaultMessage="Privacy Policy"
+                      />
                       <p>
-                        When someone visits{' '}
-                        <span className="links-ext">opendatacon.org</span>, we
-                        use a third party service,{' '}
-                        <span class="bold-text">Google Analytics</span>, to
-                        collect standard internet log information and details of
-                        visitor behaviour patterns. We do this to{' '}
-                        <span class="bold-text">
-                          understand who we reached and how we can reach more
-                          people to our conference.
-                        </span>{' '}
-                        This information is only processed in a way which does
-                        not identify anyone. We do not make, and do not allow
-                        Google to make, any attempt to find out the identities
-                        of those visiting our website.
+                        <FormattedHTMLMessage
+                          id="privacy.c"
+                          defaultMessage="Privacy Policy"
+                        />
                       </p>
                     </li>
                     <li className="mtop20">
                       <span class="bullet">●</span>
-                      <span className="bold-text">Registration forms</span>{' '}
+                      <FormattedHTMLMessage
+                        id="privacy.registration"
+                        defaultMessage="Privacy Policy"
+                      />
+
                       <p>
-                        We collect your contact details in our registration form
-                        so that we can:
+                        <FormattedHTMLMessage
+                          id="privacy.d"
+                          defaultMessage="Privacy Policy"
+                        />
                       </p>
                       <ul>
                         <li>
-                          <span className="bold-text">1.</span> Verify your
-                          identification when you visit the conference.
+                          <span className="bold-text">1.</span>{' '}
+                          <FormattedHTMLMessage
+                            id="privacy.1"
+                            defaultMessage="Privacy Policy"
+                          />
                         </li>
                         <li>
-                          <span className="bold-text">2. </span>Contact you so
-                          you can keep up-to-date with the conference and have
-                          the best attendance experience.{' '}
+                          <span className="bold-text">2. </span>
+                          <FormattedHTMLMessage
+                            id="privacy.2"
+                            defaultMessage="Privacy Policy"
+                          />
                         </li>
                         <li>
-                          <span className="bold-text">3. </span>Measure the
-                          diversity of the event.{' '}
+                          <span className="bold-text">3. </span>
+                          <FormattedHTMLMessage
+                            id="privacy.3"
+                            defaultMessage="Privacy Policy"
+                          />
                         </li>
                       </ul>
                     </li>
                     <li className="mtop20">
                       <span class="bullet">●</span>
-                      <span className="bold-text">Newsletter</span>{' '}
+                      <FormattedHTMLMessage
+                        id="privacy.newsletter"
+                        defaultMessage="Privacy Policy"
+                      />{' '}
                       <p>
-                        By registering to the conference, you give us consent to
-                        include you in our mailing list. Your data will only be
-                        shared with MailChimp to send you correspondance about
-                        the conference. You can unsubscribe from MailChimp at
-                        anytime. For more information, please see{' '}
-                        <a
-                          className="links-ext"
-                          rel="noopener noreferrer"
-                          target="_blank"
-                          href="https://mailchimp.com/legal/privacy/"
-                        >
-                          MailChimp’s privacy notice
-                        </a>.
+                        <FormattedHTMLMessage
+                          id="privacy.e"
+                          defaultMessage="Privacy Policy"
+                        />{' '}
                       </p>
                     </li>
                   </ul>
@@ -125,18 +126,28 @@ class Privacy extends Component {
 
                 <p className="internal-text">
                   <p className="internal-sub-title internal-sub-title-low mtop40">
-                    Access to your personal information
+                    <FormattedHTMLMessage
+                      id="privacy.access"
+                      defaultMessage="Privacy Policy"
+                    />
                   </p>
-                  You are entitled to view, amend or delete the personal
-                  information of yours that we maintain. Email your request to{' '}
-                  <span className="italic-text">contact@opendatacon.org</span>.
+                  <FormattedHTMLMessage
+                    id="privacy.f"
+                    defaultMessage="Privacy Policy"
+                  />
                 </p>
 
                 <p className="internal-text mbottom75">
                   <p className="internal-sub-title internal-sub-title-low mtop40">
-                    Changes to this Privacy Notice
+                    <FormattedHTMLMessage
+                      id="privacy.changes"
+                      defaultMessage="Privacy Policy"
+                    />
                   </p>
-                  This privacy policy was changed on 27/5/2018.
+                  <FormattedHTMLMessage
+                    id="privacy.g"
+                    defaultMessage="Privacy Policy"
+                  />
                 </p>
               </div>
             </div>
