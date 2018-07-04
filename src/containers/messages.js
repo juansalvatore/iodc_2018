@@ -41,6 +41,7 @@ export default {
 
     // Side Events
     'home.sideevents': 'Events around the Conference',
+    'side.events.invitation': 'Access with invitation',
 
     // Previous events
     'home.previous': 'Previous Events',
@@ -241,7 +242,7 @@ export default {
 
     // Side Events
     'home.sideevents': 'Eventos alrededor de la Conferencia',
-
+    'side.events.invitation': 'Acceso con invitación',
     // Previous events
     'home.previous': 'Eventos anteriores',
 
