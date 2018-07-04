@@ -22,6 +22,10 @@ import {
   Brasil,
   Iodc12,
   Iodc10,
+  SideEvent1,
+  SideEvent2,
+  SideEvent3,
+  SideEvent4,
 } from '../img'
 
 class Home extends Component {
@@ -201,7 +205,7 @@ class Home extends Component {
                 </div>
                 {/* EVENTO 1 */}
                 <SideEvent
-                  image={Preevent}
+                  image={SideEvent1}
                   url="http://2018.abrelatam.org/"
                   title="AbreLatam"
                   location="Usina del Arte"
@@ -209,21 +213,21 @@ class Home extends Component {
                 />
                 {/* EVENTO 2 */}
                 <SideEvent
-                  image={Preevent}
+                  image={SideEvent2}
                   url="http://opencitiessummit.org/"
                   title="Open Cities"
                   location="Centro Metropolitano de Diseño"
                   direction="Monday 24th September"
                 />
                 <SideEvent
-                  image={Preevent}
+                  image={SideEvent3}
                   url="https://www.eventbrite.com/e/open-data-research-symposium-2018-tickets-47181009670"
                   title="Open Data Research Symposium"
                   location="Centro Cultural San Martín"
                   direction="Tuesday 25th September"
                 />
                 <SideEvent
-                  image={Preevent}
+                  image={SideEvent4}
                   url="https://www.open-contracting.org/events/"
                   title="Open Contracting Workshop"
                   location="Facultad de Derecho"

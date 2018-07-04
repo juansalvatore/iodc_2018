@@ -27,6 +27,10 @@ import IdCard from './idcard.png'
 import Francia from './francia.png'
 import Brasil from './brasil.png'
 import Uruguay from './uruguay.png'
+import SideEvent1 from './sideevent1.png'
+import SideEvent2 from './sideevent2.png'
+import SideEvent3 from './sideevent3.png'
+import SideEvent4 from './sideevent4.png'
 
 export {
   Logo,
@@ -58,4 +62,8 @@ export {
   Francia,
   Brasil,
   Uruguay,
+  SideEvent1,
+  SideEvent2,
+  SideEvent3,
+  SideEvent4,
 }
