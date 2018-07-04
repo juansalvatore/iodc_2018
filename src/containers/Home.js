@@ -21,6 +21,9 @@ import {
 } from '../img'
 
 class Home extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
   render() {
     const { lang } = this.props
     return (
@@ -85,23 +88,6 @@ class Home extends Component {
                   </h4>
                 </div>
 
-                {/* BULLETS */}
-                <div className="col-xs-12 col-sm-4 text-center">
-                  <img src={Obelisco} alt="Obelisco" className="img-bullets" />
-                  <h5 className="bullets">
-                    <FormattedMessage
-                      id="home.bullets.1"
-                      defaultMessage="Need more info about Buenos Aires?"
-                    />
-                  </h5>
-                  <button className="button-bullets">
-                    <FormattedMessage
-                      id="home.bullets.button.1"
-                      defaultMessage="Get to know the city"
-                    />
-                  </button>
-                </div>
-
                 <div className="col-xs-12 col-sm-4 text-center">
                   <img src={Visas} alt="Visas" className="img-bullets" />
                   <h5 className="bullets">
@@ -110,33 +96,66 @@ class Home extends Component {
                       defaultMessage="Need more info about visas?"
                     />
                   </h5>
-                  <button className="button-bullets">
-                    <FormattedMessage
-                      id="home.bullets.button.2"
-                      defaultMessage="Info for your application"
-                    />
-                  </button>
+                  <Link
+                    to="/iodc_2018/info"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    <button className="button-bullets">
+                      <FormattedMessage
+                        id="home.bullets.button.2"
+                        defaultMessage="Info for your application"
+                      />
+                    </button>
+                  </Link>
                 </div>
-
-                <div className="col-xs-12 col-sm-4 text-center">
-                  <img
-                    src={Invitacion}
-                    alt="Invitacion"
-                    className="img-bullets"
-                  />
-                  <h5 className="bullets">
-                    <FormattedMessage
-                      id="home.bullets.3"
-                      defaultMessage="Do you need an invite from the comitee?"
+                <Link
+                  to="/iodc_2018/info"
+                  onClick={() => window.scrollTo(0, 2000)}
+                >
+                  <div className="col-xs-12 col-sm-4 text-center">
+                    <img
+                      src={Obelisco}
+                      alt="Obelisco"
+                      className="img-bullets"
                     />
-                  </h5>
-                  <button className="button-bullets">
-                    <FormattedMessage
-                      id="home.bullets.button.3"
-                      defaultMessage="Request an invite"
+                    <h5 className="bullets">
+                      <FormattedMessage
+                        id="home.bullets.1"
+                        defaultMessage="Need more info about Buenos Aires?"
+                      />
+                    </h5>
+                    <button className="button-bullets">
+                      <FormattedMessage
+                        id="home.bullets.button.1"
+                        defaultMessage="Get to know the city"
+                      />
+                    </button>
+                  </div>
+                </Link>
+                <Link
+                  to="/iodc_2018/info"
+                  onClick={() => window.scrollTo(0, 2200)}
+                >
+                  <div className="col-xs-12 col-sm-4 text-center">
+                    <img
+                      src={Invitacion}
+                      alt="Invitacion"
+                      className="img-bullets"
                     />
-                  </button>
-                </div>
+                    <h5 className="bullets">
+                      <FormattedMessage
+                        id="home.bullets.3"
+                        defaultMessage="Do you need an invite from the comitee?"
+                      />
+                    </h5>
+                    <button className="button-bullets">
+                      <FormattedMessage
+                        id="home.bullets.button.3"
+                        defaultMessage="Request an invite"
+                      />
+                    </button>
+                  </div>
+                </Link>
 
                 {/* FIN BULLETS */}
               </div>
