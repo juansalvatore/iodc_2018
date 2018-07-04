@@ -18,8 +18,8 @@ export default {
     'home.main.title': 'The Future is Open',
     'home.main.date': 'September 27-28, 2018',
     'home.main.register': 'REGISTER',
-    'home.main.schedule': 'SEE THE SCHEDULE',
-    'home.main.sideevents': 'See all the side events',
+    'home.main.schedule': 'PROGRAMME',
+    'home.main.sideevents': 'See all the pre-events',
     'home.about.iodc.title': 'About IODC',
 
     // Home Bullets
@@ -28,7 +28,7 @@ export default {
     'home.bullets.button.1': 'Get to know the city',
     'home.bullets.2': 'Need more info about visas?',
     'home.bullets.button.2': 'Info for your application',
-    'home.bullets.3': 'Do you need an invite from the comitee?',
+    'home.bullets.3': 'Do you need an invite from the Comitee?',
     'home.bullets.button.3': 'Request an invite',
 
     // Home Info
@@ -398,6 +398,13 @@ export default {
     'privacy.changes': 'Changes to this Privacy Notice',
 
     'privacy.g': 'This privacy policy was changed on 27/5/2018.',
+
+    //PRESS
+
+    'press.header': 'Press',
+
+    'press.text':
+      'For more information about how to get press access to IODC18 please contact us at <i>contact@opendatacon.org</i>',
   },
   es: {
     'nav.dashboard': 'Hola Mundo',
@@ -773,5 +780,12 @@ export default {
     'privacy.changes': 'Cambios en esta política de privacidad',
 
     'privacy.g': 'Esta política de privacidad fue actualizada del 27/5/2018.',
+
+    //PRESS
+
+    'press.header': 'Prensa',
+
+    'press.text':
+      'Dentro de poco, en esta sección vas a poder encontrar todo lo que necesitás saber para acreditarte y cubrir la Conferencia. Para más información, escribinos a <i>contact@opendatacon.org</i>',
   },
 }

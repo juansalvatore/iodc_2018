@@ -21,7 +21,7 @@ class Agenda extends Component {
   renderScript = () => {
     return (
       <Script
-        url="https://iodc2018.sched.com/js/embed.js"
+        url="//iodc2018.sched.com/js/embed.js"
         // onCreate={this.handleScriptCreate.bind(this)}
         // onError={this.handleScriptError.bind(this)}
         // onLoad={this.handleScriptLoad.bind(this)}
@@ -60,7 +60,7 @@ class Agenda extends Component {
                   height="2000px"
                   width="100%"
                   id="slideshow_frame"
-                  src="https://iodc2018.sched.com/"
+                  src="//iodc2018.sched.com/"
                 />
               </div>
             </div>

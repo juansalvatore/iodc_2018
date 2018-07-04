@@ -56,6 +56,27 @@ class Menu extends Component {
             </div>
 
             <Nav>
+              <LinkContainer to="/iodc_2018/about">
+                <NavItem eventKey={4} href="#">
+                  <FormattedMessage id="nav.about" defaultMessage="About" />
+                </NavItem>
+              </LinkContainer>
+
+              <LinkContainer to="/iodc_2018/agenda">
+                <NavItem eventKey={3} href="#">
+                  <FormattedMessage id="nav.agenda" defaultMessage="Agenda" />
+                </NavItem>
+              </LinkContainer>
+
+              <LinkContainer to="/iodc_2018/side-events-list">
+                <NavItem eventKey={3} href="#">
+                  <FormattedMessage
+                    id="nav.side-events"
+                    defaultMessage="side events"
+                  />
+                </NavItem>
+              </LinkContainer>
+
               <LinkContainer to="/iodc_2018/register">
                 <NavItem eventKey={1} href="#">
                   <FormattedMessage
@@ -65,34 +86,15 @@ class Menu extends Component {
                 </NavItem>
               </LinkContainer>
 
-              <LinkContainer to="/iodc_2018/press">
-                <NavItem eventKey={2} href="#">
-                  <FormattedMessage id="nav.press" defaultMessage="Press" />
-                </NavItem>
-              </LinkContainer>
-
-              <LinkContainer to="/iodc_2018/agenda">
-                <NavItem eventKey={3} href="#">
-                  <FormattedMessage id="nav.agenda" defaultMessage="Agenda" />
-                </NavItem>
-              </LinkContainer>
-              <LinkContainer to="/iodc_2018/side-events-list">
-                <NavItem eventKey={3} href="#">
-                  <FormattedMessage
-                    id="nav.side-events"
-                    defaultMessage="side events"
-                  />
-                </NavItem>
-              </LinkContainer>
-              <LinkContainer to="/iodc_2018/about">
-                <NavItem eventKey={4} href="#">
-                  <FormattedMessage id="nav.about" defaultMessage="About" />
-                </NavItem>
-              </LinkContainer>
-
               <LinkContainer to="/iodc_2018/info">
                 <NavItem eventKey={5} href="#">
                   <FormattedMessage id="nav.info" defaultMessage="Info" />
+                </NavItem>
+              </LinkContainer>
+
+              <LinkContainer to="/iodc_2018/press">
+                <NavItem eventKey={2} href="#">
+                  <FormattedMessage id="nav.press" defaultMessage="Press" />
                 </NavItem>
               </LinkContainer>
 

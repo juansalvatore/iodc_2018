@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { IntlProvider } from 'react-intl'
+import { IntlProvider, FormattedHTMLMessage } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
 import { Header, Footer } from './'
@@ -13,22 +13,14 @@ class Press extends Component {
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div>
           <div className="container-fluid">
-            <Header>Press</Header>
+            <Header>
+              <FormattedHTMLMessage id="press.header" defaultMessage="Info" />
+            </Header>
             <div className="row press_container">
-              <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                <img
-                  src={IdCard}
-                  alt="IdCard"
-                  classNameName="centerelement img-idcard"
-                />
+              <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 centerelement">
+                <img src={IdCard} alt="IdCard" className="img-idcard" />
                 <p classNameName="internal-text text-center">
-                  Soon, in this section you will find everything you need to
-                  know to accredit and cover the Conference. For more
-                  information, contact us at{' '}
-                  <span classNameName="italic-text">
-                    {' '}
-                    contact@opendatacon.org
-                  </span>.
+                  <FormattedHTMLMessage id="press.text" defaultMessage="Info" />
                 </p>
               </div>
             </div>
