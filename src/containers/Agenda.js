@@ -18,10 +18,15 @@ class Agenda extends Component {
     this.renderScript()
   }
 
+  // <a id="sched-embed" href="//iodc18.sched.com/" data-sched-sidebar="no">
+  // View the IODC18 schedule &amp; directory.
+  // </a>
+  // <script type="text/javascript" src="//iodc18.sched.com/js/embed.js"></script>
+
   renderScript = () => {
     return (
       <Script
-        url="//iodc2018.sched.com/js/embed.js"
+        url="https://iodc18.sched.com/js/embed.js"
         // onCreate={this.handleScriptCreate.bind(this)}
         // onError={this.handleScriptError.bind(this)}
         // onLoad={this.handleScriptLoad.bind(this)}
@@ -59,8 +64,9 @@ class Agenda extends Component {
                   title="agenda"
                   height="2000px"
                   width="100%"
-                  id="slideshow_frame"
-                  src="//iodc2018.sched.com/"
+                  id="sched-embed"
+                  src="//iodc18.sched.com/"
+                  data-sched-sidebar="no"
                 />
               </div>
             </div>
