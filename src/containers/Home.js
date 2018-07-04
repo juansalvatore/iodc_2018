@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { IntlProvider, FormattedMessage } from 'react-intl'
+import {
+  IntlProvider,
+  FormattedMessage,
+  FormattedHTMLMessage,
+} from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
 import { Footer, SideEvent } from './'
@@ -231,7 +235,7 @@ class Home extends Component {
                 <div className="centerelement">
                   <Link to="/iodc_2018/side-events-list">
                     <button className="schedule-button sideevents-button">
-                      <FormattedMessage
+                      <FormattedHTMLMessage
                         id="home.main.sideevents"
                         defaultMessage="See all the side events"
                       />

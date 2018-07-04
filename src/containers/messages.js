@@ -36,6 +36,7 @@ export default {
       'The International Open Data Conference (IODC) is a biannual event to bring the global open data community together in order to learn, share, plan, and collaborate on the future of open data. The unique nature of this event is that it gathers together in one location a diverse range of participants from the northern and southern hemispheres who are seeking to define strategies to advance open data both globally and locally.',
     // Home Proposals
     'home.proposals.title': 'Propuestas recibidas',
+    'home.partners': 'Institutional support',
 
     // Home Visit
     'home.visit.title': 'Your visit to Argentina',
@@ -305,22 +306,23 @@ export default {
     'home.main.title': 'El Futuro es Abierto',
     'home.main.date': '27 y 28 de septiembre de 2018',
     'home.main.register': 'REGISTRATE',
-    'home.main.schedule': 'VER LA AGENDA',
-    'home.main.sideevents': 'Ver todos los eventos paralelos',
+    'home.main.schedule': 'CONOCÉ LA AGENDA',
+    'home.main.sideevents': 'Ver todos los eventos</br> de la semana',
+    'home.partners': 'Nos acompañan',
 
     // Home Bullets
     'home.bullets.title': '¿Ya estás registrado en el evento?',
     'home.bullets.1': '¿Información sobre Buenos Aires?',
-    'home.bullets.button.1': 'Conoce la ciudad',
+    'home.bullets.button.1': 'Conocé la ciudad',
     'home.bullets.2': '¿Necesitas información sobre visas?',
     'home.bullets.button.2': 'Información para tu aplicación',
     'home.bullets.3': '¿Necesitas una invitación del comité?',
-    'home.bullets.button.3': 'Solicita una invitación',
+    'home.bullets.button.3': 'Solicitá una invitación',
     'home.about.iodc.title': 'Sobre IODC',
 
     // Home Info
     'home.about.iodc':
-      'La Conferencia Internacional de Datos Abiertos (IODC, por sus siglas en inglés) es un evento semestral que reúne a la comunidad global de datos abiertos para aprender, compartir, planificar y colaborar en el futuro de la apertura. La naturaleza única de este evento es que reúne en un solo lugar a una amplia gama de participantes de todo el mundo, que buscan definir estrategias para impulsar el uso de datos abiertos tanto a nivel local como global.',
+      'La Conferencia Internacional de Datos Abiertos (IODC, por sus siglas en inglés) es un evento semestral que reúne a la comunidad global de datos abiertos para aprender, compartir, planificar y colaborar en el futuro de la apertura. La naturaleza única de este evento es que reúne en un solo lugar a una gran cantidad de participantes de todo el mundo, que buscan definir estrategias para impulsar el uso de datos abiertos tanto a nivel local como global.',
     // Home Proposals
     'home.proposals.title': 'Propuestas recibidas',
 
