@@ -399,7 +399,7 @@ hr
     height: auto
     
 .bottom-footer
-    position: relative
+    position: absolute
     bottom: 0 !important
 
 
@@ -882,8 +882,16 @@ select:focus, input:focus
         font:
             size: 40px !important
 
+.press_container 
+    height: 100%
+    overflow: auto
 
 // MEDIA QUERIES
+
+@media (max-height: 1050px)
+    .bottom-footer
+        position: relative
+        bottom: 0 !important
 
 @media (max-width: 1300px)         
     .hamburguer-bt 
