@@ -13,6 +13,7 @@ export default {
     'nav.conduct': 'Code of Conduct',
     'nav.privacy': 'Privacy Policy',
     'nav.side-events': 'Pre-Events',
+    'register.success': 'You have been registered successfully.',
 
     // Home
     'home.main.title': 'The Future is Open',
@@ -121,7 +122,7 @@ export default {
     'info.c': '<b>How could I confirm my registration?</b>',
 
     'info.d':
-      'Once you completed the <a href="/iodc_2018/register">registration form</a> you will receive a notification, and also an automatic confirmation email.',
+      'Once you completed the <a href="/register">registration form</a> you will receive a notification, and also an automatic confirmation email.',
 
     'info.e':
       '<b>I am a journalist and want to cover IODC. How can I do this?</b>',
@@ -131,7 +132,7 @@ export default {
 
     'info.privacy': 'Privacy Policy',
     'info.privacy.a':
-      'Please see our Privacy Policy <a href="/iodc_2018/privacy">here</a>.',
+      'Please see our Privacy Policy <a href="/privacy">here</a>.',
 
     'info.visa': 'Visa and travel information',
 
@@ -434,6 +435,8 @@ export default {
     'home.main.sideevents': 'Ver todos los eventos</br> de la semana',
     'home.partners': 'Nos acompañan',
 
+    'register.success': 'Te registraste exitosamente.',
+
     // Home Bullets
     'home.bullets.title': '¿Ya estás registrado?',
     'home.bullets.1': '¿Información sobre Buenos Aires?',
@@ -534,7 +537,7 @@ export default {
     'info.c': '<b>¿Cómo puedo confirmar mi registro?</b>',
 
     'info.d':
-      'Una vez que hayas completado el <a href="/iodc_2018/register">formulario de registro</a>, recibirá una notificación y también un correo electrónico de confirmación automática.',
+      'Una vez que hayas completado el <a href="/register">formulario de registro</a>, recibirá una notificación y también un correo electrónico de confirmación automática.',
 
     'info.e': '<b>Soy periodista y quiero cubrir IODC. ¿Cómo puedo hacer?</b>',
 
@@ -543,7 +546,7 @@ export default {
 
     'info.privacy': 'Políticas de Privacidad',
     'info.privacy.a':
-      'Podés ver nuestras políticas de privacidad <a href="/iodc_2018/privacy">haciendo clic aquí</a>.',
+      'Podés ver nuestras políticas de privacidad <a href="/privacy">haciendo clic aquí</a>.',
 
     'info.visa': 'Visas e información para viajar',
 

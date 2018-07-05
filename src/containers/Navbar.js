@@ -41,7 +41,7 @@ class Menu extends Component {
           <Navbar className="navbar-container">
             <Navbar.Header>
               <Navbar.Brand>
-                <Link to="/iodc_2018/">
+                <Link to="/">
                   <img src={Logo} alt="logo" />
                 </Link>
               </Navbar.Brand>
@@ -56,13 +56,13 @@ class Menu extends Component {
             </div>
 
             <Nav>
-              <LinkContainer to="/iodc_2018/about">
+              <LinkContainer to="/about">
                 <NavItem eventKey={4} href="#">
                   <FormattedMessage id="nav.about" defaultMessage="About" />
                 </NavItem>
               </LinkContainer>
 
-              <LinkContainer to="/iodc_2018/agenda">
+              <LinkContainer to="/agenda">
                 <NavItem eventKey={3} href="#">
                   <FormattedMessage
                     id="nav.agenda"
@@ -71,7 +71,7 @@ class Menu extends Component {
                 </NavItem>
               </LinkContainer>
 
-              <LinkContainer to="/iodc_2018/side-events-list">
+              <LinkContainer to="/side-events-list">
                 <NavItem eventKey={3} href="#">
                   <FormattedMessage
                     id="nav.side-events"
@@ -80,7 +80,7 @@ class Menu extends Component {
                 </NavItem>
               </LinkContainer>
 
-              <LinkContainer to="/iodc_2018/register">
+              <LinkContainer to="/register">
                 <NavItem eventKey={1} href="#">
                   <FormattedMessage
                     id="nav.register"
@@ -89,19 +89,19 @@ class Menu extends Component {
                 </NavItem>
               </LinkContainer>
 
-              <LinkContainer to="/iodc_2018/info">
+              <LinkContainer to="/info">
                 <NavItem eventKey={5} href="#">
                   <FormattedMessage id="nav.info" defaultMessage="Info" />
                 </NavItem>
               </LinkContainer>
 
-              <LinkContainer to="/iodc_2018/press">
+              <LinkContainer to="/press">
                 <NavItem eventKey={2} href="#">
                   <FormattedMessage id="nav.press" defaultMessage="Press" />
                 </NavItem>
               </LinkContainer>
 
-              <LinkContainer to="/iodc_2018/conduct">
+              <LinkContainer to="/conduct">
                 <NavItem eventKey={6} href="#">
                   <FormattedMessage
                     id="nav.conduct"
@@ -109,7 +109,7 @@ class Menu extends Component {
                   />
                 </NavItem>
               </LinkContainer>
-              {/* <LinkContainer to="/iodc_2018/privacy">
+              {/* <LinkContainer to="/privacy">
                 <NavItem eventKey={7} href="#">
                   <FormattedMessage
                     id="nav.privacy"

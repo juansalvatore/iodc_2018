@@ -106,7 +106,7 @@ class Register extends Component {
     ) {
       this.setState({ sent: true })
       console.log(this.state.sent)
-      // window.location.href = '/iodc_2018/submited-form'
+      // window.location.href = '/submited-form'
     }
   }
 
@@ -210,7 +210,10 @@ class Register extends Component {
             <div className={this.state.sent ? 'row' : 'hide-submitted-message'}>
               <div className="col-md-10 col-md-offset-1">
                 <h3 className="internal-sub-title submitted-form-success">
-                  You have been registered successfully.
+                  <FormattedMessage
+                    id="register.success"
+                    defaultMessage="You have been registered successfully."
+                  />
                 </h3>
               </div>
             </div>

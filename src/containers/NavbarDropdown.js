@@ -29,34 +29,31 @@ class NavbarDropdown extends Component {
           </span>
           <hr />
           <li>
-            <Link className="navbar-dropdown-links" to="/iodc_2018/">
+            <Link className="navbar-dropdown-links" to="/">
               Home
             </Link>
           </li>
           <hr />
           <li>
-            <Link className="navbar-dropdown-links" to="/iodc_2018/register">
+            <Link className="navbar-dropdown-links" to="/register">
               <FormattedMessage id="nav.register" defaultMessage="Register" />
             </Link>
           </li>
           <hr />
           <li>
-            <Link className="navbar-dropdown-links" to="/iodc_2018/press">
+            <Link className="navbar-dropdown-links" to="/press">
               <FormattedMessage id="nav.press" defaultMessage="Press" />
             </Link>
           </li>
           <hr />
           <li>
-            <Link className="navbar-dropdown-links" to="/iodc_2018/agenda">
+            <Link className="navbar-dropdown-links" to="/agenda">
               <FormattedMessage id="nav.agenda" defaultMessage="Agenda" />
             </Link>
           </li>
           <hr />
           <li>
-            <Link
-              className="navbar-dropdown-links"
-              to="/iodc_2018/side-events-list"
-            >
+            <Link className="navbar-dropdown-links" to="/side-events-list">
               <FormattedMessage
                 id="nav.side-events"
                 defaultMessage="side events"
@@ -66,7 +63,7 @@ class NavbarDropdown extends Component {
           <hr />
 
           <li>
-            <Link className="navbar-dropdown-links" to="/iodc_2018/about">
+            <Link className="navbar-dropdown-links" to="/about">
               <FormattedMessage id="nav.about" defaultMessage="About" />
             </Link>
           </li>
@@ -74,13 +71,13 @@ class NavbarDropdown extends Component {
           <hr />
 
           <li>
-            <Link className="navbar-dropdown-links" to="/iodc_2018/info">
+            <Link className="navbar-dropdown-links" to="/info">
               <FormattedMessage id="nav.info" defaultMessage="Info" />
             </Link>
           </li>
           <hr />
           <li>
-            <Link className="navbar-dropdown-links" to="/iodc_2018/conduct">
+            <Link className="navbar-dropdown-links" to="/conduct">
               <FormattedMessage
                 id="nav.conduct"
                 defaultMessage="Code of Conduct"
@@ -88,14 +85,14 @@ class NavbarDropdown extends Component {
             </Link>
           </li>
           <hr />
-          <Link className="navbar-dropdown-links" to="/iodc_2018/privacy">
+          <Link className="navbar-dropdown-links" to="/privacy">
             <li>
               <FormattedMessage id="nav.privacy" defaultMessage="Privacy" />
             </li>
           </Link>
           <hr />
 
-          <Link to="/iodc_2018/#">
+          <Link to="/#">
             <img src={Facebook} width="20" alt="fb" />
           </Link>
           <a href="https://medium.com/@opendatacon" target="_blank">

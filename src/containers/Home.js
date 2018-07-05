@@ -65,7 +65,7 @@ class Home extends Component {
             </div>
             <div className="centerelement">
               <div className="home_button_container">
-                <Link to="/iodc_2018/register">
+                <Link to="/register">
                   <button className="register-button">
                     <FormattedMessage
                       id="home.main.register"
@@ -73,7 +73,7 @@ class Home extends Component {
                     />
                   </button>
                 </Link>
-                <Link to="/iodc_2018/agenda">
+                <Link to="/agenda">
                   <button className="schedule-button schedule-button-top">
                     <FormattedMessage
                       id="home.main.schedule"
@@ -104,10 +104,7 @@ class Home extends Component {
                       defaultMessage="Need more info about visas?"
                     />
                   </h5>
-                  <Link
-                    to="/iodc_2018/info"
-                    onClick={() => window.scrollTo(0, 0)}
-                  >
+                  <Link to="/info" onClick={() => window.scrollTo(0, 0)}>
                     <button className="button-bullets">
                       <FormattedMessage
                         id="home.bullets.button.2"
@@ -116,10 +113,7 @@ class Home extends Component {
                     </button>
                   </Link>
                 </div>
-                <Link
-                  to="/iodc_2018/info"
-                  onClick={() => window.scrollTo(0, 2000)}
-                >
+                <Link to="/info" onClick={() => window.scrollTo(0, 2000)}>
                   <div className="col-xs-12 col-sm-4 text-center">
                     <img
                       src={Obelisco}
@@ -140,10 +134,7 @@ class Home extends Component {
                     </button>
                   </div>
                 </Link>
-                <Link
-                  to="/iodc_2018/info"
-                  onClick={() => window.scrollTo(0, 2200)}
-                >
+                <Link to="/info" onClick={() => window.scrollTo(0, 2200)}>
                   <div className="col-xs-12 col-sm-4 text-center">
                     <img
                       src={Invitacion}
@@ -237,7 +228,7 @@ class Home extends Component {
 
               <div className="row padding-15 mtop40">
                 <div className="centerelement">
-                  <Link to="/iodc_2018/side-events-list">
+                  <Link to="/side-events-list">
                     <button className="schedule-button sideevents-button">
                       <FormattedHTMLMessage
                         id="home.main.sideevents"
@@ -287,7 +278,7 @@ class Home extends Component {
 
               <div className="row padding-15 mtop40">
                 <div className="centerelement">
-                  <Link to="/iodc_2018/register">
+                  <Link to="/register">
                     <button className="register-button">
                       <FormattedMessage
                         id="home.main.register"
