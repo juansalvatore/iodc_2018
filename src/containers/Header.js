@@ -9,7 +9,7 @@ class Header extends Component {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div className="row img-back section">
+        <div className="row img-back section header">
           <div className="col-lg-12">
             <div>
               <div className="flex-row">

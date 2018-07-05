@@ -64,7 +64,10 @@ class Menu extends Component {
 
               <LinkContainer to="/iodc_2018/agenda">
                 <NavItem eventKey={3} href="#">
-                  <FormattedMessage id="nav.agenda" defaultMessage="Agenda" />
+                  <FormattedMessage
+                    id="nav.agenda"
+                    defaultMessage="Programme"
+                  />
                 </NavItem>
               </LinkContainer>
 

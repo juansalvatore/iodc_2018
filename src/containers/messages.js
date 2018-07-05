@@ -8,11 +8,11 @@ export default {
     'nav.register': 'Register',
     'nav.press': 'Press',
     'nav.about': 'About',
-    'nav.agenda': 'Agenda',
+    'nav.agenda': 'Programme',
     'nav.info': 'Info',
     'nav.conduct': 'Code of Conduct',
     'nav.privacy': 'Privacy Policy',
-    'nav.side-events': 'Side Events',
+    'nav.side-events': 'Pre-Events',
 
     // Home
     'home.main.title': 'The Future is Open',
@@ -23,26 +23,26 @@ export default {
     'home.about.iodc.title': 'About IODC',
 
     // Home Bullets
-    'home.bullets.title': 'Already registered to the event?',
+    'home.bullets.title': 'Already registered?',
     'home.bullets.1': 'Need more info about Buenos Aires?',
     'home.bullets.button.1': 'Get to know the city',
     'home.bullets.2': 'Need more info about visas?',
     'home.bullets.button.2': 'Info for your application',
     'home.bullets.3': 'Do you need an invite from the Comitee?',
-    'home.bullets.button.3': 'Request an invite',
+    'home.bullets.button.3': 'Request an invitation',
 
     // Home Info
     'home.about.iodc':
       'The International Open Data Conference (IODC) is a biannual event to bring the global open data community together in order to learn, share, plan, and collaborate on the future of open data. The unique nature of this event is that it gathers together in one location a diverse range of participants from the northern and southern hemispheres who are seeking to define strategies to advance open data both globally and locally.',
     // Home Proposals
     'home.proposals.title': 'Propuestas recibidas',
-    'home.partners': 'Institutional support',
+    'home.partners': 'Institutional Support',
 
     // Home Visit
-    'home.visit.title': 'Your visit to Argentina',
+    'home.visit.title': 'Your Visit to Argentina',
 
     // Side Events
-    'home.sideevents': 'Events around the Conference',
+    'home.sideevents': 'Events Around the Conference',
     'side.events.invitation': 'Access with invitation',
     'side.events.button': 'Go to the event',
     'nav.side-events.subtitle': 'See the list',
@@ -50,7 +50,7 @@ export default {
       'Here you can find the list of side events that will occur along side IODC.',
 
     // Previous events
-    'home.previous': 'Previous Events',
+    'home.previous': 'Previous Editions',
 
     // Pre-Register
     'register.section': 'Pre-Register',
@@ -239,14 +239,14 @@ export default {
       <b>
         International Open Data Conference
       </b>
-      (IODC) is a biannual event that brings the global open data
+      (IODC) is a biannual event designed to bring the global open data
       community together in order to learn, share, plan and
       collaborate on the future of open data.
     `,
     'about.top.info.b': `
       The unique nature of this event is that it gathers together in
       one location a diverse range of participants from the northern
-      and southern hemispheres who are seeking to define strategies to
+      and southern hemispheres to define strategies to
       advance open data both locally and globally.
     `,
     'about.objectives.title': 'The IODC has 3 main objectives:',
@@ -404,7 +404,7 @@ export default {
     'press.header': 'Press',
 
     'press.text':
-      'For more information about how to get press access to IODC18 please contact us at <i>contact@opendatacon.org</i>',
+      'For more information about how to get press access to IODC18, please contact us at <i>contact@opendatacon.org</i>',
   },
   es: {
     'nav.dashboard': 'Hola Mundo',
@@ -431,7 +431,7 @@ export default {
     'home.partners': 'Nos acompañan',
 
     // Home Bullets
-    'home.bullets.title': '¿Ya estás registrado en el evento?',
+    'home.bullets.title': '¿Ya estás registrado?',
     'home.bullets.1': '¿Información sobre Buenos Aires?',
     'home.bullets.button.1': 'Conocé la ciudad',
     'home.bullets.2': '¿Necesitas información sobre visas?',
@@ -458,7 +458,7 @@ export default {
       'Conocé más sobre los pre eventos en la semana de #IODC18',
 
     // Previous events
-    'home.previous': 'Eventos anteriores',
+    'home.previous': 'Ediciones anteriores',
 
     // Pre-Register
     'register.section': 'Pre-Registro',

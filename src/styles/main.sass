@@ -399,6 +399,7 @@ hr
     height: auto
     
 .bottom-footer
+    position: relative
     bottom: 0 !important
 
 
@@ -870,6 +871,16 @@ select:focus, input:focus
 .hide_invitation_event
     opacity: 0 !important
 
+.header
+    height: 230px !important
+    display: flex
+    justify-content: center
+    align-items: center
+
+    h3
+        margin-top: 70px
+        font:
+            size: 40px !important
 
 
 // MEDIA QUERIES
@@ -989,6 +1000,12 @@ select:focus, input:focus
     .dropdown
         width: 100%
         left: 0
+
+    .header
+        h3
+            margin-top: 70px
+            font:
+                size: 30px !important
         
 @media (max-width: 390px)
     .preevent
