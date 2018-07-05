@@ -46,7 +46,9 @@ class About extends Component {
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div>
           <div className="container-fluid">
-            <Header>About</Header>
+            <Header>
+              <FormattedMessage id="nav.about" defaultMessage="About" />
+            </Header>
 
             <div className="row">
               <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">

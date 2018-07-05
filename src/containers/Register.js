@@ -279,6 +279,13 @@ class Register extends Component {
                           defaultMessage="You need to complete your name"
                         />
                       </span>
+                      {/* Save Preferred language */}
+                      <input
+                        type="hidden"
+                        name="entry.866116574"
+                        id="entry.866116574"
+                        value={this.props.lang == 'en' ? 'English' : 'Spanish'}
+                      />
                       <h4>
                         <FormattedMessage
                           id="register.last.name"

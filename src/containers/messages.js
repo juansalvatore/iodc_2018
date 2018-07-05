@@ -410,6 +410,7 @@ export default {
     'nav.dashboard': 'Hola Mundo',
     'list.a': 'prueba',
     // About
+
     // nav
     'nav.link': 'test',
     'nav.register': 'Registrarse',
