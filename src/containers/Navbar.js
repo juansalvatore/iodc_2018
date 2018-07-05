@@ -109,14 +109,14 @@ class Menu extends Component {
                   />
                 </NavItem>
               </LinkContainer>
-              <LinkContainer to="/iodc_2018/privacy">
+              {/* <LinkContainer to="/iodc_2018/privacy">
                 <NavItem eventKey={7} href="#">
                   <FormattedMessage
                     id="nav.privacy"
                     defaultMessage="Privacy Policy"
                   />
                 </NavItem>
-              </LinkContainer>
+              </LinkContainer> */}
 
               <NavItem eventKey={8} href="https://">
                 <a href="https://www.facebook.com/opendatacon/" target="_blank">

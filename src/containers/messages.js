@@ -7,9 +7,9 @@ export default {
     'nav.link': 'link',
     'nav.register': 'Register',
     'nav.press': 'Press',
-    'nav.about': 'About',
+    'nav.about': 'IODC 18',
     'nav.agenda': 'Programme',
-    'nav.info': 'Info',
+    'nav.info': 'Practical Info',
     'nav.conduct': 'Code of Conduct',
     'nav.privacy': 'Privacy Policy',
     'nav.side-events': 'Pre-Events',
@@ -19,7 +19,7 @@ export default {
     'home.main.date': 'September 27-28, 2018',
     'home.main.register': 'REGISTER',
     'home.main.schedule': 'PROGRAMME',
-    'home.main.sideevents': 'See all the pre-events',
+    'home.main.sideevents': 'See all the scheduled pre-events',
     'home.about.iodc.title': 'About IODC',
 
     // Home Bullets
@@ -121,13 +121,17 @@ export default {
     'info.c': '<b>How could I confirm my registration?</b>',
 
     'info.d':
-      'Once you completed the <a href="/register">registration form</a> you will receive a notification, and also an automatic confirmation email.',
+      'Once you completed the <a href="/iodc_2018/register">registration form</a> you will receive a notification, and also an automatic confirmation email.',
 
     'info.e':
       '<b>I am a journalist and want to cover IODC. How can I do this?</b>',
 
     'info.f':
       'Contact us at <i>contact@opendatacon.org</i> to discuss media access to the event.',
+
+    'info.privacy': 'Privacy Policy',
+    'info.privacy.a':
+      'Please see our Privacy Policy <a href="/iodc_2018/privacy">here</a>.',
 
     'info.visa': 'Visa and travel information',
 
@@ -415,7 +419,7 @@ export default {
     'nav.link': 'test',
     'nav.register': 'Registrarse',
     'nav.press': 'Prensa',
-    'nav.about': 'Acerca',
+    'nav.about': 'IODC 18',
     'nav.agenda': 'Agenda',
     'nav.info': 'Info',
     'nav.conduct': 'Código de Conducta',
@@ -530,12 +534,16 @@ export default {
     'info.c': '<b>¿Cómo puedo confirmar mi registro?</b>',
 
     'info.d':
-      'Una vez que hayas completado el <a href="/register">formulario de registro</a>, recibirá una notificación y también un correo electrónico de confirmación automática.',
+      'Una vez que hayas completado el <a href="/iodc_2018/register">formulario de registro</a>, recibirá una notificación y también un correo electrónico de confirmación automática.',
 
     'info.e': '<b>Soy periodista y quiero cubrir IODC. ¿Cómo puedo hacer?</b>',
 
     'info.f':
       'Contactanos a través de <i>contact@opendatacon.org</i> para conocer el acceso de los medios de comunicación al evento.',
+
+    'info.privacy': 'Políticas de Privacidad',
+    'info.privacy.a':
+      'Podés ver nuestras políticas de privacidad <a href="/iodc_2018/privacy">haciendo clic aquí</a>.',
 
     'info.visa': 'Visas e información para viajar',
 

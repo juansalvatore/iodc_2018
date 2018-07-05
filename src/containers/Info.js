@@ -65,6 +65,18 @@ class Info extends Component {
               </p>
 
               <h3 className="internal-sub-title">
+                {' '}
+                <FormattedHTMLMessage id="info.privacy" defaultMessage="Info" />
+              </h3>
+
+              <p className="internal-text">
+                <FormattedHTMLMessage
+                  id="info.privacy.a"
+                  defaultMessage="Info"
+                />
+              </p>
+
+              <h3 className="internal-sub-title">
                 <FormattedHTMLMessage id="info.visa" defaultMessage="Info" />
               </h3>
               <p className="internal-text mbottom0">
