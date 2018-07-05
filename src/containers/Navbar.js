@@ -158,6 +158,7 @@ class Menu extends Component {
                 onClick={() => this.props.setLocale('en')}
                 eventKey={7}
                 href="#"
+                id={this.props.lang == 'en' ? 'selected_language' : ''}
               >
                 EN
               </NavItem>
@@ -165,6 +166,7 @@ class Menu extends Component {
                 onClick={() => this.props.setLocale('es')}
                 eventKey={7}
                 href="#"
+                id={this.props.lang == 'es' ? 'selected_language' : ''}
               >
                 ES
               </NavItem>

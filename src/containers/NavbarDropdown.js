@@ -16,12 +16,14 @@ class NavbarDropdown extends Component {
           <span
             className="language_dropdown"
             onClick={() => this.props.setLocale('en')}
+            id={this.props.lang == 'en' ? 'selected_language' : ''}
           >
             EN
           </span>
           <span
             className="language_dropdown"
             onClick={() => this.props.setLocale('es')}
+            id={this.props.lang == 'es' ? 'selected_language' : ''}
           >
             ES
           </span>
