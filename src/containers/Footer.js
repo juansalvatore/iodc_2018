@@ -31,8 +31,12 @@ class Footer extends Component {
             <div className="col-xs-12 col-md-2 col-lg-2 text-center center_footer">
               <img className="footer-img" src={LogoBA} alt="BA" />
             </div>
-            <div className="col-xs-12 col-md-3 col-lg-3 text-center center_footer">
-              <img className="footer-img" src={LogoMin} alt="Logo Min" />
+            <div className="col-xs-10 col-sm-5 col-md-4 col-lg-3 text-center center_footer">
+              <img
+                className="footer-img logo_modernizacion"
+                src={LogoMin}
+                alt="Logo Min"
+              />
             </div>
           </div>
         </div>

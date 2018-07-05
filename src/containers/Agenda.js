@@ -40,10 +40,12 @@ class Agenda extends Component {
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div>
           <div class="container-fluid">
-            <Header>Agenda</Header>
+            <Header>
+              <FormattedMessage id="nav.agenda" defaultMessage="Programme" />
+            </Header>
 
             <div className="row">
-              <div className="col-xs-12 col-md-10 col-md-offset-1">
+              <div className="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
                 <h3 className="internal-sub-title mtop40">
                   <FormattedMessage
                     id="agenda.subtitle"
