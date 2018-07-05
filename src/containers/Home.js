@@ -74,7 +74,7 @@ class Home extends Component {
                   </button>
                 </Link>
                 <Link to="/iodc_2018/agenda">
-                  <button className="schedule-button">
+                  <button className="schedule-button schedule-button-top">
                     <FormattedMessage
                       id="home.main.schedule"
                       defaultMessage="SEE THE SCHEDULE"
