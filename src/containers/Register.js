@@ -1187,7 +1187,9 @@ class Register extends Component {
               </div>
             </div>
           </div>
-          <Footer />
+          <div className="footer_bottom_register">
+            <Footer />
+          </div>
         </div>
       </IntlProvider>
     )

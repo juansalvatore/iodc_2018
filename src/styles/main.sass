@@ -884,14 +884,23 @@ select:focus, input:focus
 
 .press_container 
     height: 100%
-    overflow: auto
 
 // MEDIA QUERIES
 
-@media (max-height: 1050px)
-    .bottom-footer
-        position: relative
+.footer_bottom_register, .footer_bottom_press
+    position: absolute !important
+    bottom: 0
+    width: 100%
+
+@media (max-height: 1550px)
+    .footer_bottom_register
+        position: relative !important
         bottom: 0 !important
+
+@media (max-height: 1070px)
+    .footer_bottom_press
+        position: relative !important
+        bottom: 0
 
 @media (max-width: 1300px)         
     .hamburguer-bt 

@@ -30,7 +30,9 @@ class Press extends Component {
               </div>
             </div>
           </div>
-          <Footer bottom={true} />
+          <div className="footer_bottom_press">
+            <Footer />
+          </div>
         </div>
       </IntlProvider>
     )

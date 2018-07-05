@@ -74,7 +74,9 @@ class SideEventsList extends Component {
               </div>
             </div>
           </div>
-          <Footer bottom={false} />
+          <div className="footer_bottom_preevents">
+            <Footer />
+          </div>
         </div>
       </IntlProvider>
     )
