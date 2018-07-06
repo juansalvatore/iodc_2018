@@ -48,13 +48,13 @@ class Info extends Component {
                 <FormattedHTMLMessage id="info.b" defaultMessage="Info" />
               </p>
 
-              <p className="internal-text mbottom0">
+              {/* <p className="internal-text mbottom0">
                 <FormattedHTMLMessage id="info.c" defaultMessage="Info" />
-              </p>
+              </p> */}
 
-              <p className="internal-text">
+              {/* <p className="internal-text">
                 <FormattedHTMLMessage id="info.d" defaultMessage="Info" />
-              </p>
+              </p> */}
 
               <p className="internal-text mbottom0">
                 <FormattedHTMLMessage id="info.e" defaultMessage="Info" />

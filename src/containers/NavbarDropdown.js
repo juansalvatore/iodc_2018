@@ -92,16 +92,22 @@ class NavbarDropdown extends Component {
           </Link>
           <hr />
 
-          <Link to="/#">
+          <a href="https://www.facebook.com/opendatacon/" target="_blank">
             <img src={Facebook} width="20" alt="fb" />
-          </Link>
-          <a href="https://medium.com/@opendatacon" target="_blank">
+          </a>
+          <a href="https://twitter.com/opendatacon" target="_blank">
             <img src={Twitter} width="20" alt="tw" />
           </a>
-          <a href="https://medium.com/@opendatacon" target="_blank">
+          <a
+            href="https://www.flickr.com/photos/144810968@N02/albums"
+            target="_blank"
+          >
             <img src={Flickr} width="20" alt="fl" />
           </a>
-          <a href="https://medium.com/@opendatacon" target="_blank">
+          <a
+            href="https://www.youtube.com/channel/UC8cKSDSxKSbOnKliM_MhZmQ"
+            target="_blank"
+          >
             <img src={Youtube} width="20" alt="yt" />
           </a>
           <a href="https://medium.com/@opendatacon" target="_blank">

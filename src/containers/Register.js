@@ -322,7 +322,7 @@ class Register extends Component {
                       </span>
                       <h4>
                         <FormattedMessage
-                          id="register.title"
+                          id="register.title.form"
                           defaultMessage="Title"
                         />
                       </h4>

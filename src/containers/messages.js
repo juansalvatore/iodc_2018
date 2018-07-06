@@ -20,7 +20,7 @@ export default {
     'home.main.date': 'September 27-28, 2018',
     'home.main.register': 'REGISTER',
     'home.main.schedule': 'PROGRAMME',
-    'home.main.sideevents': 'See all the scheduled pre-events',
+    'home.main.sideevents': 'See all scheduled pre-events',
     'home.about.iodc.title': 'About IODC',
 
     // Home Bullets
@@ -34,7 +34,7 @@ export default {
 
     // Home Info
     'home.about.iodc':
-      'The International Open Data Conference (IODC) is a biannual event to bring the global open data community together in order to learn, share, plan, and collaborate on the future of open data. The unique nature of this event is that it gathers together in one location a diverse range of participants from the northern and southern hemispheres who are seeking to define strategies to advance open data both globally and locally.',
+      'The International Open Data Conference (IODC) is an event that brings the global open data community together in order to learn, share, plan, and collaborate on the future of open data. The unique nature of this event is that it gathers together in one location a diverse range of participants from the northern and southern hemispheres to define strategies to advance open data both globally and locally.',
     // Home Proposals
     'home.proposals.title': 'Propuestas recibidas',
     'home.partners': 'Institutional Support',
@@ -48,7 +48,7 @@ export default {
     'side.events.button': 'Go to the event',
     'nav.side-events.subtitle': 'See the list',
     'nav.side-events.description':
-      'Here you can find the list of side events that will occur along side IODC.',
+      'Here you can find the list of side events that will occur through the Open Data Week.',
 
     // Previous events
     'home.previous': 'Previous Editions',
@@ -58,6 +58,7 @@ export default {
     'register.first.name': 'First Name',
     'register.last.name': 'Last Name',
     'register.title': 'Register',
+    'register.title.form': 'Title',
     'register.subtitle': 'Please fill in the form below.',
     'register.organization': 'Organization',
     'register.email': 'E-Mail',
@@ -128,7 +129,7 @@ export default {
       '<b>I am a journalist and want to cover IODC. How can I do this?</b>',
 
     'info.f':
-      'Contact us at <i>contact@opendatacon.org</i> to discuss media access to the event.',
+      'Contact us at <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a> to discuss media access to the event.',
 
     'info.privacy': 'Privacy Policy',
     'info.privacy.a':
@@ -161,7 +162,7 @@ export default {
     'info.k': '<b>I could not ask for a visa myself. Can you help me?</b>',
 
     'info.l':
-      'In case you need help, you can contact us at <i>contact@opendatacon.org</i> and specify the following information:',
+      'In case you need help, you can contact us at <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a> and specify the following information:',
 
     'info.name': 'Name',
     'info.surname': 'Surname',
@@ -172,7 +173,7 @@ export default {
     'info.what': 'What organization are you part of? Which is your charge?',
     'info.consulate': 'Argentine Consulate that should process this request:',
 
-    'info.venue': 'Venue',
+    'info.venue': 'Usina del Arte',
 
     'info.m': '<b>Where is the venue located?</b>',
 
@@ -208,29 +209,29 @@ export default {
     'info.x':
       'Taxis can be hired or cars can be rented in the companies that offer the service inside the airport and the Bus Terminal. Prices range from <b>USD 30 to USD 40</b> from the airports. The official and safe taxis identify with the colors black and yellow (white at the airport). They are charged through the use of a clock-tachometer, with one and only official rate.',
 
-    'info.accomodation': '2. Hospedaje',
+    'info.accomodation': '2. Accomodation',
 
     'info.y': '<b>Hotel 725</b>',
 
     'info.z':
-      'Participants must request their reservation by sending their full information mentioning "IODC 2018" addressed to <i>reservas@725continental.com</i>, with a copy to <i>fmonteleone@725continental.com</i>.',
+      'Participants must request their reservation by sending their full information mentioning "IODC 2018" addressed to <a href="mailto:reservas@725continental.com"><i>reservas@725continental.com</i></a>, with a copy to <a href="mailto:fmonteleone@725continental.com"><i>fmonteleone@725continental.com</i></a>.',
 
     'info.1': '<b>Eurobuilding Hotel Boutique Buenos Aires</b>',
 
     'info.2':
-      'Contact <i>buenosaires@eurobuilding.com.ve</i> with a copy to Roberto Brizuela (<i>rbrizuela@eurobuilding.com.ve</i>), mentioning the code "IODC 2018" to have the rate of U$D 110.- plus VAT.',
+      'Contact <a href="mailto:buenosaires@eurobuilding.com.ve"><i>buenosaires@eurobuilding.com.ve</i></a> with a copy to Roberto Brizuela (<a href="mailto:rbrizuela@eurobuilding.com.ve"><i>rbrizuela@eurobuilding.com.ve</i></a>), mentioning the code "IODC 2018" to have the rate of U$D 110.- plus VAT.',
 
     'info.3': '<b>Wyndham - Dazzler - Esplendor</b>',
 
     'info.4':
-      'Participants must request their reservation by sending their complete information mentioning "IODC 2018" addressed to <i>reservas@fenhoteles.com</i>, with a copy to <i>jherrera@fenhoteles.com</i>.',
+      'Participants must request their reservation by sending their complete information mentioning "IODC 2018" addressed to <a href="mailto:reservas@fenhoteles.com"><i>reservas@fenhoteles.com</i></a>, with a copy to <a href="mailto:jherrera@fenhoteles.com"><i>jherrera@fenhoteles.com</i></a>.',
 
     'info.invitation': 'Invitation from Committee',
 
     'info.5': '<b>Do you need an invite from the committee?</b>',
 
     'info.6':
-      'If you need an invite just write to <i>contact@opendatacon.org</i>.',
+      'If you need an invite just write to <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a>.',
 
     // Agenda
     'agenda.subtitle': 'See the Schedule',
@@ -244,7 +245,7 @@ export default {
       <b>
         International Open Data Conference
       </b>
-      (IODC) is a biannual event designed to bring the global open data
+      (IODC) is an event designed to bring the global open data
       community together in order to learn, share, plan and
       collaborate on the future of open data.
     `,
@@ -348,7 +349,7 @@ export default {
       'Conference participants violating these rules <b>may be sanctioned or expelled from the conference at the discretion of the conference organizers.</b> You can make a report by:',
 
     'conduct.g':
-      'Emailing us at <i>contact@opendatacon.org</i>. This email will be continuously monitored for the duration of the event.',
+      'Emailing us at <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a>. This email will be continuously monitored for the duration of the event.',
 
     'conduct.h':
       'Contacting a staff member, identified by STAFF badges, buttons, or shirts.',
@@ -409,7 +410,7 @@ export default {
     'press.header': 'Press',
 
     'press.text':
-      'For more information about how to get press access to IODC18, please contact us at <i>contact@opendatacon.org</i>',
+      'For more information about how to get press access to IODC18, please contact us at <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a>',
   },
   es: {
     'nav.dashboard': 'Hola Mundo',
@@ -422,7 +423,7 @@ export default {
     'nav.press': 'Prensa',
     'nav.about': 'IODC 18',
     'nav.agenda': 'Agenda',
-    'nav.info': 'Info',
+    'nav.info': 'Información',
     'nav.conduct': 'Código de Conducta',
     'nav.privacy': 'Política de Privacidad',
     'nav.side-events': 'Pre-eventos',
@@ -449,7 +450,7 @@ export default {
 
     // Home Info
     'home.about.iodc':
-      'La Conferencia Internacional de Datos Abiertos (IODC, por sus siglas en inglés) es un evento semestral que reúne a la comunidad global de datos abiertos para aprender, compartir, planificar y colaborar en el futuro de la apertura. La naturaleza única de este evento es que reúne en un solo lugar a una gran cantidad de participantes de todo el mundo, que buscan definir estrategias para impulsar el uso de datos abiertos tanto a nivel local como global.',
+      'La Conferencia Internacional de Datos Abiertos (IODC, por sus siglas en inglés) es un evento que reúne a la comunidad global de datos abiertos para aprender, compartir, planificar y colaborar en el futuro de la apertura. La naturaleza única de este evento es que reúne en un solo lugar a una gran cantidad de participantes de todo el mundo, que buscan definir estrategias para impulsar el uso de datos abiertos tanto a nivel local como global.',
     // Home Proposals
     'home.proposals.title': 'Propuestas recibidas',
 
@@ -462,7 +463,7 @@ export default {
     'side.events.button': 'Ir al evento',
     'nav.side-events.subtitle': 'Conocé los pre-eventos',
     'nav.side-events.description':
-      'Conocé más sobre los pre eventos en la semana de #IODC18',
+      'Conocé más sobre los pre-eventos en la semana de #IODC18',
 
     // Previous events
     'home.previous': 'Ediciones anteriores',
@@ -472,7 +473,7 @@ export default {
     'register.first.name': 'Nombre',
     'register.last.name': 'Apellido',
     'register.title': 'Registro',
-
+    'register.title.form': 'Cargo',
     'register.subtitle': 'Por favor, complete el siguiente formulario.',
     'register.organization': 'Organización',
     'register.email': 'Correo Electrónico',
@@ -542,7 +543,7 @@ export default {
     'info.e': '<b>Soy periodista y quiero cubrir IODC. ¿Cómo puedo hacer?</b>',
 
     'info.f':
-      'Contactanos a través de <i>contact@opendatacon.org</i> para conocer el acceso de los medios de comunicación al evento.',
+      'Contactanos a través de <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a> para conocer el acceso de los medios de comunicación al evento.',
 
     'info.privacy': 'Políticas de Privacidad',
     'info.privacy.a':
@@ -575,7 +576,7 @@ export default {
     'info.k': '<b>No pude pedir una visa por mi cuenta. ¿Me pueden ayudar?</b>',
 
     'info.l':
-      'En caso de que necesites ayuda, puede contactarnos a <i>contact@opendatacon.org</i> y especificar la siguiente información:',
+      'En caso de que necesites ayuda, puede contactarnos a <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a> y especificar la siguiente información:',
 
     'info.name': 'Nombre',
     'info.surname': 'Apellido',
@@ -587,7 +588,7 @@ export default {
     'info.consulate':
       'Consulado argentino que debería procesar esta solicitud:',
 
-    'info.venue': 'Recinto',
+    'info.venue': 'Usina del Arte',
 
     'info.m': '<b>¿Dónde está ubicado el lugar del encuentro?</b>',
 
@@ -624,29 +625,30 @@ export default {
     'info.x':
       'Se pueden tomar taxis o alquilar automóviles en las compañías que ofrecen el servicio dentro delos aeropuertos y la terminal de autobuses. Los precios oscilan entre <b>USD 30 y USD 40</b> desde los aeropuertos. Los taxis oficiales y seguros se identifican con los colores negro y amarillo (blanco en el aeropuerto), y el cobro es mediante un reloj-tacómetro con una única tarifa oficial.',
 
-    'info.accomodation': '2. Accomodation',
+    'info.accomodation': '2. Hospedaje',
 
     'info.y': '<b>Hotel 725</b>',
 
     'info.z':
-      'Participantes deben solicitar su reserva enviando su información completa mencionando “IODC 2018” dirigido hacia <i>reservas@725continental.com</i> con copia a <i>fmonteleone@725continental.com</i>.',
+      'Participantes deben solicitar su reserva enviando su información completa mencionando “IODC 2018” dirigido hacia <a href="mailto:reservas@725continental.com"><i>reservas@725continental.com</i></a> con copia a <a href="mailto:reservas@725continental.com"><i>fmonteleone@725continental.com</i></a>.',
 
     'info.1': '<b>Eurobuilding Hotel Boutique Buenos Aires</b>',
 
     'info.2':
-      'Contactarse con <i>buenosaires@eurobuilding.com.ve</i> con copia a Roberto Brizuela <i>rbrizuela@eurobuilding.com.ve</i> mencionando el código "IODC 2018" para tener la tarifa de U$D 110.- mas IVA.',
+      'Contactarse con <a href="mailto:buenosaires@eurobuilding.com.ve"><i>buenosaires@eurobuilding.com.ve</i></a> con copia a Roberto Brizuela <a href="mailto:rbrizuela@eurobuilding.com.ve"><i>rbrizuela@eurobuilding.com.ve</i></a> mencionando el código "IODC 2018" para tener la tarifa de U$D 110.- mas IVA.',
 
     'info.3': '<b>Wyndham - Dazzler - Esplendor</b>',
 
     'info.4':
-      'Participantes deben solicitar su reserva enviando su información completa mencionando “IODC 2018” dirigido hacia <i>reservas@fenhoteles.com</i> con copia a <i>jherrera@fenhoteles.com</i>.',
+      'Participantes deben solicitar su reserva enviando su información completa mencionando “IODC 2018” dirigido hacia <a href="mailto:reservas@fenhoteles.com"><i>reservas@fenhoteles.com</i></a> con copia a <a href="mailto:jherrera@fenhoteles.com"><i>jherrera@fenhoteles.com</i></a>.',
 
     'info.invitation': 'Invitación del Comité',
 
     'info.5':
       '<b>¿Necesitás una invitación especial de parte del Comité del Programa?</b>',
 
-    'info.6': 'Podés solicitarla escribiendo a <i>contact@opendatacon.org</i>.',
+    'info.6':
+      'Podés solicitarla escribiendo a <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a>.',
 
     // Agenda
     'agenda.subtitle': 'Vea la agenda',
@@ -657,7 +659,7 @@ export default {
     'about.title': 'Acerca de la Conferencia Internacional de Datos Abiertos',
     'about.top.info.a': `
     La <b>Conferencia Internacional de Datos Abiertos</b>
-      (IODC, por sus siglas en inglés) es un evento semestral que reúne a la comunidad global de datos abiertos para aprender, compartir, planificar y colaborar en el futuro de la apertura.
+      (IODC, por sus siglas en inglés) es un evento que reúne a la comunidad global de datos abiertos para aprender, compartir, planificar y colaborar en el futuro de la apertura.
     `,
     'about.top.info.b': `
       La naturaleza única de este evento es que reúne en un solo lugar a una amplia gama de participantes de todo el mundo, que buscan definir estrategias para impulsar el uso de datos abiertos tanto a nivel local como global.
@@ -735,7 +737,7 @@ export default {
       'Quienes violen estas reglas <b>pueden ser sancionados o expulsados ​​de la conferencia a discreción de los organizadores de la conferencia.</b> Para hacer un informe, podés:',
 
     'conduct.g':
-      'Enviar un correo electrónico a <i>contact@opendatacon.org</i>. Este correo electrónico será monitoreado continuamente durante la duración del evento.',
+      'Enviar un correo electrónico a <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a>. Este correo electrónico será monitoreado continuamente durante la duración del evento.',
 
     'conduct.h':
       'Contactar a un miembro del personal, identificado por insignias, botones o camisetas.',
@@ -787,7 +789,7 @@ export default {
     'privacy.access': 'Acceso a tu información personal',
 
     'privacy.f':
-      'Tenés derecho a ver, modificar o eliminar la información personal que conservamos. Enviá tu solicitud por correo electrónico a <i>contact@opendatacon.org</i>.',
+      'Tenés derecho a ver, modificar o eliminar la información personal que conservamos. Enviá tu solicitud por correo electrónico a <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a>.',
 
     'privacy.changes': 'Cambios en esta política de privacidad',
 
@@ -798,6 +800,6 @@ export default {
     'press.header': 'Prensa',
 
     'press.text':
-      'Dentro de poco, en esta sección vas a poder encontrar todo lo que necesitás saber para acreditarte y cubrir la Conferencia. Para más información, escribinos a <i>contact@opendatacon.org</i>',
+      'Dentro de poco, en esta sección vas a poder encontrar todo lo que necesitás saber para acreditarte y cubrir la Conferencia. Para más información, escribinos a <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a>',
   },
 }
