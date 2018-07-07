@@ -10,6 +10,7 @@ import reducers from './reducers'
 import App from './App'
 import { localeSet } from './actions/locale'
 import './styles/main.min.css'
+import { HashRouter } from 'react-router-dom'
 
 addLocaleData(en)
 addLocaleData(es)
@@ -22,7 +23,9 @@ if (localStorage.alhubLang) {
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </Provider>,
   document.getElementById('root')
 )
