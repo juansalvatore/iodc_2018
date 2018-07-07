@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { Route, HashRouter } from 'react-router-dom'
 import {
   Home,
   Navbar,
@@ -15,7 +15,7 @@ import {
 } from '../containers'
 
 export default () => (
-  <BrowserRouter>
+  <HashRouter>
     <div>
       <Route path="/" component={Navbar} />
       <Route path="/" exact component={Home} />
@@ -29,5 +29,5 @@ export default () => (
       <Route path="/info" exact component={Info} />
       <Route path="/side-events-list" exact component={SideEventsList} />
     </div>
-  </BrowserRouter>
+  </HashRouter>
 )
