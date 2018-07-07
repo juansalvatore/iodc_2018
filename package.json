@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://juansalvatore.github.io/",
+  "homepage": "https://juansalvatore.github.io/iodc_2018/",
   "dependencies": {
     "google-maps-react": "^2.0.2",
     "history": "^4.7.2",
