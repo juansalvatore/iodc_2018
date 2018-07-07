@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, HashRouter } from 'react-router-dom'
 import {
   Home,
   Navbar,
@@ -15,7 +15,7 @@ import {
 } from '../containers'
 
 export default () => (
-  <BrowserRouter>
+  <BrowserRouter history={HashRouter}>
     <div>
       <Route path="/" component={Navbar} />
       <Route path="/" exact component={Home} />
