@@ -1,1 +1,3 @@
-# iodc_2018
+# IODC18
+
+Website developed with React + Redux (for internationalization)
