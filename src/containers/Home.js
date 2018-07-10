@@ -37,6 +37,9 @@ import {
 } from '../img'
 
 class Home extends Component {
+  state = {
+    top: true,
+  }
   componentDidMount() {
     window.scrollTo(0, 0)
   }
@@ -308,6 +311,7 @@ class Home extends Component {
                     </h4>
                   </div>
                   {/* EVENTO 1 */}
+
                   <SideEvent
                     image={SideEvent1}
                     url="http://2018.abrelatam.org/"

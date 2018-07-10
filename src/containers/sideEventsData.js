@@ -1,11 +1,11 @@
 export default [
   {
-    event: 'Open CIties',
+    event: 'Open Cities',
     location: 'Centro Metropolitano de Diseño',
     date: 'Monday 24th September',
     date_es: 'Lunes 24 de septiembre',
     url: 'http://opencitiessummit.org/',
-    invitation: false,
+    invitation: true,
   },
   {
     event: 'Natural Resource Governance for All',
@@ -13,7 +13,7 @@ export default [
     date: 'Monday 24th September',
     date_es: 'Lunes 24 de septiembre',
     url: '',
-    invitation: true,
+    invitation: false,
   },
   {
     event: 'OD4D Network Summit',
@@ -21,7 +21,7 @@ export default [
     date: 'Monday 24th September',
     date_es: 'Lunes 24 de septiembre',
     url: 'http://od4d.net/',
-    invitation: true,
+    invitation: false,
   },
   {
     event: 'OAS Open Data GovCamp',
@@ -29,7 +29,7 @@ export default [
     date: 'Monday 24th September',
     date_es: 'Lunes 24 de septiembre',
     url: '',
-    invitation: false,
+    invitation: true,
   },
   {
     event: 'State of The Map',
@@ -37,7 +37,7 @@ export default [
     date: 'Monday 24th & Tuesday 25th September',
     date_es: 'Lunes 24 y martes 25 de septiembre',
     url: 'https://state.osmlatam.org/',
-    invitation: false,
+    invitation: true,
   },
   {
     event: 'Open Heroines Summit - Gender Spotlight',
@@ -45,7 +45,7 @@ export default [
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
     url: '',
-    invitation: false,
+    invitation: true,
   },
   {
     event: 'Open Data Research Symposium',
@@ -54,7 +54,7 @@ export default [
     date_es: 'Martes 25 de septiembre',
     url:
       'https://www.eventbrite.com/e/open-data-research-symposium-2018-tickets-47181009670',
-    invitation: false,
+    invitation: true,
   },
   {
     event: 'CKANCON 2018',
@@ -62,7 +62,7 @@ export default [
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
     url: '',
-    invitation: false,
+    invitation: true,
   },
   {
     event: 'Open Contracting Workshop',
@@ -70,7 +70,7 @@ export default [
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
     url: '',
-    invitation: false,
+    invitation: true,
   },
   {
     event: 'Data Governance Forum',
@@ -78,7 +78,7 @@ export default [
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
     url: 'http://www.datagovernanceforum.com/',
-    invitation: true,
+    invitation: false,
   },
   {
     event: 'African Data Revolution',
@@ -86,7 +86,7 @@ export default [
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
     url: '',
-    invitation: true,
+    invitation: false,
   },
   {
     event: 'La Nación Data',
@@ -94,7 +94,7 @@ export default [
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
     url: 'https://www.lanacion.com.ar/data',
-    invitation: true,
+    invitation: false,
   },
   {
     event: 'Open Data Leaders Summit',
@@ -102,7 +102,7 @@ export default [
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
     url: '',
-    invitation: true,
+    invitation: false,
   },
   {
     event: 'Open Data Charter',
@@ -110,7 +110,7 @@ export default [
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
     url: 'https://opendatacharter.net/',
-    invitation: true,
+    invitation: false,
   },
   {
     event: 'AbreLatam',
@@ -118,7 +118,7 @@ export default [
     date: 'Wednesday 26th September',
     date_es: 'Miércoles 26 de septiembre',
     url: 'http://2018.abrelatam.org/',
-    invitation: false,
+    invitation: true,
   },
   {
     event: 'Standards Day',
@@ -126,7 +126,7 @@ export default [
     date: 'Wednesday 26th September',
     date_es: 'Miércoles 26 de septiembre',
     url: '',
-    invitation: false,
+    invitation: true,
   },
   {
     event: 'NSO Side Event',

@@ -15,29 +15,53 @@ import NavbarDropdown from './NavbarDropdown'
 class Menu extends Component {
   state = {
     dropdown: 'closed',
+    open: false,
+    top: true,
   }
   componentDidMount() {
     $('.hamburguer-bt').click(function() {
       $('.hamburguer-bt').toggleClass('on')
     })
+
+    window.addEventListener('scroll', this.handleScroll)
   }
   toggleDropdown() {
     switch (this.state.dropdown) {
       case 'closed':
-        this.setState({ dropdown: 'opened' })
+        this.setState({ dropdown: 'opened', open: true })
         break
       case 'opened':
-        this.setState({ dropdown: 'closed' })
+        this.setState({ dropdown: 'closed', open: false })
         break
       default:
         break
     }
   }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll)
+  }
+
+  handleScroll = event => {
+    var lastScrollTop = 0
+    var st = window.pageYOffset || document.documentElement.scrollTop // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+    if (st > lastScrollTop) {
+      // downscroll code
+      this.setState({ top: false })
+    } else {
+      // upscroll code
+      this.setState({ top: true })
+    }
+    lastScrollTop = st <= 0 ? 0 : st
+    // console.log('top: ', this.state.top)
+  }
   render() {
     const { lang } = this.props
+
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div>
+          <div className="hide_top" />
           <Navbar className="navbar-container">
             <Navbar.Header>
               <Navbar.Brand>
@@ -174,7 +198,11 @@ class Menu extends Component {
           </Navbar>
           <div />
           {/* DROPDOWN */}
-          <NavbarDropdown opened={this.state.dropdown} />
+          <NavbarDropdown
+            opened={
+              this.state.open && this.state.top ? this.state.dropdown : 'closed'
+            }
+          />
         </div>
       </IntlProvider>
     )
