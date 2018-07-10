@@ -10,6 +10,10 @@ class SideEventsList extends Component {
     sideEvents: SideEventsData,
   }
 
+  componentWillMount() {
+    window.scrollTo(0, 0)
+  }
+
   displaySideEvents = () => {
     return this.state.sideEvents.map(event => (
       <li>

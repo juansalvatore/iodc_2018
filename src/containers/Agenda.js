@@ -18,10 +18,9 @@ class Agenda extends Component {
     this.renderScript()
   }
 
-  // <a id="sched-embed" href="//iodc18.sched.com/" data-sched-sidebar="no">
-  // View the IODC18 schedule &amp; directory.
-  // </a>
-  // <script type="text/javascript" src="//iodc18.sched.com/js/embed.js"></script>
+  componentWillMount() {
+    window.scrollTo(0, 0)
+  }
 
   renderScript = () => {
     return (

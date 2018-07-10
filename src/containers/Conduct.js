@@ -7,6 +7,9 @@ import messages from './messages'
 import { Header, Footer } from './'
 
 class Conduct extends Component {
+  componentWillMount() {
+    window.scrollTo(0, 0)
+  }
   render() {
     const { lang } = this.props
     return (

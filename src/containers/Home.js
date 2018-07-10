@@ -9,6 +9,7 @@ import messages from './messages'
 import { setLocale } from '../actions/locale'
 import { Footer, SideEvent } from './'
 import { Link } from 'react-router-dom'
+import { NavHashLink as NavLink } from 'react-router-hash-link'
 
 import {
   Preevent,
@@ -32,6 +33,7 @@ class Home extends Component {
   componentDidMount() {
     window.scrollTo(0, 0)
   }
+
   render() {
     const { lang } = this.props
     return (
@@ -47,6 +49,7 @@ class Home extends Component {
                       defaultMessage="The Future is Open"
                     />
                   </h2>
+
                   <div className="flex-row">
                     <div className="city-back">
                       <h4 className="city">BUENOS AIRES</h4>
@@ -113,7 +116,11 @@ class Home extends Component {
                     </button>
                   </Link>
                 </div>
-                <Link to="/info" onClick={() => window.scrollTo(0, 2000)}>
+                <NavLink
+                  to="/info#middle"
+                  activeClassName="selected"
+                  scroll={el => el.scrollIntoView({ behavior: 'smooth' })}
+                >
                   <div className="col-xs-12 col-sm-4 text-center">
                     <img
                       src={Obelisco}
@@ -133,8 +140,13 @@ class Home extends Component {
                       />
                     </button>
                   </div>
-                </Link>
-                <Link to="/info" onClick={() => window.scrollTo(0, 2200)}>
+                </NavLink>
+
+                <NavLink
+                  to="/info#bottom"
+                  activeClassName="selected"
+                  scroll={el => el.scrollIntoView({ behavior: 'smooth' })}
+                >
                   <div className="col-xs-12 col-sm-4 text-center">
                     <img
                       src={Invitacion}
@@ -154,7 +166,7 @@ class Home extends Component {
                       />
                     </button>
                   </div>
-                </Link>
+                </NavLink>
 
                 {/* FIN BULLETS */}
               </div>
