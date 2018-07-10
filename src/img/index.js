@@ -31,8 +31,11 @@ import SideEvent1 from './sideevent1.png'
 import SideEvent2 from './sideevent2.png'
 import SideEvent3 from './sideevent3.png'
 import SideEvent4 from './sideevent4.png'
-
+import Patio from './patio.jpg'
+import Evento from './evento.jpg'
 export {
+  Evento,
+  Patio,
   Logo,
   Facebook,
   Twitter,

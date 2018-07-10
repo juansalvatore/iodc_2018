@@ -94,7 +94,7 @@ class Info extends Component {
                 <FormattedHTMLMessage id="info.j" defaultMessage="Info" />
               </p>
 
-              <p id="middle" className="internal-text-list-program">
+              <p className="internal-text-list-program">
                 <ul>
                   <li className="mtop20">
                     <span class="internal-bullets-text">a.</span>
@@ -194,8 +194,7 @@ class Info extends Component {
                 <FormattedHTMLMessage id="info.p" defaultMessage="Info" />
               </p>
 
-              <h3 className="internal-sub-title">
-                {' '}
+              <h3 id="middle" className="internal-sub-title">
                 <FormattedHTMLMessage id="info.baires" defaultMessage="Info" />
               </h3>
 

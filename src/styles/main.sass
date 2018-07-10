@@ -573,6 +573,8 @@ li
     height: auto
     width: 100%
 
+
+
 nav, .nav, .navbar-nav
     opacity: 1
     transiton: all ease-in-out 300ms !important
@@ -888,8 +890,6 @@ select:focus, input:focus
 .press_container 
     height: 100%
 
-// MEDIA QUERIES
-
 .footer_bottom_register, .footer_bottom_press
     position: absolute !important
     bottom: 0
@@ -898,6 +898,24 @@ select:focus, input:focus
 #selected_language
     color: $celeste !important
 
+.parallax-banner
+    z-index: -9
+    top: -60px
+    margin-bottom: -60px
+
+// .parallax-banner-layer-1
+//     transform: scale(0.3)
+.banner_paralax_home_about
+    display: flex
+    justify-content: center
+    align-items: center
+
+.text_about_iodc_home
+    padding-left: 30px
+    padding-right: 30px
+
+.about_banner_parallax
+    margin-top: 90px
 
 @media (max-height: 1550px)
     .footer_bottom_register
@@ -926,6 +944,10 @@ select:focus, input:focus
     
 
 @media (max-width: 995px)     
+    .parallax-banner
+        h2 
+            font: 
+                size: 80px
     .map-title
         font: 
             size: 35px !important
@@ -981,6 +1003,11 @@ select:focus, input:focus
     .img-back
        height: 520px
 
+    .parallax-banner
+        h2 
+            font: 
+                size: 70px
+
 @media (max-width: 768px)   
     h2
         font:
@@ -1008,6 +1035,11 @@ select:focus, input:focus
         font:
             size: 17px !important
 
+    .parallax-banner
+        h2 
+            font: 
+                size: 50px
+
 @media (max-width: 425px)
     h2
         font:
@@ -1030,6 +1062,10 @@ select:focus, input:focus
             margin-top: 70px
             font:
                 size: 30px !important
+    .parallax-banner
+        h2 
+            font: 
+                size: 50px
         
 @media (max-width: 390px)
     .preevent
