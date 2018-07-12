@@ -33,7 +33,17 @@ import SideEvent3 from './sideevent3.png'
 import SideEvent4 from './sideevent4.png'
 import Patio from './patio.jpg'
 import Evento from './evento.jpg'
+import iodcBackground from './iodcBackground.svg'
+import rectangleShort from './rectangle_short.svg'
+import rectangleHeight from './rectangle_tall.svg'
+import dotsShort from './dots_short.svg'
+import dotsHeight from './dots_tall.svg'
 export {
+  dotsShort,
+  dotsHeight,
+  rectangleShort,
+  rectangleHeight,
+  iodcBackground,
   Evento,
   Patio,
   Logo,

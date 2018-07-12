@@ -163,6 +163,7 @@ nav
     margin-top: -43px
     margin-left: 15px
     margin-right: 15px
+    z-index: 200 !important
 
 .schedule-button
     background-color: #fff
@@ -181,7 +182,6 @@ nav
 
 .sideevents-button
     max-width: 400px
-    padding-left: 20px
 
 .submit-button
     background-color: $verde
@@ -922,6 +922,78 @@ select:focus, input:focus
 .parallax_reusable_header
     margin-top: -90px
 
+.iodcBack
+    z-index: -9
+    position: absolute
+    left: 0
+    top: 240px
+    margin: 0
+
+.grey_block_one
+    width: 450px
+    height: 180px
+    background-color: rgba(239,242,247,1)
+    position: absolute
+    right: 0px
+    z-index: -9
+    top: 200px
+
+
+#usina_map
+    box-shadow: 0 0 10px rgba(0,0,0,0.4) !important
+    transition: all ease-in-out 300ms
+
+.map_container
+    transition: all ease-in-out 300ms
+
+.map_container:hover
+    transform: scale(1.05)
+    z-index: 0
+    .usina
+        opacity: 0
+    .dots_short_home_bottom
+        z-index: -12412412
+
+.rectangle_short
+    position: absolute
+    right: 0
+    top: 1500px
+
+.dots_height
+    position: absolute
+    right: 100px
+    top: 1400px
+
+.rectangle_height
+    position: absolute
+    left: -60px
+    top: 2300px
+
+.rectangle_short_home
+    position: absolute
+    right: -550px
+    top: 2750px
+    z-index: -10
+
+.rectangle_test
+    width: 1700px
+
+.dots_height_home
+    position: absolute
+    left: -42px
+    z-index: -10
+
+.dots_short_home_top
+    position: absolute
+    top: 700px
+    left: 36%
+    z-index: -10
+
+.dots_short_home_bottom
+    position: absolute
+    top: 585px
+    z-index: -1
+
 @media (max-height: 1550px)
     .footer_bottom_register
         position: relative !important
@@ -946,6 +1018,8 @@ select:focus, input:focus
     .dropdown
         display: block
         opacity: 1
+    .rectangle_test
+        display: none
     
 
 @media (max-width: 995px)     
@@ -979,7 +1053,9 @@ select:focus, input:focus
         margin-top: 2px
         margin-bottom: 2px
 
-        
+    .display_none_995
+        display: none
+
 @media (max-width: 768px)   
     h2
         font:
@@ -1012,6 +1088,10 @@ select:focus, input:focus
         h2 
             font: 
                 size: 70px
+        
+    .dots_height_home
+        display: none
+
 
 @media (max-width: 768px)   
     h2

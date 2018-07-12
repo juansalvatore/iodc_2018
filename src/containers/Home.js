@@ -34,6 +34,9 @@ import {
   SideEvent2,
   SideEvent3,
   SideEvent4,
+  rectangleShort,
+  dotsHeight,
+  dotsShort,
 } from '../img'
 
 class Home extends Component {
@@ -48,66 +51,392 @@ class Home extends Component {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <ParallaxProvider>
-          <div>
-            <div className="container-fluid">
-              <div className="row">
-                <ParallaxBanner
-                  className="banner_paralax"
-                  layers={[
-                    {
-                      image: Patio,
-                      amount: 0.1,
-                      slowerScrollRate: false,
-                    },
-                    {
-                      // image:
-                      //   'https://lh3.ggpht.com/mJDgTDUOtIyHcrb69WM0cpaxFwCNW6f0VQ2ExA7dMKpMDrZ0A6ta64OCX3H-NMdRd20=s180',
-                      amount: 0.4,
-                      slowerScrollRate: false,
-                    },
-                  ]}
-                  style={{
-                    height: '680px',
-                  }}
-                >
-                  <Parallax
-                    className="custom-class"
-                    offsetYMax={200}
-                    offsetYMin={-30}
-                    slowerScrollRate
-                    tag="figure"
-                  >
-                    <div className="col-lg-12 centerelement">
-                      <div>
-                        <h2>
-                          <FormattedMessage
-                            id="home.main.title"
-                            defaultMessage="The Future is Open"
-                          />
-                        </h2>
+        <div>
+          <Parallax
+            offsetYMax={6}
+            offsetYMin={-6}
+            slowerScrollRate
+            tag="grey_one"
+            className="rectangle_short_home"
+          >
+            <img src={rectangleShort} className="rectangle_test" />
+          </Parallax>
 
-                        <div className="flex-row">
-                          <div className="city-back">
-                            <h4 className="city">BUENOS AIRES</h4>
-                          </div>
-                          <div>
-                            <h4 className="date">
-                              <FormattedMessage
-                                id="home.main.date"
-                                defaultMessage="September 27-28, 2018"
-                              />
-                            </h4>
-                          </div>
+          <Parallax
+            offsetXMax={150}
+            offsetXMin={-20}
+            slowerScrollRate
+            tag="grey_one"
+            className="dots_short_home_top"
+          >
+            <img src={dotsShort} width={180} />
+          </Parallax>
+
+          <div className="container-fluid">
+            <div className="row">
+              <ParallaxBanner
+                className="banner_paralax"
+                layers={[
+                  {
+                    image: Patio,
+                    amount: 0.1,
+                    slowerScrollRate: false,
+                  },
+                  {
+                    // image:
+                    //   'https://lh3.ggpht.com/mJDgTDUOtIyHcrb69WM0cpaxFwCNW6f0VQ2ExA7dMKpMDrZ0A6ta64OCX3H-NMdRd20=s180',
+                    amount: 0.4,
+                    slowerScrollRate: false,
+                  },
+                ]}
+                style={{
+                  height: '680px',
+                }}
+              >
+                <Parallax
+                  className="custom-class"
+                  offsetYMax={200}
+                  offsetYMin={-30}
+                  slowerScrollRate
+                  tag="figure"
+                >
+                  <div className="col-lg-12 centerelement">
+                    <div>
+                      <h2>
+                        <FormattedMessage
+                          id="home.main.title"
+                          defaultMessage="The Future is Open"
+                        />
+                      </h2>
+
+                      <div className="flex-row">
+                        <div className="city-back">
+                          <h4 className="city">BUENOS AIRES</h4>
+                        </div>
+                        <div>
+                          <h4 className="date">
+                            <FormattedMessage
+                              id="home.main.date"
+                              defaultMessage="September 27-28, 2018"
+                            />
+                          </h4>
                         </div>
                       </div>
                     </div>
+                  </div>
+                </Parallax>
+              </ParallaxBanner>
+            </div>
+
+            <div className="centerelement">
+              <div className="home_button_container">
+                <Link to="/register">
+                  <button className="register-button">
+                    <FormattedMessage
+                      id="home.main.register"
+                      defaultMessage="REGISTER"
+                    />
+                  </button>
+                </Link>
+                <Link to="/agenda">
+                  <button className="schedule-button schedule-button-top">
+                    <FormattedMessage
+                      id="home.main.schedule"
+                      defaultMessage="SEE THE SCHEDULE"
+                    />
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            {/* SECCION BULLETS */}
+            <div className="container bottom-140">
+              <div className="row">
+                <div className="col-lg-12">
+                  <Parallax
+                    className="visas"
+                    offsetYMax={-10}
+                    offsetYMin={10}
+                    slowerScrollRate
+                    tag="visas"
+                  >
+                    <h4 className="sub-title">
+                      <FormattedMessage
+                        id="home.bullets.title"
+                        defaultMessage="Already registered to the event?"
+                      />
+                    </h4>
                   </Parallax>
-                </ParallaxBanner>
+                </div>
+
+                <div className="col-xs-12 col-sm-4 text-center">
+                  <Parallax
+                    className="visas"
+                    offsetYMax={-10}
+                    offsetYMin={10}
+                    slowerScrollRate
+                    tag="visas"
+                  >
+                    <img src={Visas} alt="Visas" className="img-bullets" />
+
+                    <h5 className="bullets">
+                      <FormattedMessage
+                        id="home.bullets.2"
+                        defaultMessage="Need more info about visas?"
+                      />
+                    </h5>
+                    <Link to="/info" onClick={() => window.scrollTo(0, 0)}>
+                      <button className="button-bullets">
+                        <FormattedMessage
+                          id="home.bullets.button.2"
+                          defaultMessage="Info for your application"
+                        />
+                      </button>
+                    </Link>
+                  </Parallax>
+                </div>
+
+                <NavLink
+                  to="/info#middle"
+                  activeClassName="selected"
+                  scroll={el =>
+                    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                  }
+                >
+                  <div className="col-xs-12 col-sm-4 text-center">
+                    <Parallax
+                      className="bsas_info"
+                      offsetYMax={-10}
+                      offsetYMin={10}
+                      slowerScrollRate
+                      tag="visas"
+                    >
+                      <img
+                        src={Obelisco}
+                        alt="Obelisco"
+                        className="img-bullets"
+                      />
+                      <h5 className="bullets">
+                        <FormattedMessage
+                          id="home.bullets.1"
+                          defaultMessage="Need more info about Buenos Aires?"
+                        />
+                      </h5>
+                      <button className="button-bullets">
+                        <FormattedMessage
+                          id="home.bullets.button.1"
+                          defaultMessage="Get to know the city"
+                        />
+                      </button>
+                    </Parallax>
+                  </div>
+                </NavLink>
+
+                <NavLink
+                  to="/info#bottom"
+                  activeClassName="selected"
+                  scroll={el => el.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  <div className="col-xs-12 col-sm-4 text-center">
+                    <Parallax
+                      className="comittee"
+                      offsetYMax={-10}
+                      offsetYMin={10}
+                      slowerScrollRate
+                      tag="visas"
+                    >
+                      <img
+                        src={Invitacion}
+                        alt="Invitacion"
+                        className="img-bullets"
+                      />
+                      <h5 className="bullets">
+                        <FormattedMessage
+                          id="home.bullets.3"
+                          defaultMessage="Do you need an invite from the comitee?"
+                        />
+                      </h5>
+                      <button className="button-bullets">
+                        <FormattedMessage
+                          id="home.bullets.button.3"
+                          defaultMessage="Request an invite"
+                        />
+                      </button>
+                    </Parallax>
+                  </div>
+                </NavLink>
+
+                {/* FIN BULLETS */}
+              </div>
+            </div>
+            {/* FIN SECCION BULLETS */}
+            <div className="row">
+              <ParallaxBanner
+                className="banner_paralax_home_about"
+                layers={[
+                  {
+                    image: Evento,
+                    amount: 0.2,
+                    slowerScrollRate: false,
+                  },
+                  {
+                    // image:
+                    //   'https://lh3.ggpht.com/mJDgTDUOtIyHcrb69WM0cpaxFwCNW6f0VQ2ExA7dMKpMDrZ0A6ta64OCX3H-NMdRd20=s180',
+                    amount: 0.4,
+                    slowerScrollRate: false,
+                  },
+                ]}
+                style={{
+                  height: '450px',
+                }}
+              >
+                <Parallax
+                  className="custom-class"
+                  offsetYMax={10}
+                  offsetYMin={-10}
+                  slowerScrollRate
+                  tag="figure"
+                >
+                  <div className="row centerelement">
+                    <div className="col-xs-12 col-sm-8 text_about_iodc_home">
+                      <h5 className="info-iodc-title">
+                        <FormattedMessage
+                          id="home.about.iodc.title"
+                          defaultMessage="About IODC"
+                        />
+                      </h5>
+
+                      <p className="info-iodc">
+                        <FormattedMessage
+                          id="home.about.iodc"
+                          defaultMessage="about iodc"
+                        />
+                      </p>
+                    </div>
+                  </div>
+                </Parallax>
+              </ParallaxBanner>
+            </div>
+            {/* SECCION INFO */}
+
+            {/* FIN SECCION INFO */}
+
+            {/* SIDEEVENTS */}
+            <div className="container">
+              <div className="row padding-15">
+                <div className="col-lg-12">
+                  <h4 className="sub-title">
+                    <FormattedMessage
+                      id="home.sideevents"
+                      defaultMessage="Events around the Conference"
+                    />
+                  </h4>
+                </div>
+                {/* EVENTO 1 */}
+
+                <SideEvent
+                  image={SideEvent1}
+                  url="http://2018.abrelatam.org/"
+                  title="AbreLatam"
+                  location="Usina del Arte"
+                  direction="Wednesday 26th September"
+                />
+                {/* EVENTO 2 */}
+                <SideEvent
+                  image={SideEvent2}
+                  url="http://opencitiessummit.org/"
+                  title="Open Cities"
+                  location="Centro Metropolitano de Diseño"
+                  direction="Monday 24th September"
+                />
+                <SideEvent
+                  image={SideEvent3}
+                  url="https://www.eventbrite.com/e/open-data-research-symposium-2018-tickets-47181009670"
+                  title="Open Data Research Symposium"
+                  location="Centro Cultural San Martín"
+                  direction="Tuesday 25th September"
+                />
+                <SideEvent
+                  image={SideEvent4}
+                  url="https://www.open-contracting.org/events/"
+                  title="Open Contracting Workshop"
+                  location="Facultad de Derecho"
+                  direction="Tuesday 25th September"
+                />
               </div>
 
-              <div className="centerelement">
-                <div className="home_button_container">
+              <div className="row padding-15 mtop40">
+                <div className="centerelement">
+                  <Link to="/side-events-list">
+                    <button className="schedule-button sideevents-button">
+                      <FormattedHTMLMessage
+                        id="home.main.sideevents"
+                        defaultMessage="See all the side events"
+                      />
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* FIN EVENTOS */}
+
+            {/* MAPA */}
+
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12">
+                  <h4 className="sub-title">
+                    <FormattedMessage
+                      id="home.visit.title"
+                      defaultMessage="Your visit to Argentina"
+                    />
+                  </h4>
+                </div>
+
+                <div className="col-xs-12 centerelement map_container">
+                  <div className="usina right">
+                    <div className="map-title">#IODC18</div>
+
+                    <hr />
+
+                    <div>Usina del arte</div>
+                    <div className="map-direction">
+                      Agustín R. Caffarena 1, C1157ADA CABA
+                    </div>
+                  </div>
+                  <Parallax
+                    offsetYMax={20}
+                    offsetYMin={-20}
+                    slowerScrollRate
+                    tag="grey_one"
+                    className="dots_height_home"
+                  >
+                    <img src={dotsHeight} width={100} />
+                  </Parallax>
+
+                  <Parallax
+                    offsetXMax={50}
+                    offsetXMin={-20}
+                    slowerScrollRate
+                    tag="grey_one"
+                    className="dots_short_home_bottom"
+                  >
+                    <img src={dotsShort} width={150} />
+                  </Parallax>
+                  <iframe
+                    id="usina_map"
+                    title="usina-map"
+                    width="100%"
+                    height="520"
+                    frameBorder="0"
+                    src="https://datosgobar.carto.com/u/modernizacion/builder/329aca58-835c-465d-bb40-f215ef950dc5/embed"
+                  />
+                </div>
+              </div>
+
+              <div className="row padding-15 mtop40">
+                <div className="centerelement">
                   <Link to="/register">
                     <button className="register-button">
                       <FormattedMessage
@@ -116,381 +445,85 @@ class Home extends Component {
                       />
                     </button>
                   </Link>
-                  <Link to="/agenda">
-                    <button className="schedule-button schedule-button-top">
-                      <FormattedMessage
-                        id="home.main.schedule"
-                        defaultMessage="SEE THE SCHEDULE"
-                      />
-                    </button>
-                  </Link>
                 </div>
               </div>
+            </div>
 
-              {/* SECCION BULLETS */}
-              <div className="container bottom-140">
-                <div className="row">
-                  <div className="col-lg-12">
-                    <Parallax
-                      className="visas"
-                      offsetYMax={-10}
-                      offsetYMin={10}
-                      slowerScrollRate
-                      tag="visas"
-                    >
-                      <h4 className="sub-title">
-                        <FormattedMessage
-                          id="home.bullets.title"
-                          defaultMessage="Already registered to the event?"
-                        />
-                      </h4>
-                    </Parallax>
-                  </div>
+            {/* FIN MAPA */}
 
-                  <div className="col-xs-12 col-sm-4 text-center">
-                    <Parallax
-                      className="visas"
-                      offsetYMax={-10}
-                      offsetYMin={10}
-                      slowerScrollRate
-                      tag="visas"
-                    >
-                      <img src={Visas} alt="Visas" className="img-bullets" />
+            {/* EVENTOS ANTERIORES */}
 
-                      <h5 className="bullets">
-                        <FormattedMessage
-                          id="home.bullets.2"
-                          defaultMessage="Need more info about visas?"
-                        />
-                      </h5>
-                      <Link to="/info" onClick={() => window.scrollTo(0, 0)}>
-                        <button className="button-bullets">
-                          <FormattedMessage
-                            id="home.bullets.button.2"
-                            defaultMessage="Info for your application"
-                          />
-                        </button>
-                      </Link>
-                    </Parallax>
-                  </div>
-
-                  <NavLink
-                    to="/info#middle"
-                    activeClassName="selected"
-                    scroll={el =>
-                      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-                    }
-                  >
-                    <div className="col-xs-12 col-sm-4 text-center">
-                      <Parallax
-                        className="bsas_info"
-                        offsetYMax={-10}
-                        offsetYMin={10}
-                        slowerScrollRate
-                        tag="visas"
-                      >
-                        <img
-                          src={Obelisco}
-                          alt="Obelisco"
-                          className="img-bullets"
-                        />
-                        <h5 className="bullets">
-                          <FormattedMessage
-                            id="home.bullets.1"
-                            defaultMessage="Need more info about Buenos Aires?"
-                          />
-                        </h5>
-                        <button className="button-bullets">
-                          <FormattedMessage
-                            id="home.bullets.button.1"
-                            defaultMessage="Get to know the city"
-                          />
-                        </button>
-                      </Parallax>
-                    </div>
-                  </NavLink>
-
-                  <NavLink
-                    to="/info#bottom"
-                    activeClassName="selected"
-                    scroll={el => el.scrollIntoView({ behavior: 'smooth' })}
-                  >
-                    <div className="col-xs-12 col-sm-4 text-center">
-                      <Parallax
-                        className="comittee"
-                        offsetYMax={-10}
-                        offsetYMin={10}
-                        slowerScrollRate
-                        tag="visas"
-                      >
-                        <img
-                          src={Invitacion}
-                          alt="Invitacion"
-                          className="img-bullets"
-                        />
-                        <h5 className="bullets">
-                          <FormattedMessage
-                            id="home.bullets.3"
-                            defaultMessage="Do you need an invite from the comitee?"
-                          />
-                        </h5>
-                        <button className="button-bullets">
-                          <FormattedMessage
-                            id="home.bullets.button.3"
-                            defaultMessage="Request an invite"
-                          />
-                        </button>
-                      </Parallax>
-                    </div>
-                  </NavLink>
-
-                  {/* FIN BULLETS */}
-                </div>
-              </div>
-              {/* FIN SECCION BULLETS */}
-              <div className="row">
-                <ParallaxBanner
-                  className="banner_paralax_home_about"
-                  layers={[
-                    {
-                      image: Evento,
-                      amount: 0.2,
-                      slowerScrollRate: false,
-                    },
-                    {
-                      // image:
-                      //   'https://lh3.ggpht.com/mJDgTDUOtIyHcrb69WM0cpaxFwCNW6f0VQ2ExA7dMKpMDrZ0A6ta64OCX3H-NMdRd20=s180',
-                      amount: 0.4,
-                      slowerScrollRate: false,
-                    },
-                  ]}
-                  style={{
-                    height: '450px',
-                  }}
-                >
-                  <Parallax
-                    className="custom-class"
-                    offsetYMax={10}
-                    offsetYMin={-10}
-                    slowerScrollRate
-                    tag="figure"
-                  >
-                    <div className="row centerelement">
-                      <div className="col-xs-12 col-sm-8 text_about_iodc_home">
-                        <h5 className="info-iodc-title">
-                          <FormattedMessage
-                            id="home.about.iodc.title"
-                            defaultMessage="About IODC"
-                          />
-                        </h5>
-
-                        <p className="info-iodc">
-                          <FormattedMessage
-                            id="home.about.iodc"
-                            defaultMessage="about iodc"
-                          />
-                        </p>
-                      </div>
-                    </div>
-                  </Parallax>
-                </ParallaxBanner>
-              </div>
-              {/* SECCION INFO */}
-
-              {/* FIN SECCION INFO */}
-
-              {/* SIDEEVENTS */}
-              <div className="container">
-                <div className="row padding-15">
-                  <div className="col-lg-12">
-                    <h4 className="sub-title">
-                      <FormattedMessage
-                        id="home.sideevents"
-                        defaultMessage="Events around the Conference"
-                      />
-                    </h4>
-                  </div>
-                  {/* EVENTO 1 */}
-
-                  <SideEvent
-                    image={SideEvent1}
-                    url="http://2018.abrelatam.org/"
-                    title="AbreLatam"
-                    location="Usina del Arte"
-                    direction="Wednesday 26th September"
-                  />
-                  {/* EVENTO 2 */}
-                  <SideEvent
-                    image={SideEvent2}
-                    url="http://opencitiessummit.org/"
-                    title="Open Cities"
-                    location="Centro Metropolitano de Diseño"
-                    direction="Monday 24th September"
-                  />
-                  <SideEvent
-                    image={SideEvent3}
-                    url="https://www.eventbrite.com/e/open-data-research-symposium-2018-tickets-47181009670"
-                    title="Open Data Research Symposium"
-                    location="Centro Cultural San Martín"
-                    direction="Tuesday 25th September"
-                  />
-                  <SideEvent
-                    image={SideEvent4}
-                    url="https://www.open-contracting.org/events/"
-                    title="Open Contracting Workshop"
-                    location="Facultad de Derecho"
-                    direction="Tuesday 25th September"
-                  />
-                </div>
-
-                <div className="row padding-15 mtop40">
-                  <div className="centerelement">
-                    <Link to="/side-events-list">
-                      <button className="schedule-button sideevents-button">
-                        <FormattedHTMLMessage
-                          id="home.main.sideevents"
-                          defaultMessage="See all the side events"
-                        />
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-
-              {/* FIN EVENTOS */}
-
-              {/* MAPA */}
-
-              <div className="container">
-                <div className="row">
-                  <div className="col-lg-12">
-                    <h4 className="sub-title">
-                      <FormattedMessage
-                        id="home.visit.title"
-                        defaultMessage="Your visit to Argentina"
-                      />
-                    </h4>
-                  </div>
-
-                  <div className="col-xs-12 centerelement map_container">
-                    <div className="usina right">
-                      <div className="map-title">#IODC18</div>
-
-                      <hr />
-
-                      <div>Usina del arte</div>
-                      <div className="map-direction">
-                        Agustín R. Caffarena 1, C1157ADA CABA
-                      </div>
-                    </div>
-                    <iframe
-                      title="usina-map"
-                      width="100%"
-                      height="520"
-                      frameBorder="0"
-                      src="https://datosgobar.carto.com/u/modernizacion/builder/329aca58-835c-465d-bb40-f215ef950dc5/embed"
+            <div className="container">
+              <div className="row padding-15">
+                <div className="col-lg-12">
+                  <h4 className="sub-title">
+                    <FormattedMessage
+                      id="home.previous"
+                      defaultMessage="Previous Events"
                     />
-                  </div>
+                  </h4>
                 </div>
-
-                <div className="row padding-15 mtop40">
-                  <div className="centerelement">
-                    <Link to="/register">
-                      <button className="register-button">
-                        <FormattedMessage
-                          id="home.main.register"
-                          defaultMessage="REGISTER"
-                        />
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-
-              {/* FIN MAPA */}
-
-              {/* EVENTOS ANTERIORES */}
-
-              <div className="container">
-                <div className="row padding-15">
-                  <div className="col-lg-12">
-                    <h4 className="sub-title">
-                      <FormattedMessage
-                        id="home.previous"
-                        defaultMessage="Previous Events"
+                <div>
+                  <div className="row centerelement">
+                    <div className="col-xs-12 col-md-2 col-lg-2">
+                      <img
+                        src={Iodc10}
+                        alt="iodc10"
+                        className="img-responsive centerelement"
                       />
-                    </h4>
-                  </div>
-                  <div>
-                    <div className="row centerelement">
-                      <div className="col-xs-12 col-md-2 col-lg-2">
-                        <img
-                          src={Iodc10}
-                          alt="iodc10"
-                          className="img-responsive centerelement"
-                        />
-                      </div>
-                      <div className="col-xs-12 col-md-4 col-lg-4">
-                        <img
-                          src={Iodc12}
-                          alt="iodc12"
-                          className="img-responsive centerelement"
-                        />
-                      </div>
-                      <div className="col-xs-12 col-md-2 col-lg-2">
-                        <img
-                          src={Iodc16}
-                          alt="iodc16"
-                          className="img-responsive centerelement"
-                        />
-                      </div>
-                      <div className="col-xs-12 col-md-4 col-lg-4">
-                        <img
-                          src={Iodc15}
-                          alt="iodc15"
-                          className="img-responsive centerelement"
-                        />
-                      </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="container bottom-140">
-                <div className="row centerelement">
-                  <div className="col-lg-12">
-                    <h4 className="sub-title">
-                      <FormattedMessage
-                        id="home.partners"
-                        defaultMessage="Partners"
+                    <div className="col-xs-12 col-md-4 col-lg-4">
+                      <img
+                        src={Iodc12}
+                        alt="iodc12"
+                        className="img-responsive centerelement"
                       />
-                    </h4>
-                  </div>
-                </div>
-                <div className="row centerelement">
-                  <div className="col-xs-12 col-md-3 col-lg-3">
-                    <img
-                      src={Francia}
-                      alt="Francia"
-                      className="img-responsive"
-                    />
-                  </div>
-                  <div className="col-xs-12 col-md-3 col-lg-3 ">
-                    <img
-                      src={Uruguay}
-                      alt="Uruguay"
-                      className="img-responsive"
-                    />
-                  </div>
-                  <div className="col-xs-12 col-md-3 col-lg-3">
-                    <img src={Brasil} alt="Brasil" className="img-responsive" />
+                    </div>
+                    <div className="col-xs-12 col-md-2 col-lg-2">
+                      <img
+                        src={Iodc16}
+                        alt="iodc16"
+                        className="img-responsive centerelement"
+                      />
+                    </div>
+                    <div className="col-xs-12 col-md-4 col-lg-4">
+                      <img
+                        src={Iodc15}
+                        alt="iodc15"
+                        className="img-responsive centerelement"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <Footer />
+
+            <div className="container bottom-140">
+              <div className="row centerelement">
+                <div className="col-lg-12">
+                  <h4 className="sub-title">
+                    <FormattedMessage
+                      id="home.partners"
+                      defaultMessage="Partners"
+                    />
+                  </h4>
+                </div>
+              </div>
+              <div className="row centerelement">
+                <div className="col-xs-12 col-md-3 col-lg-3">
+                  <img src={Francia} alt="Francia" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-3 col-lg-3 ">
+                  <img src={Uruguay} alt="Uruguay" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-3 col-lg-3">
+                  <img src={Brasil} alt="Brasil" className="img-responsive" />
+                </div>
+              </div>
+            </div>
           </div>
-        </ParallaxProvider>
+          <Footer />
+        </div>
       </IntlProvider>
     )
   }

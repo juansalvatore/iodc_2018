@@ -11,6 +11,7 @@ import App from './App'
 import { localeSet } from './actions/locale'
 import './styles/main.min.css'
 import { HashRouter } from 'react-router-dom'
+import { ParallaxProvider } from 'react-scroll-parallax'
 
 addLocaleData(en)
 addLocaleData(es)
@@ -23,9 +24,11 @@ if (localStorage.alhubLang) {
 
 ReactDOM.render(
   <Provider store={store}>
-    <HashRouter>
-      <App />
-    </HashRouter>
+    <ParallaxProvider>
+      <HashRouter>
+        <App />
+      </HashRouter>
+    </ParallaxProvider>
   </Provider>,
   document.getElementById('root')
 )
