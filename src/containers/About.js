@@ -20,6 +20,10 @@ import {
   LogoOpendataGrey,
   LogoMinGrey,
   LogoWbgGrey,
+  iodcBackground,
+  rectangleShort,
+  rectangleHeight,
+  dotsHeight,
 } from '../img'
 
 import CommitteeData from './committeeData'
@@ -55,6 +59,42 @@ class About extends Component {
       <IntlProvider locale={lang} messages={messages[lang]}>
         <ParallaxProvider>
           <div>
+            <Parallax
+              className="iodcBack display_none_995"
+              offsetYMax={15}
+              offsetYMin={-70}
+              slowerScrollRate
+              tag="back"
+            >
+              <img src={iodcBackground} width="800" alt="IODC18" />
+            </Parallax>
+            <Parallax
+              offsetYMax={25}
+              offsetYMin={-50}
+              slowerScrollRate
+              tag="grey_one"
+              className="rectangle_short display_none_995"
+            >
+              <img src={rectangleShort} width="500" />
+            </Parallax>
+            <Parallax
+              offsetYMax={25}
+              offsetYMin={-50}
+              slowerScrollRate
+              tag="grey_one"
+              className="dots_height display_none_995"
+            >
+              <img src={dotsHeight} width="150" />
+            </Parallax>
+            <Parallax
+              offsetYMax={25}
+              offsetYMin={-50}
+              slowerScrollRate
+              tag="grey_one"
+              className="rectangle_height display_none_995"
+            >
+              <img src={rectangleHeight} width="200" />
+            </Parallax>
             <div className="container-fluid">
               <Header>
                 <FormattedMessage id="nav.about" defaultMessage="About" />
