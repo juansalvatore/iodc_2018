@@ -53,8 +53,8 @@ class Home extends Component {
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div>
           <Parallax
-            offsetYMax={6}
-            offsetYMin={-6}
+            offsetXMax={6}
+            offsetXMin={-6}
             slowerScrollRate
             tag="grey_one"
             className="rectangle_short_home"
@@ -416,8 +416,8 @@ class Home extends Component {
                   </Parallax>
 
                   <Parallax
-                    offsetXMax={50}
-                    offsetXMin={-20}
+                    offsetXMax={-50}
+                    offsetXMin={20}
                     slowerScrollRate
                     tag="grey_one"
                     className="dots_short_home_bottom"

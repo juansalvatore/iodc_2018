@@ -6,6 +6,9 @@ import { setLocale } from '../actions/locale'
 import { Header, Footer } from './'
 
 class Privacy extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
   render() {
     const { lang } = this.props
     return (
@@ -13,7 +16,6 @@ class Privacy extends Component {
         <div>
           <div class="container-fluid">
             <Header>
-              {' '}
               <FormattedHTMLMessage
                 id="privacy.header"
                 defaultMessage="Privacy Policy"
@@ -23,14 +25,12 @@ class Privacy extends Component {
             <div className="row">
               <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
                 <h3 className="internal-sub-title">
-                  {' '}
                   <FormattedHTMLMessage
                     id="privacy.who.we.are"
                     defaultMessage="Who we are"
-                  />{' '}
+                  />
                 </h3>
                 <p className="internal-text">
-                  {' '}
                   <FormattedHTMLMessage
                     id="privacy.a"
                     defaultMessage="Privacy Policy"
@@ -113,12 +113,12 @@ class Privacy extends Component {
                       <FormattedHTMLMessage
                         id="privacy.newsletter"
                         defaultMessage="Privacy Policy"
-                      />{' '}
+                      />
                       <p>
                         <FormattedHTMLMessage
                           id="privacy.e"
                           defaultMessage="Privacy Policy"
-                        />{' '}
+                        />
                       </p>
                     </li>
                   </ul>
@@ -136,7 +136,6 @@ class Privacy extends Component {
                     defaultMessage="Privacy Policy"
                   />
                 </p>
-
                 <p className="internal-text mbottom75">
                   <p className="internal-sub-title internal-sub-title-low mtop40">
                     <FormattedHTMLMessage

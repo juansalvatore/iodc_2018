@@ -133,7 +133,7 @@ export default {
 
     'info.privacy': 'Privacy Policy',
     'info.privacy.a':
-      'Please see our Privacy Policy <a href="/privacy">here</a>.',
+      'Please see our Privacy Policy <a href="#/privacy">here</a>.',
 
     'info.visa': 'Visa and travel information',
 
@@ -547,7 +547,7 @@ export default {
 
     'info.privacy': 'Políticas de Privacidad',
     'info.privacy.a':
-      'Podés ver nuestras políticas de privacidad <a href="/privacy">haciendo clic aquí</a>.',
+      'Podés ver nuestras políticas de privacidad <a href="#/privacy">haciendo clic aquí</a>.',
 
     'info.visa': 'Visas e información para viajar',
 

@@ -19,6 +19,10 @@ import {
 } from '../img'
 
 class Info extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   render() {
     const { lang } = this.props
     return (

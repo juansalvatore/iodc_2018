@@ -163,7 +163,7 @@ nav
     margin-top: -43px
     margin-left: 15px
     margin-right: 15px
-    z-index: 200 !important
+    z-index: 2000 !important
 
 .schedule-button
     background-color: #fff
@@ -947,12 +947,10 @@ select:focus, input:focus
     transition: all ease-in-out 300ms
 
 .map_container:hover
-    transform: scale(1.05)
-    z-index: 0
     .usina
         opacity: 0
-    .dots_short_home_bottom
-        z-index: -12412412
+        pointer-events: none
+  
 
 .rectangle_short
     position: absolute
@@ -993,6 +991,7 @@ select:focus, input:focus
     position: absolute
     top: 585px
     z-index: -1
+    transition: all ease-in-out 300ms
 
 @media (max-height: 1550px)
     .footer_bottom_register
