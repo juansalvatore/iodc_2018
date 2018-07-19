@@ -241,12 +241,12 @@ class About extends Component {
                     </ul>
                   </p>
 
-                  <p className="internal-text m75">
+                  {/* <p className="internal-text m75">
                     <FormattedHTMLMessage
                       id="about.participation.bullet.description"
                       defaultMessage="The IODC has 3 main objectives:"
                     />
-                  </p>
+                  </p> */}
 
                   <h3 className="internal-sub-title internal-sub-title-low">
                     <FormattedHTMLMessage

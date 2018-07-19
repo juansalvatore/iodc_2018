@@ -37,13 +37,13 @@ export default {
       'The International Open Data Conference (IODC) is an event that brings the global open data community together in order to learn, share, plan, and collaborate on the future of open data. The unique nature of this event is that it gathers together in one location a diverse range of participants from the northern and southern hemispheres to define strategies to advance open data both globally and locally.',
     // Home Proposals
     'home.proposals.title': 'Propuestas recibidas',
-    'home.partners': 'Institutional Support',
+    'home.partners': 'Institutional support',
 
     // Home Visit
     'home.visit.title': 'Your Visit to Argentina',
 
     // Side Events
-    'home.sideevents': 'Events Around the Conference',
+    'home.sideevents': 'Events around the Conference',
     'side.events.invitation': 'Access with invitation',
     'side.events.button': 'Go to the event',
     'nav.side-events.subtitle': 'See the list',
@@ -51,7 +51,7 @@ export default {
       'Here you can find the list of side events that will occur through the Open Data Week.',
 
     // Previous events
-    'home.previous': 'Previous Editions',
+    'home.previous': 'Previous editions',
 
     // Pre-Register
     'register.section': 'Pre-Register',
@@ -129,7 +129,7 @@ export default {
       '<b>I am a journalist and want to cover IODC. How can I do this?</b>',
 
     'info.f':
-      'Contact us at <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a> to discuss media access to the event.',
+      'Contact us at <a href="mailto:press@opendatacon.org"><i>press@opendatacon.org</i></a> to discuss media access to the event.',
 
     'info.privacy': 'Privacy Policy',
     'info.privacy.a':
@@ -162,7 +162,7 @@ export default {
     'info.k': '<b>I could not ask for a visa myself. Can you help me?</b>',
 
     'info.l':
-      'In case you need help, you can contact us at <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a> and specify the following information:',
+      'In case you need help, you can contact us at <a href="mailto:visas@opendatacon.org"><i>visas@opendatacon.org</i></a> and specify the following information:',
 
     'info.name': 'Name',
     'info.surname': 'Surname',
@@ -234,7 +234,7 @@ export default {
       'If you need an invite just write to <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a>.',
 
     // Agenda
-    'agenda.subtitle': 'See the Schedule',
+    'agenda.subtitle': 'See the schedule',
     'agenda.description':
       'All sessions that will take place in the main plenary room will be livestreamed. Also, there will be simultaneous translation services available -both for english and spanish- in all rooms.',
 
@@ -281,7 +281,7 @@ export default {
   `,
     'about.objectives.description': `
       <b>
-      The agenda has been co-created with people from all around the
+      The programme has been co-created with people from all around the
       world
       </b>
       through a global call for proposals. The conference recieved
@@ -292,7 +292,7 @@ export default {
       discussions and other special events.
     `,
     'about.participation.title':
-      'The conference targets the broad participation of individuals and organizations from:',
+      'The Conference targets the broad participation of individuals and organizations from:',
     'about.participation.bullet.a': 'Open Data Experts and Practitioners',
     'about.participation.bullet.b': 'Civil Society',
     'about.participation.bullet.btwo': 'Multilateral Organizations',
@@ -543,7 +543,7 @@ export default {
     'info.e': '<b>Soy periodista y quiero cubrir IODC. ¿Cómo puedo hacer?</b>',
 
     'info.f':
-      'Contactanos a través de <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a> para conocer el acceso de los medios de comunicación al evento.',
+      'Contactanos a través de <a href="mailto:press@opendatacon.org"><i>press@opendatacon.org</i></a> para conocer el acceso de los medios de comunicación al evento.',
 
     'info.privacy': 'Políticas de Privacidad',
     'info.privacy.a':
@@ -576,7 +576,7 @@ export default {
     'info.k': '<b>No pude pedir una visa por mi cuenta. ¿Me pueden ayudar?</b>',
 
     'info.l':
-      'En caso de que necesites ayuda, puede contactarnos a <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a> y especificar la siguiente información:',
+      'En caso de que necesites ayuda, puede contactarnos a <a href="mailto:visas@opendatacon.org"><i>visas@opendatacon.org</i></a> y especificar la siguiente información:',
 
     'info.name': 'Nombre',
     'info.surname': 'Apellido',
@@ -662,7 +662,7 @@ export default {
       (IODC, por sus siglas en inglés) es un evento que reúne a la comunidad global de datos abiertos para aprender, compartir, planificar y colaborar en el futuro de la apertura.
     `,
     'about.top.info.b': `
-      La naturaleza única de este evento es que reúne en un solo lugar a una amplia gama de participantes de todo el mundo, que buscan definir estrategias para impulsar el uso de datos abiertos tanto a nivel local como global.
+      La naturaleza única de este evento es que concentra en un solo lugar a una amplia gama de participantes de todo el mundo, que buscan definir estrategias para impulsar el uso de datos abiertos tanto a nivel local como global.
     `,
 
     'about.objectives.title': 'La Conferencia tiene 3 objetivos principales:',
