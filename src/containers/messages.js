@@ -409,8 +409,15 @@ export default {
 
     'press.header': 'Press',
 
+    'press.info':
+      'You can now request your press accreditation to cover the 5th. International Open Data Conference.',
+
     'press.text':
-      'For more information about how to get press access to IODC18, please contact us at <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a>',
+      'For inquiries and / or more information: <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a>',
+
+    'press.register': 'PRESS REGISTER',
+
+    'press.download': 'DOWNLOAD PRESS KIT',
   },
   es: {
     'nav.dashboard': 'Hola Mundo',
@@ -799,7 +806,14 @@ export default {
 
     'press.header': 'Prensa',
 
+    'press.info':
+      'Ya podés solicitar tu acreditación de prensa para la cobertura de la 5ª Conferencia Internacional sobre Datos Abiertos.',
+
     'press.text':
-      'Dentro de poco, en esta sección vas a poder encontrar todo lo que necesitás saber para acreditarte y cubrir la Conferencia. Para más información, escribinos a <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a>',
+      'Para consultas y/o más información: <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a>',
+
+    'press.register': 'REGISTRO DE PRENSA',
+
+    'press.download': 'KIT DE PRENSA',
   },
 }

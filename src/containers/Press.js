@@ -24,10 +24,38 @@ class Press extends Component {
                   alt="IdCard"
                   className="img-idcard"
                 />
-                <p classNameName="internal-text text-center">
-                  <FormattedHTMLMessage id="press.text" defaultMessage="Info" />
+                <p className="internal-text text-center">
+                  <FormattedHTMLMessage id="press.info" defaultMessage="Info" />
                 </p>
               </div>
+            </div>
+
+            <div className="row mtop40">
+              <div className="home_button_container press_buttons_container">
+                <div className="col-xs-12 col-sm-6 mtop40 button_alignment_right">
+                  <button className="register-button">
+                    <FormattedHTMLMessage
+                      id="press.register"
+                      defaultMessage="Info"
+                    />
+                  </button>
+                </div>
+
+                <div className="col-xs-12 col-sm-6 mtop40 button_alignment_left">
+                  <button className="schedule-button schedule-button-top">
+                    <FormattedHTMLMessage
+                      id="press.download"
+                      defaultMessage="Info"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="row">
+              <p className="inquiries internal-text text-center mtop40">
+                <FormattedHTMLMessage id="press.text" defaultMessage="Info" />
+              </p>
             </div>
           </div>
           <div className="footer_bottom_press">

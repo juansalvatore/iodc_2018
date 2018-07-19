@@ -180,6 +180,11 @@ nav
 .schedule-button-top
     height: 70px
 
+.button_alignment_left
+    text-align: left
+.button_alignment_right
+    text-align: right
+
 .sideevents-button
     max-width: 400px
 
@@ -569,6 +574,9 @@ li
 .mtop40
     margin-top: 40px
 
+.mtop75
+    margin-top: 75px
+
 .mtop115
     margin-top: 115px
 
@@ -576,7 +584,8 @@ li
     height: auto
     width: 100%
 
-
+.inquiries
+    margin-bottom: 40px
 
 nav, .nav, .navbar-nav
     opacity: 1
@@ -624,7 +633,7 @@ a
     font-size: 1.7rem !important
     margin: 0 0 5px
 
-.people-list__org 
+.people-list__org  
     color: $gris
     font-weight: 200
 
@@ -1041,6 +1050,7 @@ select:focus, input:focus
         height: 373px !important
         display: flex
         align-items: center
+        top: 20px
 
         img 
             margin-bottom: 5px !important
@@ -1052,7 +1062,7 @@ select:focus, input:focus
         justify-content: center !important
         margin-top: 2px
         margin-bottom: 2px
-
+        
     .display_none_995
         display: none
 
@@ -1097,7 +1107,17 @@ select:focus, input:focus
     h2
         font:
             size: 60px
- 
+    .press_buttons_container
+        display: flex
+        flex-direction: column
+        align-items: space-around
+        height: 200px
+
+    .button_alignment_left
+        text-align: center
+    .button_alignment_right
+        text-align: center
+
 @media (max-width: 640px)
     .people-list li 
         width: 100%
@@ -1109,6 +1129,7 @@ select:focus, input:focus
         justify-content: space-around
         height: 171px
         top: -20px
+     
 
     .info-iodc
         font:
@@ -1124,6 +1145,7 @@ select:focus, input:focus
         h2 
             font: 
                 size: 50px
+
 
 @media (max-width: 425px)
     h2
@@ -1151,7 +1173,9 @@ select:focus, input:focus
         h2 
             font: 
                 size: 50px
-        
+    .footer 
+        top: 34px
+
 @media (max-width: 390px)
     .preevent
         display: flex
