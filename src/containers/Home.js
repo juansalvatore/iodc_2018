@@ -27,6 +27,9 @@ import {
   Uruguay,
   Francia,
   Brasil,
+  Uk,
+  Alemania,
+  Canada,
   Iodc12,
   Patio,
   Iodc10,
@@ -510,14 +513,27 @@ class Home extends Component {
                 </div>
               </div>
               <div className="row centerelement">
-                <div className="col-xs-12 col-md-3 col-lg-3">
+                <div className="col-xs-12 col-md-2 col-lg-2">
                   <img src={Francia} alt="Francia" className="img-responsive" />
                 </div>
-                <div className="col-xs-12 col-md-3 col-lg-3 ">
+                <div className="col-xs-12 col-md-2 col-lg-2 ">
                   <img src={Uruguay} alt="Uruguay" className="img-responsive" />
                 </div>
-                <div className="col-xs-12 col-md-3 col-lg-3">
+                <div className="col-xs-12 col-md-2 col-lg-2">
                   <img src={Brasil} alt="Brasil" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img src={Uk} alt="UK" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img
+                    src={Alemania}
+                    alt="Alemania"
+                    className="img-responsive"
+                  />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img src={Canada} alt="Canada" className="img-responsive" />
                 </div>
               </div>
             </div>
