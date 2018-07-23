@@ -162,7 +162,7 @@ export default {
     'info.k': '<b>I could not ask for a visa myself. Can you help me?</b>',
 
     'info.l':
-      'In case you need help, you can contact us at <a href="mailto:visas@opendatacon.org"><i>visas@opendatacon.org</i></a> and specify the following information:',
+      'In case you need help, you can contact us at <a href="mailto:visa@opendatacon.org"><i>visa@opendatacon.org</i></a> and specify the following information:',
 
     'info.name': 'Name',
     'info.surname': 'Surname',
@@ -583,7 +583,7 @@ export default {
     'info.k': '<b>No pude pedir una visa por mi cuenta. ¿Me pueden ayudar?</b>',
 
     'info.l':
-      'En caso de que necesites ayuda, puede contactarnos a <a href="mailto:visas@opendatacon.org"><i>visas@opendatacon.org</i></a> y especificar la siguiente información:',
+      'En caso de que necesites ayuda, puede contactarnos a <a href="mailto:visa@opendatacon.org"><i>visa@opendatacon.org</i></a> y especificar la siguiente información:',
 
     'info.name': 'Nombre',
     'info.surname': 'Apellido',
