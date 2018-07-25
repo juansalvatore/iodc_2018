@@ -576,9 +576,6 @@ class Home extends Component {
                   <img src={Brasil} alt="Brasil" className="img-responsive" />
                 </div>
                 <div className="col-xs-12 col-md-2 col-lg-2">
-                  <img src={Uk} alt="UK" className="img-responsive" />
-                </div>
-                <div className="col-xs-12 col-md-2 col-lg-2">
                   <img
                     src={Alemania}
                     alt="Alemania"
@@ -587,6 +584,9 @@ class Home extends Component {
                 </div>
                 <div className="col-xs-12 col-md-2 col-lg-2">
                   <img src={Canada} alt="Canada" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img src={Uk} alt="UK" className="img-responsive" />
                 </div>
               </div>
             </div>

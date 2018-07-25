@@ -48,15 +48,11 @@ class Press extends Component {
 
                 <div className="col-xs-12 col-sm-6 mtop40 button_alignment_left">
                   <a
-<<<<<<< HEAD
-                    href="https://www.argentina.gob.ar/sites/default/files/kit_de_prensa_press_kit_-_iodc18.pdf"
-=======
                     href={
                       this.props.lang == 'en'
                         ? 'https://www.argentina.gob.ar/sites/default/files/press_kit_iodc18-v0.pdf'
                         : 'https://www.argentina.gob.ar/sites/default/files/kit_de_prensa_iodc18-v0.pdf'
                     }
->>>>>>> 8630aced6d9a2ef7bcff12ec8b1659592b8a69a1
                     target="_blank"
                   >
                     <button className="schedule-button schedule-button-top">
