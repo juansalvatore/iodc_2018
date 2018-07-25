@@ -1044,17 +1044,15 @@ select:focus, input:focus
     top: -148px
     left: 4px
     z-index: -2
-
-@media (max-height: 1550px)
-    .footer_bottom_register
-        position: relative !important
-        bottom: 0 !important
-
-@media (max-height: 1160px)
+@media (min-width: 2220px)    
     .footer_bottom_press
         position: relative !important
-        bottom: 0
+        top: 1300px
 
+@media (min-height: 1110px)
+    .footer_bottom_press
+        position: absolute !important
+        bottom: 0
 @media (max-width: 1300px)         
     .hamburguer-bt 
         display: block
@@ -1107,6 +1105,11 @@ select:focus, input:focus
         
     .display_none_995
         display: none
+
+    @media (min-height: 1110px)
+        .footer_bottom_press
+            position: relative !important
+            bottom: 0
 
 @media (max-width: 768px)   
     h2

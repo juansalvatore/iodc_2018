@@ -47,12 +47,21 @@ class Press extends Component {
                 </div>
 
                 <div className="col-xs-12 col-sm-6 mtop40 button_alignment_left">
-                  <button className="schedule-button schedule-button-top">
-                    <FormattedHTMLMessage
-                      id="press.download"
-                      defaultMessage="Info"
-                    />
-                  </button>
+                  <a
+                    href={
+                      this.props.lang == 'en'
+                        ? 'https://www.argentina.gob.ar/sites/default/files/press_kit_iodc18-v0.pdf'
+                        : 'https://www.argentina.gob.ar/sites/default/files/kit_de_prensa_iodc18-v0.pdf'
+                    }
+                    target="_blank"
+                  >
+                    <button className="schedule-button schedule-button-top">
+                      <FormattedHTMLMessage
+                        id="press.download"
+                        defaultMessage="Info"
+                      />
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
