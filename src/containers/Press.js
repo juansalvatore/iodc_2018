@@ -33,12 +33,17 @@ class Press extends Component {
             <div className="row mtop40">
               <div className="home_button_container press_buttons_container">
                 <div className="col-xs-12 col-sm-6 mtop40 button_alignment_right">
-                  <button className="register-button">
-                    <FormattedHTMLMessage
-                      id="press.register"
-                      defaultMessage="Info"
-                    />
-                  </button>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfFax_sT-AcPeVRgREsHP-fPmDk2JbmlXVFR8AdffnfNE-F9A/viewform"
+                    target="_blank"
+                  >
+                    <button className="register-button">
+                      <FormattedHTMLMessage
+                        id="press.register"
+                        defaultMessage="Info"
+                      />
+                    </button>
+                  </a>
                 </div>
 
                 <div className="col-xs-12 col-sm-6 mtop40 button_alignment_left">
