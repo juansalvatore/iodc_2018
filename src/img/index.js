@@ -41,7 +41,19 @@ import rectangleShort from './rectangle_short.svg'
 import rectangleHeight from './rectangle_tall.svg'
 import dotsShort from './dots_short.svg'
 import dotsHeight from './dots_tall.svg'
+import VisasAzul from './VISAS - azul.svg'
+import VisasCeleste from './VISAS - celeste.svg'
+import ComiteeAzul from './COMITEE - azul.svg'
+import ComiteeCeleste from './COMITEE - celeste.svg'
+import BAazul from './BA - azul.svg'
+import BAceleste from './BA - celeste.svg'
 export {
+  BAazul,
+  BAceleste,
+  ComiteeAzul,
+  ComiteeCeleste,
+  VisasAzul,
+  VisasCeleste,
   dotsShort,
   dotsHeight,
   rectangleShort,

@@ -40,6 +40,12 @@ import {
   rectangleShort,
   dotsHeight,
   dotsShort,
+  VisasAzul,
+  VisasCeleste,
+  ComiteeAzul,
+  ComiteeCeleste,
+  BAazul,
+  BAceleste,
 } from '../img'
 
 class Home extends Component {
@@ -180,8 +186,26 @@ class Home extends Component {
                     slowerScrollRate
                     tag="visas"
                   >
-                    <img src={Visas} alt="Visas" className="img-bullets" />
-
+                    <div className="visas_container">
+                      <Parallax
+                        className="visas"
+                        offsetYMax={-7}
+                        offsetYMin={7}
+                        slowerScrollRate
+                        tag="visas"
+                      >
+                        <img
+                          src={VisasAzul}
+                          alt="Visas"
+                          className="img-bullets visas_azul"
+                        />
+                      </Parallax>
+                      <img
+                        src={VisasCeleste}
+                        alt="Visas"
+                        className="img-bullets visas_celeste"
+                      />
+                    </div>
                     <h5 className="bullets">
                       <FormattedMessage
                         id="home.bullets.2"
@@ -214,11 +238,25 @@ class Home extends Component {
                       slowerScrollRate
                       tag="visas"
                     >
-                      <img
-                        src={Obelisco}
-                        alt="Obelisco"
-                        className="img-bullets"
-                      />
+                      <div className="obelisco_container">
+                        <img
+                          src={BAazul}
+                          alt="Obelisco"
+                          className="img-bullets obelisco_icon_azul"
+                        />
+                        <Parallax
+                          offsetYMax={7}
+                          offsetYMin={-7}
+                          slowerScrollRate
+                          tag="visas"
+                        >
+                          <img
+                            src={BAceleste}
+                            alt="Obelisco"
+                            className="img-bullets obelisco_icon_celeste"
+                          />
+                        </Parallax>
+                      </div>
                       <h5 className="bullets">
                         <FormattedMessage
                           id="home.bullets.1"
@@ -248,11 +286,26 @@ class Home extends Component {
                       slowerScrollRate
                       tag="visas"
                     >
-                      <img
-                        src={Invitacion}
-                        alt="Invitacion"
-                        className="img-bullets"
-                      />
+                      <div className="comitee_container">
+                        <img
+                          src={ComiteeAzul}
+                          alt="Comitee"
+                          className="img-bullets persona_icon_azul"
+                        />
+                        <Parallax
+                          offsetYMax={7}
+                          offsetYMin={-7}
+                          slowerScrollRate
+                          tag="visas"
+                        >
+                          <img
+                            src={ComiteeCeleste}
+                            alt="Comitee"
+                            className="img-bullets persona_icon_celeste"
+                          />
+                        </Parallax>
+                      </div>
+
                       <h5 className="bullets">
                         <FormattedMessage
                           id="home.bullets.3"

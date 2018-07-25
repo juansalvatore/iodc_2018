@@ -1008,16 +1008,51 @@ select:focus, input:focus
     z-index: -1
     transition: all ease-in-out 300ms
 
-@media (max-height: 1550px)
-    .footer_bottom_register
-        position: relative !important
-        bottom: 0 !important
+.visas_container 
+    height: 150px
+    
+.visas_azul
+    position: relative
 
-@media (max-height: 1160px)
+.visas_celeste
+    position: relative
+    top: -149px
+    left: 0px
+    z-index: -2
+
+.persona_icon_celeste
+    position: relative
+    top: -150px
+    z-index: -5
+
+.comitee_container
+    height: 150px
+
+.persona_icon_azul
+    z-index: 10
+    position: relative
+
+.obelisco_container
+    height: 150px
+
+.obelisco_icon_azul
+    position: relative
+    z-index: 2
+
+.obelisco_icon_celeste
+    position: relative
+    top: -148px
+    left: 4px
+    z-index: -2
+@media (min-width: 2220px)    
     .footer_bottom_press
         position: relative !important
-        bottom: 0
+        top: 1300px
 
+@media (min-height: 1110px)
+    .footer_bottom_press
+        position: absolute !important
+        bottom: 0
 @media (max-width: 1300px)         
     .hamburguer-bt 
         display: block
@@ -1070,6 +1105,11 @@ select:focus, input:focus
         
     .display_none_995
         display: none
+
+    @media (min-height: 1110px)
+        .footer_bottom_press
+            position: relative !important
+            bottom: 0
 
 @media (max-width: 768px)   
     h2
