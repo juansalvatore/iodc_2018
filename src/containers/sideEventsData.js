@@ -20,7 +20,7 @@ export default [
     location: 'Facultad de Derecho',
     date: 'Monday 24th September',
     date_es: 'Lunes 24 de septiembre',
-    url: 'http://od4d.net/',
+    url: '',
     invitation: false,
   },
   {
@@ -77,7 +77,7 @@ export default [
     location: 'Facultad de Derecho',
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
-    url: 'http://www.datagovernanceforum.com/',
+    url: '',
     invitation: false,
   },
   {
@@ -93,7 +93,7 @@ export default [
     location: 'La Nación',
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
-    url: 'https://www.lanacion.com.ar/data',
+    url: '',
     invitation: false,
   },
   {
@@ -109,7 +109,7 @@ export default [
     location: 'TBD',
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
-    url: 'https://opendatacharter.net/',
+    url: '',
     invitation: false,
   },
   {

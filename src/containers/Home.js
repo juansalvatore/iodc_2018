@@ -40,6 +40,10 @@ import {
   rectangleShort,
   dotsHeight,
   dotsShort,
+  VisasAzul,
+  VisasCeleste,
+  ComiteeAzul,
+  ComiteeCeleste,
 } from '../img'
 
 class Home extends Component {
@@ -180,8 +184,26 @@ class Home extends Component {
                     slowerScrollRate
                     tag="visas"
                   >
-                    <img src={Visas} alt="Visas" className="img-bullets" />
-
+                    <div className="visas_container">
+                      <Parallax
+                        className="visas"
+                        offsetXMax={-2}
+                        offsetXMin={2}
+                        slowerScrollRate
+                        tag="visas"
+                      >
+                        <img
+                          src={VisasAzul}
+                          alt="Visas"
+                          className="img-bullets visas_azul"
+                        />
+                      </Parallax>
+                      <img
+                        src={VisasCeleste}
+                        alt="Visas"
+                        className="img-bullets visas_celeste"
+                      />
+                    </div>
                     <h5 className="bullets">
                       <FormattedMessage
                         id="home.bullets.2"
@@ -248,11 +270,26 @@ class Home extends Component {
                       slowerScrollRate
                       tag="visas"
                     >
-                      <img
-                        src={Invitacion}
-                        alt="Invitacion"
-                        className="img-bullets"
-                      />
+                      <div className="comitee_container">
+                        <img
+                          src={ComiteeAzul}
+                          alt="Comitee"
+                          className="img-bullets persona_icon_azul"
+                        />
+                        <Parallax
+                          offsetXMax={-2}
+                          offsetXMin={2}
+                          slowerScrollRate
+                          tag="visas"
+                        >
+                          <img
+                            src={ComiteeCeleste}
+                            alt="Comitee"
+                            className="img-bullets persona_icon_celeste"
+                          />
+                        </Parallax>
+                      </div>
+
                       <h5 className="bullets">
                         <FormattedMessage
                           id="home.bullets.3"
