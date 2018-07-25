@@ -44,6 +44,8 @@ import {
   VisasCeleste,
   ComiteeAzul,
   ComiteeCeleste,
+  BAazul,
+  BAceleste,
 } from '../img'
 
 class Home extends Component {
@@ -187,8 +189,8 @@ class Home extends Component {
                     <div className="visas_container">
                       <Parallax
                         className="visas"
-                        offsetXMax={-2}
-                        offsetXMin={2}
+                        offsetYMax={-7}
+                        offsetYMin={7}
                         slowerScrollRate
                         tag="visas"
                       >
@@ -236,11 +238,25 @@ class Home extends Component {
                       slowerScrollRate
                       tag="visas"
                     >
-                      <img
-                        src={Obelisco}
-                        alt="Obelisco"
-                        className="img-bullets"
-                      />
+                      <div className="obelisco_container">
+                        <img
+                          src={BAazul}
+                          alt="Obelisco"
+                          className="img-bullets obelisco_icon_azul"
+                        />
+                        <Parallax
+                          offsetYMax={7}
+                          offsetYMin={-7}
+                          slowerScrollRate
+                          tag="visas"
+                        >
+                          <img
+                            src={BAceleste}
+                            alt="Obelisco"
+                            className="img-bullets obelisco_icon_celeste"
+                          />
+                        </Parallax>
+                      </div>
                       <h5 className="bullets">
                         <FormattedMessage
                           id="home.bullets.1"
@@ -277,8 +293,8 @@ class Home extends Component {
                           className="img-bullets persona_icon_azul"
                         />
                         <Parallax
-                          offsetXMax={-2}
-                          offsetXMin={2}
+                          offsetYMax={7}
+                          offsetYMin={-7}
                           slowerScrollRate
                           tag="visas"
                         >
