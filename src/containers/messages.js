@@ -413,7 +413,7 @@ export default {
       'You can now request your accreditation for the coverage of #IODC18, and know all the information about the Conference with the press kit.',
 
     'press.text':
-      'For inquiries and / or more information: <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a>',
+      'For inquiries and / or more information: <a href="mailto:press@opendatacon.org"><i>press@opendatacon.org</i></a>',
 
     'press.register': 'ACCREDITATION',
 
@@ -810,7 +810,7 @@ export default {
       'Ya podés solicitar tu acreditación para la cobertura de #IODC18, y conocer toda la información sobre la Conferencia en el kit de prensa.',
 
     'press.text':
-      'Para consultas y/o más información: <a href="mailto:contact@opendatacon.org"><i>contact@opendatacon.org</i></a>',
+      'Para consultas y/o más información: <a href="mailto:press@opendatacon.org"><i>press@opendatacon.org</i></a>',
 
     'press.register': 'ACREDITACIÓN',
 
