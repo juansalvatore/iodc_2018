@@ -58,7 +58,7 @@ class About extends Component {
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
         <ParallaxProvider>
-          <div>
+          <div className="overflowHidden">
             <Parallax
               className="iodcBack display_none_995"
               offsetYMax={15}

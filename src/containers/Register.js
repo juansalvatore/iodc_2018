@@ -201,7 +201,7 @@ class Register extends Component {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div>
+        <div className="overflowHidden">
           <div className="container-fluid">
             <Header>
               <FormattedMessage id="register.title" defaultMessage="Register" />

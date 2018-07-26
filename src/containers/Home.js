@@ -60,7 +60,7 @@ class Home extends Component {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div>
+        <div className="overflowHidden">
           <Parallax
             offsetXMax={6}
             offsetXMin={-6}

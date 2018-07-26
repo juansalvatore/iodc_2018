@@ -27,7 +27,7 @@ class Info extends Component {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div>
+        <div className="overflowHidden">
           <Parallax
             className="iodcBack display_none_995"
             offsetYMax={15}

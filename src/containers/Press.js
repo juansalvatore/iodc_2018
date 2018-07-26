@@ -11,7 +11,7 @@ class Press extends Component {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div className="press_container">
+        <div className="press_container overflowHidden">
           <div className="container-fluid">
             <Header>
               <FormattedHTMLMessage id="press.header" defaultMessage="Info" />

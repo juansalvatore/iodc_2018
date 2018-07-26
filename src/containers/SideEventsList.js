@@ -45,7 +45,7 @@ class SideEventsList extends Component {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div>
+        <div className="overflowHidden">
           <div class="container-fluid">
             <Header>
               <FormattedMessage

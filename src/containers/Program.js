@@ -11,7 +11,7 @@ class Program extends Component {
     const { lang } = this.props
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div className="container-fluid">
+        <div className="container-fluid overflowHidden">
           <Header>Program</Header>
 
           <div className="row">
