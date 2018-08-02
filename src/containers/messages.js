@@ -137,12 +137,12 @@ export default {
 
     'info.visa': 'Visa and travel information',
 
-    'info.g': '<b>How do I know if I need a visa?</b>',
+    'info.g':
+      '<b>To all IODC18 Participants, </b>should you require help with your visa process, please send all the information below for each potential participant to: <a href="mailto:visa@opendatacon.org">visa@opendatacon.org</a>',
 
-    'info.h':
-      'For information on nationalities that precise a visa, diplomatic or official passports to enter the Argentine Republic, please <a href="http://www.migraciones.gov.ar/accesible/indexA.php?visas">consult here</a>. In case you do not require a visa, you still must present a valid passport and proof of accreditation to the Conference at the immigration point of entry into Argentina. You can find <a href="http://www.argentina.gob.ar/tema/extranjeros/turistas">more information here</a>.',
+    'info.h': ' ',
 
-    'info.i': '<b>What should I do if I need a visa?</b>',
+    'info.i': '<b>Visa requirements for foreign visitors:</b>',
 
     'info.j':
       'You should contact the Argentine Consular Representation in your country at least <b>45 days prior to the date of your trip.</b> For contact information of Consulates and Embassies of the Argentine Republic, <a href="http://mrecic.gov.ar/representaciones">please consult here</a>. If you do<b>not have an Argentine Consular Representation in your country of residence</b>, you will have the possibility of requesting your visa remotely. For this exceptional procedure, you must follow the following steps:',
@@ -170,8 +170,8 @@ export default {
     'info.nationality': 'Nationality',
     'info.where':
       'Where was your passport issued? What is your passport number?',
-    'info.what': 'What organization are you part of? Which is your charge?',
-    'info.consulate': 'Argentine Consulate that should process this request:',
+    'info.what': 'What organization are you part of? Which is your position?',
+    'info.consulate': 'Argentine Consulate that should process this request.',
 
     'info.venue': 'Usina del Arte',
 
@@ -319,6 +319,7 @@ export default {
       the world to strengthen cohesion among existing open data
       efforts and explore new ways to drive social and economic value
       around the world.
+      This year IODC welcomes ConDatos, the Latin American Regional Open Data Conference and we will have a special track with speakers and roundtables in spanish.
     `,
 
     // Code of Conduct
@@ -715,6 +716,7 @@ export default {
       <b class="bold-text">
       Gobierno de Argentina, junto con la Red de Datos Abiertos para el Desarrollo, el Centro Internacional de Investigaciones para el Desarrollo y el Banco Mundial
       </b>. Los organizadores trabajarán con socios de todo el mundo para fortalecer los esfuerzos ya existentes y explorar nuevas formas de impulsar el valor social y económico a nivel global.
+      Este año IODC recibe a Condatos, la Conferencia Regional de Datos Abiertos de América Latina, y tendremos un track en español dedicado especialmente a la comunidad latinoamericana.
     `,
 
     // Code of Conduct
