@@ -144,20 +144,35 @@ export default {
 
     'info.i': '<b>Visa requirements for foreign visitors:</b>',
 
-    'info.j':
-      'You should contact the Argentine Consular Representation in your country at least <b>45 days prior to the date of your trip.</b> For contact information of Consulates and Embassies of the Argentine Republic, <a href="http://mrecic.gov.ar/representaciones">please consult here</a>. If you do<b>not have an Argentine Consular Representation in your country of residence</b>, you will have the possibility of requesting your visa remotely. For this exceptional procedure, you must follow the following steps:',
+    'info.i.1':
+      'If you wish to participate at IODC18 and may require a visa to enter Argentina, please <b>contact us as soon as possible</b>. For information on nationalities that require a visa to enter Argentina, please consult the following link: <a href="http://www.migraciones.gov.ar/accesible/indexA.php?visas">http://www.migraciones.gov.ar/accesible/indexA.php?visas</a>;',
+
+    'info.i.2':
+      'Foreigners who <b>do not require a visa to enter the Argentine Republic</b>, must present their <b>valid passport and proof of accreditation to the Conference</b> at the immigration point of entry into Argentina.;',
+
+    'info.i.3':
+      'Foreigners holding <b>passports that require a visa to enter the Argentine Republic</b> should contact a Argentine Consular Representative to request their visa <b>45 days prior to the date of their trip.</b> For contact information of Consulates and Embassies of the Argentine Republic, please consult the following link: <a href="http://mrecic.gov.ar/representaciones">http://mrecic.gov.ar/representaciones</a>;',
+
+    'info.i.4':
+      'If you <b>do not have a Argentine Consular Representative in your country of residence</b>, you may be able to l have the <b>request your visa remotely</b>. For this exceptional procedure, you must follow the following steps:',
 
     'info.j.a':
-      'Contact the <a href="http://mrecic.gov.ar/representaciones">consular representation that is most convenient</a>, with an anticipation of, at least, 45 days to the date of your trip.',
+      '<b>Contact a Consular Representative that is most convenient</b> a minimum of 45 days prior to the date of your trip: <a href="http://mrecic.gov.ar/representaciones">http://mrecic.gov.ar/representaciones</a>;',
 
     'info.j.b':
-      'Send the requested documentation via email <b>to the corresponding consular representation, and make sure of having an appointment with date and time for the consular interview.</b> Details for the procedure, such as the documentation to be presented and the cost of the visa, will be informed by the representation.',
+      '<b>Send the requested documentation via email</b> to the corresponding Consular Representative;',
 
     'info.j.c':
-      'Once the visa has been approved, <b>the consular representative will contact you to coordinate a date and time in which you can show up, with your valid passport, to obtain your visa</b> (this may occur during a stopover of your flight to the Argentine Republic). Note: you can authorize another person to appear with your passport to obtain your visa.',
+      'Request an <b>appointment</b> with the corresponding Consular Representative to <b>receive a date and time for the consular interview</b> if necessary, which may be carried out by virtual means (Skype, Facetime, etc.);',
 
     'info.j.d':
+      'Once the visa has been approved, the Consular Representative will contact you to coordinate a <b>date and time at which you can appear before said Representative with your valid passport to obtain your visa</b> (this may occur during a stopover of your flight to Argentina). Note: <b>you can authorize another person to appear before the Consular Representative with your passport to obtain your visa;</b>',
+
+    'info.j.e':
       'The Argentine Republic, through Consular Representation, <b>reserves the right to deny any visa applicant the possibility of carrying out the procedure remotely</b>, requiring the foreigner to carry out the procedure in person.',
+
+    'info.i.5':
+      ' In <b>exceptional circumstances</b>, you may <b>process your visa before an Argentine Consular Representative and coordinate the pick-up of your visa from another Consular Office</b>. Details of the visa procedure, such as the documentation to be presented and the cost of the visa, will be provided to the applicant by the corresponding Consular Representative.',
 
     'info.k': '<b>I could not ask for a visa myself. Can you help me?</b>',
 
@@ -566,20 +581,38 @@ export default {
 
     'info.i': '<b>¿Qué tengo que hacer si necesito una visa?</b>',
 
-    'info.j':
-      'Debés ponerte en contacto con la representación consular argentina en tu país, al menos <b>45 días antes de la fecha de tu viaje</b>. Para información de contacto de consulados y embajadas de la República Argentina, <a href="http://mrecic.gov.ar/representaciones">consultá acá</a>. <b>Si no hay un consulado argentino en tu país</b>, tenés la posibilidad de solicitar tu visa de forma remota. Para este procedimiento excepcional, seguí los siguientes pasos:',
+    'info.i.1':
+      'Si vas a participar de la Conferencia, por favor <b>consultá con la debida anticipación si necesitás una visa para ingresar a la República Argentina.</b> Para saber si necesitás una visa para ingresar a la Argentina, en pasaportes ordinarios, diplomáticos u oficiales, por favor consultá el siguiente enlace: <a href="http://www.migraciones.gov.ar/accesible/indexA.php?visas">http://www.migraciones.gov.ar/accesible/indexA.php?visas</a>;',
+
+    'info.i.2':
+      'Si <b>no necesitás una visa</b> para ingresar a la República Argentina, de cualquier forma deberás <b>presentar un pasaporte válido</b> y la constancia de acreditación a la Conferencia en el punto migratorio de ingreso a la Argentina.',
+
+    'info.i.3':
+      'Si <b>contás con un pasaporte ordinario que requiere visa para el ingreso a la República Argentina,</b> tenés que ponerte en contacto con la Representación Consular Argentina con la cual tenés que tramitar tu visa. Asegurate de hacerlo con <b>45 días de anticipación</b> a la fecha de tu viaje. Para ver datos de contacto de los distintos consulados y embajadas de la República Argentina, consultá este enlace:  <a href="http://mrecic.gov.ar/representaciones">http://mrecic.gov.ar/representaciones</a>;',
+
+    'info.i.4':
+      'Si <b>no contás con una representación consular argentina en tu país de residencia</b>, podés solicitar tu visa a distancia. En este caso excepcional, seguí los siguientes pasos: ',
 
     'info.j.a':
-      'Ponete en en contacto con <a href="http://mrecic.gov.ar/representaciones">la representación consular que sea más conveniente</a> con una anticipación de, al menos, 45 días a la fecha de tu viaje.',
+      '<b>Contactar a la Representación Consular más conveniente</b>, con anticipación de 45 días a la fecha de tu viaje, en <a href="http://mrecic.gov.ar/representaciones">http://mrecic.gov.ar/representaciones</a>',
 
     'info.j.b':
-      'Enviá la documentación solicitada por correo electrónico <b>a la representación consular, y asegurate de tener una cita con la fecha y hora de la entrevista consular.</b> Otros detalles del proceso, como la documentación a presentar y el costo de la visa, serán informados por el consulado.',
+      '<b>Enviar la documentación solicitada</b>, vía correo electrónico, a la Representación Consular correspondiente.',
 
     'info.j.c':
-      'Una vez aprobada la visa, <b>el representante consular se pondrá en contacto para coordinar una fecha y hora en la que puedas presentarte, con tu pasaporte válido, para obtener la visa</b> (esto puede ocurrir durante una escala de tu vuelo a la República Argentina). Nota: podés autorizar a otra persona para que se presente con tu pasaporte y obtener la visa.',
+      'Solicitar a dicha Representación Consular una <b>fecha y horario para realizar la entrevista necesaria</b>, que se hará de forma virtual (Skype, Facetime, etc.). ',
 
     'info.j.d':
-      'La República Argentina, a través de la Representación Consular, <b>se reserva el derecho de negar a cualquier solicitante de visa la posibilidad de llevar a cabo el procedimiento a distancia</b>, requiriendo que el extranjero lleve a cabo el procedimiento en persona.',
+      '<b>Una vez que la visa fue aprobada</b>, la Representación Consular te contactará para coordinar una fecha y horario en la cual tendrás que <b>presentarte, con pasaporte vigente, a obtener la visa</b>. Esto puede ocurrir durante una escala de su vuelo hacia la República Argentina. Nota: <b>podés autorizar a otra persona a presentarse ante la Representación Consular con tu pasaporte para retirarla.</b>',
+
+    'info.j.e':
+      'La República Argentina, a través de la Representación Consular, se reserva el derecho de denegar a cualquier solicitante de visa la posibilidad de realizar el trámite a distancia, requiriendo que sea en persona.',
+
+    'info.i.5':
+      '<b>En circunstancias excepcionales</b>, podrás <b>tramitar la visa ante una Representación Consular argentina y coordinar con dicha Representación el retiro de su visa ante otra Sede Consular.</b> Los detalles del procedimiento de visado, tales como la documentación a presentar y el costo de la visa, te serán informados por la Representación Consular correspondiente.',
+
+    'info.i.end':
+      'Details of the visa procedure, such as the documentation to be presented and the cost of the visa, will be provided to the applicant by the corresponding Consular Representative.',
 
     'info.k': '<b>No pude pedir una visa por mi cuenta. ¿Me pueden ayudar?</b>',
 

@@ -197,53 +197,96 @@ class Info extends Component {
                   <FormattedHTMLMessage id="info.h" defaultMessage="Info" />
                 </p>
 
-                <p className="internal-text mbottom0">
+                <p className="internal-text mbottom0 mtop20">
                   <FormattedHTMLMessage id="info.i" defaultMessage="Info" />
-                </p>
-                <p className="internal-text">
-                  {/* <FormattedHTMLMessage id="info.j" defaultMessage="Info" /> */}
                 </p>
 
                 <p className="internal-text-list-program">
                   <ol>
-                    <li>3 - test</li>
-                    <li>
-                      4 -
-                      <ul>
+                    <li className="mtop20">
+                      <span class="internal-bullets-text">1. </span>
+                      <FormattedHTMLMessage
+                        id="info.i.1"
+                        defaultMessage="Info"
+                      />
+                    </li>
+                    <li className="mtop20">
+                      <span class="internal-bullets-text">2. </span>
+
+                      <FormattedHTMLMessage
+                        id="info.i.2"
+                        defaultMessage="Info"
+                      />
+                    </li>
+
+                    <li className="mtop20">
+                      <span class="internal-bullets-text">3. </span>
+
+                      <FormattedHTMLMessage
+                        id="info.i.3"
+                        defaultMessage="Info"
+                      />
+                    </li>
+
+                    <li className="mtop20">
+                      <span class="internal-bullets-text">4. </span>
+
+                      <FormattedHTMLMessage
+                        id="info.i.4"
+                        defaultMessage="Info"
+                      />
+
+                      <ol>
                         <li className="mtop20">
-                          <span class="internal-bullets-text">a.</span>
+                          <span class="internal-bullets-text">a. </span>
                           <FormattedHTMLMessage
                             id="info.j.a"
                             defaultMessage="Info"
                           />
                         </li>
                         <li className="mtop20">
-                          <span class="internal-bullets-text">b.</span>
+                          <span class="internal-bullets-text">b. </span>
                           <FormattedHTMLMessage
                             id="info.j.b"
                             defaultMessage="Info"
                           />
                         </li>
                         <li className="mtop20">
-                          <span class="internal-bullets-text">c.</span>{' '}
+                          <span class="internal-bullets-text">c. </span>{' '}
                           <FormattedHTMLMessage
                             id="info.j.c"
                             defaultMessage="Info"
                           />
                         </li>
                         <li className="mtop20">
-                          <span class="internal-bullets-text">d.</span>
+                          <span class="internal-bullets-text">d. </span>
                           <FormattedHTMLMessage
                             id="info.j.d"
                             defaultMessage="Info"
                           />
                         </li>
-                      </ul>
+
+                        <li className="mtop20">
+                          <span class="internal-bullets-text">e. </span>
+                          <FormattedHTMLMessage
+                            id="info.j.e"
+                            defaultMessage="Info"
+                          />
+                        </li>
+                      </ol>
+                    </li>
+
+                    <li className="mtop20">
+                      <span class="internal-bullets-text">5. </span>
+                      <FormattedHTMLMessage
+                        id="info.i.5"
+                        defaultMessage="Info"
+                      />
                     </li>
                   </ol>
                 </p>
 
-                <p className="internal-text mbottom0">
+                <p className="internal-text mbottom0 mtop20">
                   <FormattedHTMLMessage id="info.k" defaultMessage="Info" />
                 </p>
 
