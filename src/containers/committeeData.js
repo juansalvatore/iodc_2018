@@ -156,7 +156,7 @@ export default [
   },
   {
     name: 'Beth',
-    surname: 'Novak',
+    surname: 'Noveck',
     organization: 'Govlab',
   },
   {
