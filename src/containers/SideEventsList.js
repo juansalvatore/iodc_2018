@@ -17,18 +17,21 @@ class SideEventsList extends Component {
   displaySideEvents = () => {
     return this.state.sideEvents.map(event => (
       <li>
-        <p className="people-list__name">{event.event}</p>
-        <p className="people-list__org">{event.location} </p>
-        <p className="people-list__org">
+        <span className="blue_card_top">
+          <span className="event_more_info">More information</span>
+        </span>
+        <p className="event_name">{event.event}</p>
+        <p className="event_location">{event.location} </p>
+        <p className="event_date">
           {this.props.lang == 'en' ? event.date : event.date_es}
         </p>
-        <p className={event.invitation ? 'hide_invitation_event' : ''}>
+        {/* <p className={event.invitation ? 'hide_invitation_event' : ''}>
           <FormattedMessage
             id="side.events.invitation"
             defaultMessage="Access with invitation"
           />
-        </p>
-        <a
+        </p> */}
+        {/* <a
           className={event.url ? 'side_event_button' : 'hide_event_button'}
           target="_blank"
           href={event.url}
@@ -37,7 +40,7 @@ class SideEventsList extends Component {
             id="side.events.button"
             defaultMessage="Go to event"
           />
-        </a>
+        </a> */}
       </li>
     ))
   }
@@ -54,7 +57,7 @@ class SideEventsList extends Component {
               />
             </Header>
             <div className="row">
-              <div className="col-xs-12 col-md-10 col-md-offset-1">
+              <div className="col-xs-12 col-md-10 col-md-offset-1 pre_events_text">
                 <h3 className="internal-sub-title mtop40">
                   <FormattedMessage
                     id="nav.side-events.subtitle"
@@ -72,9 +75,7 @@ class SideEventsList extends Component {
             </div>
             <div className="row">
               <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                <ul class="people-list mbottom75">
-                  {this.displaySideEvents()}
-                </ul>
+                <ul class="event-list mbottom75">{this.displaySideEvents()}</ul>
               </div>
             </div>
           </div>
