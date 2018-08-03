@@ -286,14 +286,6 @@ class Info extends Component {
                   </ol>
                 </p>
 
-                <p className="internal-text mbottom0 mtop20">
-                  <FormattedHTMLMessage id="info.k" defaultMessage="Info" />
-                </p>
-
-                <p className="internal-text">
-                  <FormattedHTMLMessage id="info.l" defaultMessage="Info" />
-                </p>
-
                 <h3 className="internal-sub-title">
                   <FormattedHTMLMessage id="info.venue" defaultMessage="Info" />
                 </h3>

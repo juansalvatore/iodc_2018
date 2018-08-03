@@ -174,11 +174,6 @@ export default {
     'info.i.5':
       ' In <b>exceptional circumstances</b>, you may <b>process your visa before an Argentine Consular Representative and coordinate the pick-up of your visa from another Consular Office</b>. Details of the visa procedure, such as the documentation to be presented and the cost of the visa, will be provided to the applicant by the corresponding Consular Representative.',
 
-    'info.k': '<b>I could not ask for a visa myself. Can you help me?</b>',
-
-    'info.l':
-      'In case you need help, you can contact us at <a href="mailto:visa@opendatacon.org"><i>visa@opendatacon.org</i></a> and specify the following information:',
-
     'info.name': 'Name',
     'info.surname': 'Surname',
     'info.birth': 'Birth Date',
@@ -574,7 +569,8 @@ export default {
 
     'info.visa': 'Visas e información para viajar',
 
-    'info.g': '<b>¿Cómo sé si necesito una visa?</b>',
+    'info.g':
+      '<b>Participante de #IODC18</b>, en caso de que necesites ayuda con el proceso de <b>solicitud de una visa</b> para ingresar a la República Argentina, podés escribirnos a <a href="mailto:visa@opendatacon.org">visa@opendatacon.org</a> con los siguientes datos:',
 
     'info.h':
       'Para obtener información sobre las nacionalidades que requieren una visa, pasaportes diplomáticos u oficiales para ingresar a la República Argentina, <a href="http://www.migraciones.gov.ar/accesible/indexA.php?visas">consultá acá</a>. En caso de que no necesites una visa, de todas formas tenés que presentar un pasaporte válido y un comprobante de acreditación a la Conferencia en el punto de entrada de inmigración a Argentina. Podés encontrar<a href="http://www.argentina.gob.ar/tema/extranjeros/turistas"> más información acá</a>.',
@@ -613,11 +609,6 @@ export default {
 
     'info.i.end':
       'Details of the visa procedure, such as the documentation to be presented and the cost of the visa, will be provided to the applicant by the corresponding Consular Representative.',
-
-    'info.k': '<b>No pude pedir una visa por mi cuenta. ¿Me pueden ayudar?</b>',
-
-    'info.l':
-      'En caso de que necesites ayuda, puede contactarnos a <a href="mailto:visa@opendatacon.org"><i>visa@opendatacon.org</i></a> y especificar la siguiente información:',
 
     'info.name': 'Nombre',
     'info.surname': 'Apellido',
