@@ -104,6 +104,9 @@ h3
   position: absolute    
   width: 100%
 
+.navbar-container
+    z-index: 200
+
 .navbar-container > div
     justify-content: space-around
     display: flex
@@ -690,6 +693,32 @@ a
     justify-content: center
     align-items: center
 
+#expand
+    animation-delay: 0
+    animation-duration: 0.5s
+    animation-name: example
+    animation-fill-mode: forwards
+    position: fixed
+    top: 0px
+    z-index: 10 !important
+    transform: translateY(100%)
+
+@keyframes example 
+    from 
+        background-color: $celeste
+    to 
+        background-color: $azul
+        width: 100vw
+        height: 100vh
+        position: fixed
+        top: 0
+        margin-right: -280px
+        margin: 0px
+        display: flex
+        transform: translateY(0%)
+        pointer-events: none
+        
+
 .event_more_info
     background-color: white
     padding: 10px 19px
@@ -897,6 +926,7 @@ a
 
 
 
+
 #footer_fixed
     position: fixed !important
     bottom: 0 !important
@@ -909,7 +939,7 @@ a
     color: red
 
 .show_error_radio
-    display: block
+    display: block 
     position: relative
     text-align: left
     margin-bottom: -19px

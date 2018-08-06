@@ -8,41 +8,36 @@ import SideEventsData from './sideEventsData'
 class SideEventsList extends Component {
   state = {
     sideEvents: SideEventsData,
+    activeId: null,
   }
 
   componentWillMount() {
     window.scrollTo(0, 0)
   }
 
+  setActiveElement(id) {
+    this.setState({ activeId: id })
+    window.scrollTo(0, 0)
+  }
+
   displaySideEvents = () => {
-    return this.state.sideEvents.map(event => (
-      <li>
-        <span className="blue_card_top">
-          <span className="event_more_info">More information</span>
-        </span>
-        <p className="event_name">{event.event}</p>
-        <p className="event_location">{event.location} </p>
-        <p className="event_date">
-          {this.props.lang == 'en' ? event.date : event.date_es}
-        </p>
-        {/* <p className={event.invitation ? 'hide_invitation_event' : ''}>
-          <FormattedMessage
-            id="side.events.invitation"
-            defaultMessage="Access with invitation"
-          />
-        </p> */}
-        {/* <a
-          className={event.url ? 'side_event_button' : 'hide_event_button'}
-          target="_blank"
-          href={event.url}
+    return this.state.sideEvents.map((event, index) => {
+      return (
+        <li
+          onClick={() => this.setActiveElement(index)}
+          id={index === this.state.activeId ? 'expand' : ''}
         >
-          <FormattedMessage
-            id="side.events.button"
-            defaultMessage="Go to event"
-          />
-        </a> */}
-      </li>
-    ))
+          <span className="blue_card_top">
+            <span className="event_more_info">More information</span>
+          </span>
+          <p className="event_name">{event.event}</p>
+          <p className="event_location">{event.location} </p>
+          <p className="event_date">
+            {this.props.lang == 'en' ? event.date : event.date_es}
+          </p>
+        </li>
+      )
+    })
   }
   render() {
     const { lang } = this.props
