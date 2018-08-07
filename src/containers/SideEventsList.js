@@ -27,7 +27,11 @@ class SideEventsList extends Component {
           onClick={() => this.setActiveElement(index)}
           id={index === this.state.activeId ? 'expand' : ''}
         >
-          <span className="blue_card_top">
+          <span
+            className={
+              index === this.state.activeId ? 'opacityCero' : 'blue_card_top'
+            }
+          >
             <span className="event_more_info">More information</span>
           </span>
           <p className="event_name">{event.event}</p>
