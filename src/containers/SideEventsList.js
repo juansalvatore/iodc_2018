@@ -148,7 +148,10 @@ class SideEventsList extends Component {
                 className="button-back"
                 onClick={() => this.setState({ open: false })}
               >
-                Back
+                <FormattedMessage
+                  id="pre_events.back"
+                  defaultMessage="Contact: "
+                />
               </button>
             </div>
           </div>

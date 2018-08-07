@@ -433,6 +433,7 @@ export default {
     'pre_events.info': 'For more information: ',
 
     'pre_events.contact': 'Contact: ',
+    'pre_events.back': 'Back',
   },
   es: {
     'nav.dashboard': 'Hola Mundo',
@@ -847,5 +848,6 @@ export default {
     'press.download': 'KIT DE PRENSA',
     'pre_events.info': 'Para más información: ',
     'pre_events.contact': 'Contacto: ',
+    'pre_events.back': 'Volver',
   },
 }
