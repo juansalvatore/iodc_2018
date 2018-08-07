@@ -429,6 +429,10 @@ export default {
     'press.register': 'ACCREDITATION',
 
     'press.download': 'PRESS KIT',
+
+    'pre_events.info': 'For more information: ',
+
+    'pre_events.contact': 'Contact: ',
   },
   es: {
     'nav.dashboard': 'Hola Mundo',
@@ -841,5 +845,7 @@ export default {
     'press.register': 'ACREDITACIÓN',
 
     'press.download': 'KIT DE PRENSA',
+    'pre_events.info': 'Para más información: ',
+    'pre_events.contact': 'Contacto: ',
   },
 }

@@ -5,33 +5,65 @@ import messages from './messages'
 import { setLocale } from '../actions/locale'
 import { Header, Footer } from './'
 import SideEventsData from './sideEventsData'
+
+import {
+  Usina,
+  SanMartin,
+  lezama,
+  EstacionFederal,
+  Derecho,
+  Cmd,
+  Ccr,
+} from '../img'
+
 class SideEventsList extends Component {
   state = {
     sideEvents: SideEventsData,
     activeId: null,
+    open: false,
+    name: '',
+    description: '',
+    description_es: '',
+    url: '',
+    contact: '',
+    img: '',
   }
 
   componentWillMount() {
     window.scrollTo(0, 0)
   }
 
-  setActiveElement(id) {
-    this.setState({ activeId: id })
-    window.scrollTo(0, 0)
+  setActiveElement(id, name, description, url, contact, description_es, img) {
+    this.setState({
+      activeId: id,
+      open: true,
+      name,
+      description,
+      url,
+      contact,
+      description_es,
+      img,
+    })
+    // window.scrollTo(0, 0)
   }
 
   displaySideEvents = () => {
     return this.state.sideEvents.map((event, index) => {
       return (
         <li
-          onClick={() => this.setActiveElement(index)}
-          id={index === this.state.activeId ? 'expand' : ''}
+          onClick={() =>
+            this.setActiveElement(
+              index,
+              event.event,
+              event.description,
+              event.url,
+              event.contact,
+              event.description_es,
+              event.img
+            )
+          }
         >
-          <span
-            className={
-              index === this.state.activeId ? 'opacityCero' : 'blue_card_top'
-            }
-          >
+          <span className="blue_card_top">
             <span className="event_more_info">More information</span>
           </span>
           <p className="event_name">{event.event}</p>
@@ -45,9 +77,82 @@ class SideEventsList extends Component {
   }
   render() {
     const { lang } = this.props
+    const image = {
+      './img/usina.png': Usina,
+      './img/sanmartin.png': SanMartin,
+      './img/lezama.png': lezama,
+      './img/estacionfederal.png': EstacionFederal,
+      './img/derecho.png': Derecho,
+      './img/cmd.png': Cmd,
+      './img/ccr.png': Ccr,
+    }
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div className="overflowHidden">
+        <div
+          className={
+            this.state.open
+              ? 'overflowHidden preEventsHeight'
+              : 'overflowHidden'
+          }
+        >
+          <div
+            className={
+              this.state.open ? 'blueBackground' : 'blueBackground opacityCero'
+            }
+          >
+            <img
+              src={image[this.state.img]}
+              className={this.state.open ? 'backgroundImagePreEvents' : ''}
+            />
+            <div className={this.state.open ? 'preEventContent' : ''}>
+              <span className="pre_event_name">{this.state.name}</span>
+
+              <span className="pre_event_description">
+                {this.props.lang == 'es'
+                  ? this.state.description_es
+                  : this.state.description}
+              </span>
+              {this.state.url != '' ? (
+                <span className="pre_event_url">
+                  <span className="white">
+                    <FormattedMessage
+                      id="pre_events.info"
+                      defaultMessage="For more information: "
+                    />
+                  </span>
+                  <a
+                    href={this.state.url}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    {this.state.url}
+                  </a>
+                </span>
+              ) : (
+                <div>
+                  <br />
+                </div>
+              )}
+              <span className="pre_event_contact">
+                <span className="white">
+                  <FormattedMessage
+                    id="pre_events.contact"
+                    defaultMessage="Contact: "
+                  />
+                </span>
+                <a href={'mailto:' + this.state.contact}>
+                  {this.state.contact}
+                </a>
+              </span>
+              <button
+                className="button-back"
+                onClick={() => this.setState({ open: false })}
+              >
+                Back
+              </button>
+            </div>
+          </div>
+
           <div class="container-fluid">
             <Header>
               <FormattedMessage

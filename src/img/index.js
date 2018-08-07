@@ -47,7 +47,21 @@ import ComiteeAzul from './COMITEE - azul.svg'
 import ComiteeCeleste from './COMITEE - celeste.svg'
 import BAazul from './BA - azul.svg'
 import BAceleste from './BA - celeste.svg'
+import Usina from './usina.png'
+import SanMartin from './sanmartin.png'
+import lezama from './lezama.png'
+import EstacionFederal from './estacionfederal.png'
+import Derecho from './derecho.png'
+import Cmd from './cmd.png'
+import Ccr from './ccr.png'
 export {
+  Usina,
+  SanMartin,
+  lezama,
+  EstacionFederal,
+  Derecho,
+  Cmd,
+  Ccr,
   BAazul,
   BAceleste,
   ComiteeAzul,
