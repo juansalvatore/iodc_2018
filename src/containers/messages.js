@@ -37,7 +37,8 @@ export default {
       'The International Open Data Conference (IODC) is an event that brings the global open data community together in order to learn, share, plan, and collaborate on the future of open data. The unique nature of this event is that it gathers together in one location a diverse range of participants from the northern and southern hemispheres to define strategies to advance open data both globally and locally.',
     // Home Proposals
     'home.proposals.title': 'Propuestas recibidas',
-    'home.partners': 'Institutional support',
+    'home.support': 'Institutional support',
+    'home.partners': 'Partners',
 
     // Home Visit
     'home.visit.title': 'Your Visit to Argentina',
@@ -457,7 +458,8 @@ export default {
     'home.main.register': 'REGISTRATE',
     'home.main.schedule': 'CONOCÉ LA AGENDA',
     'home.main.sideevents': 'Ver todos los eventos</br> de la semana',
-    'home.partners': 'Nos acompañan',
+    'home.support': 'Nos acompañan',
+    'home.partners': 'Socios estratégicos',
 
     'register.success': 'Te registraste exitosamente.',
 
