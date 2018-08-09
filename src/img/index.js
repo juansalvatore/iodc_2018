@@ -6,9 +6,11 @@ import Youtube from './youtube.svg'
 import LogoMin from './logomin.png'
 import LogoCanada from './logocanada.png'
 import LogoWbg from './logowbg.png'
-import LogoOpendata from './logoopendata.png'
-import LogoBA from './BA.png'
+import LogoOpendata from './opendata.svg'
+import LogoOpendataColor from './opendatacolor.png'
+import LogoBA from './ba.svg'
 import LogoMinGrey from './logomingrey.png'
+import LogoMinColor from './modernizacioncolor.png'
 import LogoCanadaGrey from './logocanadagrey.png'
 import LogoWbgGrey from './logowbggrey.png'
 import LogoOpendataGrey from './logoopendatagrey.png'
@@ -30,6 +32,8 @@ import Uruguay from './uruguay.png'
 import Uk from './uk.png'
 import Alemania from './alemania.png'
 import Canada from './canada.png'
+import IDRCColor from './idrc.png'
+import WorldBankColor from './theworldbankcolor.png'
 import SideEvent1 from './sideevent1.png'
 import SideEvent2 from './sideevent2.png'
 import SideEvent3 from './sideevent3.png'
@@ -54,6 +58,7 @@ import EstacionFederal from './estacionfederal.png'
 import Derecho from './derecho.png'
 import Cmd from './cmd.png'
 import Ccr from './ccr.png'
+import Telecom from './telecom.png'
 export {
   Usina,
   SanMartin,
@@ -111,4 +116,9 @@ export {
   SideEvent2,
   SideEvent3,
   SideEvent4,
+  IDRCColor,
+  WorldBankColor,
+  Telecom,
+  LogoMinColor,
+  LogoOpendataColor,
 }

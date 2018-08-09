@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { IntlProvider } from 'react-intl'
+import { IntlProvider, FormattedMessage } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
 
@@ -18,20 +18,19 @@ class Footer extends Component {
               : 'footer centerelement'
           }
         >
-          <div className="col-lg-10 centerelement">
-            <div className="col-xs-12 col-md-2 col-lg-2 text-center center_footer">
-              <img className="footer-img" src={LogoCanada} alt="Canada" />
-            </div>
-            <div className="col-xs-12 col-md-2 col-lg-2 text-center center_footer">
+          <div className="col-sm-12 col-lg-10 centerelement">
+            {/* <div className="col-xs-12 col-md-4 col-lg-4 text-center center_footer">
               <img className="footer-img" src={LogoWbg} alt="World Bank" />
+            </div> */}
+
+            <div className="col-xs-12 col-md-4 col-lg-4 text-center center_footer">
+              <img
+                className="footer-img logo_open"
+                src={LogoOpendata}
+                alt="Open Data"
+              />
             </div>
-            <div className="col-xs-12 col-md-2 col-lg-2 text-center center_footer">
-              <img className="footer-img" src={LogoOpendata} alt="Open Data" />
-            </div>
-            <div className="col-xs-12 col-md-2 col-lg-2 text-center center_footer">
-              <img className="footer-img" src={LogoBA} alt="BA" />
-            </div>
-            <div className="col-xs-10 col-sm-5 col-md-4 col-lg-3 text-center center_footer">
+            <div className="col-xs-10 col-sm-5 col-md-4 col-lg-4 text-center center_footer">
               <img
                 className="footer-img logo_modernizacion"
                 src={LogoMin}

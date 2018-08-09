@@ -33,6 +33,7 @@ import {
   Iodc12,
   Patio,
   Iodc10,
+  LogoBA,
   SideEvent1,
   SideEvent2,
   SideEvent3,
@@ -46,6 +47,14 @@ import {
   ComiteeCeleste,
   BAazul,
   BAceleste,
+  IDRCColor,
+  WorldBankColor,
+  Telecom,
+  LogoOpendata,
+  LogoMin,
+  LogoMinGrey,
+  LogoMinColor,
+  LogoOpendataColor,
 } from '../img'
 
 class Home extends Component {
@@ -81,7 +90,7 @@ class Home extends Component {
             <img src={dotsShort} width={180} />
           </Parallax>
 
-          <div className="container-fluid">
+          <div className="container-fluid no-padding">
             <div className="row">
               <ParallaxBanner
                 className="banner_paralax"
@@ -522,12 +531,31 @@ class Home extends Component {
                 <div>
                   <div className="row centerelement">
                     <div className="col-xs-12 col-md-2 col-lg-2">
-                      <img
-                        src={Iodc10}
-                        alt="iodc10"
-                        className="img-responsive centerelement"
-                      />
+                      <a
+                        href="http://conf2transfer.wpengine.com/"
+                        target="_blank"
+                      >
+                        <img
+                          src={Iodc16}
+                          alt="iodc16"
+                          className="img-responsive centerelement"
+                        />
+                      </a>
                     </div>
+
+                    <div className="col-xs-12 col-md-4 col-lg-4">
+                      <a
+                        href="http://odconf1transfe.wpengine.com/"
+                        target="_blank"
+                      >
+                        <img
+                          src={Iodc15}
+                          alt="iodc15"
+                          className="img-responsive centerelement"
+                        />
+                      </a>
+                    </div>
+
                     <div className="col-xs-12 col-md-4 col-lg-4">
                       <img
                         src={Iodc12}
@@ -535,17 +563,11 @@ class Home extends Component {
                         className="img-responsive centerelement"
                       />
                     </div>
+
                     <div className="col-xs-12 col-md-2 col-lg-2">
                       <img
-                        src={Iodc16}
-                        alt="iodc16"
-                        className="img-responsive centerelement"
-                      />
-                    </div>
-                    <div className="col-xs-12 col-md-4 col-lg-4">
-                      <img
-                        src={Iodc15}
-                        alt="iodc15"
+                        src={Iodc10}
+                        alt="iodc10"
                         className="img-responsive centerelement"
                       />
                     </div>
@@ -554,15 +576,89 @@ class Home extends Component {
               </div>
             </div>
 
-            <div className="container bottom-140">
+            <div className="container mbottom70">
               <div className="row centerelement">
                 <div className="col-lg-12">
                   <h4 className="sub-title">
+                    <FormattedMessage
+                      id="home.organizers"
+                      defaultMessage="Organizers"
+                    />
+                  </h4>
+                </div>
+              </div>
+
+              <div className="row centerelement">
+                <div className="col-xs-12 col-md-4 col-lg-4">
+                  <img
+                    src={LogoOpendataColor}
+                    alt="OpenData"
+                    className="img-responsive"
+                  />
+                </div>
+                <div className="col-xs-offset-2 col-xs-8 col-md-offset-0 col-md-4 col-lg-4">
+                  <img
+                    src={LogoMinColor}
+                    alt="Modernizacion"
+                    className="img-responsive"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="container-fluid grey-back">
+              <div className="row centerelement">
+                <div className="col-lg-12">
+                  <h4 className="sub-title-grey">
                     <FormattedMessage
                       id="home.partners"
                       defaultMessage="Partners"
                     />
                   </h4>
+                </div>
+              </div>
+              <div className="row mbottom70">
+                <div className="row centerelement">
+                  <div className="col-xs-12 col-md-3 col-lg-3">
+                    <img
+                      src={Telecom}
+                      alt="Telecom"
+                      className="img-responsive"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="container mbottom70">
+              <div className="row centerelement">
+                <div className="col-lg-12">
+                  <h4 className="sub-title">
+                    <FormattedMessage
+                      id="home.support"
+                      defaultMessage="Support"
+                    />
+                  </h4>
+                </div>
+              </div>
+
+              <div className="row centerelement">
+                <div className="col-xs-12 col-md-4 col-lg-4">
+                  <img src={IDRCColor} alt="IDRC" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img
+                    src={LogoBA}
+                    alt="ba"
+                    className="img-responsive logo-ba"
+                  />
+                </div>
+                <div className="col-xs-12 col-md-4 col-lg-4">
+                  <img
+                    src={WorldBankColor}
+                    alt="World Bank"
+                    className="img-responsive"
+                  />
                 </div>
               </div>
               <div className="row centerelement">
