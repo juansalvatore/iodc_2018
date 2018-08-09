@@ -7,8 +7,10 @@ import LogoMin from './logomin.png'
 import LogoCanada from './logocanada.png'
 import LogoWbg from './logowbg.png'
 import LogoOpendata from './opendata.svg'
+import LogoOpendataColor from './opendatacolor.png'
 import LogoBA from './ba.svg'
 import LogoMinGrey from './logomingrey.png'
+import LogoMinColor from './modernizacioncolor.png'
 import LogoCanadaGrey from './logocanadagrey.png'
 import LogoWbgGrey from './logowbggrey.png'
 import LogoOpendataGrey from './logoopendatagrey.png'
@@ -117,4 +119,6 @@ export {
   IDRCColor,
   WorldBankColor,
   Telecom,
+  LogoMinColor,
+  LogoOpendataColor,
 }

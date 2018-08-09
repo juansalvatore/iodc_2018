@@ -54,6 +54,9 @@ export default {
     // Previous events
     'home.previous': 'Previous editions',
 
+    // Organizers
+    'home.organizers': 'Organizers',
+
     // Pre-Register
     'register.section': 'Pre-Register',
     'register.first.name': 'First Name',
@@ -435,6 +438,8 @@ export default {
 
     'pre_events.contact': 'Contact: ',
     'pre_events.back': 'Back',
+
+    'footer.organizers': 'Organizers',
   },
   es: {
     'nav.dashboard': 'Hola Mundo',
@@ -459,7 +464,7 @@ export default {
     'home.main.schedule': 'CONOCÉ LA AGENDA',
     'home.main.sideevents': 'Ver todos los eventos</br> de la semana',
     'home.support': 'Nos acompañan',
-    'home.partners': 'Socios estratégicos',
+    'home.partners': 'Nos apoyan',
 
     'register.success': 'Te registraste exitosamente.',
 
@@ -492,6 +497,9 @@ export default {
 
     // Previous events
     'home.previous': 'Ediciones anteriores',
+
+    // Organizers
+    'home.organizers': 'Organizadores',
 
     // Pre-Register
     'register.section': 'Pre-Registro',
@@ -851,5 +859,7 @@ export default {
     'pre_events.info': 'Para más información: ',
     'pre_events.contact': 'Contacto: ',
     'pre_events.back': 'Volver',
+
+    'footer.organizers': 'Organizadores',
   },
 }
