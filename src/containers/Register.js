@@ -142,9 +142,9 @@ class Register extends Component {
       this.setState({ organizationError: true })
     }
     if (
-      email == '' ||
-      email.split('@').length == 1 ||
-      email.split('@')[1] == ''
+      email === '' ||
+      email.split('@').length === 1 ||
+      email.split('@')[1] === ''
     ) {
       this.setState({ emailError: true })
     }
@@ -287,7 +287,7 @@ class Register extends Component {
                         type="hidden"
                         name="entry.866116574"
                         id="entry.866116574"
-                        value={this.props.lang == 'en' ? 'English' : 'Spanish'}
+                        value={this.props.lang === 'en' ? 'English' : 'Spanish'}
                       />
                       <h4>
                         <FormattedMessage
@@ -400,9 +400,9 @@ class Register extends Component {
                         onChange={this.handleChange.bind(this)}
                         onKeyDown={() => {
                           if (
-                            this.state.email == '' ||
-                            this.state.email.split('@').length == 1 ||
-                            this.state.email.split('@')[1] == ''
+                            this.state.email === '' ||
+                            this.state.email.split('@').length === 1 ||
+                            this.state.email.split('@')[1] === ''
                           ) {
                             this.setState({ emailError: true })
                           } else {

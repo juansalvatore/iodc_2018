@@ -118,7 +118,7 @@ class Home extends Component {
                   slowerScrollRate
                   tag="figure"
                 >
-                  <div className="col-lg-12 centerelement">
+                  <div className="col-lg-12 centerelement main_title">
                     <div>
                       <h2>
                         <FormattedMessage

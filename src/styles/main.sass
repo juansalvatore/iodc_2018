@@ -389,6 +389,7 @@ hr
     justify-content: center
     padding-left: 20px
     padding-right: 10px
+    transition: all ease-in-out 300ms
 
 .preevent-img
     position: absolute
@@ -769,7 +770,7 @@ a
     text-align: left
     border-radius: 2px
     list-style: none
-    box-shadow: 0 0 10px rgba(0,0,0,0.3)
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1)
     margin: 8px
     display: flex
     align-items: center
@@ -781,7 +782,7 @@ a
     &:hover
         cursor: pointer
         transform: translateY(-4%)
-        box-shadow: 0 10px 15px rgba(0,0,0,0.2)
+        box-shadow: 5px 10px 15px rgba(0,0,0,0.15)
         .blue_card_top
             background-color: rgba(44, 211, 246,0.8)
         .event_more_info
@@ -1388,7 +1389,7 @@ select:focus, input:focus
         transform: translateY(-94%)
         width: 100%
         margin: 0px
-        padding: 0px 
+        padding: 0px   
         justify-content: center
         padding-left: 40px
         right: 0px
@@ -1413,6 +1414,10 @@ select:focus, input:focus
     h2
         font:
             size: 60px
+
+    .main_title
+        padding-left: 40px
+        
     .press_buttons_container
         display: flex
         flex-direction: column
