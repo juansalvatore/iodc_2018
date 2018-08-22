@@ -16,14 +16,14 @@ class NavbarDropdown extends Component {
           <span
             className="language_dropdown"
             onClick={() => this.props.setLocale('en')}
-            id={this.props.lang == 'en' ? 'selected_language' : ''}
+            id={this.props.lang === 'en' ? 'selected_language' : ''}
           >
             EN
           </span>
           <span
             className="language_dropdown"
             onClick={() => this.props.setLocale('es')}
-            id={this.props.lang == 'es' ? 'selected_language' : ''}
+            id={this.props.lang === 'es' ? 'selected_language' : ''}
           >
             ES
           </span>
@@ -92,25 +92,39 @@ class NavbarDropdown extends Component {
           </Link>
           <hr />
 
-          <a href="https://www.facebook.com/opendatacon/" target="_blank">
+          <a
+            href="https://www.facebook.com/opendatacon/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={Facebook} width="20" alt="fb" />
           </a>
-          <a href="https://twitter.com/opendatacon" target="_blank">
+          <a
+            href="https://twitter.com/opendatacon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={Twitter} width="20" alt="tw" />
           </a>
           <a
             href="https://www.flickr.com/photos/144810968@N02/albums"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src={Flickr} width="20" alt="fl" />
           </a>
           <a
             href="https://www.youtube.com/channel/UC8cKSDSxKSbOnKliM_MhZmQ"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src={Youtube} width="20" alt="yt" />
           </a>
-          <a href="https://medium.com/@opendatacon" target="_blank">
+          <a
+            href="https://medium.com/@opendatacon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={Medium} width="20" alt="md" />
           </a>
         </ul>

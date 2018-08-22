@@ -12,18 +12,13 @@ import { Link } from 'react-router-dom'
 import { NavHashLink as NavLink } from 'react-router-hash-link'
 import {
   Parallax,
-  ParallaxProvider,
   ParallaxBanner,
 } from 'react-scroll-parallax'
 
 import {
-  Preevent,
   Evento,
   Iodc16,
   Iodc15,
-  Obelisco,
-  Visas,
-  Invitacion,
   Uruguay,
   Francia,
   Brasil,
@@ -50,9 +45,6 @@ import {
   IDRCColor,
   WorldBankColor,
   Telecom,
-  LogoOpendata,
-  LogoMin,
-  LogoMinGrey,
   LogoMinColor,
   LogoOpendataColor,
 } from '../img'
