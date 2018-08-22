@@ -75,7 +75,7 @@ class About extends Component {
               tag="grey_one"
               className="rectangle_short display_none_995"
             >
-              <img src={rectangleShort} width="500" />
+              <img src={rectangleShort} width="500" alt="IODC18" />
             </Parallax>
             <Parallax
               offsetYMax={25}
@@ -84,7 +84,7 @@ class About extends Component {
               tag="grey_one"
               className="dots_height display_none_995"
             >
-              <img src={dotsHeight} width="150" />
+              <img src={dotsHeight} width="150" alt="IODC18" />
             </Parallax>
             <Parallax
               offsetYMax={25}
@@ -93,7 +93,7 @@ class About extends Component {
               tag="grey_one"
               className="rectangle_height display_none_995"
             >
-              <img src={rectangleHeight} width="200" />
+              <img src={rectangleHeight} width="200" alt="IODC18" />
             </Parallax>
             <div className="container-fluid">
               <Header>

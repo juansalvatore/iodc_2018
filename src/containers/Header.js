@@ -3,11 +3,7 @@ import { connect } from 'react-redux'
 import { IntlProvider } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
-import {
-  Parallax,
-  ParallaxProvider,
-  ParallaxBanner,
-} from 'react-scroll-parallax'
+import { ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax'
 
 import { Patio } from '../img'
 

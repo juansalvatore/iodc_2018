@@ -3,11 +3,7 @@ import { connect } from 'react-redux'
 import { IntlProvider, FormattedHTMLMessage } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
-import {
-  Parallax,
-  ParallaxProvider,
-  ParallaxBanner,
-} from 'react-scroll-parallax'
+import { Parallax } from 'react-scroll-parallax'
 
 import { Header, Footer } from './'
 
@@ -44,7 +40,7 @@ class Info extends Component {
             tag="grey_one"
             className="rectangle_short display_none_995"
           >
-            <img src={rectangleShort} width="500" />
+            <img src={rectangleShort} width="500" alt="IODC18" />
           </Parallax>
           <Parallax
             offsetYMax={25}
@@ -53,7 +49,7 @@ class Info extends Component {
             tag="grey_one"
             className="dots_height display_none_995"
           >
-            <img src={dotsHeight} width="150" />
+            <img src={dotsHeight} width="150" alt="IODC18" />
           </Parallax>
           <Parallax
             offsetYMax={25}
@@ -62,7 +58,7 @@ class Info extends Component {
             tag="grey_one"
             className="rectangle_height display_none_995"
           >
-            <img src={rectangleHeight} width="200" />
+            <img src={rectangleHeight} width="200" alt="IODC18" />
           </Parallax>
           <div className="container-fluid">
             <Header>

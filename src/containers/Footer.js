@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { IntlProvider, FormattedMessage } from 'react-intl'
+import { IntlProvider } from 'react-intl'
 import messages from './messages'
 import { setLocale } from '../actions/locale'
 
-import { LogoMin, LogoCanada, LogoWbg, LogoOpendata, LogoBA } from '../img'
+import { LogoMin, LogoOpendata } from '../img'
 
 class Footer extends Component {
   render() {
