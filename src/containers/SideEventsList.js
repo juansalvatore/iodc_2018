@@ -44,7 +44,6 @@ class SideEventsList extends Component {
       description_es,
       img,
     })
-    // window.scrollTo(0, 0)
   }
 
   displaySideEvents = () => {
@@ -69,7 +68,7 @@ class SideEventsList extends Component {
           <p className="event_name">{event.event}</p>
           <p className="event_location">{event.location} </p>
           <p className="event_date">
-            {this.props.lang == 'en' ? event.date : event.date_es}
+            {this.props.lang === 'en' ? event.date : event.date_es}
           </p>
         </li>
       )
@@ -102,17 +101,18 @@ class SideEventsList extends Component {
           >
             <img
               src={image[this.state.img]}
+              alt="pre-events"
               className={this.state.open ? 'backgroundImagePreEvents' : ''}
             />
             <div className={this.state.open ? 'preEventContent' : ''}>
               <span className="pre_event_name">{this.state.name}</span>
 
               <span className="pre_event_description">
-                {this.props.lang == 'es'
+                {this.props.lang === 'es'
                   ? this.state.description_es
                   : this.state.description}
               </span>
-              {this.state.url != '' ? (
+              {this.state.url !== '' ? (
                 <span className="pre_event_url">
                   <span className="white">
                     <FormattedMessage

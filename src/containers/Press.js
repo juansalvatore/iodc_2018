@@ -36,6 +36,7 @@ class Press extends Component {
                   <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSfFax_sT-AcPeVRgREsHP-fPmDk2JbmlXVFR8AdffnfNE-F9A/viewform"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <button className="register-button">
                       <FormattedHTMLMessage
@@ -49,7 +50,7 @@ class Press extends Component {
                 <div className="col-xs-12 col-sm-6 mtop40 button_alignment_left">
                   <a
                     href={
-                      this.props.lang == 'en'
+                      this.props.lang === 'en'
                         ? 'https://www.argentina.gob.ar/sites/default/files/press_kit_iodc18-v0.pdf'
                         : 'https://www.argentina.gob.ar/sites/default/files/kit_de_prensa_iodc18-v0.pdf'
                     }

@@ -10,6 +10,7 @@ body
 
 *
     box-sizing: border-box
+    
 
 // Colors definition 
 $celeste: #2cd3f6 
@@ -144,6 +145,7 @@ nav
 
 .no-padding 
     padding: 0px !important
+    overflow: hidden
  
 .img-idcard
     margin: auto
@@ -155,6 +157,7 @@ nav
 .centerelement
     @extend %center_element
     flex-wrap: wrap
+
 
 .register-button
     background-color: $verde
@@ -256,10 +259,10 @@ nav
     font-weight: 400
     transition: all ease-in-out 200ms
 
-    &:hover
-        font-weight: 700
-        border-radius: 15px
-        color: #5da2db
+    // &:hover
+    //     font-weight: 700
+    //     border-radius: 15px
+    //     color: #5da2db
 
 
 .img-bullets
@@ -1057,7 +1060,8 @@ select:focus, input:focus
     width: 100%
 
 .overflowHidden
-    overflow: hidden
+    overflow: hidden !important
+    width: 100vw !important
     transition: all ease-in-out 300ms
     height: auto
 

@@ -10,10 +10,7 @@ import { setLocale } from '../actions/locale'
 import { Footer, SideEvent } from './'
 import { Link } from 'react-router-dom'
 import { NavHashLink as NavLink } from 'react-router-hash-link'
-import {
-  Parallax,
-  ParallaxBanner,
-} from 'react-scroll-parallax'
+import { Parallax, ParallaxBanner } from 'react-scroll-parallax'
 
 import {
   Evento,
@@ -60,7 +57,11 @@ class Home extends Component {
   render() {
     const { lang } = this.props
     return (
-      <IntlProvider locale={lang} messages={messages[lang]}>
+      <IntlProvider
+        locale={lang}
+        messages={messages[lang]}
+        className="overflowHidden"
+      >
         <div className="overflowHidden">
           <Parallax
             offsetXMax={6}
@@ -69,17 +70,21 @@ class Home extends Component {
             tag="grey_one"
             className="rectangle_short_home"
           >
-            <img src={rectangleShort} className="rectangle_test" />
+            <img
+              src={rectangleShort}
+              className="rectangle_test"
+              alt="rectangle"
+            />
           </Parallax>
 
           <Parallax
-            offsetXMax={150}
+            offsetXMax={0}
             offsetXMin={-20}
             slowerScrollRate
             tag="grey_one"
             className="dots_short_home_top"
           >
-            <img src={dotsShort} width={180} />
+            <img src={dotsShort} width={180} alt="rectangle" />
           </Parallax>
 
           <div className="container-fluid no-padding">
@@ -469,7 +474,7 @@ class Home extends Component {
                     tag="grey_one"
                     className="dots_height_home"
                   >
-                    <img src={dotsHeight} width={100} />
+                    <img src={dotsHeight} width={100} alt="rectangle" />
                   </Parallax>
 
                   <Parallax
@@ -479,7 +484,7 @@ class Home extends Component {
                     tag="grey_one"
                     className="dots_short_home_bottom"
                   >
-                    <img src={dotsShort} width={150} />
+                    <img src={dotsShort} width={150} alt="rectangle" />
                   </Parallax>
                   <iframe
                     id="usina_map"
@@ -526,6 +531,7 @@ class Home extends Component {
                       <a
                         href="http://conf2transfer.wpengine.com/"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <img
                           src={Iodc16}
@@ -539,6 +545,7 @@ class Home extends Component {
                       <a
                         href="http://odconf1transfe.wpengine.com/"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <img
                           src={Iodc15}
