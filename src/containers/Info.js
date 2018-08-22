@@ -335,7 +335,7 @@ class Info extends Component {
                   <FormattedHTMLMessage id="info.v" defaultMessage="Info" />
                 </p>
 
-                <p className="internal-text mbottom0">
+                <p className="internal-sub-title internal-sub-title-low">
                   <FormattedHTMLMessage id="info.w" defaultMessage="Info" />
                 </p>
                 <p className="internal-text">

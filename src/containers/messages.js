@@ -218,12 +218,12 @@ export default {
     'info.v':
       'This is the main bus terminal in the city of Buenos Aires, and the largest in Argentina. It is located 300 mts. away from the Railway Retiro Station. Until this station, buses arrive and depart from and to all areas of the country. There are also regular services to and from various destinations on the continent, mainly Montevideo, Santiago de Chile, Lima, Santa Cruz de la Sierra, Asunción, Foz de Iguazú, Porto Alegre and São Paulo.',
 
-    'info.w': '<b>Taxis</b>',
+    'info.w': '2. Taxis',
 
     'info.x':
-      'Taxis can be hired or cars can be rented in the companies that offer the service inside the airport and the Bus Terminal. Prices range from <b>USD 30 to USD 40</b> from the airports. The official and safe taxis identify with the colors black and yellow (white at the airport). They are charged through the use of a clock-tachometer, with one and only official rate.',
+      'Taxis can be hired or cars can be rented in the companies that offer the service inside the airport and the Bus Terminal. Prices range from USD 30 to USD 40 from the airports. The official and safe taxis identify with the colors black and yellow (white at the airport). They are charged through the use of a clock-tachometer, with one and only official rate. If you wish to hire a Taxi we recommend all Taxis that are part of a "RadioTaxi" Company (you can see their company in each vehicle\'s door as they are all trustworthy) If you desire to move frequently with Taxis throughout the City of Buenos Aires you can <a href="http://www.buenosaires.gob.ar/taxis/ba-taxi-innovacion-para-mejorar-tus-viajes">download the BA Taxi App here.</a> ',
 
-    'info.accomodation': '2. Accomodation',
+    'info.accomodation': '4. Accomodation',
 
     'info.y': '<b>Hotel 725</b>',
 
@@ -667,10 +667,10 @@ export default {
     'info.v':
       'Esta es la principal terminal de autobuses de la Ciudad de Buenos Aires, y la más grande de Argentina. Está ubicada a 300 mts. de la estación de ferrocarril Retiro. Esta terminal es punto de conexión entre una gran cantidad de áreas del país, e incluso hay servicios desde y hacia varios destinos en el continente como Montevideo, Santiago de Chile, Lima, Santa Cruz de la Sierra, Asunción, Foz de Iguazú, Porto Alegre y São Paulo.',
 
-    'info.w': '<b>Taxis</b>',
+    'info.w': '2. Taxis',
 
     'info.x':
-      'Se pueden tomar taxis o alquilar automóviles en las compañías que ofrecen el servicio dentro delos aeropuertos y la terminal de autobuses. Los precios oscilan entre <b>USD 30 y USD 40</b> desde los aeropuertos. Los taxis oficiales y seguros se identifican con los colores negro y amarillo (blanco en el aeropuerto), y el cobro es mediante un reloj-tacómetro con una única tarifa oficial.',
+      'Se pueden alquilar automóviles en la compañías que ofrecen el servicio dentro del aeropuerto y la terminal de autobuses como también pueden encargar un taxi. Los precios oscilan entre los USD 30 y USD 40 desde los aeropuertos Ezeiza y Aeroparque. Los taxis oficiales y seguros se identifican con los colores negro y amarillo (blanco en el aeropuerto). Todos los taxis tienen un reloj-tacómetro, con una única tarifa oficial. Si desea contratar un Taxi recomendamos todos los Taxis que forman parte de una Compañía "Radio Taxi" (puede ver su compañía en la puerta de cada vehículo). Si desea desplazarse con frecuencia utilizando Taxis en toda la Ciudad de Buenos Aires, <a href="http://www.buenosaires.gob.ar/taxis/ba-taxi-innovacion-para-mejorar-tus-viajes">desde aquí puede descargar la aplicación de BA Taxi.</a>',
 
     'info.accomodation': '2. Hospedaje',
 
