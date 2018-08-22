@@ -338,6 +338,13 @@ class Info extends Component {
                   <FormattedHTMLMessage id="info.x" defaultMessage="Info" />
                 </p>
 
+                 <p className="internal-sub-title internal-sub-title-low">
+                  <FormattedHTMLMessage id="info.public.transport" defaultMessage="Info" />
+                </p>
+                <p className="internal-text">
+                  <FormattedHTMLMessage id="info.public.transport.text" defaultMessage="Info" />
+                </p>
+
                 <h3 className="internal-sub-title internal-sub-title-low">
                   <FormattedHTMLMessage
                     id="info.accomodation"

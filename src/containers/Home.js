@@ -44,6 +44,8 @@ import {
   Telecom,
   LogoMinColor,
   LogoOpendataColor,
+  LogoILDA,
+  LogoBID,
 } from '../img'
 
 class Home extends Component {
@@ -602,6 +604,27 @@ class Home extends Component {
                     className="img-responsive"
                   />
                 </div>
+                
+              </div>
+
+              <div className="row centerelement">
+                <div className="col-xs-12 col-md-4 col-lg-4">
+                  <img src={IDRCColor} alt="IDRC" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img
+                    src={LogoILDA}
+                    alt="ILDA"
+                    className="img-responsive logo-ilda"
+                  />
+                </div>
+                <div className="col-xs-12 col-md-4 col-lg-4">
+                  <img
+                    src={WorldBankColor}
+                    alt="World Bank"
+                    className="img-responsive"
+                  />
+                </div>
               </div>
             </div>
 
@@ -618,6 +641,13 @@ class Home extends Component {
               </div>
               <div className="row mbottom70">
                 <div className="row centerelement">
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img
+                    src={LogoBA}
+                    alt="ba"
+                    className="img-responsive logo-ba"
+                  />
+                </div>
                   <div className="col-xs-12 col-md-3 col-lg-3">
                     <img
                       src={Telecom}
@@ -625,6 +655,13 @@ class Home extends Component {
                       className="img-responsive"
                     />
                   </div>
+                  <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img
+                    src={LogoBID}
+                    alt="Bid"
+                    className="img-responsive logo-ba"
+                  />
+                </div>
                 </div>
               </div>
             </div>
@@ -641,25 +678,7 @@ class Home extends Component {
                 </div>
               </div>
 
-              <div className="row centerelement">
-                <div className="col-xs-12 col-md-4 col-lg-4">
-                  <img src={IDRCColor} alt="IDRC" className="img-responsive" />
-                </div>
-                <div className="col-xs-12 col-md-2 col-lg-2">
-                  <img
-                    src={LogoBA}
-                    alt="ba"
-                    className="img-responsive logo-ba"
-                  />
-                </div>
-                <div className="col-xs-12 col-md-4 col-lg-4">
-                  <img
-                    src={WorldBankColor}
-                    alt="World Bank"
-                    className="img-responsive"
-                  />
-                </div>
-              </div>
+              
               <div className="row centerelement">
                 <div className="col-xs-12 col-md-2 col-lg-2">
                   <img src={Francia} alt="Francia" className="img-responsive" />

@@ -59,6 +59,8 @@ import Derecho from './derecho.png'
 import Cmd from './cmd.png'
 import Ccr from './ccr.png'
 import Telecom from './telecom.png'
+import LogoILDA from './ILDA.svg'
+import LogoBID from './BID.svg'
 export {
   Usina,
   SanMartin,
@@ -121,4 +123,6 @@ export {
   Telecom,
   LogoMinColor,
   LogoOpendataColor,
+  LogoILDA,
+  LogoBID,
 }
