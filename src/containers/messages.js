@@ -225,7 +225,8 @@ export default {
 
     'info.public.transport': '3. Public Transport',
 
-    'info.public.transport.text': 'If people desire to take Public Transport the Bus lines are: 10, 20, 22, 24, 29, 33, 39, 46, 54, 64, 70, 74, 86, 93, 102, 129, 130, 152, 168 y 186. <b>It is not possible to take a Train nor Subway to the Usina del Arte</b>.',
+    'info.public.transport.text':
+      'If people desire to take Public Transport the Bus lines are: 10, 20, 22, 24, 29, 33, 39, 46, 54, 64, 70, 74, 86, 93, 102, 129, 130, 152, 168 y 186. <b>It is not possible to take a Train nor Subway to the Usina del Arte</b>.',
 
     'info.accomodation': '4. Accomodation',
 
@@ -442,7 +443,7 @@ export default {
 
     'pre_events.contact': 'Contact: ',
     'pre_events.back': 'Back',
-
+    'pre_events.blue_hover': 'More information',
     'footer.organizers': 'Organizers',
   },
   es: {
@@ -673,14 +674,13 @@ export default {
 
     'info.w': '2. Taxis',
 
-    'info.x':
-      `Se pueden alquilar automóviles en la compañías que ofrecen el servicio dentro del aeropuerto y la terminal de autobuses como también pueden encargar un taxi. <b>Los precios oscilan entre los USD 30 y USD 40 desde los aeropuertos Ezeiza y Aeroparque. Los taxis oficiales y seguros se identifican con los colores negro y amarillo (blanco en el aeropuerto).</b> Todos los taxis tienen un reloj-tacómetro, con una única tarifa oficial. Si desea contratar un Taxi recomendamos todos los Taxis que forman parte de una Compañía "Radio Taxi" (puede ver su compañía en la puerta de cada vehículo). 
+    'info.x': `Se pueden alquilar automóviles en la compañías que ofrecen el servicio dentro del aeropuerto y la terminal de autobuses como también pueden encargar un taxi. <b>Los precios oscilan entre los USD 30 y USD 40 desde los aeropuertos Ezeiza y Aeroparque. Los taxis oficiales y seguros se identifican con los colores negro y amarillo (blanco en el aeropuerto).</b> Todos los taxis tienen un reloj-tacómetro, con una única tarifa oficial. Si desea contratar un Taxi recomendamos todos los Taxis que forman parte de una Compañía "Radio Taxi" (puede ver su compañía en la puerta de cada vehículo). 
       <br/><br/>Si desea desplazarse con frecuencia utilizando Taxis en toda la Ciudad de Buenos Aires, <a href="http://www.buenosaires.gob.ar/taxis/ba-taxi-innovacion-para-mejorar-tus-viajes">desde aquí puede descargar la aplicación de BA Taxi.</a>`,
-
 
     'info.public.transport': '3. Transporte Público',
 
-    'info.public.transport.text': 'Si los participantes desean tomar transporte público hacia la Usina del Arte, las líneas de autobús son: 10, 20, 22, 24, 29, 33, 39, 46, 54, 64, 70, 74, 86, 93, 102, 129, 130, 152, 168 y 186. <b>No es posible tomar tren o subte a la Usina del Arte</b>.',
+    'info.public.transport.text':
+      'Si los participantes desean tomar transporte público hacia la Usina del Arte, las líneas de autobús son: 10, 20, 22, 24, 29, 33, 39, 46, 54, 64, 70, 74, 86, 93, 102, 129, 130, 152, 168 y 186. <b>No es posible tomar tren o subte a la Usina del Arte</b>.',
 
     'info.accomodation': '4. Hospedaje',
 
@@ -869,6 +869,7 @@ export default {
     'pre_events.info': 'Para más información: ',
     'pre_events.contact': 'Contacto: ',
     'pre_events.back': 'Volver',
+    'pre_events.blue_hover': 'Más información',
 
     'footer.organizers': 'Organizadores',
   },

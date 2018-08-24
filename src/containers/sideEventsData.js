@@ -14,20 +14,6 @@ export default [
     contact: 'opencitiessummit@gmail.com',
   },
   {
-    event: 'Natural Resource Governance for All',
-    location: 'Estacion Federal',
-    date: 'Monday 24th September',
-    date_es: 'Lunes 24 de septiembre',
-    url: 'https://resourcegovernance.org/events/events',
-    invitation: false,
-    img: './img/estacionfederal.png',
-    description: `Natural Resource Governance for All is a workshop to kick off the development and implementation of inclusive natural resource governance reforms (e.g.OGP commitments) that address the transparency, accountability, and participation needs and impacts facing women and underrepresented groups in natural resource management policymaking. The workshop will bring together natural resource governance organizations with women’s organizations, the open data community and governments.
-    `,
-    description_es: `Natural Resource Governance for All es un taller para iniciar el desarrollo de las reformas de gobernanza de los recursos naturales inclusivos que aborden las necesidades de transparencia, rendición de cuentas y participación que enfrentan las mujeres y los grupos insuficientemente representados en la formulación de políticas de gestión de recursos naturales. El taller reunirá a organizaciones de gobernanza de recursos naturales con organizaciones de mujeres y a la comunidad de datos abiertos y gobiernos.
-    `,
-    contact: 'kkuai@resourcegovernance.org',
-  },
-  {
     event: 'OD4D Network Summit',
     location: 'Facultad de Derecho',
     date: 'Monday 24th September',
@@ -164,7 +150,7 @@ export default [
     date_es: 'Martes 25 de septiembre',
     url: 'https://www.lanacion.com.ar/data',
     invitation: false,
-    img: './img/nombre.png',
+    img: '',
     description: `
 
     `,
@@ -203,6 +189,34 @@ export default [
     description_es: `Para asegurar que los Principios del Open Data Charter continúen reflejando los más altos estándares y cumplan con las expectativas de los gobiernos adoptantes, la Carta de Datos Abiertos se somete a una revisión de los Principios desde mayo de 2018. Tras un proceso de consulta global y posterior análisis de todos los comentarios recibidos de comunidades de datos abiertos en todo el mundo, la Carta de Datos Abiertos, junto con el Open Data Institute y el Gobierno de la Ciudad de Buenos Aires están organizando este taller para generar más comentarios de la comunidad sobre recomendaciones y sugerencias de tres Grupos de Expertos encargados en el análisis de todos los comentarios que recibimos. El objetivo de este taller es garantizar que todos los miembros de la comunidad global tengan la oportunidad de revisar y discutir los cambios propuestos antes de que se lancen oficialmente.
     `,
     contact: 'info@opendatacharter.net',
+  },
+  {
+    event: 'Datos para el desarrollo Socio Ecónomico de América Latina',
+    location: 'A comunicar',
+    date: 'Tuesday 25th September',
+    date_es: 'Martes 25 de septiembre',
+    url:
+      'https://www.eventbrite.com/e/open-data-charter-odcrefresh-workshop-tickets-48481864562?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing',
+    invitation: true,
+    img: '',
+    description: `To ensure the Open Data Charter Principles continue to reflect the highest standards and meet the expectations of adopting governments, the Open Data Charter is undergoing a review of the Principles since May 2018. Following a global consultation process and the subsequent analysis of all the feedback received from open data communities around the world, the the Open Data Charter, together with the Open Data Institute and the Buenos Aires City´s Government is organizing this workshop to gather further feedback from the community on the recommendations and suggestions made by three Expert Groups tasked with analysing all the feedback we received. The objective of this workshop is to ensure that members of the global community of implementers and practitioners have the opportunity to review and discuss the proposed changes to the Open Data Principles before they are officially launched later in the year.
+    `,
+    description_es: `El evento busca sugerir y realizar acciones en común, entre el sector público, privado y social, que permitan avanzar la agenda de datos abiertos en América Latina, en seguimiento a la Declaración de Lima adoptada por los jefes de Estado durante la última Cumbre de las Américas. Asimismo, explorar el avance de gobiernos subnacionales en sus procesos de apertura de datos públicos, junto actores relevantes con la finalidad de explorar aprendizajes y desafíos comunes por medio de diálogos para potenciar el uso de datos abiertos por parte del sector privado para la mejora de negocios, el desarrollo de nuevos bienes y servicios, la generación de emprendimientos o de acciones de responsabilidad social empresarial. Este evento facilitado por The Trust for the Americas de la Organización de los Estados Americanos (OEA) y la Fundación Conocimiento Abierto, se realiza con el apoyo del Gobierno de la Ciudad de Buenos Aires y el Ministerio de Modernización de la Nación Argentina.`,
+    contact: 'Jumana@fundacionparalasamericas.org | yamila@fcabierto.org',
+  },
+  {
+    event: 'Natural Resource Governance for All',
+    location: 'Facultad de Derecho',
+    date: 'Monday 26th September',
+    date_es: 'Lunes 26 de septiembre',
+    url: 'https://resourcegovernance.org/events/events',
+    invitation: false,
+    img: './img/derecho.png',
+    description: `Natural Resource Governance for All is a workshop to kick off the development and implementation of inclusive natural resource governance reforms (e.g.OGP commitments) that address the transparency, accountability, and participation needs and impacts facing women and underrepresented groups in natural resource management policymaking. The workshop will bring together natural resource governance organizations with women’s organizations, the open data community and governments.
+    `,
+    description_es: `Natural Resource Governance for All es un taller para iniciar el desarrollo de las reformas de gobernanza de los recursos naturales inclusivos que aborden las necesidades de transparencia, rendición de cuentas y participación que enfrentan las mujeres y los grupos insuficientemente representados en la formulación de políticas de gestión de recursos naturales. El taller reunirá a organizaciones de gobernanza de recursos naturales con organizaciones de mujeres y a la comunidad de datos abiertos y gobiernos.
+    `,
+    contact: 'kkuai@resourcegovernance.org',
   },
   {
     event: 'AbreLatam',

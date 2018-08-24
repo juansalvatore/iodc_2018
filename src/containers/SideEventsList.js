@@ -63,7 +63,12 @@ class SideEventsList extends Component {
           }
         >
           <span className="blue_card_top">
-            <span className="event_more_info">More information</span>
+            <span className="event_more_info">
+              <FormattedMessage
+                id="pre_events.blue_hover"
+                defaultMessage="More information"
+              />
+            </span>
           </span>
           <p className="event_name">{event.event}</p>
           <p className="event_location">{event.location} </p>
@@ -99,11 +104,15 @@ class SideEventsList extends Component {
               this.state.open ? 'blueBackground' : 'blueBackground opacityCero'
             }
           >
-            <img
-              src={image[this.state.img]}
-              alt="pre-events"
-              className={this.state.open ? 'backgroundImagePreEvents' : ''}
-            />
+            {this.state.img === '' ? (
+              ''
+            ) : (
+              <img
+                src={image[this.state.img]}
+                alt="pre-events"
+                className={this.state.open ? 'backgroundImagePreEvents' : ''}
+              />
+            )}
             <div className={this.state.open ? 'preEventContent' : ''}>
               <span className="pre_event_name">{this.state.name}</span>
 
