@@ -608,10 +608,10 @@ class Home extends Component {
               </div>
 
               <div className="row centerelement">
-                <div className="col-xs-6 col-md-4 col-lg-4">
+                <div className="col-xs-12 col-md-4 col-lg-4">
                   <img src={IDRCColor} alt="IDRC" className="img-responsive" />
                 </div>
-                <div className="col-xs-12 col-md-2 col-lg-2">
+                <div className="col-xs-6 col-md-2 col-lg-2">
                   <img
                     src={LogoILDA}
                     alt="ILDA"
