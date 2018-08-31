@@ -39,6 +39,7 @@ export default {
     'home.proposals.title': 'Propuestas recibidas',
     'home.support': 'Institutional support',
     'home.partners': 'Partners',
+    'home.media.partner': 'Media Partner',
 
     // Home Visit
     'home.visit.title': 'Your Visit to Argentina',
@@ -470,6 +471,7 @@ export default {
     'home.main.sideevents': 'Ver todos los eventos</br> de la semana',
     'home.support': 'Nos acompañan',
     'home.partners': 'Nos apoyan',
+    'home.media.partner': 'Media Partner',
 
     'register.success': 'Te registraste exitosamente.',
 

@@ -46,6 +46,7 @@ import {
   LogoOpendataColor,
   LogoILDA,
   LogoBID,
+  LogoLN,
 } from '../img'
 
 class Home extends Component {
@@ -629,6 +630,11 @@ class Home extends Component {
             </div>
 
             <div className="container-fluid grey-back">
+
+              <div className="row">
+                <div className="col-lg-8">
+            
+
               <div className="row centerelement">
                 <div className="col-lg-12">
                   <h4 className="sub-title-grey">
@@ -638,6 +644,8 @@ class Home extends Component {
                     />
                   </h4>
                 </div>
+
+                
               </div>
               <div className="row mbottom70">
                 <div className="row centerelement">
@@ -664,7 +672,50 @@ class Home extends Component {
                 </div>
                 </div>
               </div>
-            </div>
+              </div>
+
+   <div className="col-lg-4">
+                
+                <div className="row centerelement">
+                <div className="col-xs-12 col-lg-12">
+                  <h4 className="sub-title-grey">
+                    <FormattedMessage
+                      id="home.media.partner"
+                      defaultMessage="Media Partner"
+                    />
+                  </h4>
+
+                   <div className="row mbottom70">
+                <div className="row centerelement">
+                  <div className="col-xs-12 col-lg-5">
+                  <img
+                    src={LogoLN}
+                    alt="La Nacion"
+                    className="img-responsive logo-ba"
+                  />
+                </div>
+
+                </div>
+                </div>
+                </div>
+
+                
+              </div>
+                </div>
+
+                
+
+                 
+
+
+              </div>
+
+              
+             
+                
+                </div>
+
+           
 
             <div className="container mbottom70">
               <div className="row centerelement">

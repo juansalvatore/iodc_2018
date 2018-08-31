@@ -61,6 +61,7 @@ import Ccr from './ccr.png'
 import Telecom from './telecom.png'
 import LogoILDA from './ILDA.svg'
 import LogoBID from './BID.svg'
+import LogoLN from './LANA.svg'
 export {
   Usina,
   SanMartin,
@@ -125,4 +126,5 @@ export {
   LogoOpendataColor,
   LogoILDA,
   LogoBID,
+  LogoLN,
 }
