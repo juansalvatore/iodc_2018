@@ -44,6 +44,22 @@ export default [
     contact: 'mmora@oas.org',
   },
   {
+    event:
+      'Datos para la Transparencia y la rendición de cuentas en América Latina',
+    location: 'ACIJ',
+    date: 'Monday 24th September',
+    date_es: 'Lunes 24 de septiembre',
+    url: '',
+    invitation: true,
+    img: '',
+    description: `Data for transparency and accountability in Latin America is a meeting whose main objective is to generate a space to share experiences of the region on the use of data for openness, transparency, the fight against corruption and surrender of State accounts. This space seeks to identify the challenges that Latin America has in the agenda of open data of the public sector for the coming years and strengthen the link of the actors working on the theme to advance in a common work agenda.
+
+    `,
+    description_es: `Datos para la transparencia y la rendición de cuentas en América Latina es un encuentro que tiene como objetivo principal generar un espacio para poder compartir experiencias de la región sobre el uso de datos para la apertura, la transparencia, la lucha contra la corrupción y la rendición de cuentas del Estado. Este espacio busca identificar los desafíos que tiene América Latina en la agenda de datos abiertos del sector público para los próximos años y fortalecer el vínculo de los actores que trabajan la temática para avanzar en una agenda de trabajo común.
+    `,
+    contact: 'tlaznik@acij.org.ar',
+  },
+  {
     event: 'State of The Map',
     location: 'Centro Metropolitano de Diseño',
     date: 'Monday 24th & Tuesday 25th September',
@@ -99,7 +115,7 @@ export default [
     `,
     description_es: `CKANCon será un evento de día completo que resaltará todo el trabajo que se realiza dentro de la Comunidad. CKAN 2018 se centrará en las presentaciones de casos de estudio, la formalización de la capacidad de la comunidad, la elección de la Junta de la Asociación CKAN y el diseño de una hoja de ruta técnica y comercial para 2018/2019.
     `,
-    contact: 'ashley.casovan@tbs-sct.gc.ca',
+    contact: 'christopher.Jaja@tbs-sct.gc.ca',
   },
   {
     event: 'Open Contracting Workshop',
@@ -196,13 +212,14 @@ export default [
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
     url:
-      'https://www.eventbrite.com/e/open-data-charter-odcrefresh-workshop-tickets-48481864562?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing',
+      'https://www.eventbrite.com/e/datos-abiertos-para-el-desarrollo-socioeconomico-tickets-49555750584',
     invitation: true,
     img: '',
-    description: `To ensure the Open Data Charter Principles continue to reflect the highest standards and meet the expectations of adopting governments, the Open Data Charter is undergoing a review of the Principles since May 2018. Following a global consultation process and the subsequent analysis of all the feedback received from open data communities around the world, the the Open Data Charter, together with the Open Data Institute and the Buenos Aires City´s Government is organizing this workshop to gather further feedback from the community on the recommendations and suggestions made by three Expert Groups tasked with analysing all the feedback we received. The objective of this workshop is to ensure that members of the global community of implementers and practitioners have the opportunity to review and discuss the proposed changes to the Open Data Principles before they are officially launched later in the year.
+    description: `This Side event will carry out joint actions among private and social sector participants that will allow the open data agenda to advance in Latin America following the Declaration of Lima adopted by the Heads of State during the last Summit of the Americas. Also, this Side Event will explore the progress of subnational governments in their processes of opening public data together with relevant actors in order to explore common learning and challenges. Throughout dialogues, we will  promote the use of open data by the private sector to improve businesses developments of new goods and services and the generation of ventures or actions of corporate social responsibility.
+This Side Event, facilitated by The Trust for the Americas of the Organization of American States (OAS) and the Open Knowledge Foundation, is carried out with the support of the Government of the City of Buenos Aires and the Ministry of Modernization of the Argentine Republic.
     `,
     description_es: `El evento busca sugerir y realizar acciones en común, entre el sector público, privado y social, que permitan avanzar la agenda de datos abiertos en América Latina, en seguimiento a la Declaración de Lima adoptada por los jefes de Estado durante la última Cumbre de las Américas. Asimismo, explorar el avance de gobiernos subnacionales en sus procesos de apertura de datos públicos, junto actores relevantes con la finalidad de explorar aprendizajes y desafíos comunes por medio de diálogos para potenciar el uso de datos abiertos por parte del sector privado para la mejora de negocios, el desarrollo de nuevos bienes y servicios, la generación de emprendimientos o de acciones de responsabilidad social empresarial. Este evento facilitado por The Trust for the Americas de la Organización de los Estados Americanos (OEA) y la Fundación Conocimiento Abierto, se realiza con el apoyo del Gobierno de la Ciudad de Buenos Aires y el Ministerio de Modernización de la Nación Argentina.`,
-    contact: 'Jumana@fundacionparalasamericas.org | yamila@fcabierto.org',
+    contact: 'RIriani@oas.org',
   },
   {
     event: 'Natural Resource Governance for All',
