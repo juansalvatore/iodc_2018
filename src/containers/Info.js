@@ -128,7 +128,7 @@ class Info extends Component {
                   />
                 </p>
 
-                <h3 className="internal-sub-title">
+                {/* <h3 className="internal-sub-title">
                   <FormattedHTMLMessage id="info.visa" defaultMessage="Info" />
                 </h3>
                 <p className="internal-text mbottom0">
@@ -280,7 +280,7 @@ class Info extends Component {
                       />
                     </li>
                   </ol>
-                </p>
+                </p> */}
 
                 <h3 className="internal-sub-title">
                   <FormattedHTMLMessage id="info.venue" defaultMessage="Info" />
@@ -376,7 +376,7 @@ class Info extends Component {
                   <FormattedHTMLMessage id="info.4" defaultMessage="Info" />
                 </p>
 
-                <h3 className="internal-sub-title">
+                {/* <h3 className="internal-sub-title">
                   <FormattedHTMLMessage
                     id="info.invitation"
                     defaultMessage="Info"
@@ -385,10 +385,10 @@ class Info extends Component {
 
                 <p className="internal-text mbottom0">
                   <FormattedHTMLMessage id="info.5" defaultMessage="Info" />
-                </p>
+                </p> */}
 
                 <p id="bottom" className="internal-text mbottom75">
-                  <FormattedHTMLMessage id="info.6" defaultMessage="Info" />
+                  {/* <FormattedHTMLMessage id="info.6" defaultMessage="Info" /> */}
                 </p>
               </div>
               <Footer />
