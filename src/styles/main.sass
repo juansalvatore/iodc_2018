@@ -158,6 +158,11 @@ nav
     @extend %center_element
     flex-wrap: wrap
 
+.centerelement-center
+    @extend %center_element
+    flex-wrap: wrap
+    justify-content: center !important
+
 
 .register-button
     background-color: $verde
@@ -869,6 +874,13 @@ a
         left: 50%
         transform: translateX(-50%)
 
+
+.hr-divisoria 
+    width: 100%
+    border: 0.5px solid #cccccc !important
+    margin: 30px 0
+
+
 .language_dropdown
     position: relative
     margin-right: 10px
@@ -1314,6 +1326,9 @@ select:focus, input:focus
     top: -148px
     left: 4px
     z-index: -2
+
+
+
 @media (min-width: 2220px)    
     .footer_bottom_press
         position: relative !important

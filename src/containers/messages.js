@@ -25,10 +25,10 @@ export default {
 
     // Home Bullets
     'home.bullets.title': 'Already registered?',
-    'home.bullets.1': 'Need more info about Buenos Aires?',
-    'home.bullets.button.1': 'Get to know the city',
-    'home.bullets.2': 'Need more info about visas?',
-    'home.bullets.button.2': 'Info for your application',
+    'home.bullets.1': 'Learn more about Buenos Aires',
+    'home.bullets.button.1': 'Learn more about Buenos Aires',
+    'home.bullets.2': 'See the Open Data Week agenda',
+    'home.bullets.button.2': 'See the Open Data Week agenda',
     'home.bullets.3': 'Do you need an invite from the Comitee?',
     'home.bullets.button.3': 'Request an invitation',
 
@@ -477,10 +477,10 @@ export default {
 
     // Home Bullets
     'home.bullets.title': '¿Ya estás registrado?',
-    'home.bullets.1': '¿Información sobre Buenos Aires?',
-    'home.bullets.button.1': 'Conocé la ciudad',
-    'home.bullets.2': '¿Necesitas información sobre visas?',
-    'home.bullets.button.2': 'Información para tu aplicación',
+    'home.bullets.1': 'Conocé más cerca de Buenos Aires',
+    'home.bullets.button.1': 'Conocé más cerca de Buenos Aires',
+    'home.bullets.2': 'Mirá la agenda de la semana de datos',
+    'home.bullets.button.2': 'Mirá la agenda de la semana de datos',
     'home.bullets.3': '¿Necesitas una invitación del comité?',
     'home.bullets.button.3': 'Solicitá una invitación',
     'home.about.iodc.title': 'Sobre IODC',

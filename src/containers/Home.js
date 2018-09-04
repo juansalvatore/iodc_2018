@@ -47,6 +47,28 @@ import {
   LogoILDA,
   LogoBID,
   LogoLN,
+  CalendarAzul,
+  CalendarCeleste,
+  LogoPrezBlanco,
+  LogoPrezAzul,
+  AbreLatam,
+  CAFDO,
+  Ckan,
+  IDRI,
+  NRGI,
+  OAS,
+  ODCWR,
+  ODI,
+  OPC,
+  ODC,
+  ODRN,
+  ODRS,
+  OH,
+  SOTM,
+  Trust,
+  UNDP,
+  UN,
+  WWWF,
 } from '../img'
 
 class Home extends Component {
@@ -187,59 +209,15 @@ class Home extends Component {
                   </Parallax>
                 </div>
 
-                <div className="col-xs-12 col-sm-4 text-center">
-                  <Parallax
-                    className="visas"
-                    offsetYMax={-10}
-                    offsetYMin={10}
-                    slowerScrollRate
-                    tag="visas"
-                  >
-                    <div className="visas_container">
-                      <Parallax
-                        className="visas"
-                        offsetYMax={-7}
-                        offsetYMin={7}
-                        slowerScrollRate
-                        tag="visas"
-                      >
-                        <img
-                          src={VisasAzul}
-                          alt="Visas"
-                          className="img-bullets visas_azul"
-                        />
-                      </Parallax>
-                      <img
-                        src={VisasCeleste}
-                        alt="Visas"
-                        className="img-bullets visas_celeste"
-                      />
-                    </div>
-                    <h5 className="bullets">
-                      <FormattedMessage
-                        id="home.bullets.2"
-                        defaultMessage="Need more info about visas?"
-                      />
-                    </h5>
-                    <Link to="/info" onClick={() => window.scrollTo(0, 0)}>
-                      <button className="button-bullets">
-                        <FormattedMessage
-                          id="home.bullets.button.2"
-                          defaultMessage="Info for your application"
-                        />
-                      </button>
-                    </Link>
-                  </Parallax>
-                </div>
 
-                <NavLink
+                  <NavLink
                   to="/info#middle"
                   activeClassName="selected"
                   scroll={el =>
                     el.scrollIntoView({ behavior: 'smooth', block: 'start' })
                   }
                 >
-                  <div className="col-xs-12 col-sm-4 text-center">
+                  <div className="col-xs-12 col-sm-6 text-center">
                     <Parallax
                       className="bsas_info"
                       offsetYMax={-10}
@@ -266,12 +244,12 @@ class Home extends Component {
                           />
                         </Parallax>
                       </div>
-                      <h5 className="bullets">
+                      {/* <h5 className="bullets">
                         <FormattedMessage
                           id="home.bullets.1"
                           defaultMessage="Need more info about Buenos Aires?"
                         />
-                      </h5>
+                      </h5> */}
                       <button className="button-bullets">
                         <FormattedMessage
                           id="home.bullets.button.1"
@@ -282,7 +260,54 @@ class Home extends Component {
                   </div>
                 </NavLink>
 
-                <NavLink
+                <div className="col-xs-12 col-sm-6 text-center">
+                  <Parallax
+                    className="visas"
+                    offsetYMax={-10}
+                    offsetYMin={10}
+                    slowerScrollRate
+                    tag="visas"
+                  >
+                    <div className="visas_container">
+                      <Parallax
+                        className="visas"
+                        offsetYMax={-7}
+                        offsetYMin={7}
+                        slowerScrollRate
+                        tag="visas"
+                      >
+                        <img
+                          src={CalendarAzul}
+                          alt="Calendar"
+                          className="img-bullets visas_azul"
+                        />
+                      </Parallax>
+                      <img
+                        src={CalendarCeleste}
+                        alt="Calendar"
+                        className="img-bullets visas_celeste"
+                      />
+                    </div>
+                    {/* <h5 className="bullets">
+                      <FormattedMessage
+                        id="home.bullets.2"
+                        defaultMessage="See the Open Data Week agenda"
+                      />
+                    </h5> */}
+                    <Link to="/info" onClick={() => window.scrollTo(0, 0)}>
+                      <button className="button-bullets">
+                        <FormattedMessage
+                          id="home.bullets.button.2"
+                          defaultMessage="See the Open Data Week agenda"
+                        />
+                      </button>
+                    </Link>
+                  </Parallax>
+                </div>
+
+              
+
+                {/* <NavLink
                   to="/info#bottom"
                   activeClassName="selected"
                   scroll={el => el.scrollIntoView({ behavior: 'smooth' })}
@@ -329,7 +354,7 @@ class Home extends Component {
                       </button>
                     </Parallax>
                   </div>
-                </NavLink>
+                </NavLink> */}
 
                 {/* FIN BULLETS */}
               </div>
@@ -600,7 +625,7 @@ class Home extends Component {
                 </div>
                 <div className="col-xs-offset-2 col-xs-8 col-md-offset-0 col-md-4 col-lg-4">
                   <img
-                    src={LogoMinColor}
+                    src={LogoPrezAzul}
                     alt="Modernizacion"
                     className="img-responsive"
                   />
@@ -648,7 +673,7 @@ class Home extends Component {
                 
               </div>
               <div className="row mbottom70">
-                <div className="row centerelement">
+                <div className="row centerelement-center">
                 <div className="col-xs-12 col-md-2 col-lg-2">
                   <img
                     src={LogoBA}
@@ -728,6 +753,87 @@ class Home extends Component {
                   </h4>
                 </div>
               </div>
+
+<div className="row centerelement">
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img src={OAS} alt="OAS" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2 ">
+                  <img src={SOTM} alt="SOTM" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img src={AbreLatam} alt="AbreLatam" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img
+                    src={OH}
+                    alt="OH"
+                    className="img-responsive"
+                  />
+                </div>
+                
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img src={UNDP} alt="UNDP" className="img-responsive" />
+                </div>
+              </div>
+
+              <div className="row centerelement">
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img src={OPC} alt="OPC" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2 ">
+                  <img src={ODRN} alt="ODRN" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img src={ODCWR} alt="ODCWR" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img
+                    src={IDRI}
+                    alt="IDRI"
+                    className="img-responsive"
+                  />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img src={CAFDO} alt="CAFDO" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img src={Ckan} alt="Ckan" className="img-responsive" />
+                </div>
+              </div>
+
+
+              <div className="row centerelement">
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img src={Trust} alt="Trust" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2 ">
+                  <img src={UN} alt="UN" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img src={ODC} alt="ODC" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img
+                    src={ODI}
+                    alt="ODI"
+                    className="img-responsive"
+                  />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img src={ODRS} alt="ODRS" className="img-responsive" />
+                </div>
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img src={WWWF} alt="WWWF" className="img-responsive" />
+                </div>
+              </div>
+
+
+<div className="row centerelement">
+                <div className="col-xs-12 col-md-8 col-lg-8">
+                <hr className="hr-divisoria"/>
+                </div>
+                </div>
 
               
               <div className="row centerelement">

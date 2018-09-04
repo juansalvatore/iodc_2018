@@ -62,6 +62,28 @@ import Telecom from './telecom.png'
 import LogoILDA from './ILDA.svg'
 import LogoBID from './BID.svg'
 import LogoLN from './LANA.svg'
+import CalendarAzul from './calendar-azul.svg'
+import CalendarCeleste from './calendar-celeste.svg'
+import LogoPrezBlanco from './presidencia-blanco.svg'
+import LogoPrezAzul from './presidencia-azul.svg'
+import AbreLatam from './Abrelatam.png'
+import CAFDO from './CAFDO.png'
+import Ckan from './Ckan.png'
+import IDRI from './IDRI.png'
+import NRGI from './NRGI.png'
+import OAS from './OAS.png'
+import ODCWR from './ODCWR.png'
+import ODI from './ODI.png'
+import OPC from './OPC.png'
+import ODC from './ODC.png'
+import ODRN from './ODRN.png'
+import ODRS from './ODRS.png'
+import OH from './OH.png'
+import SOTM from './SOTM.png'
+import Trust from './Trust.png'
+import UNDP from './UNDP.png'
+import UN from './UN.png'
+import WWWF from './WWWF.png'
 export {
   Usina,
   SanMartin,
@@ -127,4 +149,26 @@ export {
   LogoILDA,
   LogoBID,
   LogoLN,
+  CalendarAzul,
+  CalendarCeleste,
+  LogoPrezBlanco,
+  LogoPrezAzul,
+  AbreLatam,
+  CAFDO,
+  Ckan,
+  IDRI,
+  NRGI,
+  OAS,
+  ODCWR,
+  ODI,
+  OPC,
+  ODC,
+  ODRN,
+  ODRS,
+  OH,
+  SOTM,
+  Trust,
+  UNDP,
+  UN,
+  WWWF,
 }
