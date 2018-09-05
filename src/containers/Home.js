@@ -209,8 +209,7 @@ class Home extends Component {
                   </Parallax>
                 </div>
 
-
-                  <NavLink
+                <NavLink
                   to="/info#middle"
                   activeClassName="selected"
                   scroll={el =>
@@ -294,7 +293,10 @@ class Home extends Component {
                         defaultMessage="See the Open Data Week agenda"
                       />
                     </h5> */}
-                    <Link to="/info" onClick={() => window.scrollTo(0, 0)}>
+                    <Link
+                      to="/side-events-list"
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
                       <button className="button-bullets">
                         <FormattedMessage
                           id="home.bullets.button.2"
@@ -304,8 +306,6 @@ class Home extends Component {
                     </Link>
                   </Parallax>
                 </div>
-
-              
 
                 {/* <NavLink
                   to="/info#bottom"
@@ -630,7 +630,6 @@ class Home extends Component {
                     className="img-responsive"
                   />
                 </div>
-                
               </div>
 
               <div className="row centerelement">
@@ -655,92 +654,71 @@ class Home extends Component {
             </div>
 
             <div className="container-fluid grey-back">
-
               <div className="row">
                 <div className="col-lg-8">
-            
-
-              <div className="row centerelement">
-                <div className="col-lg-12">
-                  <h4 className="sub-title-grey">
-                    <FormattedMessage
-                      id="home.partners"
-                      defaultMessage="Partners"
-                    />
-                  </h4>
-                </div>
-
-                
-              </div>
-              <div className="row mbottom70">
-                <div className="row centerelement-center">
-                <div className="col-xs-12 col-md-2 col-lg-2">
-                  <img
-                    src={LogoBA}
-                    alt="ba"
-                    className="img-responsive logo-ba"
-                  />
-                </div>
-                  <div className="col-xs-12 col-md-3 col-lg-3">
-                    <img
-                      src={Telecom}
-                      alt="Telecom"
-                      className="img-responsive"
-                    />
+                  <div className="row centerelement">
+                    <div className="col-lg-12">
+                      <h4 className="sub-title-grey">
+                        <FormattedMessage
+                          id="home.partners"
+                          defaultMessage="Partners"
+                        />
+                      </h4>
+                    </div>
                   </div>
-                  <div className="col-xs-12 col-md-2 col-lg-2">
-                  <img
-                    src={LogoBID}
-                    alt="Bid"
-                    className="img-responsive logo-ba"
-                  />
+                  <div className="row mbottom70">
+                    <div className="row centerelement-center">
+                      <div className="col-xs-12 col-md-2 col-lg-2">
+                        <img
+                          src={LogoBA}
+                          alt="ba"
+                          className="img-responsive logo-ba"
+                        />
+                      </div>
+                      <div className="col-xs-12 col-md-3 col-lg-3">
+                        <img
+                          src={Telecom}
+                          alt="Telecom"
+                          className="img-responsive"
+                        />
+                      </div>
+                      <div className="col-xs-12 col-md-2 col-lg-2">
+                        <img
+                          src={LogoBID}
+                          alt="Bid"
+                          className="img-responsive logo-ba"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
+                <div className="col-lg-4">
+                  <div className="row centerelement">
+                    <div className="col-xs-12 col-lg-12">
+                      <h4 className="sub-title-grey">
+                        <FormattedMessage
+                          id="home.media.partner"
+                          defaultMessage="Media Partner"
+                        />
+                      </h4>
+
+                      <div className="row mbottom70">
+                        <div className="row centerelement">
+                          <div className="col-xs-12 col-lg-5">
+                            <img
+                              src={LogoLN}
+                              alt="La Nacion"
+                              className="img-responsive logo-ba"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              </div>
-
-   <div className="col-lg-4">
-                
-                <div className="row centerelement">
-                <div className="col-xs-12 col-lg-12">
-                  <h4 className="sub-title-grey">
-                    <FormattedMessage
-                      id="home.media.partner"
-                      defaultMessage="Media Partner"
-                    />
-                  </h4>
-
-                   <div className="row mbottom70">
-                <div className="row centerelement">
-                  <div className="col-xs-12 col-lg-5">
-                  <img
-                    src={LogoLN}
-                    alt="La Nacion"
-                    className="img-responsive logo-ba"
-                  />
-                </div>
-
-                </div>
-                </div>
-                </div>
-
-                
-              </div>
-                </div>
-
-                
-
-                 
-
-
-              </div>
-
-              
-             
-                
-                </div>
-
-           
+            </div>
 
             <div className="container mbottom70">
               <div className="row centerelement">
@@ -754,7 +732,7 @@ class Home extends Component {
                 </div>
               </div>
 
-<div className="row centerelement">
+              <div className="row centerelement">
                 <div className="col-xs-12 col-md-2 col-lg-2">
                   <img src={OAS} alt="OAS" className="img-responsive" />
                 </div>
@@ -762,16 +740,16 @@ class Home extends Component {
                   <img src={SOTM} alt="SOTM" className="img-responsive" />
                 </div>
                 <div className="col-xs-12 col-md-2 col-lg-2">
-                  <img src={AbreLatam} alt="AbreLatam" className="img-responsive" />
-                </div>
-                <div className="col-xs-12 col-md-2 col-lg-2">
                   <img
-                    src={OH}
-                    alt="OH"
+                    src={AbreLatam}
+                    alt="AbreLatam"
                     className="img-responsive"
                   />
                 </div>
-                
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img src={OH} alt="OH" className="img-responsive" />
+                </div>
+
                 <div className="col-xs-12 col-md-2 col-lg-2">
                   <img src={UNDP} alt="UNDP" className="img-responsive" />
                 </div>
@@ -788,11 +766,7 @@ class Home extends Component {
                   <img src={ODCWR} alt="ODCWR" className="img-responsive" />
                 </div>
                 <div className="col-xs-12 col-md-2 col-lg-2">
-                  <img
-                    src={IDRI}
-                    alt="IDRI"
-                    className="img-responsive"
-                  />
+                  <img src={IDRI} alt="IDRI" className="img-responsive" />
                 </div>
                 <div className="col-xs-12 col-md-2 col-lg-2">
                   <img src={CAFDO} alt="CAFDO" className="img-responsive" />
@@ -801,7 +775,6 @@ class Home extends Component {
                   <img src={Ckan} alt="Ckan" className="img-responsive" />
                 </div>
               </div>
-
 
               <div className="row centerelement">
                 <div className="col-xs-12 col-md-2 col-lg-2">
@@ -814,11 +787,7 @@ class Home extends Component {
                   <img src={ODC} alt="ODC" className="img-responsive" />
                 </div>
                 <div className="col-xs-12 col-md-2 col-lg-2">
-                  <img
-                    src={ODI}
-                    alt="ODI"
-                    className="img-responsive"
-                  />
+                  <img src={ODI} alt="ODI" className="img-responsive" />
                 </div>
                 <div className="col-xs-12 col-md-2 col-lg-2">
                   <img src={ODRS} alt="ODRS" className="img-responsive" />
@@ -828,14 +797,12 @@ class Home extends Component {
                 </div>
               </div>
 
-
-<div className="row centerelement">
+              <div className="row centerelement">
                 <div className="col-xs-12 col-md-8 col-lg-8">
-                <hr className="hr-divisoria"/>
+                  <hr className="hr-divisoria" />
                 </div>
-                </div>
+              </div>
 
-              
               <div className="row centerelement">
                 <div className="col-xs-12 col-md-2 col-lg-2">
                   <img src={Francia} alt="Francia" className="img-responsive" />

@@ -143,20 +143,29 @@ class Menu extends Component {
               </LinkContainer> */}
 
               <NavItem eventKey={8} href="https://">
-                <a href="https://www.facebook.com/opendatacon/" target="_blank" rel="noopener noreferrer" >
+                <a
+                  href="https://www.facebook.com/opendatacon/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={Facebook} width="20" alt="fb" />
                 </a>
               </NavItem>
 
               <NavItem eventKey={9} href="https://">
-                <a href="https://twitter.com/opendatacon" target="_blank" rel="noopener noreferrer" >
+                <a
+                  href="https://twitter.com/opendatacon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={Twitter} width="20" alt="tw" />
                 </a>
               </NavItem>
 
               <NavItem eventKey={10} href="https://">
                 <a
-                  href="https://www.flickr.com/photos/144810968@N02/albums" rel="noopener noreferrer" 
+                  href="https://www.flickr.com/photos/144810968@N02/albums"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img src={Flickr} width="20" alt="fl" />
@@ -165,7 +174,8 @@ class Menu extends Component {
 
               <NavItem eventKey={11} href="https://">
                 <a
-                  href="https://www.youtube.com/channel/UC8cKSDSxKSbOnKliM_MhZmQ" rel="noopener noreferrer" 
+                  href="https://www.youtube.com/channel/UC8cKSDSxKSbOnKliM_MhZmQ"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img src={Youtube} width="20" alt="yt" />
@@ -173,7 +183,11 @@ class Menu extends Component {
               </NavItem>
 
               <NavItem eventKey={12} href="https://">
-                <a href="https://medium.com/@opendatacon"rel="noopener noreferrer" target="_blank">
+                <a
+                  href="https://medium.com/@opendatacon"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <img src={Medium} width="20" alt="tw" />
                 </a>
               </NavItem>
