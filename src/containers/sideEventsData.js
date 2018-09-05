@@ -60,6 +60,22 @@ export default [
     contact: 'tlaznik@acij.org.ar',
   },
   {
+    event:
+      'Primer año de la Ley de Acceso a la Información Pública en Argentina',
+    location: 'CCK',
+    date: 'Monday 24th September',
+    date_es: 'Lunes 24 de septiembre',
+    url:
+      'https://www.argentina.gob.ar/primer-ano-de-la-ley-de-acceso-la-informacion-publica-en-argentina',
+    invitation: true,
+    img: '',
+    description: `The Public Information Agency and the Secretary of Political and Institutional Affairs of the Ministry of the Interior, with support of the Council for Transparency and the Chile Fund, organize this event with the objective to share the level of progress, implementation and use of Law 27.275 and the insertion of Argentina in the international agenda of the right to public information.
+    `,
+    description_es: `La Agencia de Acceso a la Información Pública y la Secretaría de Asuntos Políticos e Institucionales del Ministerio del Interior, con el apoyo del Consejo para la Transparencia y Fondo Chile, organizan este evento, cuyos objetivos son compartir el nivel de avance, implementación y uso de la Ley 27.275 y la inserción de la Argentina en la agenda internacional del derecho a la información pública.
+    `,
+    contact: 'accesoalainformacion@aaip.gob.ar',
+  },
+  {
     event: 'State of The Map',
     location: 'Centro Metropolitano de Diseño',
     date: 'Monday 24th & Tuesday 25th September',
@@ -108,7 +124,8 @@ export default [
     location: 'Centro Cultural Recoleta',
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
-    url: 'www.ckan.org',
+    url:
+      'https://docs.google.com/forms/d/e/1FAIpQLSdHBtkalzutOKiY_hDA4cjS0ttAjDS29zz3KavkOt60rUOyDQ/viewform',
     invitation: true,
     img: './img/ccr.png',
     description: `CKANCon will be a full-day event highlighting all work being done within the CKAN Community. The 2018 event will focus on CKAN case study presentations, formalizing community capacity, the CKAN Association Board election, and designing a technical and business roadmap for 2018/2019.
@@ -133,12 +150,12 @@ export default [
   },
   {
     event: 'Data Rights Forum',
-    location: 'Facultad de Derecho',
+    location: 'Centro Cultural San Martín',
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
     url: '',
     invitation: false,
-    img: './img/derecho.png',
+    img: './img/sanmartin.png',
     description: `The objective of the Data Rights Forum is to bring together multiple communities, AI/Ethics/Big Data, Open Data, and Privacy, that are closely linked but not yet in close collaboration in order to explore how best to identify 'landing zones' for collaboration across these fields, identify where more evidence is required, and design a plan for action moving forward. The overall goal is to lay the groundwork for a possible joint agenda for campaigning, policy change, and research collaboration on Data Rights.
     `,
     description_es: `El objetivo del Data Rights Forum es reunir a múltiples comunidades, AI/Ethics /Big Data, Open Data y Privacy, que están estrechamente relacionadas entre sí, pero que aún no se encuentran en plena colaboración. En este sentido, se pretende alcanzar una mejor manera de identificar las "zonas de aterrizaje" para colaborar en todos estos campos, identificar dónde se requiere más evidencia y diseñar un plan de acción. El objetivo general del Data Rights Forum es sentar las bases para lograr una posible agenda conjunta para campañas, cambio de políticas y colaboración de investigación sobre Derechos de datos.
@@ -220,20 +237,6 @@ This Side Event, facilitated by The Trust for the Americas of the Organization o
     `,
     description_es: `El evento busca sugerir y realizar acciones en común, entre el sector público, privado y social, que permitan avanzar la agenda de datos abiertos en América Latina, en seguimiento a la Declaración de Lima adoptada por los jefes de Estado durante la última Cumbre de las Américas. Asimismo, explorar el avance de gobiernos subnacionales en sus procesos de apertura de datos públicos, junto actores relevantes con la finalidad de explorar aprendizajes y desafíos comunes por medio de diálogos para potenciar el uso de datos abiertos por parte del sector privado para la mejora de negocios, el desarrollo de nuevos bienes y servicios, la generación de emprendimientos o de acciones de responsabilidad social empresarial. Este evento facilitado por The Trust for the Americas de la Organización de los Estados Americanos (OEA) y la Fundación Conocimiento Abierto, se realiza con el apoyo del Gobierno de la Ciudad de Buenos Aires y el Ministerio de Modernización de la Nación Argentina.`,
     contact: 'RIriani@oas.org',
-  },
-  {
-    event: 'Natural Resource Governance for All',
-    location: 'Facultad de Derecho',
-    date: 'Monday 26th September',
-    date_es: 'Lunes 26 de septiembre',
-    url: 'https://resourcegovernance.org/events/events',
-    invitation: false,
-    img: './img/derecho.png',
-    description: `Natural Resource Governance for All is a workshop to kick off the development and implementation of inclusive natural resource governance reforms (e.g.OGP commitments) that address the transparency, accountability, and participation needs and impacts facing women and underrepresented groups in natural resource management policymaking. The workshop will bring together natural resource governance organizations with women’s organizations, the open data community and governments.
-    `,
-    description_es: `Natural Resource Governance for All es un taller para iniciar el desarrollo de las reformas de gobernanza de los recursos naturales inclusivos que aborden las necesidades de transparencia, rendición de cuentas y participación que enfrentan las mujeres y los grupos insuficientemente representados en la formulación de políticas de gestión de recursos naturales. El taller reunirá a organizaciones de gobernanza de recursos naturales con organizaciones de mujeres y a la comunidad de datos abiertos y gobiernos.
-    `,
-    contact: 'kkuai@resourcegovernance.org',
   },
   {
     event: 'AbreLatam',
