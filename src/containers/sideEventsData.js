@@ -184,12 +184,10 @@ export default [
     url: 'https://www.lanacion.com.ar/data',
     invitation: false,
     img: '',
-    description: `
-
-    `,
-    description_es: `
-    `,
-    contact: '',
+    description: `We are glad to welcome you to our newsroom! Meet LA NACION Data team and witness our Editors' Morning Meeting.`,
+    description_es: `¡Estamos contentos de darles la bienvenida a nuestra sala de redacción! Conocé al equipo de LA NACION Data y se testigo de una 
+    reunión matutina de nuestros editores.`,
+    contact: 'rcolman@lanacion.com.ar',
   },
   {
     event: 'Open Data Leaders Summit',
