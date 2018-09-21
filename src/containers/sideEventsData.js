@@ -223,9 +223,9 @@ This Side Event, facilitated by The Trust for the Americas of the Organization o
   },
   {
     event: 'Open Heroines Summit - Gender Spotlight',
-    location: 'Usina del Arte',
-    date: 'Tuesday 25th September',
-    date_es: 'Martes 25 de septiembre',
+    location: 'Palacio Lezama',
+    date: 'Tuesday 26th September',
+    date_es: 'Martes 26 de septiembre',
     url:
       'https://www.eventbrite.co.uk/e/open-heroines-gender-spotlight-do-a-thon-tickets-47797047255',
     invitation: true,
