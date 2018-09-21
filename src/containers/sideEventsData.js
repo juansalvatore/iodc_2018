@@ -78,8 +78,8 @@ export default [
   {
     event: 'State of The Map',
     location: 'Centro Metropolitano de Diseño',
-    date: 'Monday 24th & Tuesday 25th September',
-    date_es: 'Lunes 24 y martes 25 de septiembre',
+    date: 'Monday 24th',
+    date_es: 'Lunes 24',
     url: 'https://sotmlatam2018.eventbrite.com.ar/',
     invitation: true,
     img: './img/cmd.png',
@@ -91,28 +91,13 @@ export default [
     contact: 'hernan.lopez@gmail.com',
   },
   {
-    event: 'Open Heroines Summit - Gender Spotlight',
-    location: 'Centro Metropolitano de Diseño',
-    date: 'Tuesday 25th September',
-    date_es: 'Martes 25 de septiembre',
-    url:
-      'https://www.eventbrite.co.uk/e/open-heroines-gender-spotlight-do-a-thon-tickets-47797047255',
-    invitation: true,
-    img: './img/cmd.png',
-    description: `Open Heroines Gender Spotlight event will bring people with a wide variety of skills and experiences together to work on gender issues related to open data. We know that amazing results will come from meaningful of collaboration, and we’re looking forward to solving challenges with you! During the event, we will hold a Do-a-thon to work on open data projects focused on gender data, projects that want to be more inclusive and are looking to incorporate a gender perspective, projects that use open data to raise awareness and drive action around gender equality, and projects that explore gender equality within the open data community itself.
-    `,
-    description_es: `Open Heroines Gender Spotlight reunirá participantes de todo el Mundo con una amplia variedad de habilidades y experiencias para trabajar en cuestiones de género relacionadas a la información abierta. Sabemos que todos los resultados sorprendentes vendrán de la colaboración significativa, ¡y estamos ansiosos por resolver los desafíos con usted! Durante el evento, tendremos un Do-a-thon para trabajar en proyectos de datos abiertos enfocados en datos de género, proyectos inclusivos  que buscan incorporar una perspectiva de género, proyectos que usen datos abiertos para crear conciencia y conducir acción en torno a la igualdad de género, y proyectos que exploren la igualdad de género dentro de la comunidad de datos abiertos en sí misma.
-    `,
-    contact: 'morchickit@gmail.com',
-  },
-  {
     event: 'Open Data Research Symposium',
-    location: 'Centro Cultural San Martín',
+    location: 'INAP, Av. Belgrano 673',
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
     url: 'http://odresearch.org/',
     invitation: true,
-    img: './img/sanmartin.png',
+    img: '',
     description: `The 3rd Open Data Research Symposium (ODRS) offers researchers an opportunity to share completed research to inform our understanding of open data’s contribution to society. It is also an opportunity to shape the open data research agenda to ensures that the knowledge produced by the research community is both relevant and robust.
     `,
     description_es: `El 3er Open Data Research Symposium (ODRS) ofrece a investigadores la oportunidad de compartir investigaciones completas para informar una comprensión de la contribución de los datos abiertos a la sociedad. Esta jornada también es una oportunidad para dar forma a la agenda abierta de investigación de datos y garantizar que el conocimiento producido por la comunidad de investigación sea relevante y robusta.
@@ -150,12 +135,12 @@ export default [
   },
   {
     event: 'Data Rights Forum',
-    location: 'Centro Cultural San Martín',
+    location: 'INAP, Av. Belgrano 673',
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
     url: '',
     invitation: false,
-    img: './img/sanmartin.png',
+    img: '',
     description: `The objective of the Data Rights Forum is to bring together multiple communities, AI/Ethics/Big Data, Open Data, and Privacy, that are closely linked but not yet in close collaboration in order to explore how best to identify 'landing zones' for collaboration across these fields, identify where more evidence is required, and design a plan for action moving forward. The overall goal is to lay the groundwork for a possible joint agenda for campaigning, policy change, and research collaboration on Data Rights.
     `,
     description_es: `El objetivo del Data Rights Forum es reunir a múltiples comunidades, AI/Ethics /Big Data, Open Data y Privacy, que están estrechamente relacionadas entre sí, pero que aún no se encuentran en plena colaboración. En este sentido, se pretende alcanzar una mejor manera de identificar las "zonas de aterrizaje" para colaborar en todos estos campos, identificar dónde se requiere más evidencia y diseñar un plan de acción. El objetivo general del Data Rights Forum es sentar las bases para lograr una posible agenda conjunta para campañas, cambio de políticas y colaboración de investigación sobre Derechos de datos.
@@ -191,13 +176,13 @@ export default [
   },
   {
     event: 'Open Data Leaders Summit',
-    location: 'Palacio Lezama',
+    location: 'Hotel 725 - Av. Pres. Roque Sáenz Peña 725',
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
     url:
       'https://www.eventbrite.co.uk/e/open-data-leaders-summit-2018-tickets-46918297892',
     invitation: false,
-    img: './img/lezama.png',
+    img: '',
     description: `The Open Data Leaders Summit is a forum for government leaders to come together to learn, reflect and collaborate. It is designed for individuals leading the strategy, policy, or implementation of open data within their countries to share knowledge and best practices. This year the Summit will be a key opportunity for participants to provide input into revision of the Open Data Charter principles, hear about latest developments in the field, and network with each other. The event will be a valuable forum for government leaders to connect with each other ahead of the main conference.
 
     `,
@@ -208,13 +193,13 @@ export default [
   },
   {
     event: 'Open Data Charter',
-    location: 'Palacio Lezama',
+    location: 'Hotel 725 - Av. Pres. Roque Sáenz Peña 725',
     date: 'Tuesday 25th September',
     date_es: 'Martes 25 de septiembre',
     url:
       'https://www.eventbrite.com/e/open-data-charter-odcrefresh-workshop-tickets-48481864562?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing',
     invitation: false,
-    img: './img/lezama.png',
+    img: '',
     description: `To ensure the Open Data Charter Principles continue to reflect the highest standards and meet the expectations of adopting governments, the Open Data Charter is undergoing a review of the Principles since May 2018. Following a global consultation process and the subsequent analysis of all the feedback received from open data communities around the world, the the Open Data Charter, together with the Open Data Institute and the Buenos Aires City´s Government is organizing this workshop to gather further feedback from the community on the recommendations and suggestions made by three Expert Groups tasked with analysing all the feedback we received. The objective of this workshop is to ensure that members of the global community of implementers and practitioners have the opportunity to review and discuss the proposed changes to the Open Data Principles before they are officially launched later in the year.
     `,
     description_es: `Para asegurar que los Principios del Open Data Charter continúen reflejando los más altos estándares y cumplan con las expectativas de los gobiernos adoptantes, la Carta de Datos Abiertos se somete a una revisión de los Principios desde mayo de 2018. Tras un proceso de consulta global y posterior análisis de todos los comentarios recibidos de comunidades de datos abiertos en todo el mundo, la Carta de Datos Abiertos, junto con el Open Data Institute y el Gobierno de la Ciudad de Buenos Aires están organizando este taller para generar más comentarios de la comunidad sobre recomendaciones y sugerencias de tres Grupos de Expertos encargados en el análisis de todos los comentarios que recibimos. El objetivo de este taller es garantizar que todos los miembros de la comunidad global tengan la oportunidad de revisar y discutir los cambios propuestos antes de que se lancen oficialmente.
@@ -235,6 +220,21 @@ This Side Event, facilitated by The Trust for the Americas of the Organization o
     `,
     description_es: `El evento busca sugerir y realizar acciones en común, entre el sector público, privado y social, que permitan avanzar la agenda de datos abiertos en América Latina, en seguimiento a la Declaración de Lima adoptada por los jefes de Estado durante la última Cumbre de las Américas. Asimismo, explorar el avance de gobiernos subnacionales en sus procesos de apertura de datos públicos, junto actores relevantes con la finalidad de explorar aprendizajes y desafíos comunes por medio de diálogos para potenciar el uso de datos abiertos por parte del sector privado para la mejora de negocios, el desarrollo de nuevos bienes y servicios, la generación de emprendimientos o de acciones de responsabilidad social empresarial. Este evento facilitado por The Trust for the Americas de la Organización de los Estados Americanos (OEA) y la Fundación Conocimiento Abierto, se realiza con el apoyo del Gobierno de la Ciudad de Buenos Aires y el Ministerio de Modernización de la Nación Argentina.`,
     contact: 'RIriani@oas.org',
+  },
+  {
+    event: 'Open Heroines Summit - Gender Spotlight',
+    location: 'Usina del Arte',
+    date: 'Tuesday 25th September',
+    date_es: 'Martes 25 de septiembre',
+    url:
+      'https://www.eventbrite.co.uk/e/open-heroines-gender-spotlight-do-a-thon-tickets-47797047255',
+    invitation: true,
+    img: '',
+    description: `Open Heroines Gender Spotlight event will bring people with a wide variety of skills and experiences together to work on gender issues related to open data. We know that amazing results will come from meaningful of collaboration, and we’re looking forward to solving challenges with you! During the event, we will hold a Do-a-thon to work on open data projects focused on gender data, projects that want to be more inclusive and are looking to incorporate a gender perspective, projects that use open data to raise awareness and drive action around gender equality, and projects that explore gender equality within the open data community itself.
+    `,
+    description_es: `Open Heroines Gender Spotlight reunirá participantes de todo el Mundo con una amplia variedad de habilidades y experiencias para trabajar en cuestiones de género relacionadas a la información abierta. Sabemos que todos los resultados sorprendentes vendrán de la colaboración significativa, ¡y estamos ansiosos por resolver los desafíos con usted! Durante el evento, tendremos un Do-a-thon para trabajar en proyectos de datos abiertos enfocados en datos de género, proyectos inclusivos  que buscan incorporar una perspectiva de género, proyectos que usen datos abiertos para crear conciencia y conducir acción en torno a la igualdad de género, y proyectos que exploren la igualdad de género dentro de la comunidad de datos abiertos en sí misma.
+    `,
+    contact: 'morchickit@gmail.com',
   },
   {
     event: 'AbreLatam',
@@ -268,7 +268,7 @@ This Side Event, facilitated by The Trust for the Americas of the Organization o
     contact: 'tim.davies@opendataservices.coop',
   },
   {
-    event: 'National Statistics Offices Pre-Event',
+    event: 'National Reporting for the SDGs',
     location: 'Facultad de Derecho',
     date: 'Wednesday 26th September',
     date_es: 'Miércoles 26 de septiembre',
@@ -278,7 +278,7 @@ This Side Event, facilitated by The Trust for the Americas of the Organization o
     description: `This event will bring together relevant stakeholders to discuss how to ensure national reporting platforms for the SDGs integrate the principles of open data and interoperability. This pre-event will be followed by further discussions during the conference itself such as a plenary session entitled “Global Commitments to Open Data” and an impact session entitled “Open Data and National Statistics.” Open Data Watch is coordinating this work and together with our partners: The World Bank, Open Data for Development, and Inter-American Development Bank. 
 
     `,
-    description_es: `National Statistics Offices Pre-Event reunirá a todas las partes interesadas en debatir sobre cómo garantizar que las plataformas nacionales de presentación de informes para las ODS integren los principios de datos abiertos. Este pre-evento se anticipa a nuevas discusiones que luego se llevarán a cabo en la conferencia principal.  Open Data Watch está coordinando esta Jornada en conjunto con sus socios: el Banco Mundial, Open Data for Development y el Banco Interamericano de Desarrollo.
+    description_es: `National Reporting for the SDGs reunirá a todas las partes interesadas en debatir sobre cómo garantizar que las plataformas nacionales de presentación de informes para las ODS integren los principios de datos abiertos. Este pre-evento se anticipa a nuevas discusiones que luego se llevarán a cabo en la conferencia principal.  Open Data Watch está coordinando esta Jornada en conjunto con sus socios: el Banco Mundial, Open Data for Development y el Banco Interamericano de Desarrollo.
 
     `,
     contact: 'deirdreappel@opendatawatch.com',
