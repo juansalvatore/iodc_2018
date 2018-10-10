@@ -84,6 +84,7 @@ import Trust from './Trust.png'
 import UNDP from './UNDP.png'
 import UN from './UN.png'
 import WWWF from './WWWF.png'
+import Google from './google.png'
 export {
   Usina,
   SanMartin,
@@ -171,4 +172,5 @@ export {
   UNDP,
   UN,
   WWWF,
+  Google,
 }

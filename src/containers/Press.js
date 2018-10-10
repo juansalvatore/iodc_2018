@@ -51,8 +51,8 @@ class Press extends Component {
                   <a
                     href={
                       this.props.lang === 'en'
-                        ? 'https://www.argentina.gob.ar/sites/default/files/press_kit_iodc18-v0.pdf'
-                        : 'https://www.argentina.gob.ar/sites/default/files/kit_de_prensa_iodc18-v0.pdf'
+                        ? 'https://www.argentina.gob.ar/sites/default/files/press_kit_iodc18-v1.pdf'
+                        : 'https://www.argentina.gob.ar/sites/default/files/kit_de_prensa_iodc18-v1.pdf'
                     }
                     target="_blank"
                   >

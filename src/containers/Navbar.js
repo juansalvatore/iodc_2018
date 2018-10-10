@@ -164,7 +164,7 @@ class Menu extends Component {
 
               <NavItem eventKey={10} href="https://">
                 <a
-                  href="https://www.flickr.com/photos/144810968@N02/albums"
+                  href="https://www.flickr.com/photos/167218975@N05/albums"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -174,7 +174,7 @@ class Menu extends Component {
 
               <NavItem eventKey={11} href="https://">
                 <a
-                  href="https://www.youtube.com/channel/UC8cKSDSxKSbOnKliM_MhZmQ"
+                  href="https://www.youtube.com/watch?v=a0UdB1xUSEM&feature=youtu.be"
                   rel="noopener noreferrer"
                   target="_blank"
                 >

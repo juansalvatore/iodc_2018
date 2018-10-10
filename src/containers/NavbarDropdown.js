@@ -107,14 +107,14 @@ class NavbarDropdown extends Component {
             <img src={Twitter} width="20" alt="tw" />
           </a>
           <a
-            href="https://www.flickr.com/photos/144810968@N02/albums"
+            href="https://www.flickr.com/photos/167218975@N05/albums"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={Flickr} width="20" alt="fl" />
           </a>
           <a
-            href="https://www.youtube.com/channel/UC8cKSDSxKSbOnKliM_MhZmQ"
+            href="https://www.youtube.com/watch?v=a0UdB1xUSEM&feature=youtu.be"
             target="_blank"
             rel="noopener noreferrer"
           >

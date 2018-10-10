@@ -69,6 +69,7 @@ import {
   UNDP,
   UN,
   WWWF,
+  Google,
 } from '../img'
 
 class Home extends Component {
@@ -633,10 +634,18 @@ class Home extends Component {
               </div>
 
               <div className="row centerelement">
-                <div className="col-xs-12 col-md-4 col-lg-4">
+                <div className="col-xs-12 col-md-3 col-lg-3">
                   <img src={IDRCColor} alt="IDRC" className="img-responsive" />
                 </div>
-                <div className="col-xs-6 col-md-2 col-lg-2">
+
+                <div className="col-xs-12 col-md-2 col-lg-2">
+                  <img
+                    src={LogoBID}
+                    alt="Bid"
+                    className="img-responsive logo-ba"
+                  />
+                </div>
+                <div className="col-xs-6 col-md-3 col-lg-3">
                   <img
                     src={LogoILDA}
                     alt="ILDA"
@@ -684,9 +693,9 @@ class Home extends Component {
                       </div>
                       <div className="col-xs-12 col-md-2 col-lg-2">
                         <img
-                          src={LogoBID}
-                          alt="Bid"
-                          className="img-responsive logo-ba"
+                          src={Google}
+                          alt="Google"
+                          className="img-responsive"
                         />
                       </div>
                     </div>
